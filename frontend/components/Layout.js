@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
+import ProgressBar from './ProgressBar'
 
 export default ({ children }) => {
   return (
@@ -31,6 +32,7 @@ export default ({ children }) => {
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
         rel="stylesheet"
       />
+      <ProgressBar/>
       <Header />
       {children}
       <Footer />

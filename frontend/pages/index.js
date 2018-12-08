@@ -75,7 +75,7 @@ export default () => {
       </style>
       <div className="Background">
         <div className="logo">
-          <img src="/static/hackyourfuture.png" />
+          <img src="/static/HYF_LOGO.png" />
         </div>
       </div>
       <Content>

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/kevinsimper/hackyourfuture.dk#readme",
   "dependencies": {
+    "@material-ui/core": "^3.6.1",
     "marked": "^0.3.16",
     "next": "^6.0.3",
     "react": "^16.2.0",
