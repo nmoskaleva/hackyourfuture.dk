@@ -4,7 +4,7 @@
   "description": "This is a node.js project based on next.js that compiles to a static site that is currently hosted on https://surge.sh",
   "main": "index.js",
   "scripts": {
-    "start": "cd frontend && npm run start"
+    "start": "cd frontend && npm start"
   },
   "repository": {
     "type": "git",
