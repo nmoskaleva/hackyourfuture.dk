@@ -1,0 +1,20 @@
+{
+  "name": "hackyourfuture.dk",
+  "version": "1.0.0",
+  "description": "This is a node.js project based on next.js that compiles to a static site that is currently hosted on https://surge.sh",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd frontend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuhairtaha/hackyourfuture.dk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuhairtaha/hackyourfuture.dk/issues"
+  },
+  "homepage": "https://github.com/zuhairtaha/hackyourfuture.dk#readme"
+}
