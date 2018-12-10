@@ -1,32 +1,23 @@
 {
-  "name": "hackyourfuture.dk",
+  "name": "hyf-next.js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "next start",
-    "fix-lint": "npx prettier --write --single-quote --no-semi 'components/**/*.js' 'pages/**/*.js'",
-    "deploy": "npm run build && npx surge out/ hackyourfuture.dk",
-    "heroku-postbuild": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevinsimper/hackyourfuture.dk.git"
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kevinsimper/hackyourfuture.dk/issues"
-  },
-  "homepage": "https://github.com/kevinsimper/hackyourfuture.dk#readme",
   "dependencies": {
     "@material-ui/core": "^3.6.1",
-    "marked": "^0.3.16",
-    "next": "^6.0.3",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "marked": "^0.5.2",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }

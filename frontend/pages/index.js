@@ -79,9 +79,9 @@ export default () => {
         </div>
       </div>
       <Content>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+        <div dangerouslySetInnerHTML={{__html: marked(content)}} />
       </Content>
-      <div style={{ height: 50 }} />
+      <div style={{height: 50}} />
       <div className="contentExtra">
         <h2>Find us on Social Media</h2>
         <div className="facebook">
@@ -89,15 +89,15 @@ export default () => {
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackyourfuturecopenhagen%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=452614524799595"
             width="340"
             height="214"
-            styles={{ border: 'none', overflow: 'hidden' }}
+            style={{border: 'none', overflow: 'hidden'}}
             scrolling="no"
             frameBorder="0"
           />
         </div>
       </div>
-      <h2 style={{ textAlign: 'center' }}>Core Team</h2>
+      <h2 style={{textAlign: 'center'}}>Core Team</h2>
       <CoreTeam />
-      <h2 style={{ textAlign: 'center' }}>Mentors</h2>
+      <h2 style={{textAlign: 'center'}}>Mentors</h2>
       <Team />
     </Layout>
   )

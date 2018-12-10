@@ -3,27 +3,36 @@ import Header from './Header'
 import Footer from './Footer'
 import ProgressBar from './ProgressBar'
 
-export default ({ children }) => {
+export default ({children}) => {
   return (
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      {/*language=SCSS*/}
       <style global jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
+        //font-family: 'Space Mono', monospace;
+        //font-family: 'Work Sans', sans-serif;
+
         body {
           font-size: 1.2rem;
           line-height: 1.6rem;
-          font-family: 'Source Sans Pro', sans-serif;
+          //font-family: 'Source Sans Pro', sans-serif;
+          font-family: 'Work Sans', sans-serif;
           margin: 0px;
           color: #111;
           background-color: #fff !important;
         }
+
         img {
           max-width: 100%;
         }
+
         a {
           color: #111;
         }
+
         * {
           box-sizing: border-box;
         }
@@ -32,7 +41,7 @@ export default ({ children }) => {
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
         rel="stylesheet"
       />
-      <ProgressBar/>
+      <ProgressBar />
       <Header />
       {children}
       <Footer />
