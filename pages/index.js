@@ -19,58 +19,68 @@ export default () => {
       <Head>
         <title>HackYourFuture Copenhagen</title>
       </Head>
+      {/*language=CSS*/}
       <style jsx>
         {`
-          .content {
-            max-width: 760px;
-            margin: 0px auto;
-            background: white;
-            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-              0 1px 10px 0 rgba(0, 0, 0, 0.12),
-              0 2px 4px -1px rgba(0, 0, 0, 0.2);
-            padding: 15px;
-          }
-          @media (min-width: 768px) {
             .content {
-              padding: 40px;
+                max-width: 760px;
+                margin: 0px auto;
+                background: white;
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                0 2px 4px -1px rgba(0, 0, 0, 0.2);
+                padding: 15px;
             }
-          }
-          .contentExtra {
-            max-width: 760px;
-            margin: 0px auto;
-          }
-          .contentExtra h2 {
-            text-align: center;
-          }
-          .facebook {
-            max-width: 360px;
-            margin: 0 auto;
-          }
-          .logo {
-            text-align: center;
-            padding: 50px;
-          }
-          .logo img {
-            max-height: 200px;
-          }
-          .Background {
-            background: linear-gradient(
-                rgba(0, 0, 0, 0.35),
-                rgba(0, 0, 0, 0.55)
-              ),
-              url(https://images.unsplash.com/photo-1515518554912-63b4da53597d?ixlib=rb-0.3.5…EyMDd9&s=bbe35f4…&auto=format&fit=crop&w=2850&q=80);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-size: 200%;
-            height: 50vw;
-            max-height: 450px;
-            min-height: 300px;
-          }
-          @media (min-width: 768px) {
+
+            @media (min-width: 768px) {
+                .content {
+                    padding: 40px;
+                }
+            }
+
+            .contentExtra {
+                max-width: 760px;
+                margin: 0px auto;
+            }
+
+            .contentExtra h2 {
+                text-align: center;
+            }
+
+            .facebook {
+                max-width: 360px;
+                margin: 0 auto;
+            }
+
+            .logo {
+                text-align: center;
+                margin: auto;
+
+            }
+
+            .logo img {
+                max-height: 200px;
+            }
+
             .Background {
-              background-size: 100%;
+                display: flex;
+
+                background: linear-gradient(
+                        rgba(0, 0, 0, 0.35),
+                        rgba(0, 0, 0, 0.55)
+                ),
+                url(https://images.unsplash.com/photo-1515518554912-63b4da53597d?ixlib=rb-0.3.5…EyMDd9&s=bbe35f4…&auto=format&fit=crop&w=2850&q=80) no-repeat;
+                background-size: 200%;
+                height: 50vw;
+                max-height: 450px;
+                min-height: 300px;
             }
-          }
+
+            @media (min-width: 768px) {
+                .Background {
+                    background-size: 100%;
+                }
+            }
         `}
       </style>
       <div className="Background">
