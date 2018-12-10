@@ -1,20 +1,23 @@
 {
   "name": "hackyourfuture.dk",
-  "version": "1.0.0",
   "description": "This is a node.js project based on next.js that compiles to a static site that is currently hosted on https://surge.sh",
-  "main": "index.js",
+  "version": "1.2.0",
   "scripts": {
-    "start": "cd frontend && npm start"
+    "dev": "node -r esm backend/server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node -r esm backend/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zuhairtaha/hackyourfuture.dk.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zuhairtaha/hackyourfuture.dk/issues"
-  },
-  "homepage": "https://github.com/zuhairtaha/hackyourfuture.dk#readme"
+  "dependencies": {
+    "@material-ui/core": "^3.6.2",
+    "esm": "^3.0.84",
+    "express": "^4.14.0",
+    "marked": "^0.5.2",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
 }
