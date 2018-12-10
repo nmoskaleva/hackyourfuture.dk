@@ -1,5 +1,7 @@
 import express from 'express'
 import next from 'next'
+import apiRoutes from './routes'
+
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
@@ -9,10 +11,8 @@ const handle = app.getRequestHandler()
 app.prepare()
   .then(() => {
     const server = express()
-
-    server.get('*', (req, res) => {
-      return handle(req, res)
-    })
+    server.use('/api', apiRoutes)
+    server.get('*', (req, res) => handle(req, res))
 
     server.listen(port, (err) => {
       if (err) throw err
