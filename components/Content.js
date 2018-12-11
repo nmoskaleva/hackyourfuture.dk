@@ -11,6 +11,12 @@ export default ({children}) => {
                 line-height: 2.2rem;
             }
 
+            @media (max-width: 768px) {
+                .Content {
+                    padding: 1rem 5vw;
+                }
+            }
+
             @media (min-width: 1200px) {
                 .Content {
                     text-align: justify;

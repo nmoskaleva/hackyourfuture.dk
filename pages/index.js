@@ -4,6 +4,7 @@ import Team from '../components/Team/'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import marked from 'marked'
+import MyParallax from '../components/parallax'
 
 const content = `
 HackYourFuture is an educational program that aims to train refugees and asylum seekers to become web-developers and empower them by opening the doors to a very in-demand job market.
@@ -36,6 +37,7 @@ export default () => {
                 .content {
                     padding: 40px;
                 }
+
             }
 
             .contentExtra {
@@ -62,32 +64,34 @@ export default () => {
                 max-height: 200px;
             }
 
-            .Background {
-                display: flex;
+            /*.Background {*/
+            /*display: flex;*/
 
-                background: linear-gradient(
-                        rgba(0, 0, 0, 0.35),
-                        rgba(0, 0, 0, 0.55)
-                ),
-                url(https://images.unsplash.com/photo-1515518554912-63b4da53597d?ixlib=rb-0.3.5…EyMDd9&s=bbe35f4…&auto=format&fit=crop&w=2850&q=80) no-repeat;
-                background-size: 200%;
-                height: 50vw;
-                max-height: 450px;
-                min-height: 300px;
-            }
+            /*background: linear-gradient(*/
+            /*rgba(0, 0, 0, 0.35),*/
+            /*rgba(0, 0, 0, 0.55)*/
+            /*),*/
+            /*url(https://images.unsplash.com/photo-1515518554912-63b4da53597d?ixlib=rb-0.3.5…EyMDd9&s=bbe35f4…&auto=format&fit=crop&w=2850&q=80) no-repeat;*/
+            /*background-size: 200%;*/
+            /*height: 50vw;*/
+            /*max-height: 450px;*/
+            /*min-height: 300px;*/
+            /*}*/
 
-            @media (min-width: 768px) {
-                .Background {
-                    background-size: 100%;
-                }
-            }
+            /*@media (min-width: 768px) {*/
+            /*.Background {*/
+            /*background-size: 100%;*/
+            /*}*/
+            /*}*/
         `}
       </style>
-      <div className="Background">
+
+      <MyParallax>
         <div className="logo">
           <img src="/static/HYF_LOGO.png" />
         </div>
-      </div>
+      </MyParallax>
+
       <Content>
         <div dangerouslySetInnerHTML={{__html: marked(content)}} />
       </Content>
