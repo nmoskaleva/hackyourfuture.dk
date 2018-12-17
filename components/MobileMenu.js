@@ -1,4 +1,4 @@
-import {links} from './Navigation'
+import {links} from './Header/Navigation'
 
 export default () => {
   return (

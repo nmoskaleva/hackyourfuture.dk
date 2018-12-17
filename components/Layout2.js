@@ -3,7 +3,7 @@ import Footer from './Footer'
 import ProgressBar from './ProgressBar'
 import NavBar from './NavBar/Index'
 import DrawerLeft from './NavBar/DrawerLeft'
-import Header from './Header'
+import Header from './Header/Header'
 
 export default ({children}) => {
   return (

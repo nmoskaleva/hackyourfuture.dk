@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Footer from './Footer'
 import ProgressBar from './ProgressBar'
-import Header from './Header'
+import Header from './Header/Header'
 
 export default ({children}) => {
   return (
