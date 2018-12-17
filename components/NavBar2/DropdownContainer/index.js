@@ -1,23 +1,17 @@
-import React, { Component, Children, createRef } from "react"
-import PropTypes from "prop-types"
-import { Flipped } from "react-flip-toolkit"
-import {
-  DropdownRoot,
-  Caret,
-  DropdownBackground,
-  AltBackground,
-  InvertedDiv
-} from "./Components"
-import FadeContents from "./FadeContents"
+import React, {Children, Component, createRef} from 'react'
+import PropTypes from 'prop-types'
+import {Flipped} from 'react-flip-toolkit'
+import {AltBackground, Caret, DropdownBackground, DropdownRoot, InvertedDiv} from './Components'
+import FadeContents from './FadeContents'
 
 const getFirstDropdownSectionHeight = el => {
   if (
     !el ||
     !el.querySelector ||
-    !el.querySelector("*[data-first-dropdown-section]")
+    !el.querySelector('*[data-first-dropdown-section]')
   )
     return 0
-  return el.querySelector("*[data-first-dropdown-section]").offsetHeight
+  return el.querySelector('*[data-first-dropdown-section]').offsetHeight
 }
 
 const updateAltBackground = ({
@@ -30,8 +24,8 @@ const updateAltBackground = ({
 
   const immediateSetTranslateY = (el, translateY) => {
     el.style.transform = `translateY(${translateY}px)`
-    el.style.transition = "transform 0s"
-    requestAnimationFrame(() => (el.style.transitionDuration = ""))
+    el.style.transition = 'transform 0s'
+    requestAnimationFrame(() => (el.style.transitionDuration = ''))
   }
 
   if (prevHeight) {
@@ -51,7 +45,7 @@ class DropdownContainer extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     animatingOut: PropTypes.bool,
-    direction: PropTypes.oneOf(["left", "right"]),
+    direction: PropTypes.oneOf(['left', 'right']),
     duration: PropTypes.number
   }
 
@@ -68,7 +62,7 @@ class DropdownContainer extends Component {
   }
 
   render() {
-    const { children, direction, animatingOut, duration } = this.props
+    const {children, direction, animatingOut, duration} = this.props
     const [currentDropdown, prevDropdown] = Children.toArray(children)
     return (
       <DropdownRoot

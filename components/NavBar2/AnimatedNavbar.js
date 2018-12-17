@@ -82,6 +82,45 @@ export default class AnimatedNavbar extends Component {
         spring={duration === 300 ? 'noWobble' : {stiffness: 10, damping: 10}}
       >
         <Navbar onMouseLeave={this.onMouseLeave}>
+          {/*home logo button start:*/}
+          <li>
+            <button className="sc-htpNat logoBtn">
+              <a href='/'> </a>
+              {/*language=CSS*/}
+              <style jsx>{`
+                  .logoBtn {
+                      background: url('/static/HYF_LOGO.png') center center/cover;
+                      width: 100px;
+                      height: 100%;
+                      dispalay: flex;
+                      flex-direction: column;
+                      cursor: pointer;
+                      border: none;
+                      margin-right: 2rem;
+                  }
+
+                  .logoBtn:hover {
+                      opacity: .8;
+                      transition: all .5s;
+                  }
+
+                  .logoBtn:focus {
+                      outline: none;
+                  }
+
+                  .logoBtn a {
+                      width: 100px;
+                      height: 100%;
+                      dispalay: flex;
+                      display: inline-block;
+                  }
+
+              `}
+              </style>
+
+            </button>
+          </li>
+          {/*home logo button end;*/}
           {navbarConfig.map((dropDown, index) => {
             // console.log('dropDown', dropDown.dropdownList)
             return (

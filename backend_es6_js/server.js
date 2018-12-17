@@ -1,6 +1,7 @@
-const express = require('express')
-const next = require('next')
-const apiRoutes = require('./routes')
+import express from 'express'
+import next from 'next'
+import apiRoutes from './routes'
+
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
