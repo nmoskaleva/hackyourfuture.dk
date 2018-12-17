@@ -1,26 +1,31 @@
-import React, { Component } from "react"
-import Navbar from "./Navbar"
-import NavbarItem from "./Navbar/NavbarItem"
-import { Flipper } from "react-flip-toolkit"
-import DropdownContainer from "./DropdownContainer"
-import CompanyDropdown from "./DropdownContents/CompanyDropdown"
-import DevelopersDropdown from "./DropdownContents/DevelopersDropdown"
-import ProductsDropdown from "./DropdownContents/ProductsDropdown"
+import React, {Component} from 'react'
+import Navbar from './Navbar'
+import NavbarItem from './Navbar/NavbarItem'
+import {Flipper} from 'react-flip-toolkit'
+import DropdownContainer from './DropdownContainer'
+import {links} from './links-json'
+import Dropdown from './DropdownContents/Dropdown'
 
-const navbarConfig = [
-  { title: "Products", dropdown: ProductsDropdown },
-  { title: "Developers", dropdown: DevelopersDropdown },
-  { title: "Company", dropdown: CompanyDropdown }
-]
 
 export default class AnimatedNavbar extends Component {
   state = {
-    activeIndices: []
+    activeIndices: [],
+    navbarConfig: []
+  }
+
+  componentDidMount() {
+    this.setState({
+      navbarConfig: links.map(({title, dropdown}) => ({
+        title,
+        dropdown: Dropdown,
+        dropdownList: dropdown
+      }))
+    })
   }
 
   resetDropdownState = i => {
     this.setState({
-      activeIndices: typeof i === "number" ? [i] : [],
+      activeIndices: typeof i === 'number' ? [i] : [],
       animatingOut: false
     })
     delete this.animatingOutTimeout
@@ -52,35 +57,37 @@ export default class AnimatedNavbar extends Component {
   }
 
   render() {
-    const { duration } = this.props
+    const {duration} = this.props
+    const {navbarConfig} = this.state
     let CurrentDropdown
     let PrevDropdown
     let direction
-
     const currentIndex = this.state.activeIndices[
-      this.state.activeIndices.length - 1
-    ]
+    this.state.activeIndices.length - 1
+      ]
     const prevIndex =
-      this.state.activeIndices.length > 1 &&
-      this.state.activeIndices[this.state.activeIndices.length - 2]
+            this.state.activeIndices.length > 1 &&
+            this.state.activeIndices[this.state.activeIndices.length - 2]
 
-    if (typeof currentIndex === "number")
+    if (typeof currentIndex === 'number')
       CurrentDropdown = navbarConfig[currentIndex].dropdown
-    if (typeof prevIndex === "number") {
+    if (typeof prevIndex === 'number') {
       PrevDropdown = navbarConfig[prevIndex].dropdown
-      direction = currentIndex > prevIndex ? "right" : "left"
+      direction = currentIndex > prevIndex ? 'right' : 'left'
     }
 
     return (
       <Flipper
         flipKey={currentIndex}
-        spring={duration === 300 ? "noWobble" : { stiffness: 10, damping: 10 }}
+        spring={duration === 300 ? 'noWobble' : {stiffness: 10, damping: 10}}
       >
         <Navbar onMouseLeave={this.onMouseLeave}>
-          {navbarConfig.map((n, index) => {
+          {navbarConfig.map((dropDown, index) => {
+            // console.log('dropDown', dropDown.dropdownList)
             return (
               <NavbarItem
-                title={n.title}
+                key={index}
+                title={dropDown.title}
                 index={index}
                 onMouseEnter={this.onMouseEnter}
               >
@@ -90,7 +97,7 @@ export default class AnimatedNavbar extends Component {
                     animatingOut={this.state.animatingOut}
                     duration={duration}
                   >
-                    <CurrentDropdown />
+                    <CurrentDropdown menuTitle={dropDown.title} dropDown={dropDown.dropdownList} />
                     {PrevDropdown && <PrevDropdown />}
                   </DropdownContainer>
                 )}

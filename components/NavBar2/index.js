@@ -11,13 +11,18 @@ import jsxStyle from './style'
 cssVars()
 
 const AppContainer = styled.div`
-  background: linear-gradient(150deg, #53f 15%, #05d5ff);
+  //background: linear-gradient(150deg, #53f 15%, #05d5ff);
+   background: rgba(0,0,0,.25);
   display: flex;
   flex-direction: column;
-  //min-height: 100vh;
-
+   jsutify-content: center;
+   right:0;
+   left:0;
+    text-align: center;
+  position:absolute;
+  
   > div:first-of-type {
-    flex: 1 0 70vh;
+    //flex: 1 0 70vh;
   }
 `
 
@@ -31,7 +36,7 @@ export default class NavBar2 extends Component {
   render() {
     return (
       <AppContainer>
-        <jsxStyle />
+        {jsxStyle}
         <AnimatedNavbar duration={this.state.duration} />
       </AppContainer>
     )

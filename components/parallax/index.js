@@ -7,11 +7,16 @@ const MyParallax = _ =>
         .container {
             display: flex;
             flex-direction: column;
-            height: 50vh;
+            height: 60vh;
             background: fixed url('/static/background.jpeg') no-repeat center center/cover;
             alin-items: center;
             jsutify-content: center;
             text-align: center;
+            position:relative;
+            left:0;
+            right:0;
+            top:0;
+            z-index:-1;
         }
 
         .logo {
@@ -19,6 +24,7 @@ const MyParallax = _ =>
             max-width: 50vh;
             display: block;
             margin: auto;
+            padding-top:5rem;
         }
     `}
     </style>

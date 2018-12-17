@@ -1,7 +1,7 @@
-const Style = () =>
-  <>
-    {/*language=CSS*/}
-    <style global jsx>{`
+{/*language=CSS*/
+}
+const Style =
+        <style global jsx>{`
         * {
             box-sizing: border-box;
         }
@@ -17,16 +17,6 @@ const Style = () =>
             --spacer: 28px;
         }
 
-        a {
-            text-decoration: none;
-            color: #6772e5;
-        }
-
-        a:hover,
-        a:focus {
-            color: #4F3EF5;
-        }
-
         ul {
             list-style: none;
             padding-left: 0;
@@ -37,6 +27,5 @@ const Style = () =>
             margin-bottom: 1rem;
         }
     `}
-    </style>
-  </>
+        </style>
 export default Style
