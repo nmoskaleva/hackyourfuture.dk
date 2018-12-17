@@ -11,15 +11,15 @@ import jsxStyle from './style'
 cssVars()
 
 const AppContainer = styled.div`
-  //background: linear-gradient(150deg, #53f 15%, #05d5ff);
-   background: rgba(0,0,0,.25);
+  background: linear-gradient(150deg, #53f 15%, #05d5ff);
+  //  background: #000;
   display: flex;
   flex-direction: column;
    jsutify-content: center;
    right:0;
    left:0;
     text-align: center;
-  position:absolute;
+  //position:absolute;
   
   > div:first-of-type {
     //flex: 1 0 70vh;

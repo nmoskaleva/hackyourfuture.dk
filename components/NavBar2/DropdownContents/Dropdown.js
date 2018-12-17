@@ -17,7 +17,7 @@ const Dropdown = (props) => {
 
           <HeadingLink noMarginBottom>
             <a href={props.menuURL}>
-              <Icon /> {props.menuTitle}...
+              <Icon /> {props.menuTitle}
             </a>
           </HeadingLink>
 
