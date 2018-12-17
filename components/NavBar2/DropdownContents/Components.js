@@ -1,6 +1,16 @@
 import styled from "styled-components"
 
 export const Heading = styled.h3`
+:root {
+  --white: #fff;
+  --grey: #f1f4f8b0;
+  --dark-grey: #6b7c93;
+  --green: #24b47e;
+  --teal: #4F96CE;
+  --blue: #6772e5;
+  --dark-blue: #4F3EF5;
+  --spacer: 28px;
+}
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem;
@@ -27,13 +37,13 @@ export const Icon = styled.div`
   width: 13px;
   height: 13px;
   margin-right: 13px;
-  background-color: var(--blue);
+  background-color: #6772e5;
   opacity: 0.8;
   display: inline-block;
 `
 
 export const DropdownSection = styled.div`
-  padding: var(--spacer);
+  padding: 28px;
   position: relative;
   z-index: 1;
 `

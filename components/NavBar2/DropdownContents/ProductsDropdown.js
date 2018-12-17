@@ -43,7 +43,7 @@ const WorksWithStripe = styled.div`
   align-items: center;
   margin-top: var(--spacer);
   padding-top: var(--spacer);
-}
+
 h3 {
   margin-bottom: 0;
 }

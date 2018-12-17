@@ -1,38 +1,29 @@
 import React from 'react'
-import {Parallax} from 'react-parallax'
 
-const MyParallax = (props) => (
-  <div>
+const MyParallax = _ =>
+  <div className="container">
     {/*language=CSS*/}
     <style jsx>{`
         .container {
-            height: 30vw;
             display: flex;
-            background: linear-gradient(
-                    rgba(0, 0, 0, 0.35),
-                    rgba(0, 0, 0, 0.55)
-            )
+            flex-direction: column;
+            height: 50vh;
+            background: fixed url('/static/background.jpeg') no-repeat center center/cover;
+            alin-items: center;
+            jsutify-content: center;
+            text-align: center;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                height: 50vw;
-            }
+        .logo {
+            max-height: 50vh;
+            max-width: 50vh;
+            display: block;
+            margin: auto;
         }
-
     `}
     </style>
-    <Parallax
-      blur={{min: -15, max: 15}}
-      bgImage="https://images.unsplash.com/photo-1515518554912-63b4da53597d?ixlib=rb-0.3.5…EyMDd9&s=bbe35f4…&auto=format&fit=crop&w=2850&q=80"
-      bgImageAlt="the dog"
-      strength={-200}
-    >
-
-      <div className="container">
-        {props.children}
-      </div>
-    </Parallax>
+    <img className="logo" src="/static/HYF_LOGO.png" />
   </div>
-)
+
 export default MyParallax
+
