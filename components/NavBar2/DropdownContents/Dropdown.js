@@ -1,7 +1,6 @@
 import React from 'react'
 import {DropdownSection, HeadingLink, Icon, LinkList} from './Components'
 
-
 const Dropdown = (props) => {
   const dropDown = props.dropDown ? props.dropDown : []
   return (
@@ -17,8 +16,8 @@ const Dropdown = (props) => {
         <ul>
 
           <HeadingLink noMarginBottom>
-            <a href="/">
-              <Icon /> {props.menuTitle}
+            <a href={props.menuURL}>
+              <Icon /> {props.menuTitle}...
             </a>
           </HeadingLink>
 
@@ -35,8 +34,6 @@ const Dropdown = (props) => {
                 <a href={item.url}>{item.title}</a>
               </li>
             )}
-
-
           </LinkList>
         </div>
       </DropdownSection>

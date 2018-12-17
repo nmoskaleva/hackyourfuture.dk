@@ -6,7 +6,6 @@ import DropdownContainer from './DropdownContainer'
 import {links} from './links-json'
 import Dropdown from './DropdownContents/Dropdown'
 
-
 export default class AnimatedNavbar extends Component {
   state = {
     activeIndices: [],
@@ -15,9 +14,10 @@ export default class AnimatedNavbar extends Component {
 
   componentDidMount() {
     this.setState({
-      navbarConfig: links.map(({title, dropdown}) => ({
+      navbarConfig: links.map(({title, dropdown,url}) => ({
         title,
         dropdown: Dropdown,
+        url,
         dropdownList: dropdown
       }))
     })
@@ -122,7 +122,8 @@ export default class AnimatedNavbar extends Component {
           </li>
           {/*home logo button end;*/}
           {navbarConfig.map((dropDown, index) => {
-            // console.log('dropDown', dropDown.dropdownList)
+
+             console.log('dropDown', dropDown)
             return (
               <NavbarItem
                 key={index}
@@ -136,7 +137,11 @@ export default class AnimatedNavbar extends Component {
                     animatingOut={this.state.animatingOut}
                     duration={duration}
                   >
-                    <CurrentDropdown menuTitle={dropDown.title} dropDown={dropDown.dropdownList} />
+                    <CurrentDropdown
+                      menuURL = {dropDown.url}
+                      menuTitle={dropDown.title}
+                      dropDown={dropDown.dropdownList}
+                    />
                     {PrevDropdown && <PrevDropdown />}
                   </DropdownContainer>
                 )}
