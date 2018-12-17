@@ -15,14 +15,19 @@
   "dependencies": {
     "@material-ui/core": "^3.6.2",
     "@material-ui/icons": "^3.0.1",
-    "classnames": "latest",
+    "core-js": "^2.5.7",
+    "css-vars-ponyfill": "^1.16.0",
     "esm": "^3.0.84",
     "express": "^4.14.0",
     "marked": "^0.5.2",
     "next": "^7.0.2",
+    "normalize.css": "^8.0.1",
     "prop-types": "latest",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-parallax": "^2.0.1"
+    "react-flip-toolkit": "^6.3.1",
+    "react-parallax": "^2.0.1",
+    "react-scripts": "^2.1.1",
+    "styled-components": "^4.1.2"
   }
 }

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Footer from './Footer'
 import ProgressBar from './ProgressBar'
 import Header from './Header/Header'
-
+import NavBar2 from './NavBar2'
 export default ({children}) => {
   return (
     <div>
@@ -37,14 +37,12 @@ export default ({children}) => {
           box-sizing: border-box;
         }
       `}</style>
-      <link
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
-        rel="stylesheet"
-      />
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
       <ProgressBar />
       <Header />
       {/*<NavBar />*/}
       {/*<DrawerLeft/>*/}
+      <NavBar2/>
       {children}
       <Footer />
       <script
