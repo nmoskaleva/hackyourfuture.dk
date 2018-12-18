@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import ProgressBar from './ProgressBar'
 import Header from './Header/Header'
 import NavBar2 from './NavBar2'
@@ -38,11 +38,12 @@ export default ({children}) => {
         }
       `}</style>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
       <ProgressBar />
-      {/*<Header />*/}
+      <Header />
       {/*<NavBar />*/}
       {/*<DrawerLeft/>*/}
-      <NavBar2/>
+      {/*<NavBar2/>*/}
       {children}
       <Footer />
       <script

@@ -8,7 +8,7 @@ const MyParallax = _ =>
             display: flex;
             flex-direction: column;
             height: 60vh;
-            background: fixed url('/static/background.jpeg') no-repeat center center/cover;
+            background: fixed url('/static/background.jpg') no-repeat center center/cover;
             alin-items: center;
             jsutify-content: center;
             text-align: center;
@@ -24,7 +24,6 @@ const MyParallax = _ =>
             max-width: 50vh;
             display: block;
             margin: auto;
-            padding-top:5rem;
         }
     `}
     </style>

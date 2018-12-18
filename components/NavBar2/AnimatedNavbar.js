@@ -122,8 +122,6 @@ export default class AnimatedNavbar extends Component {
           </li>
           {/*home logo button end;*/}
           {navbarConfig.map((dropDown, index) => {
-
-             console.log('dropDown', dropDown)
             return (
               <NavbarItem
                 key={index}

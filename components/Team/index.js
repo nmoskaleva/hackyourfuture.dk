@@ -148,7 +148,7 @@ export default () => {
               </div>
               : <img
                 className="defaultPhoto"
-                src={'/static/HYF_LOGO.png'}
+                src={'/static/avatar.png'}
               />
             }
           </div>
