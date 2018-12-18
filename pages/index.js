@@ -42,20 +42,25 @@ export default () => {
             .contentExtra h2 {
                 text-align: center;
             }
+
+            .homePageContent {
+                margin-top: 4rem;
+            }
         `}
       </style>
 
-      <MyParallax>
+      <MyParallax />
 
-      </MyParallax>
+      <div className="homePageContent">
+        <Content>
+          <div style={{padding: '3rem 1rem'}} dangerouslySetInnerHTML={{__html: marked(content)}} />
+        </Content>
+      </div>
 
-      <Content>
-        <div dangerouslySetInnerHTML={{__html: marked(content)}} />
-      </Content>
 
-      <h2 style={{textAlign: 'center'}}>Core Team</h2>
+      <h2 style={{textAlign: 'center', margin: '4rem 0'}}>Core Team</h2>
       <CoreTeam />
-      <h2 style={{textAlign: 'center'}}>Mentors</h2>
+      <h2 style={{textAlign: 'center',margin: '4rem 0'}}>Mentors</h2>
       <Team />
 
       <Content><FindUs /></Content>

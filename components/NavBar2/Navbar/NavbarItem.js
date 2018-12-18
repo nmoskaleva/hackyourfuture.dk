@@ -56,15 +56,10 @@ export default class NavbarItem extends Component {
     const isLink = !menuTitlesNoDropDown.includes(title)
     return (
       <NavbarItemEl onMouseEnter={this.onMouseEnter} onFocus={this.onMouseEnter}>
-        {
-          isLink
-            ? <><NavbarItemTitle>{title}</NavbarItemTitle>
-              <DropdownSlot>{children}</DropdownSlot></>
-            : <a href={title.toLowerCase()} style={{textDecoration: 'none'}}>
-              <NavbarItemTitle>{title}</NavbarItemTitle>
-            </a>
-
-        }
+        <a href={title.toLowerCase()} style={{textDecoration: 'none'}}>
+          <NavbarItemTitle>{title.toUpperCase()}</NavbarItemTitle>
+        </a>
+        {isLink && <DropdownSlot>{children}</DropdownSlot>}
 
       </NavbarItemEl>
     )

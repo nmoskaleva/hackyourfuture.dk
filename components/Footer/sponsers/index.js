@@ -40,6 +40,7 @@ export default () => (
           .center {
               text-align: center;
               font-family: Space Mono, monospace;
+              margin: 5rem 0 3rem 0;
           }
       `}
     </style>
