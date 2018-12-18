@@ -6,7 +6,7 @@ export default ({children, id = ''}) => {
         {`
             .Content {
                 padding: 1rem 5vw;
-                margin: 1rem 15vw;
+                margin: 2rem 15vw;
                 font-size: 1.4rem;
                 line-height: 2.2rem;
                 background-color: #eee;

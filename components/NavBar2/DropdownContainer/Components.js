@@ -1,16 +1,15 @@
-import styled, { keyframes } from "styled-components"
+import styled, {keyframes} from 'styled-components'
 
 
-
-const getDropdownRootKeyFrame = ({ animatingOut, direction }) => {
+const getDropdownRootKeyFrame = ({animatingOut, direction}) => {
   if (!animatingOut && direction) return null
   return keyframes`
   from {
-    transform: ${animatingOut ? "rotateX(0)" : "rotateX(-15deg)"};
+    transform: ${animatingOut ? 'rotateX(0)' : 'rotateX(-15deg)'};
     opacity: ${animatingOut ? 1 : 0};
   }
   to {
-    transform: ${animatingOut ? "rotateX(-15deg)" : "rotateX(0)"};
+    transform: ${animatingOut ? 'rotateX(-15deg)' : 'rotateX(0)'};
     opacity: ${animatingOut ? 0 : 1};
   }
 `
@@ -51,6 +50,7 @@ export const DropdownBackground = styled.div`
   position: relative;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1);
   will-change: transform;
+  
 `
 
 export const AltBackground = styled.div`
@@ -63,10 +63,11 @@ export const AltBackground = styled.div`
   transform-origin: 0 0;
   z-index: 0;
   transition: transform ${props => props.duration}ms;
+  
 `
 
 export const InvertedDiv = styled.div`
-  position: ${props => (props.absolute ? "absolute" : "relative")};
+  position: ${props => (props.absolute ? 'absolute' : 'relative')};
   top:0;
   left:0;
   &:first-of-type{ z-index: 1; }

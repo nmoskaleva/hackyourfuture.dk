@@ -60,11 +60,6 @@ export const links = [
   },
   {
     id: 3,
-    title: 'HIRE',
-    url: '/hire'
-  },
-  {
-    id: 4,
     title: 'ABOUT',
     url: '/about',
     dropdown: [
@@ -85,6 +80,12 @@ export const links = [
       },
     ]
   },
+  {
+    id: 4,
+    title: 'HIRE',
+    url: '/hire'
+  }
+  ,
   {
     id: 5,
     title: 'Alumni',

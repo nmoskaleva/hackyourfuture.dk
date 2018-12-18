@@ -5,9 +5,6 @@ const CardMember = ({item}) =>
     {/*language=CSS*/}
       <style jsx>
         {`
-            .user {
-                transition: all 0.5s;
-            }
 
             .user:hover {
                 background: #f7f7f7;
@@ -17,6 +14,8 @@ const CardMember = ({item}) =>
                 width: 50%;
                 padding: 20px;
                 text-align: center;
+                                transition: all 0.5s;
+
             }
 
             @media (min-width: 600px) {

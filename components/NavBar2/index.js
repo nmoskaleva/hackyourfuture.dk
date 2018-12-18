@@ -15,12 +15,10 @@ const AppContainer = styled.div`
   //  background: #000;
   display: flex;
   flex-direction: column;
-   jsutify-content: center;
-   right:0;
-   left:0;
-    text-align: center;
-  //position:absolute;
-  
+  jsutify-content: center;
+  right:0;
+  left:0;
+  text-align: center;
   > div:first-of-type {
     //flex: 1 0 70vh;
   }
