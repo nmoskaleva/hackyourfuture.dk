@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Footer from './Footer/Footer'
 import ProgressBar from './ProgressBar'
-import Header from './Header/Header'
 import NavBar2 from './NavBar2'
+
 export default ({children}) => {
   return (
     <div>
@@ -36,6 +36,22 @@ export default ({children}) => {
         * {
           box-sizing: border-box;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+          color: #293a7d;
+          font-family: Space Mono, monospace;
+          letter-spacing: .2px;
+        }
+
+        h1 {
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 400;
+        }
+
+        .apply__container h1 {
+          font-weight: 700;
+        }
       `}</style>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
       <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
@@ -43,7 +59,7 @@ export default ({children}) => {
       {/*<Header />*/}
       {/*<NavBar />*/}
       {/*<DrawerLeft/>*/}
-      <NavBar2/>
+      <NavBar2 />
       {children}
       <Footer />
       <script

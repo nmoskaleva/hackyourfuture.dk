@@ -1,4 +1,5 @@
 import CoreTeamData from './coreteam.json'
+import CardMember from '../Team/CardMember'
 
 const CoreTeam = () => {
   return (
@@ -56,32 +57,9 @@ const CoreTeam = () => {
             }
         `}
       </style>
-      {CoreTeamData.map((person, key) => {
-        return (
-          <div className="member" key={key}>
-            <img
-              className="image"
-              src={person.photo ? person.photo : `/static/hackyourfuture.png`}
-            />
-            <h3 className="memberName">{person.name}</h3>
-            <p className="memberRole">{person.role}</p>
-            <a href={`mailto:${person.email}`}>
-              <img
-                style={{width: 33, padding: 3, opacity: 0.5}}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg"
-                alt="Mail Icon"
-              />
-            </a>
-            <a href={person.linkedin}>
-              <img
-                style={{width: 33, padding: 3, opacity: 0.5}}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
-                alt="Linkedin Icon"
-              />
-            </a>
-          </div>
-        )
-      })}
+      {CoreTeamData.map((person, key) =>
+        <CardMember key={key} item={person} />
+      )}
     </div>
   )
 }

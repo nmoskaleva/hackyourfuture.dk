@@ -1,14 +1,15 @@
-export default ({children}) => {
+export default ({children, id = ''}) => {
   return (
-    <div className={'Content'}>
+    <div className={'Content'} id={id}>
       {/*language=CSS*/}
       <style jsx>
         {`
             .Content {
-                padding: 1rem 15vw;
-                margin: 0 auto;
+                padding: 1rem 5vw;
+                margin: 1rem 15vw;
                 font-size: 1.4rem;
                 line-height: 2.2rem;
+                background-color: #eee;
             }
 
             @media (max-width: 768px) {

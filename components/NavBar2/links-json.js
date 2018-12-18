@@ -17,15 +17,17 @@ export const links = [
       {
         id: 1,
         title: 'Apply for class',
-        url: '/apply/apply-for-class'
-      }, {
+        url: '/apply#apply-for-class'
+      },
+      {
         id: 2,
         title: 'Coding Taster Class for women',
-        url: '/apply/coding-taster'
-      }, {
+        url: '/apply#coding-test'
+      },
+      {
         id: 3,
         title: 'Learn',
-        url: '/apply/learn'
+        url: '/apply#learn'
       }
     ]
   },
@@ -37,22 +39,22 @@ export const links = [
       {
         id: 1,
         title: 'Mentors',
-        url: '/volunteer/ '
+        url: '/volunteer#mentors'
       },
       {
         id: 2,
         title: 'Becoming a mentor',
-        url: '/volunteer/becoming-mentor'
+        url: '/volunteer#becoming-mentor'
       },
       {
         id: 3,
         title: 'Volunteering',
-        url: '/volunteer/volunteering'
+        url: '/volunteer#volunteering'
       },
       {
         id: 4,
         title: 'Curriculum',
-        url: '/volunteer/curriculum'
+        url: '/volunteer#curriculum'
       },
     ]
   },
@@ -69,18 +71,23 @@ export const links = [
       {
         id: 1,
         title: 'FAQ',
-        url: '/about/faq'
+        url: '/about#faq'
       },
       {
         id: 2,
         title: 'Contact',
-        url: '/about/contact'
+        url: '/about#contact'
       },
       {
         id: 3,
         title: 'Partners',
-        url: '/about/partners'
+        url: '/about#partners'
       },
     ]
+  },
+  {
+    id: 5,
+    title: 'Alumni',
+    url: '/alumni',
   }
 ]
