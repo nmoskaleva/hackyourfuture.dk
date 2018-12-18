@@ -39,7 +39,7 @@ export default ({children}) => {
 
         h1, h2, h3, h4, h5, h6 {
           color: #293a7d;
-          font-family: Space Mono, monospace;
+          font-family: 'Space Mono', monospace;
           letter-spacing: .2px;
         }
 
@@ -49,8 +49,18 @@ export default ({children}) => {
           font-weight: 400;
         }
 
+        h2 {
+          letter-spacing: .2px;
+        }
+
         .apply__container h1 {
           font-weight: 700;
+        }
+
+        p {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 18px;
+          line-height: 1.8rem;
         }
       `}</style>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
