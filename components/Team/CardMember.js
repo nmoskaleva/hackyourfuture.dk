@@ -68,6 +68,21 @@ const CardMember = ({item}) =>
                 margin-top: 1rem;
             }
 
+            .socialIcons a {
+                margin-right: 1rem;
+                display: inline-block;
+                color: #6c6c6c;
+            }
+
+            .socialIcons a:hover {
+                color: #293a7d;
+                transition: all .5s;
+            }
+
+            .socialIcons a i {
+                background-repeat: no-repeat;
+            }
+
             .defaultPhoto {
                 width: 150%;
                 maxWidth: 100%;
@@ -124,6 +139,16 @@ const CardMember = ({item}) =>
                 transform: scale(1.2);
                 filter: grayscale(100%)
             }
+
+            .tag {
+                font-size: 14px;
+                border: solid 1px;
+                margin: 2px 5px;
+                padding: 0 5px;
+                flex-wrap: wrap;
+                display: inline-flex;
+                background: #ffffff54;
+            }
         `}
       </style>
       <div className='user'>
@@ -132,46 +157,48 @@ const CardMember = ({item}) =>
             ? <div className="shine zoomIn1">
               <figure>
                 <a href={item.github}>
-                  <img src={item.photo} />
+                  <img src={item.role === 'alumni'
+                    ? '/static/alumni/photos/' + item.photo
+                    : item.photo} />
                 </a>
               </figure>
             </div>
-            : <img
-              className="defaultPhoto"
-              src={'/static/avatar.png'}
-            />
+            : <img className="defaultPhoto" src={'/static/avatar.png'} />
           }
         </div>
         <h3 className="userName">
           {item.name}
         </h3>
         {item.role && <p className="memberRole">{item.role}</p>}
+        {item.summary && <p>{item.summary}</p>}
+        {item.tags && <p>{item.tags.map(tag => <span className="tag">{tag}</span>)}</p>}
+
         <div className="socialIcons">
           {item.github && (
             <a href={item.github}>
-              <img
-                style={{width: 33, padding: 3, opacity: 0.5}}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
-                alt="Github"
-              />
+              <i className="flaticon-github-sign" />
             </a>
           )}
           {item.linkedin && (
             <a href={item.linkedin}>
-              <img
-                style={{width: 33, padding: 3, opacity: 0.5}}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
-                alt="Linkedin"
-              />
+              <i className="flaticon-linkedin-logo" />
             </a>
           )}
           {item.email && (
             <a href={item.email}>
-              <img
-                style={{width: 33, padding: 3, opacity: 0.5}}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg"
-                alt="Mail"
-              />
+              <i className="flaticon-opened-email-envelope" />
+            </a>
+          )}
+
+          {item.onlineCV && (
+            <a href={item.onlineCV}>
+              <i className="flaticon-curriculum-vitae" />
+            </a>
+          )}
+
+          {item.pdfCV && (
+            <a href={item.pdfCV}>
+              <i className="flaticon-google-drive-pdf-file" />
             </a>
           )}
         </div>

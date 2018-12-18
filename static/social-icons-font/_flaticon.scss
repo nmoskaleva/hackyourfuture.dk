@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 18/12/2018 00:08
+    Creation date: 18/12/2018 14:45
     */
 
     @font-face {
@@ -40,8 +40,14 @@
 .flaticon-facebook-logo:before { content: "\f101"; }
 .flaticon-twitter-logo:before { content: "\f102"; }
 .flaticon-github-sign:before { content: "\f103"; }
+.flaticon-google-drive-pdf-file:before { content: "\f104"; }
+.flaticon-curriculum-vitae:before { content: "\f105"; }
+.flaticon-opened-email-envelope:before { content: "\f106"; }
     
     $font-Flaticon-linkedin-logo: "\f100";
     $font-Flaticon-facebook-logo: "\f101";
     $font-Flaticon-twitter-logo: "\f102";
     $font-Flaticon-github-sign: "\f103";
+    $font-Flaticon-google-drive-pdf-file: "\f104";
+    $font-Flaticon-curriculum-vitae: "\f105";
+    $font-Flaticon-opened-email-envelope: "\f106";

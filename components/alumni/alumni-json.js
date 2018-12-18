@@ -1,13 +1,106 @@
 const students = [
   {
     id: 1,
-    name: '',
-    summary: '',
-    github: '',
-    onlineCV: '',
-    pdfCV: '',
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '1.pdf',
     tags: ['JS', 'React', 'Elastich Search'],
-    status: ''
+    status: 'Looking for jobs'
+  },
+  {
+    id: 2,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  },
+  {
+    id: 3,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  },
+  {
+    id: 4,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  }, {
+    id: 5,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '1.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  },
+  {
+    id: 6,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  },
+  {
+    id: 7,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
+  },
+  {
+    id: 8,
+    role: 'alumni',
+    name: 'Katsisaac50',
+    email: 'katsisaac50@gmail.com',
+    photo: '1.jpg',
+    summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
+    github: 'http://link-goes-here.com/github',
+    onlineCV: 'http://link-goes-here.com/cv',
+    pdfCV: '2.pdf',
+    tags: ['JS', 'React', 'Elastich Search'],
+    status: 'Looking for jobs'
   }
 ]
-export {students}
+export default students

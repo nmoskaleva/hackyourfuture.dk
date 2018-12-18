@@ -5,7 +5,8 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import marked from 'marked'
 import MyParallax from '../components/parallax'
-import {content,title} from '../components/content/_home'
+import {content, title} from '../components/content/_home'
+import FindUs from '../components/Footer/findUs'
 
 export default () => {
   return (
@@ -41,11 +42,6 @@ export default () => {
             .contentExtra h2 {
                 text-align: center;
             }
-
-            .facebook {
-                max-width: 360px;
-                margin: 0 auto;
-            }
         `}
       </style>
 
@@ -56,24 +52,14 @@ export default () => {
       <Content>
         <div dangerouslySetInnerHTML={{__html: marked(content)}} />
       </Content>
-      <div style={{height: 50}} />
-      <div className="contentExtra">
-        <h2>Find us on Social Media</h2>
-        <div className="facebook">
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackyourfuturecopenhagen%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=452614524799595"
-            width="340"
-            height="214"
-            style={{border: 'none', overflow: 'hidden'}}
-            scrolling="no"
-            frameBorder="0"
-          />
-        </div>
-      </div>
+
       <h2 style={{textAlign: 'center'}}>Core Team</h2>
       <CoreTeam />
       <h2 style={{textAlign: 'center'}}>Mentors</h2>
       <Team />
+
+      <Content><FindUs /></Content>
+
     </Layout>
   )
 }
