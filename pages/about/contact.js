@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layout'
-import Content from '../components/Content'
-import Contactform from '../components/Contactform'
-import Map from '../components/Map'
-import {content, title} from '../components/content/_contact'
+import Layout from '../../components/Layout'
+import Content from '../../components/Content'
+import Contactform from '../../components/Contactform/index'
+import Map from '../../components/Map'
+import {content, title} from '../../components/content/_contact'
 
 export default () => (
   <Layout>

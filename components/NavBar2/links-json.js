@@ -17,15 +17,15 @@ export const links = [
       {
         id: 1,
         title: 'Apply for class',
-        url: '/apply'
+        url: '/apply/apply-for-class'
       }, {
         id: 2,
         title: 'Coding Taster Class for women',
-        url: '/coding'
+        url: '/apply/coding-taster'
       }, {
         id: 3,
         title: 'Learn',
-        url: '/learn'
+        url: '/apply/learn'
       }
     ]
   },
@@ -36,18 +36,23 @@ export const links = [
     dropdown: [
       {
         id: 1,
-        title: 'Becoming a mentor',
-        url: '/becoming '
+        title: 'Mentors',
+        url: '/volunteer/ '
       },
       {
         id: 2,
-        title: 'Volunteering',
-        url: '/volunteering'
+        title: 'Becoming a mentor',
+        url: '/volunteer/becoming-mentor'
       },
       {
         id: 3,
+        title: 'Volunteering',
+        url: '/volunteer/volunteering'
+      },
+      {
+        id: 4,
         title: 'Curriculum',
-        url: '/curriculum'
+        url: '/volunteer/curriculum'
       },
     ]
   },
@@ -64,17 +69,17 @@ export const links = [
       {
         id: 1,
         title: 'FAQ',
-        url: '/faq'
+        url: '/about/faq'
       },
       {
         id: 2,
         title: 'Contact',
-        url: '/contact'
+        url: '/about/contact'
       },
       {
         id: 3,
         title: 'Partners',
-        url: '/partners'
+        url: '/about/partners'
       },
     ]
   }

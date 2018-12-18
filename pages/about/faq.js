@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layout'
-import Content from '../components/Content'
-import Apply from '../components/Apply'
-import {content, fill, title} from '../components/content/_apply'
-
+import Layout from '../../components/Layout'
+import Content from '../../components/Content'
+import {content, title} from '../../components/content/_sample'
 
 export default () => (
   <Layout>
@@ -24,9 +22,6 @@ export default () => (
     </Head>
     <Content>
       <div dangerouslySetInnerHTML={{__html: marked(content)}} />
-      <img className="image" src="https://i.imgur.com/ukKK09t.jpg" />
-      <h2>{fill}</h2>
-      <Apply email={'cph@hackyourfuture.net'} />
     </Content>
   </Layout>
 )

@@ -1,7 +1,11 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import {links} from '../links-json'
 
+const menuTitlesNoDropDown = links
+  .filter(link => link.dropdown === undefined)
+  .map(link => link.title)
 const NavbarItemTitle = styled.button`
   background: transparent;
   border: 0;
@@ -46,11 +50,11 @@ export default class NavbarItem extends Component {
   }
 
   render() {
-    const { title, children } = this.props
+    const {title, children} = this.props
     return (
       <NavbarItemEl onMouseEnter={this.onMouseEnter} onFocus={this.onMouseEnter}>
         <NavbarItemTitle>{title}</NavbarItemTitle>
-        <DropdownSlot>{children}</DropdownSlot>
+        {!menuTitlesNoDropDown.includes(title) && <DropdownSlot>{children}</DropdownSlot>}
       </NavbarItemEl>
     )
   }
