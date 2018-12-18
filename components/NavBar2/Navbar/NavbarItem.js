@@ -6,6 +6,8 @@ import {links} from '../links-json'
 const menuTitlesNoDropDown = links
   .filter(link => link.dropdown === undefined)
   .map(link => link.title)
+
+
 const NavbarItemTitle = styled.button`
   background: transparent;
   border: 0;
@@ -51,10 +53,19 @@ export default class NavbarItem extends Component {
 
   render() {
     const {title, children} = this.props
+    const isLink = !menuTitlesNoDropDown.includes(title)
     return (
       <NavbarItemEl onMouseEnter={this.onMouseEnter} onFocus={this.onMouseEnter}>
-        <NavbarItemTitle>{title}</NavbarItemTitle>
-        {!menuTitlesNoDropDown.includes(title) && <DropdownSlot>{children}</DropdownSlot>}
+        {
+          isLink
+            ? <><NavbarItemTitle>{title}</NavbarItemTitle>
+              <DropdownSlot>{children}</DropdownSlot></>
+            : <a href={title.toLowerCase()} style={{textDecoration: 'none'}}>
+              <NavbarItemTitle>{title}</NavbarItemTitle>
+            </a>
+
+        }
+
       </NavbarItemEl>
     )
   }
