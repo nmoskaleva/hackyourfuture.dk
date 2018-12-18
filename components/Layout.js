@@ -40,10 +40,10 @@ export default ({children}) => {
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
       <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
       <ProgressBar />
-      <Header />
+      {/*<Header />*/}
       {/*<NavBar />*/}
       {/*<DrawerLeft/>*/}
-      {/*<NavBar2/>*/}
+      <NavBar2/>
       {children}
       <Footer />
       <script

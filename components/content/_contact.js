@@ -1,0 +1,11 @@
+export const title = `Contact - HackYourFuture Copenhagen`
+export const content = `
+# Contact us
+
+Feel to contact us about anything, we always happy to chat!
+
+<a href="mailto:cph@hackyourfuture.net">cph@hackyourfuture.net</a>
+
+or use the contact form below
+
+`

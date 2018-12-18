@@ -2,18 +2,13 @@ import Head from 'next/head'
 import marked from 'marked'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
+import {content, title} from '../components/content/_newsletter'
 
-let content = `
-# Sign up for our newsletter!
 
-We will send a monthly update on the project and what new cool things we
-are doing at HackYourFuture.
-
-`
 export default () => (
   <Layout>
     <Head>
-      <title>Newsletter - HackYourFuture Copenhagen</title>
+      <title>{title}</title>
     </Head>
     <Content>
       <form
@@ -37,7 +32,7 @@ export default () => (
             }
           `}
         </style>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+        <div dangerouslySetInnerHTML={{__html: marked(content)}} />
         <div className="submit-form">
           <input
             type="email"

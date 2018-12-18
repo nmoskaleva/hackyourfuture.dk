@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import marked from 'marked'
 import MyParallax from '../components/parallax'
-import {content,title} from '../components/content/home'
+import {content,title} from '../components/content/_home'
 
 export default () => {
   return (
