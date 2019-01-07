@@ -3,9 +3,7 @@
   "description": "This is a node.js project based on next.js that compiles to a static site that is currently hosted on https://surge.sh",
   "version": "1.2.0",
   "scripts": {
-    "dev1": "next",
-    "dev": "node _backend/server.js",
-    "dev_modern": "node -r esm server.js",
+    "dev": "node -r esm server.js",
     "build": "next build",
     "start": "NODE_ENV=production node -r esm backend/server.js",
     "heroku-postbuild": "npm run build"
