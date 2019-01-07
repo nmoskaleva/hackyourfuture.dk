@@ -68,7 +68,7 @@ class Index extends React.Component {
             {/*left*/ }
             <Typography variant="h6" color="inherit" className={ classes.grow }>
               <a href="/">
-                <Logo width="88px" fill="#fff"/>
+                <Logo width="88px" height="auto" fill="#fff"/>
               </a>
             </Typography>
 

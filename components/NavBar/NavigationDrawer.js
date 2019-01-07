@@ -34,7 +34,7 @@ class NavigationDrawer extends React.Component {
 
                 {dropdown &&
                   dropdown.map(item => (
-                    <ListItem button component="a" href={item.url}>
+                    <ListItem key={item.id} button component="a" href={item.url}>
                       <ListItemText primary={item.title} />
                     </ListItem>
                   ))}
