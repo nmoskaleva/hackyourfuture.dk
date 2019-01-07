@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '../components/Layouts/Layout'
 import Content from '../components/Content'
 import { getApi } from '../services/api'
 import Router from 'next/router'

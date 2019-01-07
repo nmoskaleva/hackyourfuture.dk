@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/Layouts/Layout'
 import Content from '../components/Content'
 import { getApi } from '../services/api'
 

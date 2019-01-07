@@ -1,6 +1,6 @@
-const express = require('express')
-const err_handler = require('../err_handler')
-const usersRouter = require('./usersRouter')
+import express from 'express'
+import err_handler from '../err_handler'
+import usersRouter from './usersRouter'
 
 const router = express.Router()
 express().use(err_handler)
@@ -9,4 +9,4 @@ express().use(err_handler)
 router.use('/users', usersRouter)
 // router.use('/other', otherRouter)
 
-module.exports = router
+export default router

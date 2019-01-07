@@ -2,46 +2,51 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
-import toRenderProps from 'recompose/toRenderProps'
-import withState from 'recompose/withState'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 
-const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null))
+class NavMenu extends React.Component {
+  state = {
+    anchorEl: null
+  }
 
-function NavMenu(props) {
-  return !props.items
-    ? <Button style={{color: '#fff'}}>{props.menu}</Button>
-    : (
-      <WithState>
-        {({anchorEl, updateAnchorEl}) => {
-          const open = Boolean(anchorEl)
-          const handleClose = () => {
-            updateAnchorEl(null)
-          }
+  handleClick = event => {
+    this.setState({ anchorEl: event.currentTarget })
+  }
 
-          return (
-            <React.Fragment>
-              <Button
-                style={{color: '#fff'}}
-                aria-owns={open ? 'render-props-menu' : undefined}
-                aria-haspopup="true"
-                onClick={event => {
-                  updateAnchorEl(event.currentTarget)
-                }}>
+  handleClose = () => {
+    this.setState({ anchorEl: null })
+  }
 
-                {props.menu}
-                <ExpandMore className="expand" />
-              </Button>
-              <Menu id="render-props-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
-                {props.items.map(item =>
-                  <MenuItem>{item}</MenuItem>
-                )}
-              </Menu>
-            </React.Fragment>
-          )
-        }}
-      </WithState>
+  render() {
+    const { anchorEl } = this.state
+
+    return (
+      <div>
+        <Button
+          color="inherit"
+          aria-owns={anchorEl ? 'simple-menu' : undefined}
+          aria-haspopup="true"
+          onClick={this.handleClick}
+        >
+          {this.props.children} <ExpandMore />
+        </Button>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={this.handleClose}
+        >
+          {this.props.menu.map(item => (
+            <MenuItem key={item.id} onClick={this.handleClose}>
+              <a style={{ textDecoration: 'none' }} href={item.url}>
+                {item.title}
+              </a>
+            </MenuItem>
+          ))}
+        </Menu>
+      </div>
     )
+  }
 }
 
 export default NavMenu

@@ -1,10 +1,11 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Navbar from './Navbar'
 import NavbarItem from './Navbar/NavbarItem'
-import {Flipper} from 'react-flip-toolkit'
+import { Flipper } from 'react-flip-toolkit'
 import DropdownContainer from './DropdownContainer'
-import {links} from './links-json'
+import { links } from './links-json'
 import Dropdown from './DropdownContents/Dropdown'
+import Logo from "../Layouts/Logo"
 
 export default class AnimatedNavbar extends Component {
   state = {
@@ -14,7 +15,7 @@ export default class AnimatedNavbar extends Component {
 
   componentDidMount() {
     this.setState({
-      navbarConfig: links.map(({title, dropdown,url}) => ({
+      navbarConfig: links.map(({title, dropdown, url}) => ({
         title,
         dropdown: Dropdown,
         url,
@@ -78,18 +79,18 @@ export default class AnimatedNavbar extends Component {
 
     return (
       <Flipper
-        flipKey={currentIndex}
-        spring={duration === 300 ? 'noWobble' : {stiffness: 10, damping: 10}}
+        flipKey={ currentIndex }
+        spring={ duration === 300 ? 'noWobble' : {stiffness: 10, damping: 10} }
       >
-        <Navbar onMouseLeave={this.onMouseLeave}>
-          {/*home logo button start:*/}
+        <Navbar onMouseLeave={ this.onMouseLeave }>
+          {/*home logo button start:*/ }
           <li>
             <button className="sc-htpNat logoBtn">
-              <a href='/'> </a>
-              {/*language=CSS*/}
-              <style jsx>{`
+              <a href='/'><Logo fill="white"/></a>
+              {/*language=CSS*/ }
+              <style jsx>{ `
                   .logoBtn {
-                      background: url('/static/HYF_LOGO.png') center center/cover;
+                      background: transparent;
                       width: 100px;
                       height: 100%;
                       dispalay: flex;
@@ -115,37 +116,37 @@ export default class AnimatedNavbar extends Component {
                       display: inline-block;
                   }
 
-              `}
+              ` }
               </style>
 
             </button>
           </li>
-          {/*home logo button end;*/}
-          {navbarConfig.map((dropDown, index) => {
+          {/*home logo button end;*/ }
+          { navbarConfig.map((dropDown, index) => {
             return (
               <NavbarItem
-                key={index}
-                title={dropDown.title}
-                index={index}
-                onMouseEnter={this.onMouseEnter}
+                key={ index }
+                title={ dropDown.title }
+                index={ index }
+                onMouseEnter={ this.onMouseEnter }
               >
-                {currentIndex === index && (
+                { currentIndex === index && (
                   <DropdownContainer
-                    direction={direction}
-                    animatingOut={this.state.animatingOut}
-                    duration={duration}
+                    direction={ direction }
+                    animatingOut={ this.state.animatingOut }
+                    duration={ duration }
                   >
                     <CurrentDropdown
-                      menuURL = {dropDown.url}
-                      menuTitle={dropDown.title}
-                      dropDown={dropDown.dropdownList}
+                      menuURL={ dropDown.url }
+                      menuTitle={ dropDown.title }
+                      dropDown={ dropDown.dropdownList }
                     />
-                    {PrevDropdown && <PrevDropdown />}
+                    { PrevDropdown && <PrevDropdown/> }
                   </DropdownContainer>
-                )}
+                ) }
               </NavbarItem>
             )
-          })}
+          }) }
         </Navbar>
       </Flipper>
     )

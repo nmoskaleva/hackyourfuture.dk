@@ -2,8 +2,7 @@ import alumniList from './alumni-json'
 import CardMember from '../Team/CardMember'
 import Content from '../Content'
 
-
-class Alumni extends React.Component {
+class Hire extends React.Component {
   state = {
     tags: [],
     alumniList: alumniList
@@ -69,4 +68,4 @@ class Alumni extends React.Component {
   }
 }
 
-export default Alumni
+export default Hire

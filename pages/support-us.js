@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layout'
+import Layout from '../components/Layouts/Layout'
 import Content from '../components/Content'
 import {content, title} from '../components/content/_support-us'
 

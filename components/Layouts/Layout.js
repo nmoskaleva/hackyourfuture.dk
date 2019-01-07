@@ -1,16 +1,16 @@
 import Head from 'next/head'
-import Footer from './Footer/Footer'
-import ProgressBar from './ProgressBar'
-import NavBar2 from './NavBar2'
+import Footer from '../Footer/Footer'
+import ProgressBar from '../ProgressBar'
+import NavBar from '../NavBar/Index'
 
 export default ({children}) => {
   return (
     <div>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
-      {/*language=SCSS*/}
-      <style global jsx>{`
+      {/*language=SCSS*/ }
+      <style global jsx>{ `
         @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
         //font-family: 'Space Mono', monospace;
         //font-family: 'Work Sans', sans-serif;
@@ -62,22 +62,22 @@ export default ({children}) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
-      `}</style>
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
-      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
-      <ProgressBar />
-      {/*<Header />*/}
-      {/*<NavBar />*/}
-      {/*<DrawerLeft/>*/}
-      <NavBar2 />
-      {children}
-      <Footer />
+      ` }</style>
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet"/>
+      <ProgressBar/>
+      {/*<Header />*/ }
+      {/*<NavBar />*/ }
+      {/*<DrawerLeft/>*/ }
+      <NavBar/>
+      { children }
+      <Footer/>
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-117911945-1"
       />
       <script
-        dangerouslySetInnerHTML={{
+        dangerouslySetInnerHTML={ {
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -85,7 +85,7 @@ export default ({children}) => {
 
             gtag('config', 'UA-117911945-1');
           `
-        }}
+        } }
       />
     </div>
   )

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layout'
+import Layout from '../components/Layouts/Layout'
 import Content from '../components/Content'
 import Apply from '../components/Apply/index'
 import {content, fill, title} from '../components/content/_apply'

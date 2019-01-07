@@ -3,23 +3,27 @@
   "description": "This is a node.js project based on next.js that compiles to a static site that is currently hosted on https://surge.sh",
   "version": "1.2.0",
   "scripts": {
-    "dev": "node backend/server.js",
-    "dev_modern": "node -r esm backend/server.js",
+    "dev1": "next",
+    "dev": "node _backend/server.js",
+    "dev_modern": "node -r esm server.js",
     "build": "next build",
     "start": "NODE_ENV=production node -r esm backend/server.js",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuhairtaha/hackyourfuture.dk.git"
+    "url": "https://github.com/zuhairtaha/hackyourfuture.dk.git"
   },
   "dependencies": {
     "@material-ui/core": "^3.6.2",
     "@material-ui/icons": "^3.0.1",
+    "@material-ui/styles": "^3.0.0-alpha.6",
     "core-js": "^2.5.7",
     "css-vars-ponyfill": "^1.16.0",
+    "dotenv": "^6.2.0",
     "esm": "^3.0.84",
     "express": "^4.14.0",
+    "jss": "^9.8.7",
     "marked": "^0.5.2",
     "next": "^7.0.2",
     "normalize.css": "^8.0.1",
@@ -27,8 +31,9 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-flip-toolkit": "^6.3.1",
+    "react-jss": "^8.6.1",
     "react-parallax": "^2.0.1",
-    "react-scripts": "^2.1.1",
+    "react-scripts": "^2.1.3",
     "styled-components": "^4.1.2"
   }
 }

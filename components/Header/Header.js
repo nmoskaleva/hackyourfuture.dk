@@ -53,7 +53,7 @@ export default () => {
         `}
       </style>
       <a href="/">
-        <img src="/static/hackyourfuture-logo-white.png" className="logo" />
+        <img src="/static/hackyourfuture-logo-white.png" className="logo"  alt="HackYourFuture Copenhagen"/>
       </a>
       <div className="navigation">
         {links.map((link, key) => (
