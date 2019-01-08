@@ -56,7 +56,7 @@ const students = [
     role: 'alumni',
     name: 'Richard Paredes',
     email: 'chard.paredes@gmail.com',
-    photo: '4.jpg',
+    photo: '4.JPG',
     summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, voluptate.',
     github: 'http://link-goes-here.com/github',
     onlineCV: 'http://link-goes-here.com/cv',
