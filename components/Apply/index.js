@@ -1,6 +1,5 @@
 export default ({ email }) => (
   <form method="POST" action={`https://formspree.io/${email}`}>
-    {/*language=CSS*/}
     <style jsx>
       {`
         textarea {
