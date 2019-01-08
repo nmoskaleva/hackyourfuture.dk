@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import CoreTeam from './../components/CoreTeam'
-import Team from '../components/Team/'
-import Layout from '../components/Layouts/Layout'
-import Content from '../components/Content'
+import CoreTeam from '../components/core-team'
+import Team from '../components/team/'
+import Layout from '../components/layouts/layout'
+import Content from '../components/content'
 import marked from 'marked'
 import MyParallax from '../components/parallax'
 import {content, title} from '../components/content/_home'
-import FindUs from '../components/Footer/findUs'
+import FindUs from '../components/Footer/find-us'
 
 export default () => {
   return (

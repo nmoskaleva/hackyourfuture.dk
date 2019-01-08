@@ -1,6 +1,6 @@
-import alumniList from './alumni-json'
-import CardMember from '../Team/CardMember'
-import Content from '../Content'
+import alumniList from './alumni'
+import CardMember from '../team/card-member'
+import Content from '../content'
 
 class Hire extends React.Component {
   state = {

@@ -3,6 +3,7 @@ export default () => (
     action="https://hackyourfuture.us18.list-manage.com/subscribe/post?u=3d0c0055da1f780c58ef56540&amp;id=e9cde1fe9a"
     method="post"
   >
+    {/*language=CSS*/}
     <style jsx>
       {`
         .email {

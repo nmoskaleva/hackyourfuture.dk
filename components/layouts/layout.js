@@ -1,14 +1,19 @@
 import Head from 'next/head'
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/footer'
 import ProgressBar from '../ProgressBar'
-import NavBar from '../NavBar/Index'
-import Header from '../Header/Header'
+import NavBar from '../nav-bar/Index'
 
-export default ({children}) => {
+export default ({ children }) => {
   return (
     <div>
       <Head>
+        <title>HackYourFuture Copenhagen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="/static/favicon.ico"
+        />
       </Head>
       {/*language=SCSS*/}
       <style global jsx>{`
@@ -37,19 +42,56 @@ export default ({children}) => {
         * {
           box-sizing: border-box;
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: #293a7d;
+          font-family: 'Space Mono', monospace;
+          letter-spacing: 0.2px;
+        }
+
+        h1 {
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 400;
+        }
+
+        h2 {
+          letter-spacing: 0.2px;
+        }
+
+        @media (max-width: 768px) {
+          h1,
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        .apply__container h1 {
+          font-weight: 700;
+        }
+
+        p {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 18px;
+          line-height: 1.8rem;
+        }
       `}</style>
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
         rel="stylesheet"
       />
+      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
       <ProgressBar />
-      <Header />
-      {/*<NavBar />*/}
-      {/*<DrawerLeft/>*/}
+      <NavBar />
       {children}
       <Footer />
       <script
-
+        async
         src="https://www.googletagmanager.com/gtag/js?id=UA-117911945-1"
       />
       <script

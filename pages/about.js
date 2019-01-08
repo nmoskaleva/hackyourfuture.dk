@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layouts/Layout'
-import Content from '../components/Content'
-import Map from '../components/Map'
+import Layout from '../components/layouts/layout'
+import Content from '../components/content'
+import Map from '../components/map'
 import { content, title } from '../components/content/_about'
 import { content as contact_content, title as contact_title } from '../components/content/_contact'
 import { content as partners_content, title as partners_title } from '../components/content/_partners'
-import Contactform from '../components/Contactform/index'
+import Contactform from '../components/contact-form/index'
 
 export default () =>
   <Layout>

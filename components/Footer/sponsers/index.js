@@ -1,4 +1,4 @@
-import sponsers from './sponsers.json.js'
+import sponsers from './sponsers.json'
 
 export default () => (
   <div className="wrapper">

@@ -1,5 +1,5 @@
 import Sponsers from './sponsers/index'
-import SocialIcons from './socialIcon'
+import SocialIcons from './social-icon'
 
 export default () => (
   <footer className="footer">

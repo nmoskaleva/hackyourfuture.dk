@@ -25,3 +25,8 @@ about the same structure using both next.js and express.js
   #### UI components
   Many components are coming from [Material UI](https://material-ui.com)
   
+  #### Note
+  When we navigate between website urls under development, some porplems
+  appears with navbar and some other places, so we need to restart the server 
+  manually with ```npm start dev```
+  The same issue if we added a new module

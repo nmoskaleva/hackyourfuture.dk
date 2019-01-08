@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layouts/Layout'
-import Content from '../components/Content'
-import Apply from '../components/Apply/index'
+import Layout from '../components/layouts/layout'
+import Content from '../components/content'
+import Apply from '../components/apply/index'
 import {content, fill, title} from '../components/content/_apply'
 import {content as content_learn, title as title_learn} from '../components/content/_learn'
 

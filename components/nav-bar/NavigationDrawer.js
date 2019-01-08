@@ -3,21 +3,18 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
 import List from '@material-ui/core/List'
-import Divider from '@material-ui/core/Divider'
 import ListItem from '@material-ui/core/ListItem'
-import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
-import MailIcon from '@material-ui/icons/Mail'
-import { links } from './links-json'
+
 const styles = {
   list: {
-    width: 350
+    width: 300
   },
   fullList: {
     width: 'auto'
   }
 }
+
 class NavigationDrawer extends React.Component {
   render() {
     const { classes, toggleDrawer, leftDrawerOpen, links } = this.props
@@ -26,20 +23,28 @@ class NavigationDrawer extends React.Component {
         {links.map(link => {
           const { id, title, url, dropdown } = link
           return (
-            <>
+            <React.Fragment>
+              {/*Main links*/}
               <List key={id}>
                 <ListItem button component="a" href={url}>
                   <ListItemText primary={title} />
                 </ListItem>
 
+                {/*Sub Links*/}
                 {dropdown &&
                   dropdown.map(item => (
-                    <ListItem key={item.id} button component="a" href={item.url}>
+                    <ListItem
+                      key={item.id}
+                      button
+                      component="a"
+                      href={item.url}
+                    >
+                      -&nbsp;
                       <ListItemText primary={item.title} />
                     </ListItem>
                   ))}
               </List>
-            </>
+            </React.Fragment>
           )
         })}
       </div>
@@ -60,6 +65,7 @@ class NavigationDrawer extends React.Component {
     )
   }
 }
+
 NavigationDrawer.propTypes = {
   classes: PropTypes.object.isRequired
 }

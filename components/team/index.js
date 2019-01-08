@@ -1,5 +1,5 @@
-import data from './data.json'
-import CardMember from './CardMember'
+import data from './team.json'
+import CardMember from './card-member'
 
 export default () => {
   return (

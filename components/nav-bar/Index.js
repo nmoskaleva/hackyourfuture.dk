@@ -6,10 +6,9 @@ import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import NavMenu from './NavMenu'
-import { links } from './links-json'
+import links from './links'
 import Button from '@material-ui/core/es/Button/Button'
 import Typography from '@material-ui/core/es/Typography/Typography'
-import Logo from '../Layouts/Logo'
 import NavigationDrawer from './NavigationDrawer'
 
 const styles = theme => ({
@@ -45,54 +44,56 @@ class Index extends React.Component {
   }
 
   toggleDrawer = open => {
-    this.setState({leftDrawerOpen: open})
+    this.setState({ leftDrawerOpen: open })
   }
 
   render = () => {
-    const {classes} = this.props
+    const { classes } = this.props
     return (
-      <div className={ classes.root }>
+      <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
             <IconButton
-              className={ classes.menuButton }
+              onClick={this.toggleDrawer.bind(this, true)}
+              className={classes.menuButton}
               color="inherit"
               aria-label="Menu"
             >
-              {/*Hamburger icon*/ }
-              <MenuIcon
-                className={ classes.hamburgerIcon }
-                onClick={ this.toggleDrawer.bind(this, true) }
-              />
+              {/*Hamburger icon*/}
+              <MenuIcon className={classes.hamburgerIcon} />
             </IconButton>
-            {/*left*/ }
-            <Typography variant="h6" color="inherit" className={ classes.grow }>
+            {/*left*/}
+            <Typography variant="h6" color="inherit" className={classes.grow}>
               <a href="/">
-                <Logo width="88px" height="auto" fill="#fff"/>
+                <img
+                  src="/static/logo_white.svg"
+                  style={{ height: '45px', marginTop: '9px' }}
+                  alt=""
+                />
               </a>
             </Typography>
 
-            {/*Right*/ }
-            <div className={ classes.showOnLargeScreen }>
-              { links.map(link => {
-                const {id, title, url, dropdown} = link
+            {/*Right*/}
+            <div className={classes.showOnLargeScreen}>
+              {links.map(link => {
+                const { id, title, url, dropdown } = link
                 return link.dropdown !== undefined ? (
-                  <NavMenu key={ id } menu={ [{id, title, url}, ...dropdown] }>
-                    { title }
+                  <NavMenu key={id} menu={[{ id, title, url }, ...dropdown]}>
+                    {title}
                   </NavMenu>
                 ) : (
-                  <Button key={ id } href={ url } color="inherit">
-                    { title }
+                  <Button key={id} href={url} color="inherit">
+                    {title}
                   </Button>
                 )
-              }) }
+              })}
             </div>
           </Toolbar>
         </AppBar>
         <NavigationDrawer
-          toggleDrawer={ this.toggleDrawer }
-          leftDrawerOpen={ this.state.leftDrawerOpen }
-          links={ links }
+          toggleDrawer={this.toggleDrawer}
+          leftDrawerOpen={this.state.leftDrawerOpen}
+          links={links}
         />
       </div>
     )

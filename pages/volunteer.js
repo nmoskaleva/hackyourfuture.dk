@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import marked from 'marked'
-import Layout from '../components/Layouts/Layout'
-import Content from '../components/Content'
-import Contactform from '../components/Contactform/index'
-import Team from '../components/Team/index'
+import Layout from '../components/layouts/layout'
+import Content from '../components/content'
+import Contactform from '../components/contact-form/index'
+import Team from '../components/team/index'
 import {content, title} from '../components/content/_mentors'
 
 

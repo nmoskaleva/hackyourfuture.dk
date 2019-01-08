@@ -1,5 +1,5 @@
 import CoreTeamData from './coreteam.json'
-import CardMember from '../Team/CardMember'
+import CardMember from '../team/card-member'
 
 const CoreTeam = () => {
   return (
