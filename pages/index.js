@@ -6,7 +6,7 @@ import Content from '../components/content'
 import marked from 'marked'
 import MyParallax from '../components/parallax'
 import {content, title} from '../components/content/_home'
-import FindUs from '../components/Footer/find-us'
+import FindUs from '../components/footer/find-us'
 
 export default () => {
   return (

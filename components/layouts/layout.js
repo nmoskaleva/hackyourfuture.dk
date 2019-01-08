@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Footer from '../Footer/footer'
+import Footer from '../footer'
 import ProgressBar from '../ProgressBar'
 import NavBar from '../nav-bar/Index'
 

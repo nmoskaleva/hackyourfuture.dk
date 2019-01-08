@@ -27,6 +27,7 @@ const CardMember = ({ item }) => {
             color: #fff;
             border: solid 8px white;
           }
+
           .user:hover {
             background: #263265;
           }
@@ -52,6 +53,7 @@ const CardMember = ({ item }) => {
               width: 100%;
               display: inline-block;
             }
+
             figure {
               height: 180px;
             }
@@ -170,9 +172,25 @@ const CardMember = ({ item }) => {
             display: inline-flex;
             background: #ffffff54;
           }
+
+
+
+            @media (max-width: 600px) {
+              .alumni.user {
+                width: 100%;
+              }
+
+              .alumni .image {
+                width: inherit;
+                margin: auto;
+              }
+            }
+
         `}
       </style>
-      <div className="user">
+
+
+      <div className={`${role} user`}>
         <div className="image">
           {photo ? (
             <div className="shine zoomIn1">
