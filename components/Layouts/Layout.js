@@ -3,14 +3,20 @@ import Footer from '../Footer/Footer'
 import ProgressBar from '../ProgressBar'
 import NavBar from '../NavBar/Index'
 
-export default ({children}) => {
+export default ({ children }) => {
   return (
     <div>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>HackYourFuture Copenhagen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="/static/favicon.ico"
+        />
       </Head>
-      {/*language=SCSS*/ }
-      <style global jsx>{ `
+      {/*language=SCSS*/}
+      <style global jsx>{`
         @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
         //font-family: 'Space Mono', monospace;
         //font-family: 'Work Sans', sans-serif;
@@ -37,10 +43,15 @@ export default ({children}) => {
           box-sizing: border-box;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
           color: #293a7d;
           font-family: 'Space Mono', monospace;
-          letter-spacing: .2px;
+          letter-spacing: 0.2px;
         }
 
         h1 {
@@ -50,7 +61,7 @@ export default ({children}) => {
         }
 
         h2 {
-          letter-spacing: .2px;
+          letter-spacing: 0.2px;
         }
 
         .apply__container h1 {
@@ -62,22 +73,22 @@ export default ({children}) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
-      ` }</style>
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
-      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet"/>
-      <ProgressBar/>
-      {/*<Header />*/ }
-      {/*<NavBar />*/ }
-      {/*<DrawerLeft/>*/ }
-      <NavBar/>
-      { children }
-      <Footer/>
+      `}</style>
+      <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+        rel="stylesheet"
+      />
+      <link href="/static/social-icons-font/flaticon.css" rel="stylesheet" />
+      <ProgressBar />
+      <NavBar />
+      {children}
+      <Footer />
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-117911945-1"
       />
       <script
-        dangerouslySetInnerHTML={ {
+        dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -85,7 +96,7 @@ export default ({children}) => {
 
             gtag('config', 'UA-117911945-1');
           `
-        } }
+        }}
       />
     </div>
   )

@@ -15,3 +15,13 @@ about the same structure using both next.js and express.js
   write server-rendered React apps easily – amongst other cool things. 
   Also one of the most important features is SEO-friendly.
   
+  #### Website Fonts
+  there is two basic fonts: Space Mono, and Work Sans
+  ```
+   @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
+   //font-family: 'Space Mono', monospace;
+   //font-family: 'Work Sans', sans-serif;
+   ```
+  #### UI components
+  Many components are coming from [Material UI](https://material-ui.com)
+  

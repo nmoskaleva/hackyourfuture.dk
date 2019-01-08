@@ -27,9 +27,6 @@ const CardMember = ({ item }) => {
             color: #fff;
             border: solid 8px white;
           }
-          .avatarFigure {
-            background: #293a7d;
-          }
           .user:hover {
             background: #263265;
           }
@@ -47,13 +44,16 @@ const CardMember = ({ item }) => {
 
           @media (min-width: 900px) {
             .user {
-              width: 25%;
+              width: 20%;
             }
 
             .user .image {
               height: auto;
               width: 100%;
               display: inline-block;
+            }
+            figure {
+              height: 180px;
             }
           }
 
@@ -86,6 +86,7 @@ const CardMember = ({ item }) => {
 
           .socialIcons a {
             margin-right: 1rem;
+            margin-bottom: 1rem;
             display: inline-block;
             color: #fff;
             text-decoration: none;
@@ -102,7 +103,7 @@ const CardMember = ({ item }) => {
 
           .defaultPhoto {
             width: 150%;
-            maxwidth: 100%;
+            max-width: 100%;
             margin: auto;
           }
 
@@ -110,7 +111,6 @@ const CardMember = ({ item }) => {
           figure {
             margin: 0;
             padding: 0;
-            background: #fff;
             overflow: hidden;
           }
 

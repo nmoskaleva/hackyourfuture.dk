@@ -7,59 +7,61 @@ const CoreTeam = () => {
       {/*language=CSS*/}
       <style jsx>
         {`
-            .members {
-                display: flex;
-                justify-content: center;
-                max-width: 1200px;
-            }
+          .members {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+          }
 
+          .member {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+          }
+
+          @media (min-width: 600px) {
             .member {
-                width: 50%;
-                padding: 20px;
-                text-align: center;
+              width: 33%;
             }
 
-            @media (min-width: 600px) {
-                .member {
-                    width: 33%;
-                }
+            .member .image {
+              height: 25vw;
+              width: 25vw;
+            }
+          }
 
-                .member .image {
-                    height: 25vw;
-                    width: 25vw;
-                }
+          @media (min-width: 900px) {
+            .member {
+              width: 25%;
             }
 
-            @media (min-width: 900px) {
-                .member {
-                    width: 25%;
-                }
-
-                .member .image {
-                    height: 20vw;
-                    width: 20vw;
-                }
+            .member .image {
+              height: 20vw;
+              width: 20vw;
             }
+          }
 
-            .image {
-                height: 33vw;
-                width: 33vw;
-                filter: grayscale(100%);
-                max-width: 250px;
-                max-height: 250px;
-                overflow: hidden;
-                border-radius: 100%;
-                display: inline-block;
-            }
+          .image {
+            height: 33vw;
+            width: 33vw;
+            filter: grayscale(100%);
+            max-width: 250px;
+            max-height: 250px;
+            overflow: hidden;
+            border-radius: 100%;
+            display: inline-block;
+          }
 
-            .memberName {
-                font-family: Space Mono, monospace;
-            }
+          .memberName {
+            font-family: Space Mono, monospace;
+          }
         `}
       </style>
-      {CoreTeamData.map((person, key) =>
+      {CoreTeamData.map((person, key) => (
         <CardMember key={key} item={person} />
-      )}
+      ))}
     </div>
   )
 }
