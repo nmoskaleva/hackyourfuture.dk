@@ -173,22 +173,20 @@ const CardMember = ({ item }) => {
             background: #ffffff54;
           }
 
-
-
-            @media (max-width: 600px) {
-              .alumni.user {
-                width: 100%;
-              }
-
-              .alumni .image {
-                width: inherit;
-                margin: auto;
-              }
+          @media (max-width: 600px) {
+            .alumni.user {
+              width: 100%;
             }
 
+            .alumni .image {
+              width: inherit;
+              height: inherit;
+              max-height: inherit;
+              margin: auto;
+            }
+          }
         `}
       </style>
-
 
       <div className={`${role} user`}>
         <div className="image">
