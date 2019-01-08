@@ -29,7 +29,6 @@ export default ({ children }) => {
           margin: 0px;
           color: #111;
           background-color: #fff !important;
-          word-break: break-all;
         }
 
         img {
@@ -38,6 +37,7 @@ export default ({ children }) => {
 
         a {
           color: #111;
+          word-break: break-all;
         }
 
         * {

@@ -1,3 +1,5 @@
+import Button from '@material-ui/core/Button';
+
 export default ({ email }) => (
   <form method="POST" action={`https://formspree.io/${email}`}>
     <style jsx>
@@ -71,8 +73,8 @@ export default ({ email }) => (
       What is your Educational background?
       <textarea className="textarea" name="education" />
     </label>
-    <button className="submit" type="submit">
+    <Button className="submit" variant="contained" color="primary" type="submit">
       Apply
-    </button>
+    </Button>
   </form>
 )
