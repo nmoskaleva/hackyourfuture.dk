@@ -1,5 +1,4 @@
 export let content = `
-# Partners and friends
 
 ### Sponsors
 Foreningen Roskilde Festival, Tuborgfondet, Københavns Kommune, Zibra Wireless
@@ -17,4 +16,4 @@ CPHFTW, Politiken, MOOT, Opbyg Samfundet
 - Google
 
 `
-export const title = `Partners and Friends - HackYourFuture Copenhagen`
+export const title = `Partners and Friends`

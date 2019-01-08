@@ -55,16 +55,11 @@
     "dropdown": [
       {
         "id": 1,
-        "title": "FAQ",
-        "url": "/about#faq"
-      },
-      {
-        "id": 2,
         "title": "Contact",
         "url": "/about#contact"
       },
       {
-        "id": 3,
+        "id": 2,
         "title": "Partners",
         "url": "/about#partners"
       }

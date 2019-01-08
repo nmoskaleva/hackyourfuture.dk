@@ -1,6 +1,5 @@
-export const title = `Contact - HackYourFuture Copenhagen`
+export const title = `Contact us`
 export const content = `
-# Contact us
 
 Feel to contact us about anything, we always happy to chat!
 
