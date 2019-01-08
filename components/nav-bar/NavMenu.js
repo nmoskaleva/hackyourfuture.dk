@@ -27,6 +27,7 @@ class NavMenu extends React.Component {
           aria-owns={anchorEl ? 'simple-menu' : undefined}
           aria-haspopup="true"
           onClick={this.handleClick}
+          onMouseOver={this.handleClick}
         >
           {this.props.children} <ExpandMore />
         </Button>
@@ -35,9 +36,12 @@ class NavMenu extends React.Component {
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
+          onMouseEnter={() => console.log('enter')}
+          onMouseLeave={this.handleClose}
+          style={{ marginTop: '3rem' }}
         >
           {this.props.menu.map(item => (
-            <MenuItem key={item.id} onClick={this.handleClose}>
+            <MenuItem key={`menue-item-${item.id}`} onClick={this.handleClose}>
               <a style={{ textDecoration: 'none' }} href={item.url}>
                 {item.title}
               </a>

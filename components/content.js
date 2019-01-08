@@ -11,7 +11,6 @@ export default ({ children, id = '' }) => {
             line-height: 2.2rem;
             background-color: #eee;
           }
-
           @media (max-width: 768px) {
             .content {
               padding: 1rem 5vw;
