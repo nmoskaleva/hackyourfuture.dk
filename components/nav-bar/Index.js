@@ -39,8 +39,15 @@ const styles = theme => ({
 })
 
 class Index extends React.Component {
+  componentDidMount() {
+    this.setState({
+      display: 'inherit'
+    })
+  }
+
   state = {
-    leftDrawerOpen: false
+    leftDrawerOpen: false,
+    display: 'none'
   }
 
   toggleDrawer = open => {
@@ -50,25 +57,25 @@ class Index extends React.Component {
   render = () => {
     const { classes } = this.props
     return (
-      <div className={classes.root}>
-        <AppBar position="static">
+      <div className={classes.root} style={{ display: this.state.display }}>
+        <AppBar position='static'>
           <Toolbar>
             <IconButton
               onClick={this.toggleDrawer.bind(this, true)}
               className={classes.menuButton}
-              color="inherit"
-              aria-label="Menu"
+              color='inherit'
+              aria-label='Menu'
             >
               {/*Hamburger icon*/}
               <MenuIcon className={classes.hamburgerIcon} />
             </IconButton>
             {/*left*/}
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              <a href="/">
+            <Typography variant='h6' color='inherit' className={classes.grow}>
+              <a href='/'>
                 <img
-                  src="/static/logo_white.svg"
+                  src='/static/logo_white.svg'
                   style={{ height: '45px', marginTop: '9px' }}
-                  alt=""
+                  alt=''
                 />
               </a>
             </Typography>
@@ -82,7 +89,7 @@ class Index extends React.Component {
                     {title}
                   </NavMenu>
                 ) : (
-                  <Button key={id} href={url} color="inherit">
+                  <Button key={id} href={url} color='inherit'>
                     {title}
                   </Button>
                 )
