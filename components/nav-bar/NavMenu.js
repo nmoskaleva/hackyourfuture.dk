@@ -27,7 +27,7 @@ class NavMenu extends React.Component {
           aria-owns={anchorEl ? 'simple-menu' : undefined}
           aria-haspopup="true"
           onClick={this.handleClick}
-          onMouseOver={this.handleClick}
+          // onMouseOver={this.handleClick}
         >
           {this.props.children} <ExpandMore />
         </Button>
