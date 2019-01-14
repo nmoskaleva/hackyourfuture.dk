@@ -44,6 +44,7 @@ class Form extends Component {
           <TextField
             className={classes.textField}
             label='Your name'
+            type='text'
             name='name'
             margin='normal'
             style={{ marginRight: '1rem' }}
@@ -52,6 +53,7 @@ class Form extends Component {
           {/*Your email*/}
           <TextField
             className={classes.textField}
+            type='email'
             label='Your email'
             name='email'
             margin='normal'
