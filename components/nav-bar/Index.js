@@ -10,6 +10,7 @@ import links from './links'
 import Button from '@material-ui/core/es/Button/Button'
 import Typography from '@material-ui/core/es/Typography/Typography'
 import NavigationDrawer from './NavigationDrawer'
+import Link from 'next/link'
 
 const styles = theme => ({
   root: {
@@ -71,13 +72,13 @@ class Index extends React.Component {
             </IconButton>
             {/*left*/}
             <Typography variant='h6' color='inherit' className={classes.grow}>
-              <a href='/'>
+              <Link href='/'>
                 <img
                   src='/static/logo_white.svg'
-                  style={{ height: '45px', marginTop: '9px' }}
+                  style={{ height: '45px', marginTop: '9px',cursor:'pointer' }}
                   alt=''
                 />
-              </a>
+              </Link>
             </Typography>
 
             {/*Right*/}
@@ -89,8 +90,10 @@ class Index extends React.Component {
                     {title}
                   </NavMenu>
                 ) : (
-                  <Button key={id} href={url} color='inherit'>
-                    {title}
+                  <Button key={id} href={url} >
+                    <Link  href={url}>
+                      <Typography style={{color:'#fff'}}>{title}</Typography>
+                    </Link>
                   </Button>
                 )
               })}
