@@ -13,9 +13,9 @@
     "url": "https://github.com/zuhairtaha/hackyourfuture.dk.git"
   },
   "dependencies": {
-    "@material-ui/core": "^3.6.2",
+    "@material-ui/core": "^3.8.3",
     "@material-ui/icons": "^3.0.1",
-    "@material-ui/styles": "^3.0.0-alpha.6",
+    "@material-ui/styles": "^3.0.0-alpha.7",
     "classnames": "^2.2.6",
     "core-js": "^2.5.7",
     "css-vars-ponyfill": "^1.16.0",

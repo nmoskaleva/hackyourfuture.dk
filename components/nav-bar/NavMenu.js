@@ -4,7 +4,6 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
-import Typography from '@material-ui/core/es/Typography/Typography'
 
 class NavMenu extends React.Component {
   state = {
@@ -49,12 +48,9 @@ class NavMenu extends React.Component {
               onClick={this.handleClose}
             >
               <Link href={item.url}>
-                <Typography
-                  style={{ textDecoration: 'none', fontSize: '1rem' }}
-                >
-                  {' '}
+                <a style={{ display: 'block', textDecoration: 'none' }}>
                   {item.title}
-                </Typography>
+                </a>
               </Link>
             </MenuItem>
           ))}

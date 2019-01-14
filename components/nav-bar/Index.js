@@ -75,7 +75,11 @@ class Index extends React.Component {
               <Link href='/'>
                 <img
                   src='/static/logo_white.svg'
-                  style={{ height: '45px', marginTop: '9px',cursor:'pointer' }}
+                  style={{
+                    height: '45px',
+                    marginTop: '9px',
+                    cursor: 'pointer'
+                  }}
                   alt=''
                 />
               </Link>
@@ -90,11 +94,9 @@ class Index extends React.Component {
                     {title}
                   </NavMenu>
                 ) : (
-                  <Button key={id} href={url} >
-                    <Link  href={url}>
-                      <Typography style={{color:'#fff'}}>{title}</Typography>
-                    </Link>
-                  </Button>
+                  <Link key={id} href={url}>
+                    <Button style={{ color: 'inherit' }}>{title}</Button>
+                  </Link>
                 )
               })}
             </div>

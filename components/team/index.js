@@ -3,7 +3,7 @@ import CardMember from './card-member'
 
 export default () => {
   return (
-    <div className="members">
+    <div className='members'>
       {/*language=CSS*/}
       <style jsx>
         {`
@@ -18,8 +18,8 @@ export default () => {
       </style>
       {data
         .sort((a, b) => a.name.localeCompare(b.name))
-        .map((item, key) => (
-          <CardMember item={item} key={key} />
+        .map((item, index) => (
+          <CardMember item={item} key={index} />
         ))}
     </div>
   )
