@@ -1,56 +1,77 @@
-export default ({ email }) => (
-  <form method="POST" action={`https://formspree.io/${email}`}>
-    <style jsx>
-      {`
-        label,
-        textarea,
-        input {
-          display: block;
-          width: 100%;
-        }
-        .label {
-          margin-bottom: 10px;
-        }
-        .textarea {
-          border: 2px solid #111;
-          min-height: 200px;
-          padding: 6px;
-          font-size: 1rem;
-        }
-        .input {
-          max-width: 350px;
-          border: 2px solid #111;
-          font-size: 1rem;
-          padding: 4px;
-        }
-        .submit {
-          margin: 10px 0 0;
-          border: 2px solid #111;
-          padding: 10px 15px;
-          font-size: 1rem;
-          cursor: pointer;
-        }
-        .submit:hover {
-          border-color: #3d9970;
-          color: #fff;
-          background: #2ecc40;
-        }
-      `}
-    </style>
-    <label className="label">
-      Message:
-      <textarea className="textarea" name="message" />
-    </label>
-    <label className="label">
-      Your name:
-      <input className="input" type="text" name="name" />
-    </label>
-    <label className="label">
-      Your email:
-      <input className="input" type="text" name="_replyto" />
-    </label>
-    <button className="submit" type="submit">
-      Send
-    </button>
-  </form>
-)
+import React, { Component } from 'react'
+import TextField from '@material-ui/core/TextField'
+import { withStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
+import SendIcon from '@material-ui/icons/Send'
+
+const styles = {
+  flex: {
+    display: 'flex'
+  },
+  textField: {
+    flex: 1
+  }
+}
+
+class Form extends Component {
+  render() {
+    const { classes } = this.props
+    return (
+      <form
+        method='POST'
+        action={`https://formspree.io/${this.props.email}`}
+        style={{
+          background: '#fff',
+          padding: '1rem',
+          boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
+        }}
+        noValidate
+        autoComplete='off'
+      >
+        {/*Message*/}
+        <TextField
+          label='Message'
+          multiline
+          rows='2'
+          rowsMax='6'
+          name='message'
+          margin='normal'
+          fullWidth
+        />
+
+        <div className={classes.flex}>
+          {/*Your name*/}
+          <TextField
+            className={classes.textField}
+            label='Your name'
+            name='name'
+            margin='normal'
+            style={{ marginRight: '1rem' }}
+          />
+
+          {/*Your email*/}
+          <TextField
+            className={classes.textField}
+            label='Your email'
+            name='email'
+            margin='normal'
+          />
+        </div>
+        <br />
+
+        {/*submit form*/}
+        <Button
+          type='submit'
+          variant='contained'
+          size='large'
+          color='primary'
+          className={classes.button}
+        >
+          Send &nbsp; <SendIcon />
+        </Button>
+      </form>
+    )
+  }
+}
+
+export default withStyles(styles)(Form)

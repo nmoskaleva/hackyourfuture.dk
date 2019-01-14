@@ -49,9 +49,11 @@ class NavMenu extends React.Component {
               onClick={this.handleClose}
             >
               <Link href={item.url}>
-                <Typography style={{ textDecoration: 'none' }}>
+                <Typography
+                  style={{ textDecoration: 'none', fontSize: '1rem' }}
+                >
                   {' '}
-                  {item.title + '...'}
+                  {item.title}
                 </Typography>
               </Link>
             </MenuItem>
