@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react'
 
-const ItemCard = ({ item }) => {
+const ItemCard = ({ item, children }) => {
   const {
     photo,
     github,
     role,
     name,
-    summary,
-    tags,
     linkedin,
     email,
     onlineCV,
@@ -156,7 +154,7 @@ const ItemCard = ({ item }) => {
           /* small screen */
           @media (max-width: 519px) {
             .member-card {
-              border-width:2px 20px;
+              border-width: 2px 20px;
               max-width: 100%;
               width: 100%;
               margin-bottom: 0.4rem;
@@ -210,17 +208,6 @@ const ItemCard = ({ item }) => {
         </div>
         <h3 className='member-name'>{name}</h3>
         {role && <p className='memberRole'>{role}</p>}
-        {summary && <p>{summary}</p>}
-        {tags && (
-          <p>
-            {tags.map((tag, index) => (
-              <span key={index} className='tag'>
-                {tag}
-              </span>
-            ))}
-          </p>
-        )}
-
         <div className='member-social-icons'>
           {github && (
             <a href={github}>
@@ -250,6 +237,7 @@ const ItemCard = ({ item }) => {
             </a>
           )}
         </div>
+        {children}
       </div>
     </Fragment>
   )

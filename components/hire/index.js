@@ -1,6 +1,7 @@
 import alumniList from './alumni'
 import ItemCard from '../team/item-card'
 import Content from '../layouts/content'
+import SimpleExpansionPanel from './expansionPanel'
 
 class Hire extends React.Component {
   state = {
@@ -29,7 +30,6 @@ class Hire extends React.Component {
         {/*language=CSS*/}
         <style jsx>
           {`
-
             .members {
               display: flex;
               flex-wrap: wrap;
@@ -70,7 +70,9 @@ class Hire extends React.Component {
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
-              <ItemCard item={member} key={member.id} />
+              <ItemCard item={member} key={member.id}>
+                <SimpleExpansionPanel item={member} />
+              </ItemCard>
             ))}
         </div>
       </div>
