@@ -6,19 +6,6 @@ export default () => {
   const coreTeam = [c1, c2, c3]
   return (
     <div>
-      {/*language=CSS*/}
-      <style jsx>
-        {`
-          .team-members {
-            display: flex;
-            max-width: 1300px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-        `}
-      </style>
-
       {/*Core-team*/}
       <h2>Core team</h2>
       <div className='team-members core-team'>

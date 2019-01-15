@@ -5,65 +5,81 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
+import IconButton from '@material-ui/core/IconButton'
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 
-const styles = {
+const styles = theme => ({
   list: {
     width: 300
   },
   fullList: {
     width: 'auto'
+  },
+  drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '0 8px',
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-end'
   }
-}
+})
 
 class NavigationDrawer extends React.Component {
   render() {
-    const {classes, toggleDrawer, leftDrawerOpen, links} = this.props
+    const { classes, toggleDrawer, leftDrawerOpen, links } = this.props
     const sideList = (
-      <div className={ classes.list }>
-        { links.map(link => {
-          const {id, title, url, dropdown} = link
+      <div className={classes.list}>
+        {links.map(link => {
+          const { id, title, url, dropdown } = link
           return (
             <React.Fragment>
-              {/*Main links*/ }
-              <List key={ id }>
-                <ListItem button component='a' href={ url }>
-                  <ListItemText primary={ title }/>
+              {/*Main links*/}
+              <List key={id}>
+                <ListItem button component='a' href={url}>
+                  <ListItemText primary={title} />
                 </ListItem>
 
-                {/*Sub Links*/ }
-                { dropdown &&
-                dropdown.map(item => (
-                  <ListItem
-                    key={ item.id }
-                    button
-                    component='a'
-                    href={ item.url }
-                  >
-                    -&nbsp;
-                    <ListItemText primary={ item.title }/>
-                  </ListItem>
-                )) }
+                {/*Sub Links*/}
+                {dropdown &&
+                  dropdown.map(item => (
+                    <ListItem
+                      key={item.id}
+                      button
+                      component='a'
+                      href={item.url}
+                    >
+                      -&nbsp;
+                      <ListItemText primary={item.title} />
+                    </ListItem>
+                  ))}
               </List>
             </React.Fragment>
           )
-        }) }
+        })}
       </div>
     )
     return (
       <div>
         <SwipeableDrawer
-          open={ leftDrawerOpen }
-          onClose={ () => toggleDrawer(false) }
-          onOpen={ () => toggleDrawer(true) }
+          open={leftDrawerOpen}
+          onClose={() => toggleDrawer(false)}
+          onOpen={() => toggleDrawer(true)}
         >
+          {/*touch to open / close*/}
           <div
-            tabIndex={ 0 }
+            tabIndex={0}
             role='button'
-            onClick={ () => toggleDrawer(false) }
-            onKeyDown={ () => toggleDrawer(false) }
-          >
-            { sideList }
+            onClick={() => toggleDrawer(false)}
+            onKeyDown={() => toggleDrawer(false)}
+          />
+          {/*cross close icon*/}
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={() => toggleDrawer(false)}>
+              <ChevronLeftIcon />
+            </IconButton>
           </div>
+
+          {sideList}
         </SwipeableDrawer>
       </div>
     )

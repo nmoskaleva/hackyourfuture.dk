@@ -29,6 +29,7 @@ class Hire extends React.Component {
         {/*language=CSS*/}
         <style jsx>
           {`
+
             .members {
               display: flex;
               flex-wrap: wrap;
