@@ -4,14 +4,17 @@ import { withStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import SendIcon from '@material-ui/icons/Send'
 
-const styles = {
+const styles = theme => ({
   flex: {
-    display: 'flex'
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column'
+    }
   },
   textField: {
     flex: 1
   }
-}
+})
 
 class Form extends Component {
   render() {

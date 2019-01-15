@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import marked from 'marked'
 import Layout from '../components/layouts/layout'
-import Content from '../components/content'
+import Content from '../components/layouts/content'
 import Apply from '../components/apply/index'
 import { content, fill, title } from '../components/content/_apply'
 import {

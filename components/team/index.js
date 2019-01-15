@@ -1,26 +1,30 @@
-import data from './team.json'
-import CardMember from './card-member'
+import members from './team'
+import ItemCard from './item-card'
+import Style from './style'
 
 export default () => {
+  let [c1, c2, c3, ...mentors] = members
+  const coreTeam = [c1, c2, c3]
   return (
-    <div className='members'>
-      {/*language=CSS*/}
-      <style jsx>
-        {`
-          .members {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-            justify-content: center;
-          }
-        `}
-      </style>
-      {data
-        .sort((a, b) => a.name.localeCompare(b.name))
-        .map((item, index) => (
-          <CardMember item={item} key={index} />
+    <div>
+      <Style />
+      {/*Core-team*/}
+      <h2>Core team</h2>
+      <div className='team-members core-team'>
+        {coreTeam.map(member => (
+          <ItemCard item={member} key={member.id} />
         ))}
+      </div>
+
+      {/*Mentors-team*/}
+      <h2>Mentors</h2>
+      <div className='team-members mentors'>
+        {mentors
+          .sort((a, b) => a.name.localeCompare(b.name)) // sort names alphabetically
+          .map(member => (
+            <ItemCard item={member} key={member.id} />
+          ))}
+      </div>
     </div>
   )
 }

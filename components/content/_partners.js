@@ -1,15 +1,15 @@
 export let content = `
 
-### Sponsors
+## Sponsors
 Foreningen Roskilde Festival, Tuborgfondet, Københavns Kommune, Zibra Wireless
 
-### Partners and Friends
+## Partners and Friends
 Foreningen Nydansker, Trampoline House, Student Refugees, YES! CPH, R.E.D., DFUNK, Røde Kors Asyl, Coding Pirates
 
-### Featured in
+## Featured in
 CPHFTW, Politiken, MOOT, Opbyg Samfundet
 
-### Supported
+## Supported
 - Slack
 - GitHub
 - Facebook

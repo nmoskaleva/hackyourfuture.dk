@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layouts/layout'
-import Content from '../components/content'
+import Content from '../components/layouts/content'
 import { getApi } from '../services/api'
 import Router from 'next/router'
 

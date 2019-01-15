@@ -1,5 +1,30 @@
 [
   {
+    "id": 1,
+    "name": "Christopher Klüter",
+    "role": "Director",
+    "email": "christopher@hackyourfuture.net",
+    "linkedin": "https://www.linkedin.com/in/christopher-kl%C3%BCter-26794643/",
+    "photo": "https://imgur.com/Lj29FDP.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Marie Hoff",
+    "role": "Public Affairs",
+    "email": "marie@hackyourfuture.net",
+    "linkedin": "https://www.linkedin.com/in/marie-hoff/",
+    "photo": "https://imgur.com/sK7RHV4.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Benjamin Dalsgaard Hughes",
+    "role": "Educational director",
+    "photo": "https://i.imgur.com/HC4l4na.jpg",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "id": 4,
     "name": "Alicia Gonzales",
     "role": "mentor",
     "photo": "https://i.imgur.com/CpK28fb.png",
@@ -7,6 +32,7 @@
     "github": ""
   },
   {
+    "id": 5,
     "name": "Zaki Wasik",
     "role": "mentor",
     "photo": "https://i.imgur.com/dMhbTTP.jpg",
@@ -14,6 +40,7 @@
     "github": "https://github.com/zkwsk"
   },
   {
+    "id": 6,
     "name": "Rohit Sharma",
     "role": "mentor",
     "photo": "https://i.imgur.com/m8L1xEn.jpg",
@@ -21,6 +48,7 @@
     "github": ""
   },
   {
+    "id": 7,
     "name": "Rasmus Jones",
     "role": "mentor",
     "photo": "https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD03OTUxNl9ffHxfXzEwM19ffHxfXzE0MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d",
@@ -28,6 +56,7 @@
     "github": "https://github.com/Rassibassi"
   },
   {
+    "id": 8,
     "name": "Pachito Marco Calabrese",
     "role": "mentor",
     "photo": "https://avatars1.githubusercontent.com/u/1509241?s=460&v=4",
@@ -35,6 +64,7 @@
     "github": "https://github.com/pmcalabrese/"
   },
   {
+    "id": 9,
     "name": "Martin Clemmensen",
     "role": "mentor",
     "photo": "https://i.imgur.com/8hJo6Sp.jpg",
@@ -42,6 +72,7 @@
     "github": "https://github.com/mclemme"
   },
   {
+    "id": 10,
     "name": "Marta Matos",
     "role": "mentor",
     "photo": "https://i.imgur.com/rq6WNi2.jpg",
@@ -49,6 +80,7 @@
     "github": "https://github.com/martamatos"
   },
   {
+    "id": 11,
     "name": "Nynne Just Christofferson",
     "role": "mentor",
     "photo": "https://i.imgur.com/EwbPr66.jpg",
@@ -56,6 +88,7 @@
     "github": "https://github.com/nynnejc/"
   },
   {
+    "id": 12,
     "name": "Pankaj Kumar Singh",
     "role": "mentor",
     "photo": "https://avatars0.githubusercontent.com/u/432980?s=460&v=4",
@@ -63,6 +96,7 @@
     "github": "https://github.com/pankaj28843/"
   },
   {
+    "id": 13,
     "name": "Svetlana Galkina",
     "role": "mentor",
     "photo": "https://i.imgur.com/nTxq371.jpg",
@@ -70,6 +104,7 @@
     "github": ""
   },
   {
+    "id": 14,
     "name": "Jacob Andresen",
     "role": "mentor",
     "photo": "https://avatars0.githubusercontent.com/u/15238?s=400&v=4",
@@ -77,6 +112,7 @@
     "github": "https://github.com/jacobandresen"
   },
   {
+    "id": 15,
     "name": "Kevin Simper",
     "role": "mentor",
     "photo": "https://i.imgur.com/quTEcgF.png",
@@ -84,6 +120,7 @@
     "github": "https://github.com/kevinsimper"
   },
   {
+    "id": 16,
     "name": "Younes Meliani",
     "role": "mentor",
     "photo": "https://i.imgur.com/raR78e5.png",
@@ -91,13 +128,15 @@
     "github": ""
   },
   {
+    "id": 17,
     "name": "Fehime Seven",
     "role": "mentor",
-    "photo": "",
-    "linkedin": "",
+    "photo": "https://media.licdn.com/dms/image/C5103AQEi6YLxhUmEug/profile-displayphoto-shrink_800_800/0?e=1553126400&v=beta&t=CDMWzHWZBr4nxNciaN1JPRH5-vgfsNwywsXpWwpQwcg",
+    "linkedin": "https://www.linkedin.com/in/fehime-seven-4b2b5b56/?locale=en_US",
     "github": ""
   },
   {
+    "id": 18,
     "name": "Moritz Beber",
     "role": "mentor",
     "photo": "https://i.imgur.com/1x0oWRJ.jpg",
@@ -105,6 +144,7 @@
     "github": "https://github.com/Midnighter"
   },
   {
+    "id": 19,
     "name": "Abed Sujan",
     "role": "mentor",
     "photo": "https://secure.gravatar.com/avatar/678b0439a52359c99d1ed00b9a019ad7?size=400",
@@ -112,6 +152,7 @@
     "github": ""
   },
   {
+    "id": 20,
     "name": "Jakub Cioslowski",
     "role": "mentor",
     "photo": "",
@@ -119,6 +160,7 @@
     "github": "https://github.com/jakub-c/"
   },
   {
+    "id": 21,
     "name": "Ahmed Magdy",
     "role": "mentor",
     "photo": "https://avatars1.githubusercontent.com/u/14139855?s=400&u=b070e4c61cab4383c2868400aadb7bf5de3fa45d&v=4",
@@ -126,6 +168,7 @@
     "github": "https://github.com/a-magdy"
   },
   {
+    "id": 22,
     "name": "Petru Catana",
     "role": "mentor",
     "photo": "https://media.licdn.com/dms/image/C4D03AQEsK5ZbI2RS0A/profile-displayphoto-shrink_800_800/0?e=1550707200&v=beta&t=jfoeICLCmitXtEg3Im66bYluNNy9p-I3ldtVY98sTsw",
@@ -133,6 +176,7 @@
     "github": "https://github.com/pcatana"
   },
   {
+    "id": 23,
     "name": "Mikael Wistoft-Ibsen",
     "role": "mentor",
     "photo": "https://i.imgur.com/9kJRICy.png",
@@ -140,6 +184,7 @@
     "github": "https://github.com/wistoft"
   },
   {
+    "id": 24,
     "name": "Emil Bay",
     "role": "mentor",
     "photo": "https://avatars2.githubusercontent.com/u/416524?s=460&v=4",

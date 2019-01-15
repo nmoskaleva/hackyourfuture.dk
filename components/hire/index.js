@@ -1,7 +1,7 @@
 import alumniList from './alumni'
-import CardMember from '../team/card-member'
-import Content from '../content'
-
+import ItemCard from '../team/item-card'
+import Content from '../layouts/content'
+import Style from '../team/style'
 class Hire extends React.Component {
   state = {
     tags: [],
@@ -26,6 +26,7 @@ class Hire extends React.Component {
     const { alumniList, tags } = this.state
     return (
       <div>
+        <Style />
         {/*language=CSS*/}
         <style jsx>
           {`
@@ -51,11 +52,11 @@ class Hire extends React.Component {
           `}
         </style>
 
-        <h2 className="center">Alumni</h2>
+        <h2 className='center'>Alumni</h2>
         <Content>
           <div>
             Filter by:
-            <select onChange={this.filterHandler} className="filterMenu">
+            <select onChange={this.filterHandler} className='filterMenu'>
               {tags.map(tag => (
                 <option key={tag} value={tag}>
                   {tag}
@@ -65,11 +66,11 @@ class Hire extends React.Component {
           </div>
         </Content>
 
-        <div className="members">
+        <div className='team-members'>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
-            .map((item, key) => (
-              <CardMember item={item} key={key} />
+            .map(member => (
+              <ItemCard item={member} key={member.id} />
             ))}
         </div>
       </div>

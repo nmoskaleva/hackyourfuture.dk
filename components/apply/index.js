@@ -15,14 +15,20 @@ import FormGroup from '@material-ui/core/FormGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Switch from '@material-ui/core/Switch'
 
-const styles = {
+const styles = theme => ({
   flex: {
-    display: 'flex'
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column'
+    }
   },
   textField: {
-    width: '50%'
+    width: '50%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    }
   }
-}
+})
 
 class Apply extends Component {
   state = {

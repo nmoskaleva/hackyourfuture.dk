@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import CoreTeam from '../components/core-team'
-import Team from '../components/team/'
+import Team from '../components/team'
 import Layout from '../components/layouts/layout'
-import Content from '../components/content'
+import Content from '../components/layouts/content'
 import marked from 'marked'
-import MyParallax from '../components/parallax'
-import {content, title} from '../components/content/_home'
+import Parallax from '../components/parallax'
+import { content, title } from '../components/content/_home'
 import FindUs from '../components/footer/find-us'
 
 export default () => {
@@ -14,57 +13,18 @@ export default () => {
       <Head>
         <title>{title}</title>
       </Head>
-      {/*language=CSS*/}
-      <style jsx>
-        {`
-            .content {
-                max-width: 760px;
-                margin: 0px auto;
-                background: white;
-                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-                0 1px 10px 0 rgba(0, 0, 0, 0.12),
-                0 2px 4px -1px rgba(0, 0, 0, 0.2);
-                padding: 15px;
-            }
 
-            @media (min-width: 768px) {
-                .content {
-                    padding: 40px;
-                }
+      <Parallax />
 
-            }
+      <Content>
+        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+      </Content>
 
-            .contentExtra {
-                max-width: 760px;
-                margin: 0px auto;
-            }
-
-            .contentExtra h2 {
-                text-align: center;
-            }
-
-            .homePageContent {
-                margin-top: 4rem;
-            }
-        `}
-      </style>
-
-      <MyParallax />
-
-      <div className="homePageContent">
-        <Content>
-          <div style={{padding: '3rem 1rem'}} dangerouslySetInnerHTML={{__html: marked(content)}} />
-        </Content>
-      </div>
-
-
-      <h2 style={{textAlign: 'center', margin: '4rem 0'}}>Core Team</h2>
-      <CoreTeam />
-      <h2 style={{textAlign: 'center',margin: '4rem 0'}}>Mentors</h2>
       <Team />
 
-      <Content><FindUs /></Content>
-
+      <Content>
+        <FindUs />
+      </Content>
     </Layout>
   )
 }

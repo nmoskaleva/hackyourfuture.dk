@@ -20,7 +20,7 @@ class NavMenu extends React.Component {
 
   render() {
     const { anchorEl } = this.state
-
+    const { children, menu } = this.props
     return (
       <div>
         <Button
@@ -30,7 +30,7 @@ class NavMenu extends React.Component {
           onClick={this.handleClick}
           // onMouseOver={this.handleClick}
         >
-          {this.props.children} <ExpandMore />
+          {children} <ExpandMore />
         </Button>
         <Menu
           id='simple-menu'
@@ -41,7 +41,7 @@ class NavMenu extends React.Component {
           onMouseLeave={this.handleClose}
           style={{ marginTop: '3rem' }}
         >
-          {this.props.menu.map(item => (
+          {menu.map(item => (
             <MenuItem
               style={{ display: 'block' }}
               key={`menue-item-${item.id}`}
