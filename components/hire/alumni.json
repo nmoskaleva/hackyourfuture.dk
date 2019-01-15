@@ -9,7 +9,7 @@
     "github": "http://link-goes-here.com/github",
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "1.pdf",
-    "tags": ["JS", "Express.js", "MySQL"],
+    "skills": ["JS", "Express.js", "MySQL"],
     "status": "Looking for jobs"
   },
   {
@@ -22,7 +22,7 @@
     "github": "http://link-goes-here.com/github",
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
-    "tags": ["JS", "React", "Elastich Search"],
+    "skills": ["JS", "React", "Elastich Search"],
     "status": "Looking for new opportunities"
   },
   {
@@ -35,7 +35,7 @@
     "github": "http://link-goes-here.com/github",
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
-    "tags": ["JS", "React", "Elastich Search"],
+    "skills": ["JS", "React"],
     "status": "Looking for jobs"
   },
   {
@@ -48,7 +48,7 @@
     "github": "http://link-goes-here.com/github",
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
-    "tags": ["JS", "GraphQL", "CSS3", "Koa.js"],
+    "skills": ["JS", "GraphQL", "CSS3", "Koa.js"],
     "status": "looking for internship"
   },
   {
@@ -61,7 +61,7 @@
     "github": "http://link-goes-here.com/github",
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
-    "tags": ["JS", "HTML", "SCSS", "C#", "UI"],
+    "skills": ["JS", "HTML", "SCSS", "C#", "UI"],
     "status": "Looking for jobs"
   }
 ]

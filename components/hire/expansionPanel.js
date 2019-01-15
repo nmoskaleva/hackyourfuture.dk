@@ -20,7 +20,7 @@ const styles = theme => ({
 
 function SimpleExpansionPanel(props) {
   const { classes } = props
-  const { summary, tags } = props.item
+  const { summary, skills } = props.item
   return (
     <div className={classes.root}>
       <ExpansionPanel>
@@ -33,7 +33,7 @@ function SimpleExpansionPanel(props) {
             {summary}
             <br />
             <h3>Skills:</h3>
-            {tags.join(', ')}
+            {skills.join(', ')}
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
