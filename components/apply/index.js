@@ -27,6 +27,11 @@ const styles = theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%'
     }
+  },
+  submitForm: {
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    }
   }
 })
 
@@ -166,10 +171,11 @@ class Apply extends Component {
 
         <br />
         <Button
-          className='submit'
+          className={classes.submitForm}
           variant='contained'
           color='primary'
           type='submit'
+          size='large'
         >
           Apply &nbsp; <SendIcon />
         </Button>
