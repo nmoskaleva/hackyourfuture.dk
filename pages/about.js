@@ -45,7 +45,7 @@ export default () => (
     </Content>
 
     <Content>
-      <h1 id="partners">{partners_title}</h1>
+      <h2 id="partners">{partners_title}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
     </Content>
   </Layout>

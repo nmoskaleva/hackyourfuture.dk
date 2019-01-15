@@ -13,6 +13,11 @@ const styles = theme => ({
   },
   textField: {
     flex: 1
+  },
+  submitForm: {
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    }
   }
 })
 
@@ -70,7 +75,7 @@ class Form extends Component {
           variant='contained'
           size='large'
           color='primary'
-          className={classes.button}
+          className={classes.submitForm}
         >
           Send &nbsp; <SendIcon />
         </Button>

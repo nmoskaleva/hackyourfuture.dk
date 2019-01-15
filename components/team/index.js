@@ -1,13 +1,24 @@
 import members from './team'
 import ItemCard from './item-card'
-import Style from './style'
 
 export default () => {
   let [c1, c2, c3, ...mentors] = members
   const coreTeam = [c1, c2, c3]
   return (
     <div>
-      <Style />
+      {/*language=CSS*/}
+      <style jsx>
+        {`
+          .team-members {
+            display: flex;
+            max-width: 1300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        `}
+      </style>
+
       {/*Core-team*/}
       <h2>Core team</h2>
       <div className='team-members core-team'>

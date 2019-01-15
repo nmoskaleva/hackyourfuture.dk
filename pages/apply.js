@@ -27,7 +27,7 @@ export default () => (
       <Apply email={'cph@hackyourfuture.net'} />
     </Content>
 
-    <Content id='learn'>
+    <Content id='coding-test'>
       <div dangerouslySetInnerHTML={{ __html: marked(codingTest) }} />
     </Content>
 

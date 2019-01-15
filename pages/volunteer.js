@@ -13,12 +13,12 @@ export default () => (
     </Head>
     <Content>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-      <img src={'https://i.imgur.com/jspZFfk.jpg'} />
+      <img alt='' src={'https://i.imgur.com/jspZFfk.jpg'} />
 
-      <h2 id="becoming-mentor">Would you like to help?</h2>
+      <h2 id='becoming-mentor'>Would you like to help?</h2>
       <Contactform />
     </Content>
-    <h2 id="mentors" style={{ textAlign: 'center' }}>
+    <h2 id='mentors' style={{ textAlign: 'center' }}>
       The team
     </h2>
     <Team />
