@@ -4,57 +4,36 @@ import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content'
 import Apply from '../components/apply/index'
 import { content, title } from '../components/content/_apply'
-import { content as content_learn, title as title_learn } from '../components/content/_learn'
+import { content as codingTest } from '../components/content/_coding-test'
+import {
+  content as content_learn,
+  title as title_learn
+} from '../components/content/_learn'
 
 export default () => (
   <Layout>
-    {/*language=CSS*/ }
-    <style jsx>
-      { `
-          .image {
-              position: relative;
-              left: -20px;
-              right: -20px;
-              width: calc(100% + 40px);
-              max-width: none;
-          }
-      ` }
-    </style>
+    {/*language=CSS*/}
     <Head>
-      <title>{ title }</title>
+      <title>{title}</title>
     </Head>
 
     <Content id='apply'>
-      <div dangerouslySetInnerHTML={ {__html: marked(content)} }/>
-      <img
-        style={ {maxWidth: '100%'} }
-        className='image'
-        alt='Apply to be a student'
-        src='https://i.imgur.com/ukKK09t.jpg'
-      />
+      <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+      <img alt='Apply to be a student' src='https://i.imgur.com/ukKK09t.jpg' />
     </Content>
 
     <Content id='apply-for-class'>
       <h2>Apply for class</h2>
-      <Apply email={ 'cph@hackyourfuture.net' }/>
-    </Content>
-
-    <Content id='coding-test'>
-      <h2>Coding Tester Class for Women</h2>
-      <div
-        dangerouslySetInnerHTML={ {
-          __html: marked(
-            `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aut beatae consectetur
-            cupiditate eaque molestias officiis omnis possimus quaerat? Accusantium aperiam assumenda cumque
-            ipsam laboriosam maxime officiis quisquam ullam.`
-          )
-        } }
-      />
+      <Apply email={'cph@hackyourfuture.net'} />
     </Content>
 
     <Content id='learn'>
-      <h2>{ title_learn }</h2>
-      <div dangerouslySetInnerHTML={ {__html: marked(content_learn)} }/>
+      <div dangerouslySetInnerHTML={{ __html: marked(codingTest) }} />
+    </Content>
+
+    <Content id='learn'>
+      <h2>{title_learn}</h2>
+      <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
     </Content>
   </Layout>
 )
