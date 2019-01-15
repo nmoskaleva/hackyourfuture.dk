@@ -156,7 +156,7 @@ const ItemCard = ({ item }) => {
           /* small screen */
           @media (max-width: 519px) {
             .member-card {
-              border: 0;
+              border-width:2px 20px;
               max-width: 100%;
               width: 100%;
               margin-bottom: 0.4rem;
