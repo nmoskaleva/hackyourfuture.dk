@@ -1,7 +1,7 @@
 import alumniList from './alumni'
 import ItemCard from '../team/item-card'
 import Content from '../layouts/content'
-import Style from '../team/style'
+
 class Hire extends React.Component {
   state = {
     tags: [],
@@ -26,7 +26,6 @@ class Hire extends React.Component {
     const { alumniList, tags } = this.state
     return (
       <div>
-        <Style />
         {/*language=CSS*/}
         <style jsx>
           {`
