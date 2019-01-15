@@ -8,14 +8,24 @@ class Hire extends React.Component {
   state = {
     skills: [],
     selectedSkills: [],
+    selectedStatus: [],
+    statusList: [],
     alumniList: alumniList
   }
 
   componentDidMount() {
     let skills = []
-    alumniList.forEach(alumni => (skills = [...skills, ...alumni.skills]))
-    skills = [...new Set(skills)] // get distinct / unique items from an array
-    this.setState({ skills })
+    let statusList = []
+
+    alumniList.forEach(alumni => {
+      skills = [...skills, ...alumni.skills]
+      statusList = [...statusList, alumni.status]
+    })
+    this.setState({
+      // get distinct unique items from an array
+      skills: [...new Set(skills)],
+      statusList: [...new Set(statusList)]
+    })
   }
 
   filterHandler = skill => {
@@ -40,7 +50,13 @@ class Hire extends React.Component {
   }
 
   render = () => {
-    const { alumniList, skills, selectedSkills } = this.state
+    const {
+      alumniList,
+      skills,
+      selectedSkills,
+      statusList,
+      selectedStatus
+    } = this.state
     return (
       <div>
         {/*language=CSS*/}
@@ -70,25 +86,41 @@ class Hire extends React.Component {
 
         <h2 className='center'>Alumni</h2>
         <Content>
-          <div style={{ textAlign: 'center', marginBottom: '-2rem' }}>
-            {skills.map((skill, index) => {
-              return (
-                <Button
-                  key={index + 1}
-                  onClick={() => this.filterHandler(skill)}
-                  variant={
-                    selectedSkills.includes(skill) ? 'contained' : 'outlined'
-                  }
-                  size='small'
-                  color='primary'
-                  style={{ marginRight: '0.5rem' }}
-                >
-                  {skill}
-                </Button>
-              )
-            })}
-          </div>
-          <div />
+          {/*FILTER BY SKILLS ---------------- */}
+          {skills.map((skill, index) => {
+            return (
+              <Button
+                key={index + 1}
+                onClick={() => this.filterHandler(skill)}
+                variant={
+                  selectedSkills.includes(skill) ? 'contained' : 'outlined'
+                }
+                size='small'
+                color='primary'
+                style={{ marginRight: '0.5rem' }}
+              >
+                {skill}
+              </Button>
+            )
+          })}
+
+          {/*FILTER BY STATUS ---------------- */}
+          {statusList.map((status, index) => {
+            return (
+              <Button
+                key={index + 1}
+                onClick={() => this.filterHandler(status)}
+                variant={
+                  selectedStatus.includes(status) ? 'contained' : 'outlined'
+                }
+                size='small'
+                color='primary'
+                style={{ marginRight: '0.5rem' }}
+              >
+                {status}
+              </Button>
+            )
+          })}
         </Content>
 
         <div className='team-members'>

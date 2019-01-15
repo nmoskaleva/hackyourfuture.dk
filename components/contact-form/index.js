@@ -21,7 +21,7 @@ const styles = theme => ({
   }
 })
 
-class Form extends Component {
+class ContactForm extends Component {
   render() {
     const { classes } = this.props
     return (
@@ -84,4 +84,4 @@ class Form extends Component {
   }
 }
 
-export default withStyles(styles)(Form)
+export default withStyles(styles)(ContactForm)
