@@ -41,14 +41,12 @@ const styles = theme => ({
 
 class Index extends React.Component {
   componentDidMount() {
-    this.setState({
-      display: 'inherit'
-    })
+    // this.setState({display: 'inherit'})
   }
 
   state = {
     leftDrawerOpen: false,
-    display: 'none'
+    display: 'inherit'
   }
 
   toggleDrawer = open => {

@@ -1,193 +1,142 @@
 import React, { Fragment } from 'react'
+import { withStyles } from '@material-ui/core/styles'
+import classNames from 'classnames'
 
-const ItemCard = ({ item, children }) => {
-  const {
-    photo,
-    github,
-    role,
-    name,
-    linkedin,
-    email,
-    onlineCV,
-    pdfCV
-  } = item
+const styles = theme => ({
+
+  memberCard: {
+    padding: '20px',
+    textAlign: 'center',
+    transition: 'all 0.5s',
+    background: '#293a7d',
+    color: '#fff',
+    border: 'solid 5px white',
+    width: '10%',
+    maxWidth: 'calc(100% / 5)',
+    minWidth: '260px',
+    '&:hover': {
+      background: '#263265'
+    },
+    [theme.breakpoints.down('xs')]: {
+      borderWidth: '2px 20px',
+      maxWidth: '100%',
+      width: '100%',
+      marginBottom: '0.4rem'
+    }
+  },
+  memberName: {
+    color: '#fff',
+    fontFamily: 'Space Mono, monospace',
+    h3: {
+      margin: '0 auto'
+    }
+  },
+  memberImage: {
+    overflow: 'hidden',
+    height: 'inherit',
+    width: '100%',
+    maxWidth: '250px',
+    maxHeight: 'inherit',
+    minHeight: 'inherit',
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  img: {
+    objectFit: 'cover',
+    display: 'flex',
+    width: '210px',
+    height: '210px'
+  },
+  avatarFigure: {
+    margin: 0,
+    padding: 0,
+    overflow: 'hidden',
+    width: '210px',
+    height: '210px',
+    position: 'relative',
+    '&:hover + span': {
+      bottom: '-36px',
+      opacity: 1
+    },
+
+    img: {
+      margin: 'auto',
+      borderRadius: '50%'
+    },
+
+    '&:hover:before': {
+      webkitAnimation: 'shine 0.75s',
+      animation: 'shine 0.75s'
+    },
+    '&:before': {
+      position: 'absolute',
+      top: 0,
+      left: '-75%',
+      zIndex: 2,
+      display: 'block',
+      content: '',
+      width: '50%',
+      height: '100%',
+      background:
+        'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%)',
+      transform: 'skewX(-25deg)'
+    }
+  },
+  '@keyframes shine': {
+    '100%': '{left: 125%}'
+  },
+  zoomIn1: {
+    img: {
+      transform: 'scale(1)',
+    },
+    '&:hover img': {
+      transform: 'scale(1.2)',
+      filter: 'grayscale(100%)',
+      transition: '0.23s ease-in-out'
+
+    }
+  },
+  memberSocialIcons: {
+    marginTop: '1rem',
+    '& a': {
+      margin: '0.5rem',
+      color: '#fff',
+      textDecoration: 'none'
+    },
+    '& a:hover': {
+      opacity: 0.9,
+      transition: 'all 0.5s'
+    },
+    '& a i': {
+      backgroundRepeat: 'no-repeat'
+    },
+    memberDefaultAvatar: {
+      margin: 'auto'
+    }
+  },
+  memberTag: {
+    fontSize: '14px',
+    border: 'solid 1px',
+    margin: '2px 5px',
+    padding: '0 5px',
+    flexWrap: 'wrap',
+    display: 'inline-flex',
+    background: '#ffffff54'
+  }
+})
+
+const ItemCard = ({ item, children, classes }) => {
+  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV } = item
   return (
     <Fragment>
-      {/*language=SCSS*/}
-      <style jsx>
-        {`
-          .member-card {
-            padding: 20px;
-            text-align: center;
-            transition: all 0.5s;
-            background: #293a7d;
-            color: #fff;
-            border: solid 5px white;
-            width: 10%;
-            max-width: calc(100% / 5);
-            min-width: 260px;
-          }
-
-          .member-name {
-            color: #fff;
-            font-family: Space Mono, monospace;
-          }
-
-          .member-card:hover {
-            background: #263265;
-          }
-
-          .member-image {
-            overflow: hidden;
-            height: 33vw;
-            width: 100%;
-            max-width: 250px;
-            max-height: 250px;
-            min-height: 250px;
-          }
-
-          .avatar-figure img {
-            object-fit: cover;
-            display: flex;
-            width: 210px;
-            height: 210px;
-          }
-
-          .member-social-icons {
-            margin-top: 1rem;
-          }
-
-          .member-social-icons a {
-            margin: 0.5rem;
-            color: #fff;
-            text-decoration: none;
-          }
-
-          .member-social-icons a:hover {
-            opacity: 0.9;
-            transition: all 0.5s;
-          }
-
-          .member-social-icons a i {
-            background-repeat: no-repeat;
-          }
-
-          .member-default-avatar {
-            /*width: 150%;*/
-            /*max-width: 100%;*/
-            margin: auto;
-          }
-
-          /*shine effect start */
-          /*shine effect*/
-          .avatar-figure {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            width: 210px;
-            height: 210px;
-          }
-
-          .avatar-figure:hover + span {
-            bottom: -36px;
-            opacity: 1;
-          }
-
-          .member-shine .avatar-figure {
-            position: relative;
-          }
-
-          .member-shine .avatar-figure::before {
-            position: absolute;
-            top: 0;
-            left: -75%;
-            z-index: 2;
-            display: block;
-            content: '';
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(
-              to right,
-              rgba(255, 255, 255, 0) 0%,
-              rgba(255, 255, 255, 0.3) 100%
-            );
-            transform: skewX(-25deg);
-          }
-
-          .member-shine .avatar-figure:hover::before {
-            -webkit-animation: shine 0.75s;
-            animation: shine 0.75s;
-          }
-
-          @keyframes shine {
-            100% {
-              left: 125%;
-            }
-          }
-
-          .zoomIn1 .avatar-figure img {
-            transform: scale(1);
-            transition: 0.23s ease-in-out;
-          }
-
-          .zoomIn1 .avatar-figure:hover img {
-            transform: scale(1.2);
-            filter: grayscale(100%);
-          }
-
-          /* end shine effect*/
-
-          .member-tag {
-            font-size: 14px;
-            border: solid 1px;
-            margin: 2px 5px;
-            padding: 0 5px;
-            flex-wrap: wrap;
-            display: inline-flex;
-            background: #ffffff54;
-          }
-
-          /* large screen */
-          @media (min-width: 769px) {
-          }
-
-          /* small screen */
-          @media (max-width: 519px) {
-            .member-card {
-              border-width: 2px 20px;
-              max-width: 100%;
-              width: 100%;
-              margin-bottom: 0.4rem;
-            }
-
-            .member-image,
-            .avatar-figure img {
-              margin: auto;
-              border-radius: 50%;
-            }
-
-            .member-name > h3 {
-              margin: 0 auto;
-            }
-
-            .member-image {
-              height: inherit;
-              max-height: inherit;
-              min-height: inherit;
-              display: flex;
-              justify-content: center;
-            }
-          }
-        `}
-      </style>
-
-      <div className={`${role.replace(/ /g, '_')} member-card`}>
-        <div className='member-image'>
+      <div className={classNames(classes.memberCard, role.replace(/ /g, '_'))}>
+        <div className={classes.memberImage}>
           {photo ? (
-            <div className='member-shine zoomIn1'>
-              <figure className='avatar-figure'>
+            <div className={classNames(classes.memberShine, classes.zoomIn1)}>
+              <figure className={classes.avatarFigure}>
                 <a href={github || '#'}>
                   <img
+                    className={classes.img}
                     alt={name}
                     src={
                       role === 'alumni'
@@ -201,14 +150,14 @@ const ItemCard = ({ item, children }) => {
           ) : (
             <img
               alt={name}
-              className='member-default-avatar'
+              className={classes.memberDefaultAvatar}
               src={'/static/avatar.png'}
             />
           )}
         </div>
-        <h3 className='member-name'>{name}</h3>
+        <h3 className={classes.memberName}>{name}</h3>
         {role && <p className='memberRole'>{role}</p>}
-        <div className='member-social-icons'>
+        <div className={classes.memberSocialIcons}>
           {github && (
             <a href={github}>
               <i className='flaticon-github-sign' />
@@ -243,4 +192,4 @@ const ItemCard = ({ item, children }) => {
   )
 }
 
-export default ItemCard
+export default withStyles(styles)(ItemCard)

@@ -4,6 +4,38 @@ import Content from '../layouts/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
 
+import { withStyles } from '@material-ui/core/styles'
+
+const styles = theme => ({
+  members: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    maxWidth: '1200px',
+    margin: '0 auto',
+    justifyContent: 'center'
+  },
+
+  center: {
+    textAlign: 'center',
+    margin: '4rem'
+  },
+
+  filterMenu: {
+    padding: '0.3rem 5rem',
+    fontSize: '1rem',
+    marginLeft: '1rem',
+    borderRadius: '3px'
+  },
+
+  teamMembers: {
+    display: 'flex',
+    maxWidth: '1300px',
+    margin: '0 auto',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  }
+})
+
 class Hire extends React.Component {
   state = {
     skills: [],
@@ -57,34 +89,11 @@ class Hire extends React.Component {
       statusList,
       selectedStatus
     } = this.state
+    const { classes } = this.props
+
     return (
       <div>
-        {/*language=CSS*/}
-        <style jsx>
-          {`
-            .members {
-              display: flex;
-              flex-wrap: wrap;
-              max-width: 1200px;
-              margin: 0 auto;
-              justify-content: center;
-            }
-
-            .center {
-              text-align: center;
-              margin: 4rem;
-            }
-
-            .filterMenu {
-              padding: 0.3rem 5rem;
-              font-size: 1rem;
-              margin-left: 1rem;
-              border-radius: 3px;
-            }
-          `}
-        </style>
-
-        <h2 className='center'>Alumni</h2>
+        <h2 className={classes.center}>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
           {skills.map((skill, index) => {
@@ -123,7 +132,7 @@ class Hire extends React.Component {
           })}
         </Content>
 
-        <div className='team-members'>
+        <div className={classes.teamMembers}>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
@@ -137,4 +146,4 @@ class Hire extends React.Component {
   }
 }
 
-export default Hire
+export default withStyles(styles)(Hire)

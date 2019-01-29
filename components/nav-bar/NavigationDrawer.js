@@ -32,8 +32,6 @@ class NavigationDrawer extends React.Component {
         {links.map(link => {
           const { id, title, url, dropdown } = link
           return (
-            <React.Fragment>
-              {/*Main links*/}
               <List key={id}>
                 <ListItem button component='a' href={url}>
                   <ListItemText primary={title} />
@@ -53,7 +51,6 @@ class NavigationDrawer extends React.Component {
                     </ListItem>
                   ))}
               </List>
-            </React.Fragment>
           )
         })}
       </div>
