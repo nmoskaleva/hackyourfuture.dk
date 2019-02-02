@@ -71,13 +71,7 @@ export default ({ children }) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
-        .team-members {
-          display: flex;
-          max-width: 1300px;
-          margin: 0 auto;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
+
       `}</style>
       <Head>
         <title>HackYourFuture Copenhagen</title>

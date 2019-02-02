@@ -3,7 +3,6 @@ import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 
 const styles = theme => ({
-
   memberCard: {
     padding: '20px',
     textAlign: 'center',
@@ -32,6 +31,7 @@ const styles = theme => ({
     }
   },
   memberImage: {
+    margin:'auto',
     overflow: 'hidden',
     height: 'inherit',
     width: '100%',
@@ -39,8 +39,8 @@ const styles = theme => ({
     maxHeight: 'inherit',
     minHeight: 'inherit',
     display: 'flex',
-    justifyContent: 'center'
-  },
+    justifyContent: 'center',
+    },
   img: {
     objectFit: 'cover',
     display: 'flex',
@@ -80,6 +80,9 @@ const styles = theme => ({
       background:
         'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%)',
       transform: 'skewX(-25deg)'
+    },
+    [theme.breakpoints.down('xs')]: {
+      borderRadius: '50%'
     }
   },
   '@keyframes shine': {
@@ -87,13 +90,12 @@ const styles = theme => ({
   },
   zoomIn1: {
     img: {
-      transform: 'scale(1)',
+      transform: 'scale(1)'
     },
     '&:hover img': {
       transform: 'scale(1.2)',
       filter: 'grayscale(100%)',
       transition: '0.23s ease-in-out'
-
     }
   },
   memberSocialIcons: {
@@ -109,9 +111,6 @@ const styles = theme => ({
     },
     '& a i': {
       backgroundRepeat: 'no-repeat'
-    },
-    memberDefaultAvatar: {
-      margin: 'auto'
     }
   },
   memberTag: {
@@ -122,6 +121,10 @@ const styles = theme => ({
     flexWrap: 'wrap',
     display: 'inline-flex',
     background: '#ffffff54'
+  },
+  memberDefaultAvatar: {
+    margin: 'auto',
+    height: '210px'
   }
 })
 
@@ -150,6 +153,7 @@ const ItemCard = ({ item, children, classes }) => {
           ) : (
             <img
               alt={name}
+              style={{ height: '210px' }}
               className={classes.memberDefaultAvatar}
               src={'/static/avatar.png'}
             />

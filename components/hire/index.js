@@ -3,10 +3,10 @@ import ItemCard from '../team/item-card'
 import Content from '../layouts/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
-
 import { withStyles } from '@material-ui/core/styles'
-
+import itemCardsLayout from '../team/item-cards-layout'
 const styles = theme => ({
+  ...itemCardsLayout,
   members: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -27,13 +27,6 @@ const styles = theme => ({
     borderRadius: '3px'
   },
 
-  teamMembers: {
-    display: 'flex',
-    maxWidth: '1300px',
-    margin: '0 auto',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
-  }
 })
 
 class Hire extends React.Component {
@@ -132,7 +125,7 @@ class Hire extends React.Component {
           })}
         </Content>
 
-        <div className={classes.teamMembers}>
+        <div className={classes.cards}>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
