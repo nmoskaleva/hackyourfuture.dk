@@ -4,7 +4,6 @@ import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content'
 import Apply from '../components/apply/index'
 import { content, title } from '../components/content/_apply'
-import { content as codingTest } from '../components/content/_coding-test'
 import {
   content as content_learn,
   title as title_learn
@@ -27,9 +26,6 @@ export default () => (
       <Apply email={'cph@hackyourfuture.net'} />
     </Content>
 
-    <Content id='coding-test'>
-      <div dangerouslySetInnerHTML={{ __html: marked(codingTest) }} />
-    </Content>
 
     <Content id='learn'>
       <h2>{title_learn}</h2>

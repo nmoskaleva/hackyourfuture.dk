@@ -1,4 +1,4 @@
-import Sponsers from './sponsers/index'
+import Sponsors from './sponsors/index'
 import SocialIcons from './social-icon'
 
 export default () => (
@@ -55,7 +55,7 @@ export default () => (
         }
       `}
     </style>
-    <Sponsers />
+    <Sponsors />
     <div className="links">
       <div className="bottom">
         {/*<Newsletter />*/}

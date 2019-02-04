@@ -1,4 +1,5 @@
-export let content = `
+const title = `Partners and Friends`
+let content = `
 
 ## Sponsors
 Foreningen Roskilde Festival, Tuborgfondet, Københavns Kommune, Zibra Wireless
@@ -16,4 +17,4 @@ CPHFTW, Politiken, MOOT, Opbyg Samfundet
 - Google
 
 `
-export const title = `Partners and Friends`
+export { title, content }
