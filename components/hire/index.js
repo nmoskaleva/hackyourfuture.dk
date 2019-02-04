@@ -1,51 +1,35 @@
 import alumniList from './alumni'
 import ItemCard from '../team/item-card'
 import Content from '../layouts/content'
-import SimpleExpansionPanel from './expansionPanel'
-import Button from '@material-ui/core/Button'
 
 class Hire extends React.Component {
   state = {
-    skills: [],
-    selectedSkills: [],
+    tags: [],
     alumniList: alumniList
   }
 
   componentDidMount() {
-    let skills = []
-    alumniList.forEach(alumni => (skills = [...skills, ...alumni.skills]))
-    skills = [...new Set(skills)] // get distinct / unique items from an array
-    this.setState({ skills })
+    let tags = []
+    alumniList.forEach(alumni => (tags = [...tags, ...alumni.tags]))
+    tags = [...new Set(tags)]
+    this.setState({ tags })
   }
 
-  filterHandler = skill => {
-    this.setState(
-      state => ({
-        selectedSkills: state.selectedSkills.includes(skill)
-          ? state.selectedSkills.filter(i => i !== skill)
-          : [...state.selectedSkills, skill]
-      }),
-      () => {
-        console.log(this.state.selectedSkills)
-        return this.setState(state => ({
-          alumniList:
-            state.selectedSkills.length === 0
-              ? alumniList
-              : alumniList.filter(alumni =>
-                  state.selectedSkills.every(s => alumni.skills.includes(s))
-                )
-        }))
-      }
-    )
+  filterHandler = e => {
+    this.setState({
+      alumniList: alumniList.filter(alumni =>
+        alumni.tags.includes(e.target.value)
+      )
+    })
   }
-
   render = () => {
-    const { alumniList, skills, selectedSkills } = this.state
+    const { alumniList, tags } = this.state
     return (
       <div>
         {/*language=CSS*/}
         <style jsx>
           {`
+
             .members {
               display: flex;
               flex-wrap: wrap;
@@ -70,34 +54,23 @@ class Hire extends React.Component {
 
         <h2 className='center'>Alumni</h2>
         <Content>
-          <div style={{ textAlign: 'center', marginBottom: '-2rem' }}>
-            {skills.map((skill, index) => {
-              return (
-                <Button
-                  key={index + 1}
-                  onClick={() => this.filterHandler(skill)}
-                  variant={
-                    selectedSkills.includes(skill) ? 'contained' : 'outlined'
-                  }
-                  size='small'
-                  color='primary'
-                  style={{ marginRight: '0.5rem' }}
-                >
-                  {skill}
-                </Button>
-              )
-            })}
+          <div>
+            Filter by:
+            <select onChange={this.filterHandler} className='filterMenu'>
+              {tags.map(tag => (
+                <option key={tag} value={tag}>
+                  {tag}
+                </option>
+              ))}
+            </select>
           </div>
-          <div />
         </Content>
 
         <div className='team-members'>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
-              <ItemCard item={member} key={member.id}>
-                <SimpleExpansionPanel item={member} />
-              </ItemCard>
+              <ItemCard item={member} key={member.id} />
             ))}
         </div>
       </div>
