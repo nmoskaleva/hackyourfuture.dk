@@ -40,9 +40,15 @@ const styles = theme => ({
 })
 
 class Index extends React.Component {
+  componentDidMount() {
+    this.setState({
+      display: 'inherit'
+    })
+  }
 
   state = {
     leftDrawerOpen: false,
+    display: 'none'
   }
 
   toggleDrawer = open => {
@@ -52,7 +58,7 @@ class Index extends React.Component {
   render = () => {
     const { classes } = this.props
     return (
-      <div className={classes.root} >
+      <div className={classes.root} style={{ display: this.state.display }}>
         <AppBar position='static'>
           <Toolbar>
             <IconButton
