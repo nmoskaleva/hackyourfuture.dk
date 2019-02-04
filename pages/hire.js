@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layouts/layout'
-import Hire from '../components/hire/Hire'
+import Hire from '../components/hire'
 
 export default () => (
   <Layout>

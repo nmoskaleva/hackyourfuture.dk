@@ -1,5 +1,5 @@
 import members from './team'
-import ItemCard from './item-card/item-card'
+import ItemCard from './item-card'
 
 export default () => {
   let [c1, c2, c3, ...mentors] = members

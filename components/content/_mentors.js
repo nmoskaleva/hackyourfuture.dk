@@ -1,5 +1,4 @@
-const title = `Learn - HackYourFuture Copenhagen`
-const content = `
+export const content = `
 ## Mentors
 
 HackYourFuture is getting a lot of help from awesome volunteer mentors that want to help new people with an interest in programming.
@@ -10,4 +9,4 @@ However, what we value most is that our students learn how to think like a progr
 
 The teaching is split up into modules of 3-5 weeks each. Each module is taught by a different pair of mentors, so that the students can also be introduced to a broad set of working professionals in the field.
 `
-export { title, content }
+export const title = `Learn - HackYourFuture Copenhagen`

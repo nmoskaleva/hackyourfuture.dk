@@ -1,7 +1,21 @@
-import './social-icon.scss'
-
 const SocialIcons = () => (
   <div className='social-icons'>
+    {/*language=CSS*/}
+    <style jsx>
+      {`
+        .social-icons a {
+          color: #fff;
+          margin: 0.5rem;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons a:hover {
+          opacity: 0.7;
+          transition: all 0.3s;
+          box-shadow: none;
+        }
+      `}
+    </style>
     <a
       target='_blank'
       title='facebook'

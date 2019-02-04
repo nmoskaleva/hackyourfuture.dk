@@ -1,5 +1,4 @@
-const title = `Privacy Policy`
-const content = `
+export let content = `
 ## Privacy Policy
 This privacy notice discloses the privacy practices for HackYourFuture.dk. This privacy notice applies solely to information collected by this website. It will notify you of the following:
 
@@ -30,4 +29,4 @@ While we use encryption to protect sensitive information transmitted online, we 
 
 If you feel that we are not abiding by this privacy policy, you should contact us immediately via email.
 `
-export { title, content }
+export const title = `Privacy Policy`

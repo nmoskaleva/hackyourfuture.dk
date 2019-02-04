@@ -1,5 +1,4 @@
-const title = `Support - HackYourFuture Copenhagen`
-const content = `
+export let content = `
 ## Want to support us?
 
 HackYourFuture is a non-profit organization and run on a lot of voluntary work. The organization is started by individuals and not backed by a larger institution, but is a grassroots initiative by citizens. Although we try to do everything as lean as we can we still dependent on outside support to make everything run.
@@ -17,4 +16,4 @@ Konto. nr. 0001028176
 ## Can I help with more than money?
 Yes, we are looking for equipment for the students like laptops that will allow the students to follow the courses if they don’t have a computer of their own.
 `
-export { title, content }
+export const title = `Support - HackYourFuture Copenhagen`

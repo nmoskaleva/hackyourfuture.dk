@@ -17,9 +17,6 @@ const styles = theme => ({
   submitForm: {
     [theme.breakpoints.down('sm')]: {
       width: '100%'
-    },
-    send: {
-      marginLeft: '1rem'
     }
   }
 })
@@ -80,7 +77,7 @@ class ContactForm extends Component {
           color='primary'
           className={classes.submitForm}
         >
-          Send <SendIcon className={classes.send} />
+          Send &nbsp; <SendIcon />
         </Button>
       </form>
     )

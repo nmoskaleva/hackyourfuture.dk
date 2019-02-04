@@ -32,14 +32,14 @@ const styles = theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%'
     }
-  },
-  grid: { flex: 1 },
-  send:{marginLeft:'1rem'}
+  }
 })
 
 class Apply extends Component {
   state = {
-    haveComputer: true
+    gilad: true,
+    jason: false,
+    antoine: true
   }
 
   handleChange = name => event => {
@@ -55,7 +55,7 @@ class Apply extends Component {
             <Grid item>
               <AccountCircle />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
                 label='Your name'
                 name='name'
@@ -71,7 +71,7 @@ class Apply extends Component {
             <Grid item>
               <LocationCityIcon />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
                 className={classes.textField}
                 label='Address / Municipality / City'
@@ -87,7 +87,7 @@ class Apply extends Component {
             <Grid item>
               <EmailIcon />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
                 type='email'
                 label='Your email'
@@ -104,9 +104,8 @@ class Apply extends Component {
             <Grid item>
               <PhoneIcon />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
-                type='tel'
                 label='Phone'
                 name='phone'
                 margin='normal'
@@ -121,7 +120,7 @@ class Apply extends Component {
             <Grid item>
               <InfoIcon />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
                 label='How did you hear about HackYourFuture?'
                 multiline
@@ -140,7 +139,7 @@ class Apply extends Component {
             <Grid item>
               <BookIcon />
             </Grid>
-            <Grid item className={classes.grid}>
+            <Grid item style={{ flex: 1 }}>
               <TextField
                 label='What is your Educational background?'
                 multiline
@@ -159,10 +158,10 @@ class Apply extends Component {
             <FormControlLabel
               control={
                 <Switch
-                  checked={this.state.haveComputer}
-                  onChange={this.handleChange('haveComputer')}
+                  checked={this.state.gilad}
+                  onChange={this.handleChange('gilad')}
                   name='own-computer'
-                  value='haveComputer'
+                  value='gilad'
                 />
               }
               label='Do you have your own computer?'
@@ -178,7 +177,7 @@ class Apply extends Component {
           type='submit'
           size='large'
         >
-          Apply <SendIcon className={classes.send} />
+          Apply &nbsp; <SendIcon />
         </Button>
       </form>
     )

@@ -1,10 +1,8 @@
-import * as React from 'react'
 import alumniList from './alumni'
-import ItemCard from '../team/item-card/item-card'
-import Content from '../layouts/content/content'
+import ItemCard from '../team/item-card'
+import Content from '../layouts/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
-import './hire.scss'
 
 class Hire extends React.Component {
   state = {
@@ -61,6 +59,31 @@ class Hire extends React.Component {
     } = this.state
     return (
       <div>
+        {/*language=CSS*/}
+        <style jsx>
+          {`
+            .members {
+              display: flex;
+              flex-wrap: wrap;
+              max-width: 1200px;
+              margin: 0 auto;
+              justify-content: center;
+            }
+
+            .center {
+              text-align: center;
+              margin: 4rem;
+            }
+
+            .filterMenu {
+              padding: 0.3rem 5rem;
+              font-size: 1rem;
+              margin-left: 1rem;
+              border-radius: 3px;
+            }
+          `}
+        </style>
+
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
