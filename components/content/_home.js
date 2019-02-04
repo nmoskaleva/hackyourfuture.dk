@@ -6,4 +6,4 @@ In our free 6-month program we train refugees, asylum seekers and people with li
 
 We believe talented refugees are a great opportunity for society and we are here to give them a helping hand to make use of their potential.
 `
-export {title, content}
+export { title, content }

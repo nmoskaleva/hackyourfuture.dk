@@ -12,7 +12,7 @@ import {
   content as partners_content,
   title as partners_title
 } from '../components/content/_partners'
-import Contactform from '../components/contact-form/index'
+import Contactform from '../components/contact-form/ContactForm'
 
 export default () => (
   <Layout>

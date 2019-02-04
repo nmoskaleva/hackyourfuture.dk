@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Footer from '../footer'
+import Footer from '../footer/footer'
 import ProgressBar from '../progress-bar/ProgressBar'
-import NavBar from '../nav-bar/Index'
+import NavBar from '../nav-bar/NavBar'
 import './layout.scss'
 
 export default ({children}) => {

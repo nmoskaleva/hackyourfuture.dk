@@ -1,4 +1,5 @@
-export const content = `
+const title = `Learn`
+const content = `
 We are super engaged in learning and especially about web development!
 
 This is the resources we use and that we can recommend:
@@ -12,4 +13,5 @@ This contains all the courses we teach the students!
 
 We are a big fan of Khan Academy and the courses that they have!
 `
-export const title = `Learn`
+
+export { content, title }

@@ -1,4 +1,4 @@
-import Sponsers from './sponsors/index'
+import Sponsers from './sponsors/sponsors'
 import SocialIcons from './social-icons/social-icon'
 import './footer.scss'
 

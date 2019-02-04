@@ -1,7 +1,7 @@
 import React from 'react'
 import './parallax.scss'
 
-const MyParallax = _ => (
+const Parallax = () => (
   <div className='container'>
     {/*<img className="logo" src="/static/HYF_LOGO.png"/>*/}
     <div className='logo'>
@@ -10,4 +10,4 @@ const MyParallax = _ => (
   </div>
 )
 
-export default MyParallax
+export default Parallax
