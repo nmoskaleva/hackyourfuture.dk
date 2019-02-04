@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Team from '../components/team'
 import Layout from '../components/layouts/layout'
-import Content from '../components/layouts/content'
+import Content from '../components/layouts/content/content'
 import marked from 'marked'
 import Parallax from '../components/parallax'
 import { content, title } from '../components/content/_home'
-import FindUs from '../components/footer/find-us'
+import FindUs from '../components/footer/find-us/find-us'
 
 export default () => {
   return (

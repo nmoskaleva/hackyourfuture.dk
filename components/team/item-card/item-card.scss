@@ -1,0 +1,159 @@
+.team-member-card {
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s;
+  background: #293a7d;
+  color: #fff;
+  border: solid 5px white;
+  width: 10%;
+  max-width: calc(100% / 5);
+  min-width: 260px;
+
+
+  &:hover {
+    background: #263265;
+  }
+
+  .member-name {
+    color: #fff;
+    font-family: Space Mono, monospace;
+
+    & > h3 {
+      margin: 0 auto;
+    }
+  }
+
+  .member-image {
+    overflow: hidden;
+    height: 33vw;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 250px;
+
+    /*shine effect start */
+    /*shine effect*/
+    .avatar-figure {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 210px;
+      height: 210px;
+
+      img {
+        object-fit: cover;
+        display: flex;
+        width: 210px;
+        height: 210px;
+       @media (max-width:960px) {
+         margin: auto;
+         border-radius: 50%;
+       }
+      }
+
+      &:hover + span {
+        bottom: -36px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .member-social-icons {
+    margin-top: 1rem;
+
+    a {
+      margin: 0.5rem;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.9;
+        transition: all 0.5s;
+      }
+
+      i {
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .member-default-avatar {
+    /*width: 150%;*/
+    /*max-width: 100%;*/
+    margin: auto;
+  }
+
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+
+  .member-shine .avatar-figure {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+      transform: skewX(-25deg);
+    }
+
+    &:hover::before {
+      -webkit-animation: shine 0.75s;
+      animation: shine 0.75s;
+    }
+  }
+
+  .zoomIn1 .avatar-figure {
+    img {
+      transform: scale(1);
+      transition: 0.23s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+      filter: grayscale(100%);
+    }
+  }
+
+  /* end shine effect*/
+
+  .member-tag {
+    font-size: 14px;
+    border: solid 1px;
+    margin: 2px 5px;
+    padding: 0 5px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    background: #ffffff54;
+  }
+
+  /* small screen */
+  @media (max-width: 519px) {
+    .team-member-card {
+      border-width: 2px 20px;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 0.4rem;
+    }
+
+    .member-image {
+      height: inherit;
+      max-height: inherit;
+      min-height: inherit;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

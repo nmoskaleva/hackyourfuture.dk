@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layouts/layout'
-import Content from '../components/layouts/content'
+import Content from '../components/layouts/content/content'
 import { getApi } from '../services/api'
 
 export default class Dashboard extends React.Component {

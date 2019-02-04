@@ -1,17 +1,14 @@
 import members from './team'
-import ItemCard from './item-card'
-import itemCardsLayout from './item-cards-layout'
-import {withStyles} from '@material-ui/core/styles'
+import ItemCard from './item-card/item-card'
 
-const Index= ({classes}) => {
+export default () => {
   let [c1, c2, c3, ...mentors] = members
   const coreTeam = [c1, c2, c3]
-
   return (
     <div>
       {/*Core-team*/}
       <h2>Core team</h2>
-      <div className={classes.cards}>
+      <div className='team-members core-team'>
         {coreTeam.map(member => (
           <ItemCard item={member} key={member.id} />
         ))}
@@ -19,7 +16,7 @@ const Index= ({classes}) => {
 
       {/*Mentors-team*/}
       <h2>Mentors</h2>
-      <div className={classes.cards}>
+      <div className='team-members mentors'>
         {mentors
           .sort((a, b) => a.name.localeCompare(b.name)) // sort names alphabetically
           .map(member => (
@@ -29,5 +26,3 @@ const Index= ({classes}) => {
     </div>
   )
 }
-
-export default withStyles(itemCardsLayout)(Index)

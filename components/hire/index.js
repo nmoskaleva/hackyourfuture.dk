@@ -1,33 +1,10 @@
+import * as React from 'react'
 import alumniList from './alumni'
-import ItemCard from '../team/item-card'
-import Content from '../layouts/content'
+import ItemCard from '../team/item-card/item-card'
+import Content from '../layouts/content/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
-import itemCardsLayout from '../team/item-cards-layout'
-const styles = theme => ({
-  ...itemCardsLayout,
-  members: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    justifyContent: 'center'
-  },
-
-  center: {
-    textAlign: 'center',
-    margin: '4rem'
-  },
-
-  filterMenu: {
-    padding: '0.3rem 5rem',
-    fontSize: '1rem',
-    marginLeft: '1rem',
-    borderRadius: '3px'
-  },
-
-})
+import './hire.scss'
 
 class Hire extends React.Component {
   state = {
@@ -82,11 +59,9 @@ class Hire extends React.Component {
       statusList,
       selectedStatus
     } = this.state
-    const { classes } = this.props
-
     return (
       <div>
-        <h2 className={classes.center}>Alumni</h2>
+        <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
           {skills.map((skill, index) => {
@@ -125,7 +100,7 @@ class Hire extends React.Component {
           })}
         </Content>
 
-        <div className={classes.cards}>
+        <div className='team-members'>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
@@ -139,4 +114,4 @@ class Hire extends React.Component {
   }
 }
 
-export default withStyles(styles)(Hire)
+export default Hire

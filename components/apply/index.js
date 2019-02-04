@@ -37,9 +37,7 @@ const styles = theme => ({
 
 class Apply extends Component {
   state = {
-    gilad: true,
-    jason: false,
-    antoine: true
+    haveComputer: true,
   }
 
   handleChange = name => event => {
@@ -158,10 +156,10 @@ class Apply extends Component {
             <FormControlLabel
               control={
                 <Switch
-                  checked={this.state.gilad}
-                  onChange={this.handleChange('gilad')}
+                  checked={this.state.haveComputer}
+                  onChange={this.handleChange('haveComputer')}
                   name='own-computer'
-                  value='gilad'
+                  value='haveComputer'
                 />
               }
               label='Do you have your own computer?'
