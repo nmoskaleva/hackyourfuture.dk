@@ -6,7 +6,7 @@ import flush from 'styled-jsx/server'
 class MyDocument extends Document {
   render() {
     const { pageContext } = this.props
-
+    NextScript
     return (
       <html lang='en' dir='ltr'>
         <Head>
