@@ -106,3 +106,5 @@ At most of `pages` it like `container` in bootstrap framework. All boxes contain
 > - We should figure out what to do with these pages, cause they are reachable just not with links
 
 اوليفر
+
+check meta tags for social media (twitter, facebook)
