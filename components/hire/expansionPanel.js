@@ -27,13 +27,10 @@ function SimpleExpansionPanel({ classes, item }) {
           <Typography className={classes.heading}>More...</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            <h3>Summary:</h3>
-            {summary}
-            <br />
-            <h3>Skills:</h3>
-            {skills.join(', ')}
-          </Typography>
+          <h3>Summary:</h3>
+          <Typography>{summary}</Typography>
+          <h3>Skills:</h3>
+          <Typography> {skills.join(', ')}</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

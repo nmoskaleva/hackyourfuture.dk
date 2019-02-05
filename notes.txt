@@ -79,6 +79,14 @@ At most of `pages` it like `container` in bootstrap framework. All boxes contain
 ✅ deleted. it was coming from Kevin legacy repo
 > - We should update the favicon
 ✅ updated to the logo
+
+
+
+
+
+
+
+
 > - The navbar should show the elements on hover.
 > - What is the difference between the navMenu and the nav-bar?
 > - Consistent file naming. expansionPanel -> expansion-panel

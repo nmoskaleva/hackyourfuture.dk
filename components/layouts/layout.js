@@ -97,10 +97,6 @@ export default ({ children }) => {
       {children}
       <Footer />
       <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=UA-117911945-1'
-      />
-      <script
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
