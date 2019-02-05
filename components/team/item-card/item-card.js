@@ -32,7 +32,7 @@ const ItemCard = ({ item, children }) => {
           )}
         </div>
         <h3 className='member-name'>{name}</h3>
-        {role && <p className='memberRole'>{role}</p>}
+        {role && <p className='member-role'>{role}</p>}
         <div className='member-social-icons'>
           {github && (
             <a href={github}>

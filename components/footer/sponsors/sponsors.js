@@ -10,7 +10,7 @@ export default () => (
       {sponsors.map(({ id, logo, url }) => (
         <div className='sponsor' key={id}>
           <a target='_blank' href={url}>
-            <img alt='' src={`/static/sponsors/new/blue-color/${logo}`} />
+            <img alt='' src={`/static/sponsors/${logo}`} />
           </a>
         </div>
       ))}

@@ -1,11 +1,11 @@
-import styles from  './find-us.scss'
+import styles from './find-us.scss'
 import React from 'react'
 
 const FindUs = () => (
   <div style={{textAlign: 'center'}}>
     <style jsx>{styles}</style>
 
-    <div className="contentExtra">
+    <div className="content-extra">
       <h2>Find us on Social Media</h2>
       <div className="facebook">
         <iframe

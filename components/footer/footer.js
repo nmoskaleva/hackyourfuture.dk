@@ -17,13 +17,13 @@ export default () => (
           Kongens Enghave <br/>
           2450 København <br/>
         </div>
-        <div className="col-lg-6 cvrDiv">
+        <div className="col-lg-6 cvr-div">
           CVR:
           <br/>
           38 53 31 93
         </div>
       </div>
-      <div className="Copyright">
+      <div className="copyright">
         &copy; Copyright HackYourFuture Copenhagen 2018
       </div>
     </div>
