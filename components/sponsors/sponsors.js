@@ -7,10 +7,10 @@ export default () => (
     <style jsx>{styles}</style>
     <h2 className='center'>Official partners & supporters</h2>
     <div className='sponsors'>
-      {sponsors.map(({ id, logo, url }) => (
+      {sponsors.map(({ id, logo, url, title }) => (
         <div className='sponsor' key={id}>
           <a target='_blank' href={url}>
-            <img alt='' src={`/static/sponsors/${logo}`} />
+            <img alt={title} src={`/static/sponsors/${logo}`} />
           </a>
         </div>
       ))}

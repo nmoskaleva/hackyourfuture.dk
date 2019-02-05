@@ -35,11 +35,11 @@ const styles = theme => ({
 
 class ContactForm extends Component {
   render() {
-    const { classes } = this.props
+    const { classes, email} = this.props;
     return (
       <form
         method='POST'
-        action={`https://formspree.io/${this.props.email}`}
+        action={`https://formspree.io/${email}`}
         className={classes.form}
         noValidate
         autoComplete='off'

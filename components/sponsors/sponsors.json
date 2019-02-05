@@ -1,22 +1,26 @@
 [
   {
     "id": 1,
-    "logo": "APMS.jpg",
-    "url": "#"
+    "logo": "apms.jpg",
+    "title": "AP Møller",
+    "url": "https://www.apmollerfonde.dk/socialindsats/"
   },
   {
     "id": 2,
-    "logo": "RSV.jpg",
-    "url": "#"
+    "logo": "roskilde-festival.jpg",
+    "title": "roskilde festival",
+    "url": "https://roskildefestivalgruppen.dk/da/hvem-vi-stoetter/"
   },
   {
     "id": 3,
     "logo": "donationslogo.jpg",
+    "title": "donations",
     "url": "#"
   },
   {
     "id": 4,
     "logo": "foreningen.jpg",
-    "url": "#"
+    "title": "Tryg Fonden",
+    "url": "https://www.trygfonden.dk/"
   }
 ]

@@ -16,26 +16,27 @@ const style = () => ({
 
 class Hire extends React.Component {
   state = {
-    skills: [],
+    uniqueSkills: [],
     selectedSkills: [],
     selectedStatus: [],
-    statusList: [],
+    uniqueStatuses: [],
     alumniList: alumniList
   }
 
   componentDidMount() {
     let skills = []
-    let statusList = []
+    let statuses = []
 
     alumniList.forEach(alumni => {
       skills = [...skills, ...alumni.skills]
-      statusList = [...statusList, alumni.status]
+      statuses = [...statuses, alumni.status]
     })
+
     this.setState({
       // get distinct unique items from an array
-      skills: [...new Set(skills)],
-      statusList: [...new Set(statusList)]
-    })
+      uniqueSkills: [...new Set(skills)],
+      uniqueStatuses: [...new Set(statuses)]
+    });
   }
 
   filterHandler = skill => {
@@ -46,7 +47,6 @@ class Hire extends React.Component {
           : [...state.selectedSkills, skill]
       }),
       () => {
-        console.log(this.state.selectedSkills)
         return this.setState(state => ({
           alumniList:
             state.selectedSkills.length === 0
@@ -62,9 +62,9 @@ class Hire extends React.Component {
   render = () => {
     const {
       alumniList,
-      skills,
+      uniqueSkills,
       selectedSkills,
-      statusList,
+      uniqueStatuses,
       selectedStatus
     } = this.state
     const { classes } = this.props
@@ -74,7 +74,7 @@ class Hire extends React.Component {
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
-          {skills.map(skill => {
+          {uniqueSkills.map(skill => {
             return (
               <Button
                 key={id()}
@@ -92,7 +92,7 @@ class Hire extends React.Component {
           })}
 
           {/*FILTER BY STATUS ---------------- */}
-          {statusList.map(status => {
+          {uniqueStatuses.map(status => {
             return (
               <Button
                 key={id()}

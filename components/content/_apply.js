@@ -1,5 +1,4 @@
 const title = `Apply - HackYourFuture Copenhagen`
-const fill = `Fill out and apply`
 const content = `
 ## Apply to be a student
 
@@ -8,4 +7,4 @@ Every 2 months we start a new class with talented refugees who want to start the
 Want to apply? Please fill in your details below and we will contact you about the further steps in the application process.
 
 `
-export { title, fill, content }
+export { title, content }
