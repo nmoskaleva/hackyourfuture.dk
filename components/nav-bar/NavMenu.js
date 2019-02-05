@@ -4,6 +4,20 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
+import { withStyles } from '@material-ui/core/styles'
+
+const styles = () => ({
+  menu: {
+    marginTop: '3rem'
+  },
+  menuItem: {
+    display: 'block'
+  },
+  titleLink: {
+    display: 'block',
+    textDecoration: 'none'
+  }
+})
 
 class NavMenu extends React.Component {
   state = {
@@ -20,7 +34,8 @@ class NavMenu extends React.Component {
 
   render() {
     const { anchorEl } = this.state
-    const { children, menu } = this.props
+    const { children, menu, classes } = this.props
+
     return (
       <div>
         <Button
@@ -39,18 +54,16 @@ class NavMenu extends React.Component {
           onClose={this.handleClose}
           onMouseEnter={() => console.log('enter')}
           onMouseLeave={this.handleClose}
-          style={{ marginTop: '3rem' }}
+          className={classes.menu}
         >
           {menu.map(item => (
             <MenuItem
-              style={{ display: 'block' }}
+              className={classes.menuItem}
               key={`menu-item-${item.id}`}
               onClick={this.handleClose}
             >
               <Link href={item.url}>
-                <a style={{ display: 'block', textDecoration: 'none' }}>
-                  {item.title}
-                </a>
+                <a className={classes.titleLink}>{item.title}</a>
               </Link>
             </MenuItem>
           ))}
@@ -60,4 +73,4 @@ class NavMenu extends React.Component {
   }
 }
 
-export default NavMenu
+export default withStyles(styles)(NavMenu)

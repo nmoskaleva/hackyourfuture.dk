@@ -1,5 +1,3 @@
-✅ *The problem of styling with jsx and widthStyles has been solved using SCSS as external styling files for all components
-so all styles now are even withStyles for material ui components or scss files*
 > - Delete the usersRouter.js
 ✅ Done
 > - Apply.js has some weird state. gilad, jason and antoine, what is this?
@@ -40,24 +38,47 @@ line 26 contains: `const { classes } = this.props`
 > - Should the find us be part of the footer? I dont think it should.
 ✅ moved to components folder
 > - ALL id's and classnames should be seperated with dash so contentExtra -> content-extra. They should ALL start with lowercase so Copyright -> copyright
+✅ Done. but classNames for material ui mast be camelCase
 > - Footer line 5 should not have a class called footer, we can get that from the just the footer
+✅ Done
 > - In the styling indent the styling, so the scope is more narrow: .footer {margin-top: 30px; .links {etc.}}
+⚠ where is this??
 > - Remove all unused styling
+⚠ I think there is no unused styling
 > - You style in different ways, why is that?
+✅ Material ui styling now using withStyles because we cannot style its components directly.
+    we could use styled-components package, but we already have withStyles for these components
+    otherwise with scss external jsx, and no internal styles
+    for conditional styling we have classNames
 > - I dont think the sponsors should be part of the footer.
+✅ Done
 > - Your footer classnames should be changed. Fx links contain a lot more than links and bottom is actually at the top.
+✅ Done
 > - Hire alumni.json we should stick with a naming of keys. You change it around. fx graduation_date onlineCV i think we should use camelCase so: onlineCV
+✅ Done
 > - Hire index.js: line 21 why are you desctructuring the skills array when it is empty?
+ ⚠  if you mean this line `skills = [...skills, ...alumni.skills]` I'm getting skills from `alumniList` and using destructuring to append skills to current empty array
 > - The same with the status list
+😃 also the same answer
 > - Line 26 should maybe be called unique skills and unique statusList?
+⚠ Later they will come from a database, so be default they will be unique,
 > - Line 33 you have to explain me. Its a little heavy.
+When we click on a skill (the buttons which contain skills), we are looking at the array `selectedSkills` if the clicked skill is not exists at this array we
+add it. then we are filtering the `alumniList` according to this `selectedSkills` by looping `selectedSkills` and checking if this alumni have this skill
 > - In general the filterHandler is tricky!
+YES sure, it will be very easy and simple when we add a database and use an api to update and filter alumni
 > - Line 93 why index + 1?
+✅ just to not start the id with zero, anyway I replaced them to be using uuid package to generate random ids
 > - Line 96 i would name selected. If it is selected it has the background color. The problem with the outlined and contained is that what if we want it to not be outlined when not selected. Then we need to change the name aswell. This we want to avoid
+`contained` and `outlined` are options of `variant` property which is coming from material ui. they refer to the style.
 > - Expansion panel line 22 and 23 is maybe a bit overkill
+✅ Done
 > - The layout content.js where are we using that?
+At most of `pages` it like `container` in bootstrap framework. All boxes contain text are wrapped with it
 > - layout.js line 65 there is some BEM there.
+✅ deleted. it was coming from Kevin legacy repo
 > - We should update the favicon
+✅ updated to the logo
 > - The navbar should show the elements on hover.
 > - What is the difference between the navMenu and the nav-bar?
 > - Consistent file naming. expansionPanel -> expansion-panel
@@ -75,3 +96,5 @@ line 26 contains: `const { classes } = this.props`
 > - Newsletter?
 > - Privacy?
 > - We should figure out what to do with these pages, cause they are reachable just not with links
+
+اوليفر

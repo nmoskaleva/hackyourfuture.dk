@@ -63,10 +63,6 @@ export default ({ children }) => {
           }
         }
 
-        .apply__container h1 {
-          font-weight: 700;
-        }
-
         p {
           font-family: 'Work Sans', sans-serif;
           font-size: 18px;

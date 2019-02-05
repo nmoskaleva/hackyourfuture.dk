@@ -9,7 +9,7 @@ const ItemCard = ({ item, children }) => {
       <div className={`${role.replace(/ /g, '_')} team-member-card`}>
         <div className='member-image'>
           {photo ? (
-            <div className='member-shine zoomIn1'>
+            <div className='member-shine zoom-in-1'>
               <figure className='avatar-figure'>
                 <a href={github || '#'}>
                   <img

@@ -11,7 +11,7 @@
     "pdfCV": "1.pdf",
     "skills": ["JS", "Express.js", "MySQL"],
     "status": "Looking for jobs",
-    "graduation_date": "01-01-2018"
+    "graduationDate": "01-01-2018"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "pdfCV": "2.pdf",
     "skills": ["JS", "React", "Elastich Search"],
     "status": "Looking for new opportunities",
-    "graduation_date": "02-01-2018"
+    "graduationDate": "02-01-2018"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
     "pdfCV": "2.pdf",
     "skills": ["JS", "React"],
     "status": "Looking for jobs",
-    "graduation_date": "03-01-2018"
+    "graduationDate": "03-01-2018"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "pdfCV": "2.pdf",
     "skills": ["JS", "GraphQL", "CSS3", "Koa.js"],
     "status": "looking for internship",
-    "graduation_date": "04-01-2018"
+    "graduationDate": "04-01-2018"
   },
   {
     "id": 6,
@@ -67,6 +67,6 @@
     "pdfCV": "2.pdf",
     "skills": ["JS", "HTML", "SCSS", "C#", "UI"],
     "status": "Looking for jobs",
-    "graduation_date": "05-01-2018"
+    "graduationDate": "05-01-2018"
   }
 ]

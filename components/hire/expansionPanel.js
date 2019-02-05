@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 const styles = theme => ({
   root: {
     width: '100%',
-    marginTop: '1rem',
+    marginTop: '1rem'
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -18,9 +18,8 @@ const styles = theme => ({
   }
 })
 
-function SimpleExpansionPanel(props) {
-  const { classes } = props
-  const { summary, skills } = props.item
+function SimpleExpansionPanel({ classes, item }) {
+  const { summary, skills } = item
   return (
     <div className={classes.root}>
       <ExpansionPanel>

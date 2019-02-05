@@ -6,11 +6,11 @@ import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import NavMenu from './NavMenu'
+import Link from 'next/link'
 import links from './links'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import NavigationDrawer from './NavigationDrawer'
-import Link from 'next/link'
 
 const styles = theme => ({
   root: {
@@ -36,11 +36,18 @@ const styles = theme => ({
     [theme.breakpoints.down('xs')]: {
       display: 'inherit'
     }
+  },
+  img: {
+    height: '45px',
+    marginTop: '9px',
+    cursor: 'pointer'
+  },
+  button: {
+    color: 'inherit'
   }
 })
 
 class Index extends React.Component {
-
   state = {
     leftDrawerOpen: false,
     display: 'none'
@@ -70,11 +77,7 @@ class Index extends React.Component {
               <Link href='/'>
                 <img
                   src='/static/logo_white.svg'
-                  style={{
-                    height: '45px',
-                    marginTop: '9px',
-                    cursor: 'pointer'
-                  }}
+                  className={classes.img}
                   alt=''
                 />
               </Link>
@@ -90,7 +93,7 @@ class Index extends React.Component {
                   </NavMenu>
                 ) : (
                   <Link key={id} href={url}>
-                    <Button style={{ color: 'inherit' }}>{title}</Button>
+                    <Button className={classes.button}>{title}</Button>
                   </Link>
                 )
               })}

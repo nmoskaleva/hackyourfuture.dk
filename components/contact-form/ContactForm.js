@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField'
 import { withStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import SendIcon from '@material-ui/icons/Send'
+import classNames from 'classnames'
 
 const styles = theme => ({
   flex: {
@@ -21,6 +22,14 @@ const styles = theme => ({
     send: {
       marginLeft: '1rem'
     }
+  },
+  form: {
+    background: '#fff',
+    padding: '1rem',
+    boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
+  },
+  name:{
+    marginRight: '1rem'
   }
 })
 
@@ -31,11 +40,7 @@ class ContactForm extends Component {
       <form
         method='POST'
         action={`https://formspree.io/${this.props.email}`}
-        style={{
-          background: '#fff',
-          padding: '1rem',
-          boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
-        }}
+        className={classes.form}
         noValidate
         autoComplete='off'
       >
@@ -53,12 +58,11 @@ class ContactForm extends Component {
         <div className={classes.flex}>
           {/*Your name*/}
           <TextField
-            className={classes.textField}
+            className={classNames(classes.textField,classes.name)}
             label='Your name'
             type='text'
             name='name'
             margin='normal'
-            style={{ marginRight: '1rem' }}
           />
 
           {/*Your email*/}

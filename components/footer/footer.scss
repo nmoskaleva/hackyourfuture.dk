@@ -1,11 +1,11 @@
-.footer {
+footer {
   /*margin-top: 100px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.links {
+.wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.bottom {
+.social-icons {
   padding: 2rem;
 }
 
@@ -25,7 +25,7 @@
   padding: 1rem;
 }
 
-.hyf-info {
+.info {
   display: flex;
   padding: 1rem 10rem;
   flex-direction: row;
@@ -37,11 +37,11 @@
 }
 
 @media (max-width: 768px) {
-  .hyf-info {
+  .info {
     padding: 1rem;
     flex-direction: column;
   }
-  .cvr-div {
+  .cvr {
     margin-top: 2rem;
   }
 }

@@ -1,10 +1,18 @@
 import * as React from 'react'
-import alumniList from './alumni'
+import alumniList from './alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
 import styles from './hire.scss'
+import { withStyles } from '@material-ui/core/styles'
+import id from 'uuid/v4'
+
+const style = () => ({
+  button: {
+    marginRight: '0.5rem'
+  }
+})
 
 class Hire extends React.Component {
   state = {
@@ -59,23 +67,24 @@ class Hire extends React.Component {
       statusList,
       selectedStatus
     } = this.state
+    const { classes } = this.props
     return (
       <div>
         <style jsx>{styles}</style>
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
-          {skills.map((skill, index) => {
+          {skills.map(skill => {
             return (
               <Button
-                key={index + 1}
+                key={id()}
                 onClick={() => this.filterHandler(skill)}
                 variant={
                   selectedSkills.includes(skill) ? 'contained' : 'outlined'
                 }
                 size='small'
                 color='primary'
-                style={{ marginRight: '0.5rem' }}
+                className={classes.button}
               >
                 {skill}
               </Button>
@@ -83,17 +92,17 @@ class Hire extends React.Component {
           })}
 
           {/*FILTER BY STATUS ---------------- */}
-          {statusList.map((status, index) => {
+          {statusList.map(status => {
             return (
               <Button
-                key={index + 1}
+                key={id()}
                 onClick={() => this.filterHandler(status)}
                 variant={
                   selectedStatus.includes(status) ? 'contained' : 'outlined'
                 }
                 size='small'
                 color='primary'
-                style={{ marginRight: '0.5rem' }}
+                className={classes.button}
               >
                 {status}
               </Button>
@@ -115,4 +124,4 @@ class Hire extends React.Component {
   }
 }
 
-export default Hire
+export default withStyles(style)(Hire)
