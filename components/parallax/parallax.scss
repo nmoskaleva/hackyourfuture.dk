@@ -11,12 +11,12 @@
   right: 0;
   top: 0;
   z-index: -1;
-}
 
-.logo {
-  max-height: 50vh;
-  max-width: 50vh;
-  display: block;
-  margin: auto;
-  opacity: 0.85;
+  .logo {
+    max-height: 50vh;
+    max-width: 50vh;
+    display: block;
+    margin: auto;
+    opacity: 0.85;
+  }
 }

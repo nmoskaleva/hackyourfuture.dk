@@ -1,3 +1,11 @@
+.team-members {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .members {
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +17,4 @@
 .center {
   text-align: center;
   margin: 4rem;
-}
-
-.filterMenu {
-  padding: 0.3rem 5rem;
-  font-size: 1rem;
-  margin-left: 1rem;
-  border-radius: 3px;
 }

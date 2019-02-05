@@ -4,16 +4,17 @@ import ProgressBar from '../progress-bar/ProgressBar'
 import NavBar from '../nav-bar/NavBar'
 import React from 'react'
 
-export default ({ children }) => {
+export default ({children}) => {
   return (
     <div>
       {/*language=CSS*/}
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
+
         body {
           font-size: 1.2rem;
           line-height: 1.6rem;
-          // font-family: 'Source Sans Pro', sans-serif;
+        / / font-family: 'Source Sans Pro', sans-serif;
           font-family: 'Work Sans', sans-serif;
           margin: 0;
           color: #111;
@@ -68,18 +69,10 @@ export default ({ children }) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
-
-        .team-members {
-          display: flex;
-          max-width: 1300px;
-          margin: 0 auto;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
       `}</style>
       <Head>
         <title>HackYourFuture Copenhagen</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link
           rel='shortcut icon'
           type='image/x-icon'
@@ -91,11 +84,11 @@ export default ({ children }) => {
         href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'
         rel='stylesheet'
       />
-      <link href='/static/social-icons-font/flaticon.css' rel='stylesheet' />
-      <ProgressBar />
-      <NavBar />
+      <link href='/static/social-icons-font/flaticon.css' rel='stylesheet'/>
+      <ProgressBar/>
+      <NavBar/>
       {children}
-      <Footer />
+      <Footer/>
       <script
         dangerouslySetInnerHTML={{
           __html: `

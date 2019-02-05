@@ -1,15 +1,13 @@
 import members from './team.json'
 import ItemCard from './item-card/item-card'
-
-
+import styles from './team.scss'
 
 export default () => {
-  // let [c1, c2, c3, ...mentors] = members
-  // const coreTeam = [c1, c2, c3]
-  const mentors = members
-  const coreTeam = members
+  const mentors = members.filter(member => member.role === 'mentor')
+  const coreTeam = members.filter(member => member.role !== 'mentor')
   return (
     <div>
+      <style jsx>{styles}</style>
       {/*Core-team*/}
       <h2>Core team</h2>
       <div className='team-members core-team'>

@@ -36,7 +36,7 @@ class Hire extends React.Component {
       // get distinct unique items from an array
       uniqueSkills: [...new Set(skills)],
       uniqueStatuses: [...new Set(statuses)]
-    });
+    })
   }
 
   filterHandler = skill => {
