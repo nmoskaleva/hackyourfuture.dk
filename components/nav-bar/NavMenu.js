@@ -44,7 +44,7 @@ class NavMenu extends React.Component {
           {menu.map(item => (
             <MenuItem
               style={{ display: 'block' }}
-              key={`menue-item-${item.id}`}
+              key={`menu-item-${item.id}`}
               onClick={this.handleClose}
             >
               <Link href={item.url}>

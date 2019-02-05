@@ -1,5 +1,16 @@
-node_modules
-.next
-.env
-.idea
-package-lock.json
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+
+# Next.js
+/.next

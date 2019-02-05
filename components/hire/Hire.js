@@ -1,10 +1,10 @@
 import * as React from 'react'
 import alumniList from './alumni'
-import ItemCard from '../team/item-card'
-import Content from '../layouts/content'
-import './hire.scss'
+import ItemCard from '../team/item-card/item-card'
+import Content from '../layouts/content/content'
 import SimpleExpansionPanel from './expansionPanel'
 import Button from '@material-ui/core/Button'
+import styles from './hire.scss'
 
 class Hire extends React.Component {
   state = {
@@ -44,8 +44,8 @@ class Hire extends React.Component {
             state.selectedSkills.length === 0
               ? alumniList
               : alumniList.filter(alumni =>
-                state.selectedSkills.every(s => alumni.skills.includes(s))
-              )
+                  state.selectedSkills.every(s => alumni.skills.includes(s))
+                )
         }))
       }
     )
@@ -53,14 +53,15 @@ class Hire extends React.Component {
 
   render = () => {
     const {
-            alumniList,
-            skills,
-            selectedSkills,
-            statusList,
-            selectedStatus
-          } = this.state
+      alumniList,
+      skills,
+      selectedSkills,
+      statusList,
+      selectedStatus
+    } = this.state
     return (
       <div>
+        <style jsx>{styles}</style>
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}

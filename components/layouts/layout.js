@@ -1,20 +1,21 @@
 import Head from 'next/head'
-import Footer from '../footer'
-import ProgressBar from '../ProgressBar'
-import NavBar from '../nav-bar/Index'
+import Footer from '../footer/footer'
+import ProgressBar from '../progress-bar/ProgressBar'
+import NavBar from '../nav-bar/NavBar'
+import React from 'react'
+
 export default ({ children }) => {
   return (
     <div>
       {/*language=CSS*/}
-      <style global jsx>{`
+      <style jsx global>{`
         @import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans');
-
         body {
           font-size: 1.2rem;
           line-height: 1.6rem;
           // font-family: 'Source Sans Pro', sans-serif;
           font-family: 'Work Sans', sans-serif;
-          margin: 0px;
+          margin: 0;
           color: #111;
           background-color: #fff !important;
         }
@@ -71,6 +72,7 @@ export default ({ children }) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
+
         .team-members {
           display: flex;
           max-width: 1300px;
@@ -88,7 +90,6 @@ export default ({ children }) => {
           href='/static/favicon.ico'
         />
       </Head>
-      {/*language=SCSS*/}
 
       <link
         href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'
