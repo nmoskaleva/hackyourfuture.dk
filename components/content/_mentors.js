@@ -1,4 +1,4 @@
-const title = `Learn - HackYourFuture Copenhagen`
+const title = `Volunteer - HackYourFuture Copenhagen`
 const content = `
 ## Mentors
 

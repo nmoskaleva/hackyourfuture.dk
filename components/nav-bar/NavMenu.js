@@ -64,9 +64,7 @@ class NavMenu extends React.Component {
               onClick={this.handleClose}
             >
               {/*sub menus*/}
-              <Link prefetch href={item.url}>
-                <a className={classes.titleLink}>{item.title}</a>
-              </Link>
+                <a href={item.url} className={classes.titleLink}>{item.title}</a>
             </MenuItem>
           ))}
         </Menu>
