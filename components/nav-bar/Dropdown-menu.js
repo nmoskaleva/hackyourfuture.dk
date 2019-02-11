@@ -20,7 +20,7 @@ const styles = () => ({
   }
 })
 
-class NavMenu extends React.Component {
+class DropdownMenu extends React.Component {
   state = {
     anchorEl: null
   }
@@ -71,4 +71,4 @@ class NavMenu extends React.Component {
   }
 }
 
-export default withStyles(styles)(NavMenu)
+export default withStyles(styles)(DropdownMenu)

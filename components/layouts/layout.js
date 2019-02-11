@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Footer from '../footer/footer'
 import ProgressBar from '../progress-bar/ProgressBar'
-import NavBar from '../nav-bar/NavBar'
+import NavBar from '../nav-bar/Navbar'
 import React from 'react'
 
 export default ({children}) => {
