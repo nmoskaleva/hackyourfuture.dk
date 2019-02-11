@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
 import { withStyles } from '@material-ui/core/styles'
+import uuid from 'uuid/v4'
 
 const styles = () => ({
   menu: {
@@ -52,14 +53,14 @@ class NavMenu extends React.Component {
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
-          onMouseEnter={() => console.log('enter')}
+          // onMouseEnter={() => console.log('enter')}
           onMouseLeave={this.handleClose}
           className={classes.menu}
         >
           {menu.map(item => (
             <MenuItem
               className={classes.menuItem}
-              key={`menu-item-${item.id}`}
+              key={uuid()}
               onClick={this.handleClose}
             >
               <Link href={item.url}>
