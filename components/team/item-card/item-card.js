@@ -6,7 +6,7 @@ const ItemCard = ({ item, children }) => {
   return (
     <Fragment>
       <style jsx>{styles}</style>
-      <div className={`${role.replace(/ /g, '_')} team-member-card`}>
+      <div className='team-member-card'>
         <div className='member-image'>
           {photo ? (
             <div className='member-shine zoom-in-1'>

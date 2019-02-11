@@ -89,22 +89,34 @@ At most of `pages` it like `container` in bootstrap framework. All boxes contain
 
 > - The navbar should show the elements on hover.
 > - What is the difference between the navMenu and the nav-bar?
+navMenu is the drop-down list. For example `about` is an item at nav-bar, but `[about, contact, partners]` are navMenu
 > - Consistent file naming. expansionPanel -> expansion-panel
+✅ Done
 > - All outcommented code should be removed
+✅ Done
 > - For the team.json there should be a key that defines is the members are core or not. Relying on people remembering the first 3 is core is difficult. And what if there comes more core people.
+✅ Done, filtered by `role`
 > - Item-card.js i think you can destructure in directly in the first destructure. But maybe that will be a little hard to read?
+we are using many of them several times
 > - Line 184 you have the role in the classname, why?
+I've been thinking about adding custom styling depending on role, anyway **deleted***
 > - zoomIn1 -> zoom-in-1
+✅ Done
 > - Line 210 you have to explain me
+⚠ which file
 > - mewsletter, where is that used?
+it is not used currently and comming from Kven repo. you can see it at https://hyf-dk.herokuapp.com/newsletter do you want to keep it or delete
 > - When opening a link in the navbar it hides the scroll or something weird. It results in the page going slightly to the left. Could be nice to fix.
+⚠ mmm, this is the default material ui behaviour
 > - What is the progressbar for?
+the read progress bar that appears upper navbar. Christopher asket to add it
 > - Pages dashboard?
 - Login?
 > - Newsletter?
 > - Privacy?
 > - We should figure out what to do with these pages, cause they are reachable just not with links
+Kevin added it. It looks like he was preparing to build a dashboard https://hyf-dk.herokuapp.com/dashboard
+do you prefer to remove all of them
 
-اوليفر
 
 check meta tags for social media (twitter, facebook)
