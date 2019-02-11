@@ -47,7 +47,7 @@ const ItemCard = ({ item, children }) => {
             </IconButton>
           )}
           {email && (
-            <IconButton color='inherit' href={email}>
+            <IconButton color='inherit' href={`mailto:${email}`}>
               <Email />
             </IconButton>
           )}

@@ -73,6 +73,27 @@ export default ({ children }) => {
       <Head>
         <title>HackYourFuture Copenhagen</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+        <meta
+          name='description'
+          content='HackYourFuture Refugee Coding School In Copenhagen'
+        />
+        <meta
+          name='keywords'
+          content='HackYourFuture, copenhagen, denmark, coding, school, dk, programming'
+        />
+        <meta
+          name='og:title'
+          content='HackYourFuture Refugee Coding School In Copenhagen'
+        />
+        <meta
+          name='og:description'
+          content='HackYourFuture Refugee Coding School In Copenhagen'
+        />
+        <meta name='og:image' content='/static/logo_black.svg' />
+        <meta name='og:url' content='http://hackyourfuture.dk/' />
+        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:site' content='@hyf' />
         <link
           rel='shortcut icon'
           type='image/x-icon'
