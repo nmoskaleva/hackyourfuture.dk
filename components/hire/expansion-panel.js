@@ -15,7 +15,8 @@ const styles = theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular
-  }
+  },
+  details: { flexDirection: 'column' }
 })
 
 function SimpleExpansionPanel({ classes, item }) {
@@ -26,7 +27,7 @@ function SimpleExpansionPanel({ classes, item }) {
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}>More...</Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        <ExpansionPanelDetails class={classes.details}>
           <h3>Summary:</h3>
           <Typography>{summary}</Typography>
           <h3>Skills:</h3>

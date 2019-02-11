@@ -3,7 +3,7 @@ import marked from 'marked'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
 import Contactform from '../components/contact-form/ContactForm'
-import {MentorsTeam} from '../components/team/team'
+import { MentorsTeam } from '../components/team/team'
 import { content, title } from '../components/content/_mentors'
 
 export default () => (
@@ -18,8 +18,7 @@ export default () => (
       <h2 id='becoming-mentor'>Would you like to help?</h2>
       <Contactform />
     </Content>
-    <h2 id='mentors' style={{ textAlign: 'center' }}>
-    </h2>
+    <h2 id='mentors' style={{ textAlign: 'center' }} />
     <MentorsTeam />
   </Layout>
 )

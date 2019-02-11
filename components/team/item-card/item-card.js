@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import styles from './item-card.scss'
+import IconButton from '@material-ui/core/IconButton'
+import { GithubCircle, Linkedin, Email, Note, Earth } from 'mdi-material-ui'
 
 const ItemCard = ({ item, children }) => {
   const { photo, github, role, name, linkedin, email, onlineCV, pdfCV } = item
@@ -33,33 +35,33 @@ const ItemCard = ({ item, children }) => {
         </div>
         <h3 className='member-name'>{name}</h3>
         {role && <p className='member-role'>{role}</p>}
-        <div className='member-social-icons'>
+        <div>
           {github && (
-            <a href={github}>
-              <i className='flaticon-github-sign' />
-            </a>
+            <IconButton color='inherit' href={github}>
+              <GithubCircle />
+            </IconButton>
           )}
           {linkedin && (
-            <a href={linkedin}>
-              <i className='flaticon-linkedin-logo' />
-            </a>
+            <IconButton color='inherit' href={linkedin}>
+              <Linkedin />
+            </IconButton>
           )}
           {email && (
-            <a href={email}>
-              <i className='flaticon-opened-email-envelope' />
-            </a>
+            <IconButton color='inherit' href={email}>
+              <Email />
+            </IconButton>
           )}
 
           {onlineCV && (
-            <a href={onlineCV}>
-              <i className='flaticon-curriculum-vitae' />
-            </a>
+            <IconButton color='inherit' href={onlineCV}>
+              <Earth />
+            </IconButton>
           )}
 
           {pdfCV && (
-            <a href={pdfCV}>
-              <i className='flaticon-google-drive-pdf-file' />
-            </a>
+            <IconButton color='inherit' href={pdfCV}>
+              <Note />
+            </IconButton>
           )}
         </div>
         {children}

@@ -5,24 +5,24 @@ import styles from './footer.scss'
 export default () => (
   <footer>
     <style jsx>{styles}</style>
-    <Sponsors/>
-    <div className="wrapper">
-      <div className="social-icons">
-        <SocialIcons/>
+    <Sponsors />
+    <div className='wrapper'>
+      <div className='social-icons'>
+        <SocialIcons />
       </div>
-      <div className="info">
-        <div className="col-lg-6">
-          Foreningen HackYourFuture <br/>
-          Kongens Enghave <br/>
-          2450 København <br/>
+      <div className='info'>
+        <div className='col-lg-6'>
+          Foreningen HackYourFuture <br />
+          Kongens Enghave <br />
+          2450 København <br />
         </div>
-        <div className="col-lg-6 cvr">
+        <div className='col-lg-6 cvr'>
           CVR:
-          <br/>
+          <br />
           38 53 31 93
         </div>
       </div>
-      <div className="copyright">
+      <div className='copyright'>
         &copy; Copyright HackYourFuture Copenhagen 2018
       </div>
     </div>

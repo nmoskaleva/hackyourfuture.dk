@@ -74,25 +74,6 @@
     }
   }
 
-  .member-social-icons {
-    margin-top: 1rem;
-
-    a {
-      margin: 0.5rem;
-      color: #fff;
-      text-decoration: none;
-
-      &:hover {
-        opacity: 0.9;
-        transition: all 0.5s;
-      }
-
-      i {
-        background-repeat: no-repeat;
-      }
-    }
-  }
-
   @keyframes shine {
     100% {
       left: 125%;

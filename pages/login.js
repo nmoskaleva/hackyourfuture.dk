@@ -78,9 +78,9 @@ export default class Login extends React.Component {
           <label>
             <div>Email:</div>
             <input
-              className="email"
-              type="email"
-              name="email"
+              className='email'
+              type='email'
+              name='email'
               onChange={event => {
                 this.setState({ email: event.target.value })
               }}
@@ -96,7 +96,7 @@ export default class Login extends React.Component {
               Login
             </button>
           </div>
-          <script src="https://sdk.accountkit.com/en_US/sdk.js" />
+          <script src='https://sdk.accountkit.com/en_US/sdk.js' />
           <script
             dangerouslySetInnerHTML={{
               __html: `

@@ -20,7 +20,7 @@ export default () => (
       <title>{title}</title>
     </Head>
 
-    <Content id="faq">
+    <Content id='faq'>
       <h2>Frequently Asked Questions</h2>
       <div
         dangerouslySetInnerHTML={{
@@ -35,7 +35,7 @@ export default () => (
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </Content>
 
-    <Content id="contact">
+    <Content id='contact'>
       <h2>{contact_title}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(contact_content) }} />
       <Contactform email={'cph@hackyourfuture.net'} />
@@ -45,7 +45,7 @@ export default () => (
     </Content>
 
     <Content>
-      <h2 id="partners">{partners_title}</h2>
+      <h2 id='partners'>{partners_title}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
     </Content>
   </Layout>

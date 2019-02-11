@@ -4,7 +4,10 @@ import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
 import Apply from '../components/apply/Apply'
 import { content, title } from '../components/content/_apply'
-import {content as content_learn, title as title_learn} from '../components/content/_learn'
+import {
+  content as content_learn,
+  title as title_learn
+} from '../components/content/_learn'
 
 export default () => (
   <Layout>

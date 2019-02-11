@@ -3,8 +3,7 @@ import marked from 'marked'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
 import Map from '../components/map'
-import {content, title} from '../components/content/_privacy'
-
+import { content, title } from '../components/content/_privacy'
 
 export default () => {
   return (
@@ -13,7 +12,7 @@ export default () => {
         <title>{title}</title>
       </Head>
       <Content>
-        <div dangerouslySetInnerHTML={{__html: marked(content)}} />
+        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
         <Map />
       </Content>
     </Layout>
