@@ -78,7 +78,7 @@ class Index extends React.Component {
                 <img
                   src='/static/logo_white.svg'
                   className={classes.img}
-                  alt=''
+                  alt='HackYourFuture Copenhagen'
                 />
               </Link>
             </Typography>

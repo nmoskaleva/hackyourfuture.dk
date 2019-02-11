@@ -1,11 +1,11 @@
-import Sponsors from '../sponsors/sponsors'
+import Partners from '../partners/partners'
 import SocialIcons from './social-icons/social-icon'
 import styles from './footer.scss'
 
 export default () => (
   <footer>
     <style jsx>{styles}</style>
-    <Sponsors />
+    <Partners />
     <div className='wrapper'>
       <div className='social-icons'>
         <SocialIcons />

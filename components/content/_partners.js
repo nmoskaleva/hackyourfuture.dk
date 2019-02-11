@@ -1,7 +1,7 @@
 const title = `Partners and Friends`
 let content = `
 
-## Sponsors
+## Partners
 Foreningen Roskilde Festival, Tuborgfondet, Københavns Kommune, Zibra Wireless
 
 ## Partners and Friends
