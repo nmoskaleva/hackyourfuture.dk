@@ -9,7 +9,7 @@ export default () => (
     <div className='partners'>
       {partners.map(({ id, logo, url, title }) => (
         <div className='partner' key={id}>
-          <a target='_blank' href={url}>
+          <a rel='noopener' target='_blank' href={url}>
             <img alt={title} src={`/static/partners/${logo}`} />
           </a>
         </div>
