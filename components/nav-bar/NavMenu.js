@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import ExpandMore from '@material-ui/icons/ExpandMore'
-// import Link from 'next/link'
+import Link from 'next/link'
 import { withStyles } from '@material-ui/core/styles'
 import uuid from 'uuid/v4'
 
@@ -64,7 +64,9 @@ class NavMenu extends React.Component {
               onClick={this.handleClose}
             >
               {/*sub menus*/}
-                <a href={item.url} className={classes.titleLink}>{item.title}</a>
+              <Link prefetch href={item.url}>
+                <a className={classes.titleLink}>{item.title}</a>
+              </Link>
             </MenuItem>
           ))}
         </Menu>
