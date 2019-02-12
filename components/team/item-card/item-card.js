@@ -1,12 +1,13 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styles from './item-card.scss'
 import IconButton from '@material-ui/core/IconButton'
 import { GithubCircle, Linkedin, Email, Note, Earth } from 'mdi-material-ui'
+import Slide from 'react-reveal/Slide'
 
 const ItemCard = ({ item, children }) => {
   const { photo, github, role, name, linkedin, email, onlineCV, pdfCV } = item
   return (
-    <Fragment>
+    <Slide bottom>
       <style jsx>{styles}</style>
       <div className='team-member-card'>
         <div className='member-image'>
@@ -66,7 +67,7 @@ const ItemCard = ({ item, children }) => {
         </div>
         {children}
       </div>
-    </Fragment>
+    </Slide>
   )
 }
 

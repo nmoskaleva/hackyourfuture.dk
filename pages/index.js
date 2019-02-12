@@ -13,15 +13,16 @@ export default () => {
       <Head>
         <title>{title}</title>
       </Head>
-
       <Parallax />
-
       <Content>
+        <img
+          style={{ height: '17rem', float: 'right', marginTop: '2rem' }}
+          src='/static/intro.svg'
+          alt='intro-hyf'
+        />
         <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
       </Content>
-
       <Team />
-
       <Content>
         <FindUs />
       </Content>

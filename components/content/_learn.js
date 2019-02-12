@@ -5,7 +5,7 @@ We are super engaged in learning and especially about web development!
 This is the resources we use and that we can recommend:
 
 ### HackYourFuture Github organisation
-https://github.com/hackYourFuture-CPH
+<span class="hyf-title">https://github.com/hackYourFuture-CPH</span>
 
 This contains all the courses we teach the students!
 

@@ -6,9 +6,10 @@
   line-height: 2.2rem;
   background-color: #efefef;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-  0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    0 2px 1px -1px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  overflow: hidden;
+  //overflow: hidden;
+  position: relative;
 
   @media (max-width: 768px) {
     padding: 1rem 5vw;
@@ -30,5 +31,23 @@
 
   &:nth-child(even) {
     background-color: #fbfbfb;
+  }
+
+  .shape-up {
+    position: absolute;
+    right: -11.7rem;
+    top: -7.5rem;
+    transform: scale(0.3);
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  .shape-down {
+    position: absolute;
+    bottom: -7rem;
+    z-index: -1;
+    left: -12rem;
+    transform: scale(0.8);
+    opacity: 0.1;
   }
 }

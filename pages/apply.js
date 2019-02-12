@@ -27,6 +27,11 @@ export default () => (
 
     <Content id='learn'>
       <h2>{title_learn}</h2>
+      <img
+        style={{ width: '25vw', float: 'right', marginTop: '2rem' }}
+        src='/static/programmer.svg'
+        alt='intro-hyf'
+      />
       <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
     </Content>
   </Layout>

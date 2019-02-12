@@ -1,4 +1,5 @@
-import styles from  './parallax.scss'
+import styles from './parallax.scss'
+import Flip from 'react-reveal/Flip'
 
 const Parallax = () => (
   <div className='container'>
@@ -6,7 +7,9 @@ const Parallax = () => (
 
     {/*<img className="logo" src="/static/HYF_LOGO.png"/>*/}
     <div className='logo'>
-      <img src='/static/logo_white.svg' alt='HackYourFuture Copenhagen' />
+      <Flip top>
+        <img src='/static/logo_white.svg' alt='HackYourFuture Copenhagen' />
+      </Flip>
     </div>
   </div>
 )

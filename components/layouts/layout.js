@@ -69,6 +69,15 @@ export default ({ children }) => {
           font-size: 18px;
           line-height: 1.8rem;
         }
+
+        .hyf-title {
+          border-bottom: 1px solid #fdf4b4;
+          box-shadow: inset 0 -6px 0 #fdf4b4;
+        }
+
+        .hyf-title > a {
+          text-decoration: none;
+        }
       `}</style>
       <Head>
         <title>HackYourFuture Copenhagen</title>
