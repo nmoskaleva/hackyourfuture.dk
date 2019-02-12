@@ -1,0 +1,14 @@
+.alumni-details {
+  position: absolute;
+  width: 50vw;
+  background-color: #fff;
+  padding: 1rem;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .hyf-title {
+    display: inline-block;
+  }
+}

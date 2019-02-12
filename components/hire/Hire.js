@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button'
 import styles from './hire.scss'
 import { withStyles } from '@material-ui/core/styles'
 import id from 'uuid/v4'
-
+import AlumniDetails from './alumni-details'
 const style = () => ({
   button: {
     marginRight: '0.5rem'
@@ -115,7 +115,7 @@ class Hire extends React.Component {
             .sort((a, b) => a.name.localeCompare(b.name))
             .map(member => (
               <ItemCard item={member} key={member.id}>
-                <SimpleExpansionPanel item={member} />
+                <AlumniDetails alumni={member} />
               </ItemCard>
             ))}
         </div>
