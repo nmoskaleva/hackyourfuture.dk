@@ -1,5 +1,5 @@
 import LinearProgress from '@material-ui/core/LinearProgress'
-import styles from './ProgressBar.scss'
+import styles from './Progress-bar.scss'
 import * as React from 'react'
 
 class ProgressBar extends React.Component {

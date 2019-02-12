@@ -20,7 +20,6 @@ footer {
   }
 
   .copyright {
-    background-color: rgba(0, 0, 0, 0.25);
     padding: 1rem;
   }
 
@@ -38,6 +37,9 @@ footer {
   .col-lg-6 {
     flex: 1;
     margin: auto;
+    text-align: left;
+    justify-content: center;
+    display: flex;
   }
 
   .cvr {

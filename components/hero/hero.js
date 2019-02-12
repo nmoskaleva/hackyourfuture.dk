@@ -1,7 +1,7 @@
-import styles from './parallax.scss'
+import styles from './hero.scss'
 import Flip from 'react-reveal/Flip'
 
-const Parallax = () => (
+const Hero = () => (
   <div className='container'>
     <style jsx>{styles}</style>
 
@@ -14,4 +14,4 @@ const Parallax = () => (
   </div>
 )
 
-export default Parallax
+export default Hero

@@ -5,7 +5,6 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
-import NavMenu from './Dropdown-menu'
 import Link from 'next/link'
 import links from './links'
 import Button from '@material-ui/core/Button'
@@ -86,12 +85,8 @@ class Index extends React.Component {
             {/*Right*/}
             <div className={classes.showOnLargeScreen}>
               {links.map(link => {
-                const { id, title, url, dropdown } = link
-                return link.dropdown !== undefined ? (
-                  <NavMenu key={id} menu={[{ id, title, url }, ...dropdown]}>
-                    {title}
-                  </NavMenu>
-                ) : (
+                const { id, title, url } = link
+                return (
                   <Link key={id} href={url}>
                     <Button className={classes.button}>{title}</Button>
                   </Link>

@@ -8,10 +8,7 @@ import {
   content as contact_content,
   title as contact_title
 } from '../components/content/_contact'
-import {
-  content as partners_content,
-  title as partners_title
-} from '../components/content/_partners'
+import { content as partners_content } from '../components/content/_partners'
 import Contactform from '../components/contact-form/ContactForm'
 
 export default () => (
@@ -20,16 +17,18 @@ export default () => (
       <title>{title}</title>
     </Head>
 
-    <Content id='faq'>
-      <h2>Frequently Asked Questions</h2>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: marked(
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque, explicabo hic id, laborum maiores nisi quae quia quis reprehenderit unde voluptas. Animi aspernatur at in modi natus quidem quis.'
-          )
-        }}
-      />
-    </Content>
+    {/*
+       <Content id='faq'>
+       <h2>Frequently Asked Questions</h2>
+       <div
+       dangerouslySetInnerHTML={{
+       __html: marked(
+       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque, explicabo hic id, laborum maiores nisi quae quia quis reprehenderit unde voluptas. Animi aspernatur at in modi natus quidem quis.'
+       )
+       }}
+       />
+       </Content>
+      */}
 
     <Content>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
@@ -44,8 +43,7 @@ export default () => (
       </div>
     </Content>
 
-    <Content>
-      <h2 id='partners'>{partners_title}</h2>
+    <Content id='partners'>
       <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
     </Content>
   </Layout>

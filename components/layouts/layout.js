@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Footer from '../footer/footer'
-import ProgressBar from '../progress-bar/ProgressBar'
+import ProgressBar from '../progress-bar/Progress-bar'
 import NavBar from '../nav-bar/Navbar'
 import React from 'react'
 

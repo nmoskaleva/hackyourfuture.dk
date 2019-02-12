@@ -18,7 +18,6 @@ export default () => (
       <h2 id='becoming-mentor'>Would you like to help?</h2>
       <Contactform />
     </Content>
-    <h2 id='mentors' style={{ textAlign: 'center' }} />
-    <MentorsTeam />
+    <MentorsTeam id='mentors' />
   </Layout>
 )

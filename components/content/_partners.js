@@ -10,11 +10,6 @@ Foreningen Nydansker, Trampoline House, Student Refugees, YES! CPH, R.E.D., DFUN
 ## Featured in
 CPHFTW, Politiken, MOOT, Opbyg Samfundet
 
-## Supported
-- Slack
-- GitHub
-- Facebook
-- Google
 
 `
 export { title, content }

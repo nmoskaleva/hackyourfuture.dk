@@ -32,22 +32,4 @@
   &:nth-child(even) {
     background-color: #fbfbfb;
   }
-
-  .shape-up {
-    position: absolute;
-    right: -11.7rem;
-    top: -7.5rem;
-    transform: scale(0.3);
-    z-index: -1;
-    opacity: 0.1;
-  }
-
-  .shape-down {
-    position: absolute;
-    bottom: -7rem;
-    z-index: -1;
-    left: -12rem;
-    transform: scale(0.8);
-    opacity: 0.1;
-  }
 }

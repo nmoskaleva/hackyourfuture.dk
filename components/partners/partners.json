@@ -13,14 +13,14 @@
   },
   {
     "id": 3,
-    "logo": "rsv.jpg",
-    "title": "donations",
-    "url": "#"
-  },
-  {
-    "id": 4,
     "logo": "trygfonden.jpg",
     "title": "Tryg Fonden",
     "url": "https://www.trygfonden.dk/"
+  },
+  {
+    "id": 4,
+    "logo": "rsv.jpg",
+    "title": "donations",
+    "url": "#"
   }
 ]
