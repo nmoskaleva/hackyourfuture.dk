@@ -5,7 +5,7 @@
     "role": "Director",
     "email": "christopher@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/christopher-kl%C3%BCter-26794643/",
-    "photo": "https://imgur.com/Lj29FDP.jpg"
+    "photo": "/static/team/christopher.jpg"
   },
   {
     "id": 2,
@@ -13,29 +13,27 @@
     "role": "Public Affairs",
     "email": "marie@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/marie-hoff/",
-    "photo": "https://imgur.com/sK7RHV4.jpg"
+    "photo": "/static/team/marie.jpg"
   },
   {
     "id": 3,
     "name": "Benjamin Dalsgaard Hughes",
     "role": "Educational director",
-    "photo": "https://i.imgur.com/HC4l4na.jpg",
-    "linkedin": "",
-    "github": ""
+    "photo": "/static/team/benjamin.jpg",
+    "linkedin": "https://www.linkedin.com/in/benjamindalshughes/",
+    "github": "https://github.com/benna100/"
   },
   {
     "id": 4,
     "name": "Alicia Gonzales",
     "role": "mentor",
-    "photo": "https://i.imgur.com/CpK28fb.png",
-    "linkedin": "",
-    "github": ""
+    "photo": "/static/team/alicia.jpg"
   },
   {
     "id": 5,
     "name": "Zaki Wasik",
     "role": "mentor",
-    "photo": "https://i.imgur.com/dMhbTTP.jpg",
+    "photo": "/static/team/zaki.jpg",
     "linkedin": "https://www.linkedin.com/in/zakiwasik/",
     "github": "https://github.com/zkwsk"
   },
@@ -43,15 +41,13 @@
     "id": 6,
     "name": "Rohit Sharma",
     "role": "mentor",
-    "photo": "https://i.imgur.com/m8L1xEn.jpg",
-    "linkedin": "",
-    "github": ""
+    "photo": "/static/team/rohit.jpg"
   },
   {
     "id": 7,
     "name": "Rasmus Jones",
     "role": "mentor",
-    "photo": "https://www.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHBzOi8vd3d3LmR0dWJhc2VuLmR0dS5kay9zaG93aW1hZ2UuYXNweD9pZD03OTUxNl9ffHxfXzEwM19ffHxfXzE0MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d",
+    "photo": "/static/team/rasmus.jpg",
     "linkedin": "https://www.linkedin.com/in/rasmus-jones-b4552480/",
     "github": "https://github.com/Rassibassi"
   },
@@ -59,7 +55,7 @@
     "id": 8,
     "name": "Pachito Marco Calabrese",
     "role": "mentor",
-    "photo": "https://avatars1.githubusercontent.com/u/1509241?s=460&v=4",
+    "photo": "/static/team/marco.jpg",
     "linkedin": "https://www.linkedin.com/in/pmcalabrese/",
     "github": "https://github.com/pmcalabrese/"
   },
@@ -67,7 +63,7 @@
     "id": 9,
     "name": "Martin Clemmensen",
     "role": "mentor",
-    "photo": "https://i.imgur.com/8hJo6Sp.jpg",
+    "photo": "/static/team/martin.jpg",
     "linkedin": "https://www.linkedin.com/in/martinclemmensen/",
     "github": "https://github.com/mclemme"
   },
@@ -75,7 +71,7 @@
     "id": 10,
     "name": "Marta Matos",
     "role": "mentor",
-    "photo": "https://i.imgur.com/rq6WNi2.jpg",
+    "photo": "/static/team/marta.jpg",
     "linkedin": "https://www.linkedin.com/in/marta-matos-829a7050/",
     "github": "https://github.com/martamatos"
   },
@@ -83,7 +79,7 @@
     "id": 11,
     "name": "Nynne Just Christofferson",
     "role": "mentor",
-    "photo": "https://i.imgur.com/EwbPr66.jpg",
+    "photo": "/static/team/nynne.jpg",
     "linkedin": "https://www.linkedin.com/in/nynne-just-christoffersen-0361a316/",
     "github": "https://github.com/nynnejc/"
   },
@@ -91,7 +87,7 @@
     "id": 12,
     "name": "Pankaj Kumar Singh",
     "role": "mentor",
-    "photo": "https://avatars0.githubusercontent.com/u/432980?s=460&v=4",
+    "photo": "/static/team/pankaj.jpg",
     "linkedin": "https://dk.linkedin.com/in/pankaj28843",
     "github": "https://github.com/pankaj28843/"
   },
@@ -99,7 +95,7 @@
     "id": 13,
     "name": "Svetlana Galkina",
     "role": "mentor",
-    "photo": "https://i.imgur.com/nTxq371.jpg",
+    "photo": "/static/team/svetlana.jpg",
     "linkedin": "",
     "github": ""
   },
@@ -107,7 +103,7 @@
     "id": 14,
     "name": "Jacob Andresen",
     "role": "mentor",
-    "photo": "https://avatars0.githubusercontent.com/u/15238?s=400&v=4",
+    "photo": "/static/team/jacob.jpg",
     "linkedin": "https://www.linkedin.com/in/jacobandresen/",
     "github": "https://github.com/jacobandresen"
   },
@@ -115,7 +111,7 @@
     "id": 15,
     "name": "Kevin Simper",
     "role": "mentor",
-    "photo": "https://i.imgur.com/quTEcgF.png",
+    "photo": "/static/team/kevin.jpg",
     "linkedin": "https://www.linkedin.com/in/kevinsimper/",
     "github": "https://github.com/kevinsimper"
   },
@@ -123,23 +119,20 @@
     "id": 16,
     "name": "Younes Meliani",
     "role": "mentor",
-    "photo": "https://i.imgur.com/raR78e5.png",
-    "linkedin": "",
-    "github": ""
+    "photo": "/static/team/younes.jpg"
   },
   {
     "id": 17,
     "name": "Fehime Seven",
     "role": "mentor",
-    "photo": "https://media.licdn.com/dms/image/C5103AQEi6YLxhUmEug/profile-displayphoto-shrink_800_800/0?e=1553126400&v=beta&t=CDMWzHWZBr4nxNciaN1JPRH5-vgfsNwywsXpWwpQwcg",
-    "linkedin": "https://www.linkedin.com/in/fehime-seven-4b2b5b56/?locale=en_US",
-    "github": ""
+    "photo": "/static/team/fehime.jpg",
+    "linkedin": "https://www.linkedin.com/in/fehime-seven-4b2b5b56/?locale=en_US"
   },
   {
     "id": 18,
     "name": "Moritz Beber",
     "role": "mentor",
-    "photo": "https://i.imgur.com/1x0oWRJ.jpg",
+    "photo": "/static/team/moritz.jpg",
     "linkedin": "https://www.linkedin.com/in/moritz-beber-b597a55a/",
     "github": "https://github.com/Midnighter"
   },
@@ -147,48 +140,94 @@
     "id": 19,
     "name": "Abed Sujan",
     "role": "mentor",
-    "photo": "https://secure.gravatar.com/avatar/678b0439a52359c99d1ed00b9a019ad7?size=400",
-    "linkedin": "https://www.linkedin.com/in/abedsujan/",
-    "github": ""
+    "photo": "/static/team/abed.jpg",
+    "linkedin": "https://www.linkedin.com/in/abedsujan/"
   },
   {
     "id": 20,
     "name": "Jakub Cioslowski",
     "role": "mentor",
-    "photo": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/jakub-cios%C5%82owski-78b33211b/",
     "github": "https://github.com/jakub-c/"
   },
   {
     "id": 21,
     "name": "Ahmed Magdy",
     "role": "mentor",
-    "photo": "https://avatars1.githubusercontent.com/u/14139855?s=400&u=b070e4c61cab4383c2868400aadb7bf5de3fa45d&v=4",
+    "photo": "/static/team/ahmed.jpg",
     "linkedin": "https://www.linkedin.com/in/a-magdy/",
     "github": "https://github.com/a-magdy"
-  },
-  {
-    "id": 22,
-    "name": "Petru Catana",
-    "role": "mentor",
-    "photo": "https://media.licdn.com/dms/image/C4D03AQEsK5ZbI2RS0A/profile-displayphoto-shrink_800_800/0?e=1550707200&v=beta&t=jfoeICLCmitXtEg3Im66bYluNNy9p-I3ldtVY98sTsw",
-    "linkedin": "https://www.linkedin.com/in/petru-catana-3151a268/",
-    "github": "https://github.com/pcatana"
   },
   {
     "id": 23,
     "name": "Mikael Wistoft-Ibsen",
     "role": "mentor",
-    "photo": "https://i.imgur.com/9kJRICy.png",
-    "linkedin": "",
+    "photo": "/static/team/mikael.jpg",
+    "linkedin": "https://www.linkedin.com/in/wistoft/",
     "github": "https://github.com/wistoft"
   },
   {
     "id": 24,
     "name": "Emil Bay",
     "role": "mentor",
-    "photo": "https://avatars2.githubusercontent.com/u/416524?s=460&v=4",
+    "photo": "/static/team/emil.jpg",
     "linkedin": "https://www.linkedin.com/in/emilbayes/",
     "github": "https://github.com/emilbayes"
+  },
+  {
+    "id": 25,
+    "name": "Flemming Andersen",
+    "role": "mentor",
+    "photo": "/static/team/flemming.jpg",
+    "linkedin": "https://www.linkedin.com/in/flemeur"
+  },
+  {
+    "id": 26,
+    "name": "Daniel Fernandes",
+    "role": "mentor",
+    "photo": "/static/team/daniel.jpg",
+    "linkedin": "https://www.linkedin.com/in/danielapfernandes/"
+  },
+  {
+    "id": 27,
+    "name": "Hugo Leote",
+    "role": "mentor",
+    "photo": "/static/team/hugo.jpg",
+    "linkedin": "https://www.linkedin.com/in/hugoleote/"
+  },
+  {
+    "id": 28,
+    "name": "Oliver Thomsen",
+    "role": "mentor",
+    "photo": "/static/team/oliver.jpg",
+    "linkedin": "https://www.linkedin.com/in/oliver-thomsen/"
+  },
+  {
+    "id": 29,
+    "name": "Kristoffer Tølbøll",
+    "role": "mentor",
+    "photo": "/static/team/kristoffer.jpg",
+    "linkedin": "https://www.linkedin.com/in/kristoffer-t%C3%B8lb%C3%B8ll-19b54210b/"
+  },
+  {
+    "id": 30,
+    "name": "Anders Ravn",
+    "role": "mentor",
+    "photo": "/static/team/anders.jpg",
+    "linkedin": "https://www.linkedin.com/in/anders-ravn-23b69026/"
+  },
+  {
+    "id": 31,
+    "name": "Shanawaz Islam",
+    "role": "mentor",
+    "photo": "/static/team/shanawaz.jpg",
+    "linkedin": "https://www.linkedin.com/in/shanawazislam/"
+  },
+  {
+    "id": 34,
+    "name": "Majd Darraj",
+    "role": "mentor",
+    "photo": "/static/team/majd.jpg",
+    "linkedin": "https://www.linkedin.com/in/majd-darraj/"
   }
 ]
