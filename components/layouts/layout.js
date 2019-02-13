@@ -19,6 +19,7 @@ export default ({ children }) => {
           margin: 0;
           color: #111;
           background-color: #fff !important;
+          overflow-x: hidden;
         }
 
         img {
