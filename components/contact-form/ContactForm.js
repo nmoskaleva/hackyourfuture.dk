@@ -28,14 +28,14 @@ const styles = theme => ({
     padding: '1rem',
     boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
   },
-  name:{
+  name: {
     marginRight: '1rem'
   }
 })
 
 class ContactForm extends Component {
   render() {
-    const { classes, email} = this.props;
+    const { classes, email } = this.props
     return (
       <form
         method='POST'
@@ -58,7 +58,7 @@ class ContactForm extends Component {
         <div className={classes.flex}>
           {/*Your name*/}
           <TextField
-            className={classNames(classes.textField,classes.name)}
+            className={classNames(classes.textField, classes.name)}
             label='Your name'
             type='text'
             name='name'

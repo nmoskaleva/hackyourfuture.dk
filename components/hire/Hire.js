@@ -2,12 +2,12 @@ import * as React from 'react'
 import alumniList from './alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
-import SimpleExpansionPanel from './expansion-panel'
 import Button from '@material-ui/core/Button'
 import styles from './hire.scss'
 import { withStyles } from '@material-ui/core/styles'
 import id from 'uuid/v4'
 import AlumniDetails from './alumni-details'
+
 const style = () => ({
   button: {
     marginRight: '0.5rem'
@@ -38,24 +38,42 @@ class Hire extends React.Component {
       uniqueStatuses: [...new Set(statuses)]
     })
   }
+  doFiltering = () => {
+    // by default: all alumni list
+    let newAlumniList = alumniList
+    // if any filter by skills button is clicked, then filter by skills
+    if (this.state.selectedSkills.length !== 0) {
+      newAlumniList = newAlumniList.filter(alumni =>
+        this.state.selectedSkills.every(s => alumni.skills.includes(s))
+      )
+    }
+    if (this.state.selectedStatus.length !== 0) {
+      newAlumniList = newAlumniList.filter(alumni =>
+        this.state.selectedStatus.every(s => alumni.status === s)
+      )
+    }
+    this.setState(state => ({ alumniList: newAlumniList }))
+  }
 
-  filterHandler = skill => {
+  filterSkillsHandler = skill => {
     this.setState(
       state => ({
         selectedSkills: state.selectedSkills.includes(skill)
           ? state.selectedSkills.filter(i => i !== skill)
           : [...state.selectedSkills, skill]
       }),
-      () => {
-        return this.setState(state => ({
-          alumniList:
-            state.selectedSkills.length === 0
-              ? alumniList
-              : alumniList.filter(alumni =>
-                  state.selectedSkills.every(s => alumni.skills.includes(s))
-                )
-        }))
-      }
+      () => this.doFiltering()
+    )
+  }
+
+  filterStatusesHandler = status => {
+    this.setState(
+      state => ({
+        selectedStatus: state.selectedStatus.includes(status)
+          ? state.selectedStatus.filter(i => i !== status)
+          : [...state.selectedStatus, status]
+      }),
+      () => this.doFiltering()
     )
   }
 
@@ -74,11 +92,15 @@ class Hire extends React.Component {
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
+          <p>
+            🔎 Here is a list of alumni students. you can filter them by one or
+            more skills by clicking on buttons bellow:
+          </p>
           {uniqueSkills.map(skill => {
             return (
               <Button
                 key={id()}
-                onClick={() => this.filterHandler(skill)}
+                onClick={() => this.filterSkillsHandler(skill)}
                 variant={
                   selectedSkills.includes(skill) ? 'contained' : 'outlined'
                 }
@@ -92,11 +114,15 @@ class Hire extends React.Component {
           })}
 
           {/*FILTER BY STATUS ---------------- */}
+          <p>
+            🏳️ You cal also filter alumni students by there status using the
+            filter buttons below:
+          </p>
           {uniqueStatuses.map(status => {
             return (
               <Button
                 key={id()}
-                onClick={() => this.filterHandler(status)}
+                onClick={() => this.filterStatusesHandler(status)}
                 variant={
                   selectedStatus.includes(status) ? 'contained' : 'outlined'
                 }

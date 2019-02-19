@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import Modal from '@material-ui/core/Modal'
 import Button from '@material-ui/core/Button'
 import styles from './alumni-details.scss'
-import MoreIcon from 'mdi-material-ui/DotsHorizontal'
+import { DotsHorizontal as MoreIcon, WindowClose } from 'mdi-material-ui'
 
 export default props => {
   const [open, setOpen] = useState(false)
-  const { name, summary, skills } = props.alumni
+  const { name, summary, skills, photo } = props.alumni
 
   return (
     <div>
@@ -26,18 +26,19 @@ export default props => {
         onClose={() => setOpen(false)}
       >
         <div className='alumni-details'>
+          <img
+            className='photo'
+            src={`/static/alumni/photos/${photo}`}
+            alt={name}
+          />
           <h3 className='hyf-title'>{name}</h3>
           <h3>Summary:</h3>
           <p>{summary}</p>
           <h3>Skills:</h3>
           <p> {skills.join(', ')}</p>
-          <Button
-            color='secondary'
-            variant='contained'
-            onClick={() => setOpen(false)}
-          >
-            x
-          </Button>
+          <span className='close' onClick={() => setOpen(false)}>
+            <WindowClose />
+          </span>
         </div>
       </Modal>
     </div>
