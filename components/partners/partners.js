@@ -5,7 +5,7 @@ import styles from './partners.scss'
 export default () => (
   <div className='footer-partners'>
     <style jsx>{styles}</style>
-    <h2 className='center'>Official partners & supporters</h2>
+    <h2 className='center'>Official partners</h2>
     <div className='partners'>
       {partners.map(({ id, logo, url, title }) => (
         <div className='partner' key={id}>

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Footer from '../footer/footer'
-import ProgressBar from '../progress-bar/Progress-bar'
 import NavBar from '../nav-bar/Navbar'
 import React from 'react'
 
@@ -44,6 +43,7 @@ export default ({ children }) => {
           color: #293a7d;
           font-family: 'Space Mono', monospace;
           letter-spacing: 0.2px;
+          margin: 0;
         }
 
         h1 {
@@ -69,15 +69,33 @@ export default ({ children }) => {
           font-family: 'Work Sans', sans-serif;
           font-size: 18px;
           line-height: 1.8rem;
+          margin: 0;
         }
 
         .hyf-title {
-          border-bottom: 1px solid #fdf4b4;
-          box-shadow: inset 0 -6px 0 #fdf4b4;
+          border-bottom: 2px solid #293a7d;
         }
 
         .hyf-title > a {
           text-decoration: none;
+        }
+
+        header {
+          background-color: white !important;
+          box-shadow: none !important;
+          font-weight: bold;
+        }
+
+        header button {
+          color: #293a7d !important;
+          transition: background-color: 0.3s;
+          font-weight: bold !important;
+          font-size: 1rem !important;
+        }
+
+        header button:hover {
+          color: black !important;
+          background-color: inherit !important;
         }
       `}</style>
       <Head>
@@ -100,7 +118,7 @@ export default ({ children }) => {
           name='og:description'
           content='HackYourFuture Refugee Coding School In Copenhagen'
         />
-        <meta name='og:image' content='/static/logo_black.svg' />
+        <meta name='og:image' content='/static/logo-dark.svg' />
         <meta name='og:url' content='http://hackyourfuture.dk/' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@hyf' />
@@ -115,7 +133,6 @@ export default ({ children }) => {
         href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'
         rel='stylesheet'
       />
-      <ProgressBar />
       <NavBar />
       {children}
       <Footer />

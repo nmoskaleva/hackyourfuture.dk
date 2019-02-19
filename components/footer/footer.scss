@@ -43,6 +43,8 @@ footer {
   }
 
   .cvr {
+    text-align: left;
+
     @media (max-width: 768px) {
       margin-top: 2rem;
     }

@@ -8,7 +8,7 @@ const Hero = () => (
     {/*<img className="logo" src="/static/HYF_LOGO.png"/>*/}
     <div className='logo'>
       <Flip top>
-        <img src='/static/logo_white.svg' alt='HackYourFuture Copenhagen' />
+        <img src='/static/logo-light.svg' alt='HackYourFuture Copenhagen' />
       </Flip>
     </div>
   </div>

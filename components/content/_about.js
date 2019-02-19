@@ -1,7 +1,5 @@
 const title = 'About HackYourFuture Copenhagen'
 let content = `
-## About Us
-
 ## What is HackYourFuture?
 HackYourFuture is a non-profit that aims to train refugees and asylum seekers to become web-developers and empower them by opening the doors to a very in-demand job market.
 
