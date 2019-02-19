@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   height: 60vh;
-  background: fixed url('/static/background.jpg') no-repeat center center/cover;
+  background: fixed url('/static/background.jpg') no-repeat;
   align-items: center;
-  jsutify-content: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   left: 0;
   right: 0;
   top: 0;
   z-index: -1;
+  background-size: cover;
+  background-position: center;
 
   .logo {
     max-height: 50vh;
