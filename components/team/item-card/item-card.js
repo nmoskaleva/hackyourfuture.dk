@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide'
 const ItemCard = ({ item, children }) => {
   const { photo, github, role, name, linkedin, email, onlineCV, pdfCV } = item
   return (
-    <Slide duration="300" bottom>
+    <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
       <div className='team-member-card'>
         <div className='member-image'>

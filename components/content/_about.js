@@ -37,5 +37,4 @@ Developer? Become a mentor - write us a message first though, so we can figure o
 Not a developer? We can always use extra hands on deck - let us know how much time you would like to dedicate to volunteering and what you are good at. We can use help with Social Media, copywriting, photography, CV help, interview coaching, and tons of other small things. - We just need to figure out first where you would most like to get active.
 `
 
-
-export {content, title}
+export { content, title }

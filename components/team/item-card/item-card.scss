@@ -8,6 +8,7 @@
   width: 10%;
   max-width: calc(100% / 5);
   min-width: 260px;
+  //transform: translateY(10px);
 
   &:hover {
     background: #263265;
@@ -130,4 +131,6 @@
     display: inline-flex;
     background: #ffffff54;
   }
+
+
 }
