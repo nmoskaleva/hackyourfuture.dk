@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "node server.js",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
@@ -12,7 +12,6 @@
     "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
     "express": "^4.14.0",
-    "express-sslify": "^1.2.0",
     "jss": "^9.8.7",
     "marked": "^0.6.0",
     "mdi-material-ui": "^5.9.0",

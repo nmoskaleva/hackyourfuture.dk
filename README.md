@@ -1,6 +1,6 @@
 # HackYourFuture.dk
 
-![content](/static/logo_black.svg)
+![content](/static/logo-dark.svg)
 
 this is a fork from [Keven repo](`https://github.com/kevinsimper/hackyourfuture.dk`)
 

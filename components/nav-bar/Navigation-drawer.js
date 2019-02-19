@@ -32,25 +32,20 @@ class NavigationDrawer extends React.Component {
         {links.map(link => {
           const { id, title, url, dropdown } = link
           return (
-              <List key={id}>
-                <ListItem button component='a' href={url}>
-                  <ListItemText primary={title} />
-                </ListItem>
+            <List key={id}>
+              <ListItem button component='a' href={url}>
+                <ListItemText primary={title} />
+              </ListItem>
 
-                {/*Sub Links*/}
-                {dropdown &&
-                  dropdown.map(item => (
-                    <ListItem
-                      key={item.id}
-                      button
-                      component='a'
-                      href={item.url}
-                    >
-                      -&nbsp;
-                      <ListItemText primary={item.title} />
-                    </ListItem>
-                  ))}
-              </List>
+              {/*Sub Links*/}
+              {dropdown &&
+                dropdown.map(item => (
+                  <ListItem key={item.id} button component='a' href={item.url}>
+                    -&nbsp;
+                    <ListItemText primary={item.title} />
+                  </ListItem>
+                ))}
+            </List>
           )
         })}
       </div>

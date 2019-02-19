@@ -62,7 +62,9 @@ class DropdownMenu extends React.Component {
               onClick={this.handleClose}
             >
               {/*sub menus*/}
-                <a href={item.url} className={classes.titleLink}>{item.title}</a>
+              <a href={item.url} className={classes.titleLink}>
+                {item.title}
+              </a>
             </MenuItem>
           ))}
         </Menu>

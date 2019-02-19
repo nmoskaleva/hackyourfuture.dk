@@ -17,7 +17,7 @@
         <style>
             .hyf_logo {
             fill-rule: evenodd;
-            <!--fill:green-->
+            fill:white;
             }
         </style>
     </defs>

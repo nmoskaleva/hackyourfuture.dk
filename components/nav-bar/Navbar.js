@@ -75,7 +75,7 @@ class Index extends React.Component {
             <Typography variant='h6' color='inherit' className={classes.grow}>
               <Link href='/'>
                 <img
-                  src='/static/logo_white.svg'
+                  src='/static/logo-dark.svg'
                   className={classes.img}
                   alt='HackYourFuture Copenhagen'
                 />

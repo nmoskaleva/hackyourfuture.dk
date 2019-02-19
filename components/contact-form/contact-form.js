@@ -7,7 +7,6 @@ import classNames from 'classnames'
 
 const styles = theme => ({
   flex: {
-    display: 'flex',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column'
     }
@@ -28,14 +27,25 @@ const styles = theme => ({
     padding: '1rem',
     boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
   },
+
   name:{
-    marginRight: '1rem'
+    width:'50%',
+    paddingRight: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    },
+  },
+  email: {
+    width:'50%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%'
+    },
   }
 })
 
 class ContactForm extends Component {
   render() {
-    const { classes, email} = this.props;
+    const { classes, email } = this.props
     return (
       <form
         method='POST'
@@ -44,21 +54,10 @@ class ContactForm extends Component {
         noValidate
         autoComplete='off'
       >
-        {/*Message*/}
-        <TextField
-          label='Message'
-          multiline
-          rows='2'
-          rowsMax='6'
-          name='message'
-          margin='normal'
-          fullWidth
-        />
-
         <div className={classes.flex}>
           {/*Your name*/}
           <TextField
-            className={classNames(classes.textField,classes.name)}
+            className={classNames(classes.textField, classes.name)}
             label='Your name'
             type='text'
             name='name'
@@ -67,11 +66,22 @@ class ContactForm extends Component {
 
           {/*Your email*/}
           <TextField
-            className={classes.textField}
+            className={classNames(classes.textField,classes.name)}
             type='email'
             label='Your email'
             name='email'
             margin='normal'
+          />
+
+          {/*Message*/}
+          <TextField
+            label='Message'
+            multiline
+            rows='2'
+            rowsMax='6'
+            name='message'
+            margin='normal'
+            fullWidth
           />
         </div>
         <br />

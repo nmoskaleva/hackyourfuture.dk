@@ -10,7 +10,6 @@ export const CoreTeam = () => {
       <style jsx>{styles}</style>
       <h2>Core team</h2>
       <div className='team-members core-team'>
-        <img className='shape' src='/static/shape.svg' alt='shape' />
         {coreTeam.map(member => (
           <ItemCard item={member} key={member.id} />
         ))}
