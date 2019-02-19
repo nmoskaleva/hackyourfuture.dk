@@ -1,5 +1,3 @@
-import Form from "../components/contact-form/ContactForm"
+import Form from '../components/contact-form/ContactForm'
 
-
-
-export default ()=> <Form/>
+export default () => <Form />
