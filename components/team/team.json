@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Christopher Klüter",
-    "role": "Director",
+    "role": "Managing Director",
     "email": "christopher@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/christopher-kl%C3%BCter-26794643/",
     "photo": "/static/team/christopher.jpg"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Marie Hoff",
-    "role": "Public Affairs",
+    "role": "Community Manager",
     "email": "marie@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/marie-hoff/",
     "photo": "/static/team/marie.jpg"
@@ -18,10 +18,11 @@
   {
     "id": 3,
     "name": "Benjamin Dalsgaard Hughes",
-    "role": "Educational director",
+    "role": "Educational Director",
     "photo": "/static/team/benjamin.jpg",
     "linkedin": "https://www.linkedin.com/in/benjamindalshughes/",
-    "github": "https://github.com/benna100/"
+    "github": "https://github.com/benna100/",
+    "email": "benjami@hackyourfuture.net"
   },
   {
     "id": 4,

@@ -10,33 +10,27 @@ const ItemCard = ({ item, children }) => {
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
       <div className='team-member-card'>
-        <div className='member-image'>
-          {photo ? (
-            <div className='member-shine zoom-in-1'>
-              <figure className='avatar-figure'>
-                <a href={github || '#'}>
-                  <img
-                    alt={name}
-                    src={
-                      role === 'alumni'
-                        ? '/static/alumni/photos/' + photo
-                        : photo
-                    }
-                  />
-                </a>
-              </figure>
-            </div>
-          ) : (
+        {photo ? (
+          <a href={github || '#'}>
             <img
               alt={name}
-              className='member-default-avatar'
-              src={'/static/avatar.png'}
+              src={
+                role === 'alumni'
+                  ? '/static/alumni/photos/' + photo
+                  : photo
+              }
             />
-          )}
-        </div>
+          </a>
+        ) : (
+          <img
+            alt={name}
+            className='member-default-avatar'
+            src={'/static/avatar.png'}
+          />
+        )}
         <h3 className='member-name'>{name}</h3>
         {role && <p className='member-role'>{role}</p>}
-        <div>
+        <div className="social-media">
           {github && (
             <IconButton color='inherit' href={github}>
               <GithubCircle />

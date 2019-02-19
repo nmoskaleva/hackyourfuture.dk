@@ -18,9 +18,6 @@ export default () => {
         <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
       </Content>
       <Team />
-      <Content>
-        <FindUs />
-      </Content>
     </Layout>
   )
 }

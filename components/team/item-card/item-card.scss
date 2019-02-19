@@ -2,126 +2,37 @@
   padding: 20px;
   text-align: center;
   transition: all 0.5s;
-  background: #293a7d;
-  color: #fff;
-  border: solid 5px white;
-  width: 10%;
-  max-width: calc(100% / 5);
-  min-width: 260px;
-  //transform: translateY(10px);
-
-  &:hover {
-    background: #263265;
-  }
+  color: #293a7d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 260px;
 
   @media (max-width: 519px) {
-    border-width: 2px 20px;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 0.4rem;
+    width: 50%;
   }
 
   .member-name {
-    color: #fff;
     font-family: Space Mono, monospace;
     line-height: 2rem;
-
-    & > h3 {
-      margin: 0 auto;
-    }
   }
 
-  .member-image {
-    overflow: hidden;
-    height: 33vw;
-    width: 100%;
-    max-width: 250px;
-    max-height: 250px;
-    min-height: 250px;
-
-    .member-default-avatar {
-      margin: auto;
-    }
+  img {
+    border-radius: 100%;
+    object-fit: cover;
+    display: flex;
+    width: 210px;
+    height: 210px;
+    margin-bottom: 12px;
+    background-color: #f4f4f4;
 
     @media (max-width: 519px) {
-      height: inherit;
-      max-height: inherit;
-      min-height: inherit;
-      display: flex;
-      justify-content: center;
-    }
-
-    .avatar-figure {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      width: 210px;
-      height: 210px;
-
-      img {
-        object-fit: cover;
-        display: flex;
-        width: 210px;
-        height: 210px;
-        @media (max-width: 960px) {
-          margin: auto;
-          border-radius: 50%;
-        }
-      }
-
-      &:hover + span {
-        bottom: -36px;
-        opacity: 1;
-      }
+      width: 36vw;
+      height: 36vw;
     }
   }
-
-  @keyframes shine {
-    100% {
-      left: 125%;
-    }
-  }
-
-  .member-shine .avatar-figure {
-    position: relative;
-
-    &:before {
-      position: absolute;
-      top: 0;
-      left: -75%;
-      z-index: 2;
-      display: block;
-      content: '';
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.3) 100%
-      );
-      transform: skewX(-25deg);
-    }
-
-    &:hover::before {
-      -webkit-animation: shine 0.75s;
-      animation: shine 0.75s;
-    }
-  }
-
-  .zoom-in-1 .avatar-figure {
-    img {
-      transform: scale(1);
-      transition: 0.23s ease-in-out;
-    }
-
-    &:hover img {
-      transform: scale(1.2);
-      filter: grayscale(100%);
-    }
-  }
-
-  /* end shine effect*/
-
+  
   .member-tag {
     font-size: 14px;
     border: solid 1px;
