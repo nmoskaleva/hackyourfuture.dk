@@ -5,7 +5,7 @@ export default () => (
   <footer>
     <style jsx>{styles}</style>
     <SocialIcons />
-    <div className='content'>
+    <div className='info'>
       <ul>
         <li>
           <a href="/">Home</a>
@@ -21,9 +21,10 @@ export default () => (
         </li>
       </ul>
       <div>
-        Foreningen HackYourFuture <br />
-        Kongens Enghave <br />
-        2450 København <br />
+        <p>Foreningen HackYourFuture</p>
+        <p>Kongens Enghave </p>
+        <p>2450 København </p>
+        <p>CVR: 38 53 31 93</p>
       </div>
     </div>
   </footer>
