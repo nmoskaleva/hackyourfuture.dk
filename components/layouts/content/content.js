@@ -5,10 +5,10 @@ export default ({ children, id = '' }) => {
   return (
     <div className='content' id={id}>
       <style jsx global>{`
-      h3 {
+      .content h3 {
         margin: 18px 0 18px;
       }
-      p {
+      .content p {
         margin: 12px 0 12px;
       }
       `}</style>
