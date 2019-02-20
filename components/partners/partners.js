@@ -3,10 +3,10 @@ import partners from './partners.json'
 import styles from './partners.scss'
 
 export default () => (
-  <div className='footer-partners'>
+  <div className='partners'>
     <style jsx>{styles}</style>
     <h2 className='center'>Official partners</h2>
-    <div className='partners'>
+    <div className='wrapper'>
       {partners.map(({ id, logo, url, title }) => (
         <div className='partner' key={id}>
           <a rel='noopener' target='_blank' href={url}>

@@ -1,5 +1,9 @@
-.footer-partners {
-  .partners {
+.partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .wrapper {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
