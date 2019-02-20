@@ -450,6 +450,7 @@ export default ({ children }) => {
           transition: background-color: 0.3s;
           font-weight: bold !important;
           font-size: 1rem !important;
+          font-family: 'Work Sans', sans-serif !important;
         }
 
         header button:hover {
