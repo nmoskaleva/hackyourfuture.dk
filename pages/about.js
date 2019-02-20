@@ -10,6 +10,7 @@ import {
 } from '../components/content/_contact'
 import { content as partners_content } from '../components/content/_partners'
 import Contactform from '../components/contact-form/contact-form'
+import Partners from '../components/partners/partners'
 
 export default () => (
   <Layout>
@@ -46,5 +47,7 @@ export default () => (
     <Content id='partners'>
       <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
     </Content>
+    
+    <Partners />
   </Layout>
 )

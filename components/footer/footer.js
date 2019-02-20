@@ -1,25 +1,29 @@
-import Partners from '../partners/partners'
 import SocialIcons from './social-icons/social-icon'
 import styles from './footer.scss'
 
 export default () => (
   <footer>
     <style jsx>{styles}</style>
-    <Partners />
-    <div className='wrapper'>
-      <div className='social-icons'>
-        <SocialIcons />
-      </div>
-      <div className='info'>
-        <div className='col-lg-6'>
-          Foreningen HackYourFuture <br />
-          Kongens Enghave <br />
-          2450 København <br />
-        </div>
-        <div className='col-lg-6 cvr'>CVR: 38 53 31 93</div>
-      </div>
-      <div className='copyright'>
-        &copy; Copyright HackYourFuture Copenhagen 2018
+    <SocialIcons />
+    <div className='content'>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/apply">Apply</a>
+        </li>
+        <li>
+          <a href="/volunteer">Volunteer</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+      <div>
+        Foreningen HackYourFuture <br />
+        Kongens Enghave <br />
+        2450 København <br />
       </div>
     </div>
   </footer>

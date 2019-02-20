@@ -5,6 +5,7 @@ import Content from '../components/layouts/content/content'
 import Contactform from '../components/contact-form/contact-form'
 import { MentorsTeam } from '../components/team/team'
 import { content, title } from '../components/content/_mentors'
+import Partners from '../components/partners/partners'
 
 export default () => (
   <Layout>
@@ -18,6 +19,9 @@ export default () => (
       <h2 id='becoming-mentor'>Would you like to help?</h2>
       <Contactform />
     </Content>
+
     <MentorsTeam id='mentors' />
+
+    <Partners />
   </Layout>
 )
