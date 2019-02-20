@@ -9,9 +9,14 @@ const ItemCard = ({ item, children }) => {
   return (
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
+      <style jsx global>{`
+      .social-media > a {
+        padding: 6px;
+      }
+      `}</style>
       <div className='team-member-card'>
         {photo ? (
-          <a href={github || '#'}>
+          <a target="_blank" href={github || '#'}>
             <img
               alt={name}
               src={
@@ -32,29 +37,29 @@ const ItemCard = ({ item, children }) => {
         {role && <p className='member-role'>{role}</p>}
         <div className="social-media">
           {github && (
-            <IconButton color='inherit' href={github}>
+            <IconButton color='inherit' target="_blank" href={github}>
               <GithubCircle />
             </IconButton>
           )}
           {linkedin && (
-            <IconButton color='inherit' href={linkedin}>
+            <IconButton color='inherit' target="_blank" href={linkedin}>
               <Linkedin />
             </IconButton>
           )}
           {email && (
-            <IconButton color='inherit' href={`mailto:${email}`}>
+            <IconButton color='inherit' target="_blank" href={`mailto:${email}`}>
               <Email />
             </IconButton>
           )}
 
           {onlineCV && (
-            <IconButton color='inherit' href={onlineCV}>
+            <IconButton color='inherit' target="_blank" href={onlineCV}>
               <Earth />
             </IconButton>
           )}
 
           {pdfCV && (
-            <IconButton color='inherit' href={pdfCV}>
+            <IconButton color='inherit' target="_blank" href={pdfCV}>
               <Note />
             </IconButton>
           )}

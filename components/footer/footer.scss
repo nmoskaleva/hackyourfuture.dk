@@ -14,7 +14,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    max-width: 1300px;
+    max-width: 1000px;
 
     @media (max-width: $breakpoint) {
       flex-direction: column;
