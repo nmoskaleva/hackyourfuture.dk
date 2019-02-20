@@ -399,6 +399,12 @@ export default ({ children }) => {
           margin: 0;
         }
 
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
         h1 {
           font-size: 40px;
           line-height: 50px;
