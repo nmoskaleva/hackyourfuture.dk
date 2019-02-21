@@ -24,7 +24,8 @@ export default () => (
         <p>Foreningen HackYourFuture</p>
         <p>Kongens Enghave </p>
         <p>2450 København </p>
-        <p>CVR: 38 53 31 93</p>
+        <p>CVR: 38533193</p>
+        <p><a href="mailto:cph@hackyourfuture.net">cph@hackyourfuture.net</a></p>
       </div>
     </div>
   </footer>
