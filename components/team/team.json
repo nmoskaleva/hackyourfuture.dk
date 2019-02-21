@@ -230,5 +230,13 @@
     "role": "mentor",
     "photo": "/static/team/majd.jpg",
     "linkedin": "https://www.linkedin.com/in/majd-darraj/"
+  },
+  {
+    "id": 35,
+    "name": "Allan Thraen",
+    "role": "mentor",
+    "photo": "/static/team/allan-thraen.jpg",
+    "linkedin": "https://www.linkedin.com/in/allanthraen/",
+    "github": "https://github.com/AThraen/"
   }
 ]
