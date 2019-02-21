@@ -1,5 +1,6 @@
 import SocialIcons from './social-icons/social-icon'
 import styles from './footer.scss'
+import Link from 'next/link'
 
 export default () => (
   <footer>
@@ -8,16 +9,24 @@ export default () => (
     <div className='info'>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
         <li>
-          <a href="/apply">Apply</a>
+          <Link href="/apply">
+            <a>Apply</a>
+          </Link>
         </li>
         <li>
-          <a href="/volunteer">Volunteer</a>
+          <Link href="/volunteer">
+            <a>Volunteer</a>
+          </Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
         </li>
       </ul>
       <div>
