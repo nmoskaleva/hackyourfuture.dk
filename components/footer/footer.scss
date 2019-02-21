@@ -21,7 +21,7 @@ footer {
     }
 
     > * {
-      flex: 200px 0 1;
+      flex: 240px 0 1;
       text-align: left;
 
       @media (max-width: $breakpoint) {
@@ -30,7 +30,7 @@ footer {
       }
     }
 
-    ul li a {
+    ul li a, a {
       color: white;
     }
   }
