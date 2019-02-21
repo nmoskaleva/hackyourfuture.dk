@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './item-card.scss'
 import IconButton from '@material-ui/core/IconButton'
-import { GithubCircle, Linkedin, Email, Note, Earth } from 'mdi-material-ui'
+import { GithubCircle, Linkedin, Email, Note, Earth, Web } from 'mdi-material-ui'
 import Slide from 'react-reveal/Slide'
 
 const ItemCard = ({ item, children }) => {
-  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV } = item
+  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV, website } = item
   return (
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
@@ -16,16 +16,14 @@ const ItemCard = ({ item, children }) => {
       `}</style>
       <div className='team-member-card'>
         {photo ? (
-          <a target="_blank" href={github || '#'}>
-            <img
-              alt={name}
-              src={
-                role === 'alumni'
-                  ? '/static/alumni/photos/' + photo
-                  : photo
-              }
-            />
-          </a>
+          <img
+            alt={name}
+            src={
+              role === 'alumni'
+                ? '/static/alumni/photos/' + photo
+                : photo
+            }
+          />
         ) : (
           <img
             alt={name}
@@ -61,6 +59,12 @@ const ItemCard = ({ item, children }) => {
           {pdfCV && (
             <IconButton color='inherit' target="_blank" href={pdfCV}>
               <Note />
+            </IconButton>
+          )}
+
+          {website && (
+            <IconButton color='inherit' target="_blank" href={website}>
+              <Web />
             </IconButton>
           )}
         </div>
