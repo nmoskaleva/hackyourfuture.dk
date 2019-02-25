@@ -1,28 +1,41 @@
 import React from 'react'
 import styles from './item-card.scss'
 import IconButton from '@material-ui/core/IconButton'
-import { GithubCircle, Linkedin, Email, Note, Earth, Web } from 'mdi-material-ui'
+import {
+  GithubCircle,
+  Linkedin,
+  Email,
+  Note,
+  Earth,
+  Web
+} from 'mdi-material-ui'
 import Slide from 'react-reveal/Slide'
 
 const ItemCard = ({ item, children }) => {
-  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV, website } = item
+  const {
+    photo,
+    github,
+    role,
+    name,
+    linkedin,
+    email,
+    onlineCV,
+    pdfCV,
+    website
+  } = item
   return (
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
       <style jsx global>{`
-      .social-media > a {
-        padding: 6px;
-      }
+        .social-media > a {
+          padding: 6px;
+        }
       `}</style>
       <div className='team-member-card'>
         {photo ? (
           <img
             alt={name}
-            src={
-              role === 'alumni'
-                ? '/static/alumni/photos/' + photo
-                : photo
-            }
+            src={role === 'alumni' ? '/static/alumni/photos/' + photo : photo}
           />
         ) : (
           <img
@@ -33,37 +46,41 @@ const ItemCard = ({ item, children }) => {
         )}
         <h3 className='member-name'>{name}</h3>
         {role && <p className='member-role'>{role}</p>}
-        <div className="social-media">
+        <div className='social-media'>
           {github && (
-            <IconButton color='inherit' target="_blank" href={github}>
+            <IconButton color='inherit' target='_blank' href={github}>
               <GithubCircle />
             </IconButton>
           )}
           {linkedin && (
-            <IconButton color='inherit' target="_blank" href={linkedin}>
+            <IconButton color='inherit' target='_blank' href={linkedin}>
               <Linkedin />
             </IconButton>
           )}
           {email && (
-            <IconButton color='inherit' target="_blank" href={`mailto:${email}`}>
+            <IconButton
+              color='inherit'
+              target='_blank'
+              href={`mailto:${email}`}
+            >
               <Email />
             </IconButton>
           )}
 
           {onlineCV && (
-            <IconButton color='inherit' target="_blank" href={onlineCV}>
+            <IconButton color='inherit' target='_blank' href={onlineCV}>
               <Earth />
             </IconButton>
           )}
 
           {pdfCV && (
-            <IconButton color='inherit' target="_blank" href={pdfCV}>
+            <IconButton color='inherit' target='_blank' href={pdfCV}>
               <Note />
             </IconButton>
           )}
 
           {website && (
-            <IconButton color='inherit' target="_blank" href={website}>
+            <IconButton color='inherit' target='_blank' href={website}>
               <Web />
             </IconButton>
           )}

@@ -1,104 +1,34 @@
-import React, { Component } from 'react'
-import TextField from '@material-ui/core/TextField'
-import { withStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
-import SendIcon from '@material-ui/icons/Send'
-import classNames from 'classnames'
+import React from 'react'
+import Send from 'mdi-material-ui/Send'
 
-const styles = theme => ({
-  flex: {
-    [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column'
-    }
-  },
-  textField: {
-    flex: 1
-  },
-  submitForm: {
-    [theme.breakpoints.down('sm')]: {
-      width: '100%'
-    },
-    send: {
-      marginLeft: '1rem'
-    }
-  },
-  form: {
-    background: '#fff',
-    padding: '1rem',
-    boxShadow: `1px 1px 5px rgba(0,0,0,0.1)`
-  },
+import styles from './contact-form.scss'
 
-  name:{
-    width:'50%',
-    paddingRight: '1rem',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%'
-    },
-  },
-  email: {
-    width:'50%',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%'
-    },
-  }
-})
+export default ({ email }) => {
+  return (
+    <form action={`https://formspree.io/${email}`} className='contact-form'>
+      <style jsx>{styles}</style>
 
-class ContactForm extends Component {
-  render() {
-    const { classes, email } = this.props
-    return (
-      <form
-        method='POST'
-        action={`https://formspree.io/${email}`}
-        className={classes.form}
-        noValidate
-        autoComplete='off'
-      >
-        <div className={classes.flex}>
-          {/*Your name*/}
-          <TextField
-            className={classNames(classes.textField, classes.name)}
-            label='Your name'
-            type='text'
-            name='name'
-            margin='normal'
-          />
+      {/*name*/}
+      <label>
+        <input type='text' required='required' />
+        <span>Username</span>
+      </label>
 
-          {/*Your email*/}
-          <TextField
-            className={classNames(classes.textField,classes.name)}
-            type='email'
-            label='Your email'
-            name='email'
-            margin='normal'
-          />
+      {/*email*/}
+      <label>
+        <input type='email' required='required' />
+        <span>email</span>
+      </label>
 
-          {/*Message*/}
-          <TextField
-            label='Message'
-            multiline
-            rows='2'
-            rowsMax='6'
-            name='message'
-            margin='normal'
-            fullWidth
-          />
-        </div>
-        <br />
+      {/*message*/}
+      <label>
+        <input type='text' required='required' />
+        <span>message</span>
+      </label>
 
-        {/*submit form*/}
-        <Button
-          type='submit'
-          variant='contained'
-          size='large'
-          color='primary'
-          className={classes.submitForm}
-        >
-          Send <SendIcon className={classes.send} />
-        </Button>
-      </form>
-    )
-  }
+      <button className='material-btn' type='submit'>
+        <Send /> SEND
+      </button>
+    </form>
+  )
 }
-
-export default withStyles(styles)(ContactForm)

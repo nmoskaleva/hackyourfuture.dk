@@ -10,15 +10,15 @@ const SocialIcons = () => (
       href='https://www.facebook.com/hackyourfuturecopenhagen/'
       color='inherit'
       title='facebook'
-      target="_blank"
+      target='_blank'
     >
-    <Facebook />
+      <Facebook />
     </IconButton>
     <IconButton
       href='https://twitter.com/HackyourfutureC'
       color='inherit'
       title='twitter'
-      target="_blank"
+      target='_blank'
     >
       <Twitter />
     </IconButton>
@@ -26,7 +26,7 @@ const SocialIcons = () => (
       href='https://www.linkedin.com/school/hackyourfuture-copenhagen/'
       color='inherit'
       title='linkedin'
-      target="_blank"
+      target='_blank'
     >
       <Linkedin />
     </IconButton>
@@ -34,7 +34,7 @@ const SocialIcons = () => (
       href='https://github.com/hackyourfuture-cph'
       color='inherit'
       title='github'
-      target="_blank"
+      target='_blank'
     >
       <GithubCircle />
     </IconButton>

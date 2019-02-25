@@ -1,6 +1,6 @@
 const express = require('express')
 const next = require('next')
-var enforce = require('express-sslify');
+var enforce = require('express-sslify')
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
@@ -11,7 +11,7 @@ app.prepare().then(() => {
   const server = express()
 
   if (process.env.NODE_ENV === 'production') {
-    server.use(enforce.HTTPS({ trustProtoHeader: true }));
+    server.use(enforce.HTTPS({ trustProtoHeader: true }))
   }
 
   server.get('*', (req, res) => {
