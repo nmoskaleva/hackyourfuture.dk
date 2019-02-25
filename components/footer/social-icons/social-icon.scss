@@ -1,3 +1,14 @@
 .social-icons {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
+  a {
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+    transition: all 0.3s;
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
 }
