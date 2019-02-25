@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Footer from '../footer/footer'
-import NavBar from '../nav-bar/Navbar'
+import Navbar from '../nav-bar/navbar'
 import React from 'react'
 
 export default ({ children }) => {
@@ -439,23 +439,8 @@ export default ({ children }) => {
           text-decoration: none;
         }
 
-        header {
-          background-color: white !important;
-          box-shadow: none !important;
-          font-weight: bold;
-        }
-
-        header button {
-          color: #293a7d !important;
-          transition: background-color: 0.3s;
-          font-weight: bold !important;
-          font-size: 1rem !important;
-          font-family: 'Work Sans', sans-serif !important;
-        }
-
-        header button:hover {
-          color: black !important;
-          background-color: inherit !important;
+        main {
+          margin-top: 56px;
         }
       `}</style>
       <Head>
@@ -487,14 +472,14 @@ export default ({ children }) => {
           type='image/x-icon'
           href='/static/favicon.ico'
         />
+        <link
+          href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'
+          rel='stylesheet'
+        />
       </Head>
 
-      <link
-        href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'
-        rel='stylesheet'
-      />
-      <NavBar />
-      {children}
+      <Navbar />
+      <main>{children}</main>
       <Footer />
       <script
         dangerouslySetInnerHTML={{
