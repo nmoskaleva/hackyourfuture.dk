@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from '@material-ui/core/Modal'
+import Modal from './modal'
 import Button from '@material-ui/core/Button'
 import styles from './alumni-details.scss'
 import { DotsHorizontal as MoreIcon, WindowClose } from 'mdi-material-ui'
@@ -19,16 +19,13 @@ export default props => {
       >
         details <MoreIcon />
       </Button>
-      <Modal
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'
-        open={open}
-        onClose={() => setOpen(false)}
-      >
+      <Modal show={open} onClose={() => setOpen(false)}>
         <div className='alumni-details'>
           <img
-            className='photo'
-            src={`/static/alumni/photos/${photo}`}
+            className={`photo ${!photo && 'defaultAvatar'}`}
+            src={
+              photo ? `/static/alumni/photos/${photo}` : `/static/avatar.png`
+            }
             alt={name}
           />
           <h3 className='hyf-title'>{name}</h3>

@@ -38,6 +38,7 @@ class Hire extends React.Component {
       uniqueStatuses: [...new Set(statuses)]
     })
   }
+
   doFiltering = () => {
     // by default: all alumni list
     let newAlumniList = alumniList
