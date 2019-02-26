@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import SideDrawer from './side-drawer/side-drawer'
-import Toolbar from './toolbar/toolbar'
-import styles from './navbar.scss'
+import HamburgerIcon from './navbar/hamburger-icon'
+import Navbar from './navbar/navbar'
+import styles from './header.scss'
+import Logo from './logo/logo'
 
 export default () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
@@ -9,7 +11,17 @@ export default () => {
   return (
     <div>
       <style jsx>{styles}</style>
-      <Toolbar drawerClickHandler={() => setSideDrawerOpen(!sideDrawerOpen)} />
+      {/*<Toolbar  />*/}
+      <div className='toolbar'>
+        <div className='navigation'>
+          <HamburgerIcon
+            drawerClickHandler={() => setSideDrawerOpen(!sideDrawerOpen)}
+          />
+          <Logo />
+          <div className='spacer' />
+          <Navbar />
+        </div>
+      </div>
       <SideDrawer onGoBackClick={() => closeDrawer()} show={sideDrawerOpen} />
       {sideDrawerOpen && (
         <div className='backdrop' onClick={() => closeDrawer()} />

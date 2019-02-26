@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Footer from '../footer/footer'
-import Navbar from '../nav-bar/navbar'
+import Header from '../header/header'
 import React from 'react'
 
 export default ({ children }) => {
@@ -478,7 +478,7 @@ export default ({ children }) => {
         />
       </Head>
 
-      <Navbar />
+      <Header />
       <main>{children}</main>
       <Footer />
       <script

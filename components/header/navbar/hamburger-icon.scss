@@ -1,0 +1,28 @@
+$primary-color: #293a7d;
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  div {
+    width: 30px;
+    height: 2px;
+    background: $primary-color;
+  }
+}
