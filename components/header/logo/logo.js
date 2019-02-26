@@ -7,11 +7,7 @@ export default () => (
     <style jsx>{styles}</style>
     <Link href='/'>
       <a>
-        <img
-          className='img'
-          src='/static/logo-dark.svg'
-          alt='HackYourFuture Copenhagen'
-        />
+        <img src='/static/logo-dark.svg' alt='HackYourFuture Copenhagen' />
       </a>
     </Link>
   </div>

@@ -6,19 +6,19 @@ import styles from './header.scss'
 import Logo from './logo/logo'
 
 export default () => {
-  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
-  const closeDrawer = () => setSideDrawerOpen(false)
+  const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false)
+  const closeDrawer = () => setIsSideDrawerOpen(false)
   return (
     <header>
       <style jsx>{styles}</style>
       {/*<Toolbar  />*/}
       <HamburgerIcon
-        drawerClickHandler={() => setSideDrawerOpen(!sideDrawerOpen)}
+        drawerClickHandler={() => setIsSideDrawerOpen(!isSideDrawerOpen)}
       />
       <Logo />
       <Navbar />
-      <SideDrawer onGoBackClick={() => closeDrawer()} show={sideDrawerOpen} />
-      {sideDrawerOpen && (
+      <SideDrawer onGoBackClick={() => closeDrawer()} show={isSideDrawerOpen} />
+      {isSideDrawerOpen && (
         <div className='backdrop' onClick={() => closeDrawer()} />
       )}
     </header>
