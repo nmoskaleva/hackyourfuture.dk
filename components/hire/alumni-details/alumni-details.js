@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from './modal'
+import Modal from '../modal/modal'
 import styles from './alumni-details.scss'
 import Icon from '@mdi/react'
 import { mdiDotsHorizontal, mdiWindowClose } from '@mdi/js'
@@ -17,7 +17,7 @@ export default props => {
       <Modal show={open} onClose={() => setOpen(false)}>
         <div className='alumni-details'>
           <img
-            className={`photo ${!photo && 'defaultAvatar'}`}
+            className={`photo`}
             src={
               photo ? `/static/alumni/photos/${photo}` : `/static/avatar.png`
             }

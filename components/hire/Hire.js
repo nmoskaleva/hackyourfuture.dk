@@ -1,10 +1,10 @@
 import * as React from 'react'
-import alumniList from './alumni.json'
+import alumniList from './alumni-details/alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
 import styles from './hire.scss'
 import id from 'uuid/v4'
-import AlumniDetails from './alumni-details'
+import AlumniDetails from './alumni-details/alumni-details'
 
 class Hire extends React.Component {
   state = {
