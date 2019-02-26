@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Icon from '@mdi/react'
 import { mdiSend } from '@mdi/js'
 import styles from './contact-form.scss'
 
 export default ({ email }) => {
+  const [inputEmail, setInputEmail] = useState('')
+
   return (
     <form
       action={`https://formspree.io/${email}`}
@@ -21,7 +23,12 @@ export default ({ email }) => {
 
       {/*email*/}
       <label>
-        <input type='text' required='required' />
+        <input
+          className={inputEmail.length > 0 && 'hasText'}
+          onChange={event => setInputEmail(event.target.value)}
+          type='email'
+          required='required'
+        />
         <span>email</span>
       </label>
 
