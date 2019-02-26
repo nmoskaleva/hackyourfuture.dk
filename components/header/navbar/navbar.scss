@@ -1,6 +1,10 @@
 $primary-color: #293a7d;
 
 .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media (max-width: 768px) {
     display: none;
   }

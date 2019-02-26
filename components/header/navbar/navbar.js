@@ -5,7 +5,7 @@ import uuid from 'uuid/v4'
 import styles from './navbar.scss'
 
 export default () => (
-  <div className='items'>
+  <nav className='items'>
     <style jsx>{styles}</style>
     <ul>
       {/*loop json links*/}
@@ -17,5 +17,5 @@ export default () => (
         </li>
       ))}
     </ul>
-  </div>
+  </nav>
 )

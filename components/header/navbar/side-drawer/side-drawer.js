@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './side-drawer.scss'
-import links from '../links.json'
+import links from '../../links.json'
 import Link from 'next/link'
 import Icon from '@mdi/react'
 import { mdiBackspaceOutline } from '@mdi/js'

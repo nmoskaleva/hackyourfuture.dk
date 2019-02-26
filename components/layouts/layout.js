@@ -438,10 +438,6 @@ export default ({ children }) => {
         .hyf-title > a {
           text-decoration: none;
         }
-
-        main {
-          margin-top: 56px;
-        }
       `}</style>
       <Head>
         <title>HackYourFuture Copenhagen</title>
