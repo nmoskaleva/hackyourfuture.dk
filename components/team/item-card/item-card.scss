@@ -1,8 +1,9 @@
+$primary-color: #293a7d;
 .team-member-card {
   padding: 20px;
   text-align: center;
   transition: all 0.5s;
-  color: #293a7d;
+  color: $primary-color;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,7 +34,7 @@
       height: 36vw;
     }
   }
-  
+
   .member-tag {
     font-size: 14px;
     border: solid 1px;
@@ -42,5 +43,17 @@
     flex-wrap: wrap;
     display: inline-flex;
     background: #ffffff54;
+  }
+
+  .social-media {
+    a {
+      color: $primary-color;
+      display: inline-flex;
+
+      &:hover {
+        background-color: #eee;
+        border-radius: 50%;
+      }
+    }
   }
 }

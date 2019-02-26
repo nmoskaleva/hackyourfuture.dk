@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './item-card.scss'
-import IconButton from '@material-ui/core/IconButton'
 import {
   GithubCircle,
   Linkedin,
@@ -48,41 +47,37 @@ const ItemCard = ({ item, children }) => {
         {role && <p className='member-role'>{role}</p>}
         <div className='social-media'>
           {github && (
-            <IconButton color='inherit' target='_blank' href={github}>
+            <a target='_blank' href={github}>
               <GithubCircle />
-            </IconButton>
+            </a>
           )}
           {linkedin && (
-            <IconButton color='inherit' target='_blank' href={linkedin}>
+            <a target='_blank' href={linkedin}>
               <Linkedin />
-            </IconButton>
+            </a>
           )}
           {email && (
-            <IconButton
-              color='inherit'
-              target='_blank'
-              href={`mailto:${email}`}
-            >
+            <a target='_blank' href={`mailto:${email}`}>
               <Email />
-            </IconButton>
+            </a>
           )}
 
           {onlineCV && (
-            <IconButton color='inherit' target='_blank' href={onlineCV}>
+            <a target='_blank' href={onlineCV}>
               <Earth />
-            </IconButton>
+            </a>
           )}
 
           {pdfCV && (
-            <IconButton color='inherit' target='_blank' href={pdfCV}>
+            <a target='_blank' href={pdfCV}>
               <Note />
-            </IconButton>
+            </a>
           )}
 
           {website && (
-            <IconButton color='inherit' target='_blank' href={website}>
+            <a target='_blank' href={website}>
               <Web />
-            </IconButton>
+            </a>
           )}
         </div>
         {children}
