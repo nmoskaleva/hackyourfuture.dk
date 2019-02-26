@@ -31,6 +31,9 @@ $primary-color: #293a7d;
           text-decoration: underline;
         }
       }
+      &.active > a {
+        text-decoration: underline;
+      }
     }
   }
 }

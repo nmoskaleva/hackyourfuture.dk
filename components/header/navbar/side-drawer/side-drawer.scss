@@ -27,17 +27,23 @@ $primary-color: #293a7d;
     display: flex;
     flex-direction: column;
 
-    li a {
-      color: $primary-color;
-      text-decoration: none;
-      font-size: 1.2rem;
-      display: block;
-      padding: 1rem;
-      transition: background-color 0.3s ease-in-out;
+    li {
+      &.active a {
+        font-weight: bold;
+      }
 
-      &:hover,
-      &:active {
-        background: #eee;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover,
+        &:active {
+          background: #eee;
+        }
       }
     }
   }

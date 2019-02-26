@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './side-drawer.scss'
 import links from '../../links.json'
 import Link from 'next/link'
@@ -7,6 +7,11 @@ import { mdiBackspaceOutline } from '@mdi/js'
 import uuid from 'uuid/v4'
 
 export default ({ show, onGoBackClick }) => {
+  const [path, setPath] = useState('')
+  useEffect(() => setPath(window.location.pathname + window.location.hash), [
+    path
+  ])
+
   return (
     <nav className={show ? 'side-drawer open' : 'side-drawer'}>
       <style jsx>{styles}</style>
@@ -18,7 +23,7 @@ export default ({ show, onGoBackClick }) => {
         </li>
         {/*Outer list items ---------- */}
         {links.map(({ title, url, dropdown }) => (
-          <li key={uuid()}>
+          <li className={url === path && 'active'} key={uuid()}>
             <Link href={url}>
               <a>{title}</a>
             </Link>
@@ -27,7 +32,7 @@ export default ({ show, onGoBackClick }) => {
             {dropdown.length > 0 && (
               <ul key={uuid()}>
                 {dropdown.map(({ title, url }) => (
-                  <li key={uuid()}>
+                  <li className={url === path && 'active'} key={uuid()}>
                     <Link href={url}>
                       <a>- {title}</a>
                     </Link>
