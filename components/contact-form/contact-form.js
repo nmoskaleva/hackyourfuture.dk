@@ -9,6 +9,7 @@ export default ({ email }) => {
       action={`https://formspree.io/${email}`}
       className='contact-form'
       method='POST'
+      autoComplete='off'
     >
       <style jsx>{styles}</style>
 
@@ -20,7 +21,7 @@ export default ({ email }) => {
 
       {/*email*/}
       <label>
-        <input type='email' required='required' />
+        <input type='text' required='required' />
         <span>email</span>
       </label>
 

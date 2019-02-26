@@ -113,9 +113,7 @@ class Hire extends React.Component {
               <button
                 key={id()}
                 onClick={() => this.filterStatusesHandler(status)}
-                className={
-                  selectedStatus.includes(status) ? 'active' : 'outlined'
-                }
+                className={selectedStatus.includes(status) && 'active'}
                 color='primary'
               >
                 {status}
