@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './side-drawer.scss'
 import links from '../links.json'
 import Link from 'next/link'
-import BackIcon from 'mdi-material-ui/BackspaceOutline'
+import Icon from '@mdi/react'
+import { mdiBackspaceOutline } from '@mdi/js'
 import uuid from 'uuid/v4'
 
 export default ({ show, onGoBackClick }) => {
@@ -12,7 +13,7 @@ export default ({ show, onGoBackClick }) => {
       <ul>
         <li key={uuid()} onClick={onGoBackClick}>
           <a href='#'>
-            <BackIcon />
+            <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
           </a>
         </li>
         {/*Outer list items ---------- */}

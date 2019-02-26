@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Modal from './modal'
-import Button from '@material-ui/core/Button'
 import styles from './alumni-details.scss'
-import { DotsHorizontal as MoreIcon, WindowClose } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import { mdiDotsHorizontal, mdiWindowClose } from '@mdi/js'
 
 export default props => {
   const [open, setOpen] = useState(false)
@@ -11,14 +11,9 @@ export default props => {
   return (
     <div>
       <style jsx>{styles}</style>
-      <Button
-        size='small'
-        variant='contained'
-        fullWidth
-        onClick={() => setOpen(true)}
-      >
-        details <MoreIcon />
-      </Button>
+      <button className='details-button' onClick={() => setOpen(true)}>
+        details <Icon color='#fff' size={1} path={mdiDotsHorizontal} />
+      </button>
       <Modal show={open} onClose={() => setOpen(false)}>
         <div className='alumni-details'>
           <img
@@ -34,7 +29,7 @@ export default props => {
           <h3>Skills:</h3>
           <p> {skills.join(', ')}</p>
           <span className='close' onClick={() => setOpen(false)}>
-            <WindowClose />
+            <Icon size={1} path={mdiWindowClose} />
           </span>
         </div>
       </Modal>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Send from 'mdi-material-ui/Send'
-
+import Icon from '@mdi/react'
+import { mdiSend } from '@mdi/js'
 import styles from './contact-form.scss'
 
 export default ({ email }) => {
@@ -27,7 +27,7 @@ export default ({ email }) => {
       </label>
 
       <button className='material-btn' type='submit'>
-        <Send /> SEND
+        <Icon color='white' size={1} path={mdiSend} /> SEND
       </button>
     </form>
   )

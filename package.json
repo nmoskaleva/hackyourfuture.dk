@@ -8,9 +8,8 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "@material-ui/icons": "^3.0.2",
-    "classnames": "^2.2.6",
+    "@mdi/js": "^3.5.95",
+    "@mdi/react": "^1.1.0",
     "express": "^4.14.0",
     "express-sslify": "^1.2.0",
     "jss": "^9.8.7",

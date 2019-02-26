@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './item-card.scss'
+import Icon from '@mdi/react'
 import {
-  GithubCircle,
-  Linkedin,
-  Email,
-  Note,
-  Earth,
-  Web
-} from 'mdi-material-ui'
+  mdiEarth,
+  mdiEmail,
+  mdiGithubCircle,
+  mdiLinkedin,
+  mdiNote,
+  mdiWeb
+} from '@mdi/js'
 import Slide from 'react-reveal/Slide'
 
 const ItemCard = ({ item, children }) => {
@@ -48,35 +49,35 @@ const ItemCard = ({ item, children }) => {
         <div className='social-media'>
           {github && (
             <a target='_blank' href={github}>
-              <GithubCircle />
+              <Icon size={1} color='#293a7d' path={mdiGithubCircle} />
             </a>
           )}
           {linkedin && (
             <a target='_blank' href={linkedin}>
-              <Linkedin />
+              <Icon size={1} color='#293a7d' path={mdiLinkedin} />
             </a>
           )}
           {email && (
             <a target='_blank' href={`mailto:${email}`}>
-              <Email />
+              <Icon size={1} color='#293a7d' path={mdiEmail} />
             </a>
           )}
 
           {onlineCV && (
             <a target='_blank' href={onlineCV}>
-              <Earth />
+              <Icon size={1} color='#293a7d' path={mdiEarth} />
             </a>
           )}
 
           {pdfCV && (
             <a target='_blank' href={pdfCV}>
-              <Note />
+              <Icon size={1} color='#293a7d' path={mdiNote} />
             </a>
           )}
 
           {website && (
             <a target='_blank' href={website}>
-              <Web />
+              <Icon size={1} color='#293a7d' path={mdiWeb} />
             </a>
           )}
         </div>

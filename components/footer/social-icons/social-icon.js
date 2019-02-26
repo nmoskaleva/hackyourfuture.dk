@@ -1,5 +1,7 @@
 import React from 'react'
-import { Facebook, GithubCircle, Linkedin, Twitter } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import { mdiFacebook, mdiGithubCircle, mdiLinkedin, mdiTwitter } from '@mdi/js'
+
 import styles from './social-icon.scss'
 
 const SocialIcons = () => (
@@ -10,28 +12,28 @@ const SocialIcons = () => (
       title='facebook'
       target='_blank'
     >
-      <Facebook />
+      <Icon size={1} path={mdiFacebook} />
     </a>
     <a
       href='https://twitter.com/HackyourfutureC'
       title='twitter'
       target='_blank'
     >
-      <Twitter />
+      <Icon size={1} path={mdiTwitter} />
     </a>
     <a
       href='https://www.linkedin.com/school/hackyourfuture-copenhagen/'
       title='linkedin'
       target='_blank'
     >
-      <Linkedin />
+      <Icon size={1} path={mdiLinkedin} />
     </a>
     <a
       href='https://github.com/hackyourfuture-cph'
       title='github'
       target='_blank'
     >
-      <GithubCircle />
+      <Icon size={1} path={mdiGithubCircle} />
     </a>
   </div>
 )
