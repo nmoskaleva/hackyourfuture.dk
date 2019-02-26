@@ -5,7 +5,11 @@ import styles from './contact-form.scss'
 
 export default ({ email }) => {
   return (
-    <form action={`https://formspree.io/${email}`} className='contact-form'>
+    <form
+      action={`https://formspree.io/${email}`}
+      className='contact-form'
+      method='POST'
+    >
       <style jsx>{styles}</style>
 
       {/*name*/}
@@ -26,7 +30,7 @@ export default ({ email }) => {
         <span>message</span>
       </label>
 
-      <button className='material-btn' type='submit'>
+      <button type='submit'>
         <Icon color='white' size={1} path={mdiSend} /> SEND
       </button>
     </form>

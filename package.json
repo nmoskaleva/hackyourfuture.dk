@@ -14,7 +14,6 @@
     "express-sslify": "^1.2.0",
     "jss": "^9.8.7",
     "marked": "^0.6.0",
-    "mdi-material-ui": "^5.9.0",
     "next": "^8.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.1",

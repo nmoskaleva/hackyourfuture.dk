@@ -12,28 +12,28 @@ const SocialIcons = () => (
       title='facebook'
       target='_blank'
     >
-      <Icon size={1} path={mdiFacebook} />
+      <Icon color='#fff' size={1} path={mdiFacebook} />
     </a>
     <a
       href='https://twitter.com/HackyourfutureC'
       title='twitter'
       target='_blank'
     >
-      <Icon size={1} path={mdiTwitter} />
+      <Icon color='#fff' size={1} path={mdiTwitter} />
     </a>
     <a
       href='https://www.linkedin.com/school/hackyourfuture-copenhagen/'
       title='linkedin'
       target='_blank'
     >
-      <Icon size={1} path={mdiLinkedin} />
+      <Icon color='#fff' size={1} path={mdiLinkedin} />
     </a>
     <a
       href='https://github.com/hackyourfuture-cph'
       title='github'
       target='_blank'
     >
-      <Icon size={1} path={mdiGithubCircle} />
+      <Icon color='#fff' size={1} path={mdiGithubCircle} />
     </a>
   </div>
 )

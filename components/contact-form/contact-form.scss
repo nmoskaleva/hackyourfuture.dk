@@ -20,10 +20,10 @@ label > input {
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
-label > input:valid + span {
+label > input + span {
   transform: translateY(-25px) scale(0.8);
   transform-origin: 0;
 }
@@ -40,7 +40,7 @@ label > span {
   left: 0;
   font-size: 16px;
   cursor: text;
-  transition: 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 label > input:focus + span {
@@ -56,7 +56,7 @@ label > input:focus {
 
 //Button
 /* Material style */
-.material-btn {
+button[type='submit'] {
   border: none;
   cursor: pointer;
   color: white;
@@ -72,14 +72,12 @@ label > input:focus {
 }
 
 /* Ripple magic */
-.material-btn {
+button[type='submit'] {
   position: relative;
   overflow: hidden;
-
-
 }
 
-.material-btn:after {
+button[type='submit']:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -108,7 +106,6 @@ label > input:focus {
   }
 }
 
-.material-btn:focus:not(:active)::after {
+button[type='submit']:focus:not(:active)::after {
   animation: ripple 1s ease-out;
 }
-

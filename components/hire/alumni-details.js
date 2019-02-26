@@ -11,7 +11,7 @@ export default props => {
   return (
     <div>
       <style jsx>{styles}</style>
-      <button className='details-button' onClick={() => setOpen(true)}>
+      <button className='details' onClick={() => setOpen(true)}>
         details <Icon color='#fff' size={1} path={mdiDotsHorizontal} />
       </button>
       <Modal show={open} onClose={() => setOpen(false)}>
