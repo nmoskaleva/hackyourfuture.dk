@@ -14,6 +14,14 @@ It is a framework that most notably allows you to
 write server-rendered React apps easily – amongst other cool things.
 Also one of the most important features is SEO-friendly.
 
+### Run project
+Set the node_env. This is how you do in git bash:
+`export NODE_ENV=development`
+Now you can run 
+`npm run start`
+or run
+`nodemon`
+
 ### project structure refs
 The project is depend on Next.js & Express.js, and here is a tutorial
 about the same structure using both next.js and express.js
