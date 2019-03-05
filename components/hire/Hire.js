@@ -97,11 +97,8 @@ class Hire extends React.Component {
                   selectedSkills.includes(skill) ? 'active' : 'outlined'
                 }
                 color='primary'
-<<<<<<< HEAD
                 className={classes.button}
-                aria-label="Filter specific skill"
-=======
->>>>>>> feature/remove-materialize
+                aria-label="Filter specific skills"
               >
                 {skill}
               </button>
