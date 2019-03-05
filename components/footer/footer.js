@@ -10,22 +10,22 @@ export default () => (
       <ul>
         <li>
           <Link href='/'>
-            <a>Home</a>
+            <a rel="noopener">Home</a>
           </Link>
         </li>
         <li>
           <Link href='/apply'>
-            <a>Apply</a>
+            <a rel="noopener">Apply</a>
           </Link>
         </li>
         <li>
           <Link href='/volunteer'>
-            <a>Volunteer</a>
+            <a rel="noopener">Volunteer</a>
           </Link>
         </li>
         <li>
           <Link href='/about'>
-            <a>About</a>
+            <a rel="noopener">About</a>
           </Link>
         </li>
       </ul>
@@ -35,7 +35,7 @@ export default () => (
         <p>2450 København </p>
         <p>CVR: 38533193</p>
         <p>
-          <a href='mailto:cph@hackyourfuture.net'>cph@hackyourfuture.net</a>
+          <a rel="noopener" href='mailto:cph@hackyourfuture.net'>cph@hackyourfuture.net</a>
         </p>
       </div>
     </div>

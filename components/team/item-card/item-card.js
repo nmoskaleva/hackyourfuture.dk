@@ -65,35 +65,35 @@ const ItemCard = ({ item, children }) => {
         {role && <p className='member-role'>{role}</p>}
         <div className='social-media'>
           {github && (
-            <a target='_blank' href={github}>
+            <a rel="noopener" aria-label="Github link" target='_blank' href={github}>
               <Icon size={1} color='#293a7d' path={mdiGithubCircle} />
             </a>
           )}
           {linkedin && (
-            <a target='_blank' href={linkedin}>
+            <a rel="noopener" aria-label="Linkedin link" target='_blank' href={linkedin}>
               <Icon size={1} color='#293a7d' path={mdiLinkedin} />
             </a>
           )}
           {email && (
-            <a target='_blank' href={`mailto:${email}`}>
+            <a rel="noopener"  aria-label="email link" target='_blank' href={`mailto:${email}`}>
               <Icon size={1} color='#293a7d' path={mdiEmail} />
             </a>
           )}
 
           {onlineCV && (
-            <a target='_blank' href={onlineCV}>
+            <a rel="noopener" aria-label="Online cv link" target='_blank' href={onlineCV}>
               <Icon size={1} color='#293a7d' path={mdiEarth} />
             </a>
           )}
 
           {pdfCV && (
-            <a target='_blank' href={pdfCV}>
+            <a rel="noopener" aria-label="Pdf cv link" target='_blank' href={pdfCV}>
               <Icon size={1} color='#293a7d' path={mdiNote} />
             </a>
           )}
 
           {website && (
-            <a target='_blank' href={website}>
+            <a rel="noopener" aria-label="website link" target='_blank' href={website}>
               <Icon size={1} color='#293a7d' path={mdiWeb} />
             </a>
           )}

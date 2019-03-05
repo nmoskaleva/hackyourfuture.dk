@@ -17,15 +17,13 @@ export default ({ show, onGoBackClick }) => {
       <style jsx>{styles}</style>
       <ul>
         <li key={uuid()} onClick={onGoBackClick}>
-          <a href='#'>
-            <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
-          </a>
+          <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
         </li>
         {/*Outer list items ---------- */}
         {links.map(({ title, url, dropdown }) => (
           <li className={url === path && 'active'} key={uuid()}>
             <Link href={url}>
-              <a>{title}</a>
+              <a rel="noopener">{title}</a>
             </Link>
 
             {/*Sub items --------- */}
@@ -34,7 +32,7 @@ export default ({ show, onGoBackClick }) => {
                 {dropdown.map(({ title, url }) => (
                   <li className={url === path && 'active'} key={uuid()}>
                     <Link href={url}>
-                      <a>- {title}</a>
+                      <a rel="noopener">- {title}</a>
                     </Link>
                   </li>
                 ))}

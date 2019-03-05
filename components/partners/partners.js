@@ -9,7 +9,7 @@ export default () => (
     <div className='wrapper'>
       {partners.map(({ id, logo, url, title, width }) => (
         <div className='partner' key={id}>
-          <a rel='noopener' target='_blank' href={url}>
+          <a aria-label="Partner link" rel='noopener' target='_blank' href={url}>
             <img alt={title} src={`/static/partners/${logo}`} width={width ? width: ''} />
           </a>
         </div>
