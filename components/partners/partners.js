@@ -1,8 +1,6 @@
 import React from 'react'
 import partners from './partners.json'
 import styles from './partners.scss'
-console.log(4);
-
 
 export default () => (
   <div className='partners'>

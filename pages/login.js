@@ -88,13 +88,6 @@ export default class Login extends React.Component {
             />
           </label>
           <div>
-            <button
-              onClick={() => {
-                this.handleLogin()
-              }}
-            >
-              Login
-            </button>
           </div>
           <script src='https://sdk.accountkit.com/en_US/sdk.js' />
           <script

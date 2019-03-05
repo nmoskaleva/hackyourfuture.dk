@@ -88,7 +88,7 @@ class Index extends React.Component {
                 const { id, title, url } = link
                 return (
                   <Link key={id} href={url}>
-                    <Button className={classes.button}>{title}</Button>
+                    <Button className={classes.button} aria-label="Click link">{title}</Button>
                   </Link>
                 )
               })}

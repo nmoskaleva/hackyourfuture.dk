@@ -93,6 +93,7 @@ class ContactForm extends Component {
           size='large'
           color='primary'
           className={classes.submitForm}
+          aria-label="Contact us"
         >
           Send <SendIcon className={classes.send} />
         </Button>

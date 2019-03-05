@@ -16,6 +16,7 @@ export default props => {
         variant='contained'
         fullWidth
         onClick={() => setOpen(true)}
+        aria-label="Show details"
       >
         details <MoreIcon />
       </Button>

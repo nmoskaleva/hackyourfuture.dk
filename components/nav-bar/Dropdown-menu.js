@@ -44,6 +44,7 @@ class DropdownMenu extends React.Component {
           aria-owns={anchorEl ? 'simple-menu' : undefined}
           aria-haspopup='true'
           onClick={this.handleClick}
+          aria-label="Click menu"
         >
           {children} <ExpandMore />
         </Button>

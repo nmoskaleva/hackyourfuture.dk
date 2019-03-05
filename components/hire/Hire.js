@@ -107,6 +107,7 @@ class Hire extends React.Component {
                 size='small'
                 color='primary'
                 className={classes.button}
+                aria-label="Filter specific skill"
               >
                 {skill}
               </Button>
@@ -129,6 +130,7 @@ class Hire extends React.Component {
                 size='small'
                 color='primary'
                 className={classes.button}
+                aria-label="Filter specific status"
               >
                 {status}
               </Button>
