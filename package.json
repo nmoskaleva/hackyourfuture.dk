@@ -11,6 +11,7 @@
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
+    "compression-webpack-plugin": "^2.0.0",
     "express": "^4.14.0",
     "express-sslify": "^1.2.0",
     "jss": "^9.8.7",
