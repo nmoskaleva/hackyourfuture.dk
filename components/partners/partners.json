@@ -22,5 +22,12 @@
     "logo": "rsv.jpg",
     "title": "donations",
     "url": "#"
+  },
+  {
+    "id": 5,
+    "logo": "zapier.svg",
+    "title": "Zapier",
+    "url": "https://www.zapier.com",
+    "width": "130px"
   }
 ]
