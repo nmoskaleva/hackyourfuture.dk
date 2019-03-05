@@ -1,12 +1,29 @@
 import React from 'react'
 import styles from './item-card.scss'
-import IconButton from '@material-ui/core/IconButton'
-import { GithubCircle, Linkedin, Email, Note, Earth, Web } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import {
+  mdiEarth,
+  mdiEmail,
+  mdiGithubCircle,
+  mdiLinkedin,
+  mdiNote,
+  mdiWeb
+} from '@mdi/js'
 import Slide from 'react-reveal/Slide'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ItemCard = ({ item, children }) => {
-  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV, website } = item
+  const {
+    photo,
+    github,
+    role,
+    name,
+    linkedin,
+    email,
+    onlineCV,
+    pdfCV,
+    website
+  } = item
   return (
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
@@ -30,15 +47,12 @@ const ItemCard = ({ item, children }) => {
           height: 36vw;
         }
       }
-
       `}</style>
       <div className='team-member-card'>
         {photo ? (
           <LazyLoadImage
             alt={name}
-            src={role === 'alumni'
-            ? '/static/alumni/photos/' + photo
-            : photo} // use normal <img> attributes as props
+            src={role === 'alumni' ? `/static/alumni/photos/${photo}` : photo}
           />
         ) : (
           <LazyLoadImage
@@ -49,39 +63,39 @@ const ItemCard = ({ item, children }) => {
         )}
         <h3 className='member-name'>{name}</h3>
         {role && <p className='member-role'>{role}</p>}
-        <div className="social-media">
+        <div className='social-media'>
           {github && (
-            <IconButton color='inherit' target="_blank" href={github}>
-              <GithubCircle />
-            </IconButton>
+            <a target='_blank' href={github}>
+              <Icon size={1} color='#293a7d' path={mdiGithubCircle} />
+            </a>
           )}
           {linkedin && (
-            <IconButton color='inherit' target="_blank" href={linkedin}>
-              <Linkedin />
-            </IconButton>
+            <a target='_blank' href={linkedin}>
+              <Icon size={1} color='#293a7d' path={mdiLinkedin} />
+            </a>
           )}
           {email && (
-            <IconButton color='inherit' target="_blank" href={`mailto:${email}`}>
-              <Email />
-            </IconButton>
+            <a target='_blank' href={`mailto:${email}`}>
+              <Icon size={1} color='#293a7d' path={mdiEmail} />
+            </a>
           )}
 
           {onlineCV && (
-            <IconButton color='inherit' target="_blank" href={onlineCV}>
-              <Earth />
-            </IconButton>
+            <a target='_blank' href={onlineCV}>
+              <Icon size={1} color='#293a7d' path={mdiEarth} />
+            </a>
           )}
 
           {pdfCV && (
-            <IconButton color='inherit' target="_blank" href={pdfCV}>
-              <Note />
-            </IconButton>
+            <a target='_blank' href={pdfCV}>
+              <Icon size={1} color='#293a7d' path={mdiNote} />
+            </a>
           )}
 
           {website && (
-            <IconButton color='inherit' target="_blank" href={website}>
-              <Web />
-            </IconButton>
+            <a target='_blank' href={website}>
+              <Icon size={1} color='#293a7d' path={mdiWeb} />
+            </a>
           )}
         </div>
         {children}

@@ -1,43 +1,40 @@
 import React from 'react'
-import IconButton from '@material-ui/core/IconButton'
-import { Facebook, GithubCircle, Linkedin, Twitter } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import { mdiFacebook, mdiGithubCircle, mdiLinkedin, mdiTwitter } from '@mdi/js'
+
 import styles from './social-icon.scss'
 
 const SocialIcons = () => (
   <div className='social-icons'>
     <style jsx>{styles}</style>
-    <IconButton
+    <a
       href='https://www.facebook.com/hackyourfuturecopenhagen/'
-      color='inherit'
       title='facebook'
-      target="_blank"
+      target='_blank'
     >
-    <Facebook />
-    </IconButton>
-    <IconButton
+      <Icon color='#fff' size={1} path={mdiFacebook} />
+    </a>
+    <a
       href='https://twitter.com/HackyourfutureC'
-      color='inherit'
       title='twitter'
-      target="_blank"
+      target='_blank'
     >
-      <Twitter />
-    </IconButton>
-    <IconButton
+      <Icon color='#fff' size={1} path={mdiTwitter} />
+    </a>
+    <a
       href='https://www.linkedin.com/school/hackyourfuture-copenhagen/'
-      color='inherit'
       title='linkedin'
-      target="_blank"
+      target='_blank'
     >
-      <Linkedin />
-    </IconButton>
-    <IconButton
+      <Icon color='#fff' size={1} path={mdiLinkedin} />
+    </a>
+    <a
       href='https://github.com/hackyourfuture-cph'
-      color='inherit'
       title='github'
-      target="_blank"
+      target='_blank'
     >
-      <GithubCircle />
-    </IconButton>
+      <Icon color='#fff' size={1} path={mdiGithubCircle} />
+    </a>
   </div>
 )
 

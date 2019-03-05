@@ -1,6 +1,6 @@
 const express = require('express')
 const next = require('next')
-var enforce = require('express-sslify');
+const enforce = require('express-sslify')
 
 const port = parseInt(process.env.PORT, 10) || 3000
 // NODE_ENV is used for next.js ONLY

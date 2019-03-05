@@ -9,22 +9,22 @@ export default () => (
     <div className='info'>
       <ul>
         <li>
-          <Link href="/">
+          <Link href='/'>
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/apply">
+          <Link href='/apply'>
             <a>Apply</a>
           </Link>
         </li>
         <li>
-          <Link href="/volunteer">
+          <Link href='/volunteer'>
             <a>Volunteer</a>
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href='/about'>
             <a>About</a>
           </Link>
         </li>
@@ -34,7 +34,9 @@ export default () => (
         <p>Kongens Enghave </p>
         <p>2450 København </p>
         <p>CVR: 38533193</p>
-        <p><a href="mailto:cph@hackyourfuture.net">cph@hackyourfuture.net</a></p>
+        <p>
+          <a href='mailto:cph@hackyourfuture.net'>cph@hackyourfuture.net</a>
+        </p>
       </div>
     </div>
   </footer>

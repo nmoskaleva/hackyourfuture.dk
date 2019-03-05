@@ -1,0 +1,50 @@
+$primary-color: #293a7d;
+
+.side-drawer {
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  &.open {
+    transform: translateX(0);
+    box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+  }
+
+  ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      &.active a {
+        font-weight: bold;
+      }
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover,
+        &:active {
+          background: #eee;
+        }
+      }
+    }
+  }
+}

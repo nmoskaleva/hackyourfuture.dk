@@ -47,7 +47,7 @@ export default () => (
     <Content id='partners'>
       <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
     </Content>
-    
+
     <Partners />
   </Layout>
 )

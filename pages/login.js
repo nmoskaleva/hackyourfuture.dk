@@ -11,6 +11,7 @@ export default class Login extends React.Component {
       email: ''
     }
   }
+
   componentDidMount() {
     if (
       window.location.hostname === 'hackyourfuture.dk' &&
@@ -19,6 +20,7 @@ export default class Login extends React.Component {
       window.location.href = 'https://hackyourfuture.dk/login/'
     }
   }
+
   handleLogin() {
     console.log('Logging in!', this.state.email)
     AccountKit.login(
@@ -27,11 +29,12 @@ export default class Login extends React.Component {
       this.loginCallback
     )
   }
+
   loginCallback(response) {
     console.log(response.status)
     if (response.status === 'PARTIALLY_AUTHENTICATED') {
-      var code = response.code
-      var csrf = response.state
+      const code = response.code
+      const csrf = response.state
       fetch(`${getApi()}/login`, {
         method: 'POST',
         headers: {
@@ -52,6 +55,7 @@ export default class Login extends React.Component {
       // handle bad parameters
     }
   }
+
   render() {
     return (
       <Layout>
@@ -59,12 +63,14 @@ export default class Login extends React.Component {
           <title>Login</title>
         </Head>
         <Content>
+          {/*language=CSS*/}
           <style jsx>{`
             .email {
               width: 100%;
               max-width: 300px;
               font-size: 1.4rem;
             }
+
             button {
               font-size: 1.4rem;
               background: #2ecc40;
