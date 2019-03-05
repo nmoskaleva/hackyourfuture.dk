@@ -14,7 +14,7 @@ module.exports = {
         'sass-loader'
       ]
     })
-    if (config.mode ===  'production') {
+    if (config.mode === 'production') {
       config.plugins.push(
         new CompressionPlugin({
           filename: '[path].gz[query]',
@@ -22,9 +22,10 @@ module.exports = {
           test: /\.js$|\.css$|\.html$|\.eot?.+$|\.ttf?.+$|\.woff?.+$|\.svg?.+$/,
           threshold: 10240,
           minRatio: 0.8
-        }), 
+        }),
       );
-
+    }
+    
     return config
   }
 }

@@ -19,20 +19,7 @@
     font-size: 1.2rem;
   }
 
-  img {
-    border-radius: 100%;
-    object-fit: cover;
-    display: flex;
-    width: 210px;
-    height: 210px;
-    margin-bottom: 12px;
-    background-color: #f4f4f4;
-
-    @media (max-width: 519px) {
-      width: 36vw;
-      height: 36vw;
-    }
-  }
+  
   
   .member-tag {
     font-size: 14px;

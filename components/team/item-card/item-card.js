@@ -3,6 +3,7 @@ import styles from './item-card.scss'
 import IconButton from '@material-ui/core/IconButton'
 import { GithubCircle, Linkedin, Email, Note, Earth, Web } from 'mdi-material-ui'
 import Slide from 'react-reveal/Slide'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ItemCard = ({ item, children }) => {
   const { photo, github, role, name, linkedin, email, onlineCV, pdfCV, website } = item
@@ -13,19 +14,34 @@ const ItemCard = ({ item, children }) => {
       .social-media > a {
         padding: 6px;
       }
+      .team-member-card img {
+        border-radius: 100%;
+        object-fit: cover;
+        display: flex;
+        width: 210px;
+        height: 210px;
+        margin-bottom: 12px;
+        background-color: #f4f4f4;
+      }
+
+      @media (max-width: 519px) {
+        .team-member-card img {
+          width: 36vw;
+          height: 36vw;
+        }
+      }
+
       `}</style>
       <div className='team-member-card'>
         {photo ? (
-          <img
+          <LazyLoadImage
             alt={name}
-            src={
-              role === 'alumni'
-                ? '/static/alumni/photos/' + photo
-                : photo
-            }
+            src={role === 'alumni'
+            ? '/static/alumni/photos/' + photo
+            : photo} // use normal <img> attributes as props
           />
         ) : (
-          <img
+          <LazyLoadImage
             alt={name}
             className='member-default-avatar'
             src={'/static/avatar.png'}
