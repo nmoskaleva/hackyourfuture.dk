@@ -14,6 +14,23 @@ It is a framework that most notably allows you to
 write server-rendered React apps easily – amongst other cool things.
 Also one of the most important features is SEO-friendly.
 
+### Run project
+Set the node_env. This is how you do in git bash:
+`export NODE_ENV=develop`
+Now you can run 
+`npm run start`
+or run
+`nodemon`
+
+#### Dependencies vs devDependencies
+All modules that are used by heroku must be in dependencies! 
+Fx `compression-webpack-plugin`, `node-sass`, `sass-loader`. Are all in dependencies.
+The issue is this: https://github.com/zeit/next.js/issues/6478 and this: https://github.com/zeit/next.js/issues/198
+
+### Staging environment
+The develop branch automatically deploys to https://dashboard.heroku.com/apps/test-hackyourfuture-dk
+This heroku app is registred at staging.hackyourfuture.dk with the NODE_ENVIRONMENT set to develop
+
 ### project structure refs
 The project is depend on Next.js & Express.js, and here is a tutorial
 about the same structure using both next.js and express.js
@@ -33,13 +50,6 @@ there is two basic fonts: Space Mono, and Work Sans
 #### UI components
 
 Many components are coming from [Material UI](https://material-ui.com)
-
-#### Note
-
-When we navigate between website urls under development, some porplems
-appears with navbar and some other places, so we need to restart the server
-manually with `npm start dev`
-The same issue if we added a new module
 
 ## project structure:
 

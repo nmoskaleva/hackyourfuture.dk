@@ -1,3 +1,4 @@
+const CompressionPlugin = require('compression-webpack-plugin');
 module.exports = {
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
@@ -13,7 +14,12 @@ module.exports = {
         'sass-loader'
       ]
     })
-
+    if (config.mode === 'production') {
+      config.plugins.push(
+        new CompressionPlugin(),
+      );
+    }
+    
     return config
   }
 }

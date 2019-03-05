@@ -1,3 +1,11 @@
 .social-icons {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
+
+  a {
+    margin: 0.5rem 0.4rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }

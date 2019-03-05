@@ -1,18 +1,10 @@
 import * as React from 'react'
-import alumniList from './alumni.json'
+import alumniList from './alumni-details/alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
-import Button from '@material-ui/core/Button'
 import styles from './hire.scss'
-import { withStyles } from '@material-ui/core/styles'
 import id from 'uuid/v4'
-import AlumniDetails from './alumni-details'
-
-const style = () => ({
-  button: {
-    marginRight: '0.5rem'
-  }
-})
+import AlumniDetails from './alumni-details/alumni-details'
 
 class Hire extends React.Component {
   state = {
@@ -38,6 +30,7 @@ class Hire extends React.Component {
       uniqueStatuses: [...new Set(statuses)]
     })
   }
+
   doFiltering = () => {
     // by default: all alumni list
     let newAlumniList = alumniList
@@ -52,7 +45,7 @@ class Hire extends React.Component {
         this.state.selectedStatus.every(s => alumni.status === s)
       )
     }
-    this.setState(state => ({ alumniList: newAlumniList }))
+    this.setState({ alumniList: newAlumniList })
   }
 
   filterSkillsHandler = skill => {
@@ -85,7 +78,6 @@ class Hire extends React.Component {
       uniqueStatuses,
       selectedStatus
     } = this.state
-    const { classes } = this.props
     return (
       <div>
         <style jsx>{styles}</style>
@@ -98,18 +90,18 @@ class Hire extends React.Component {
           </p>
           {uniqueSkills.map(skill => {
             return (
-              <Button
+              <button
                 key={id()}
                 onClick={() => this.filterSkillsHandler(skill)}
-                variant={
-                  selectedSkills.includes(skill) ? 'contained' : 'outlined'
+                className={
+                  selectedSkills.includes(skill) ? 'active' : 'outlined'
                 }
-                size='small'
                 color='primary'
                 className={classes.button}
+                aria-label="Filter specific skills"
               >
                 {skill}
-              </Button>
+              </button>
             )
           })}
 
@@ -120,18 +112,15 @@ class Hire extends React.Component {
           </p>
           {uniqueStatuses.map(status => {
             return (
-              <Button
+              <button
                 key={id()}
                 onClick={() => this.filterStatusesHandler(status)}
-                variant={
-                  selectedStatus.includes(status) ? 'contained' : 'outlined'
-                }
-                size='small'
+                className={selectedStatus.includes(status) && 'active'}
                 color='primary'
-                className={classes.button}
+                aria-label="Filter specific status"
               >
                 {status}
-              </Button>
+              </button>
             )
           })}
         </Content>
@@ -150,4 +139,4 @@ class Hire extends React.Component {
   }
 }
 
-export default withStyles(style)(Hire)
+export default Hire

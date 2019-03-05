@@ -1,11 +1,29 @@
 import React from 'react'
 import styles from './item-card.scss'
-import IconButton from '@material-ui/core/IconButton'
-import { GithubCircle, Linkedin, Email, Note, Earth, Web } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import {
+  mdiEarth,
+  mdiEmail,
+  mdiGithubCircle,
+  mdiLinkedin,
+  mdiNote,
+  mdiWeb
+} from '@mdi/js'
 import Slide from 'react-reveal/Slide'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ItemCard = ({ item, children }) => {
-  const { photo, github, role, name, linkedin, email, onlineCV, pdfCV, website } = item
+  const {
+    photo,
+    github,
+    role,
+    name,
+    linkedin,
+    email,
+    onlineCV,
+    pdfCV,
+    website
+  } = item
   return (
     <Slide duration={300} effect='fadeInUp'>
       <style jsx>{styles}</style>
@@ -13,19 +31,31 @@ const ItemCard = ({ item, children }) => {
       .social-media > a {
         padding: 6px;
       }
+      .team-member-card img {
+        border-radius: 100%;
+        object-fit: cover;
+        display: flex;
+        width: 210px;
+        height: 210px;
+        margin-bottom: 12px;
+        background-color: #f4f4f4;
+      }
+
+      @media (max-width: 519px) {
+        .team-member-card img {
+          width: 36vw;
+          height: 36vw;
+        }
+      }
       `}</style>
       <div className='team-member-card'>
         {photo ? (
-          <img
+          <LazyLoadImage
             alt={name}
-            src={
-              role === 'alumni'
-                ? '/static/alumni/photos/' + photo
-                : photo
-            }
+            src={role === 'alumni' ? `/static/alumni/photos/${photo}` : photo}
           />
         ) : (
-          <img
+          <LazyLoadImage
             alt={name}
             className='member-default-avatar'
             src={'/static/avatar.png'}
@@ -33,39 +63,39 @@ const ItemCard = ({ item, children }) => {
         )}
         <h3 className='member-name'>{name}</h3>
         {role && <p className='member-role'>{role}</p>}
-        <div className="social-media">
+        <div className='social-media'>
           {github && (
-            <IconButton color='inherit' target="_blank" href={github}>
-              <GithubCircle />
-            </IconButton>
+            <a rel="noopener" aria-label="Github link" target='_blank' href={github}>
+              <Icon size={1} color='#293a7d' path={mdiGithubCircle} />
+            </a>
           )}
           {linkedin && (
-            <IconButton color='inherit' target="_blank" href={linkedin}>
-              <Linkedin />
-            </IconButton>
+            <a rel="noopener" aria-label="Linkedin link" target='_blank' href={linkedin}>
+              <Icon size={1} color='#293a7d' path={mdiLinkedin} />
+            </a>
           )}
           {email && (
-            <IconButton color='inherit' target="_blank" href={`mailto:${email}`}>
-              <Email />
-            </IconButton>
+            <a rel="noopener"  aria-label="email link" target='_blank' href={`mailto:${email}`}>
+              <Icon size={1} color='#293a7d' path={mdiEmail} />
+            </a>
           )}
 
           {onlineCV && (
-            <IconButton color='inherit' target="_blank" href={onlineCV}>
-              <Earth />
-            </IconButton>
+            <a rel="noopener" aria-label="Online cv link" target='_blank' href={onlineCV}>
+              <Icon size={1} color='#293a7d' path={mdiEarth} />
+            </a>
           )}
 
           {pdfCV && (
-            <IconButton color='inherit' target="_blank" href={pdfCV}>
-              <Note />
-            </IconButton>
+            <a rel="noopener" aria-label="Pdf cv link" target='_blank' href={pdfCV}>
+              <Icon size={1} color='#293a7d' path={mdiNote} />
+            </a>
           )}
 
           {website && (
-            <IconButton color='inherit' target="_blank" href={website}>
-              <Web />
-            </IconButton>
+            <a rel="noopener" aria-label="website link" target='_blank' href={website}>
+              <Icon size={1} color='#293a7d' path={mdiWeb} />
+            </a>
           )}
         </div>
         {children}

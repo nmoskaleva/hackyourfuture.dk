@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Modal from '@material-ui/core/Modal'
-import Button from '@material-ui/core/Button'
+import Modal from '../modal/modal'
 import styles from './alumni-details.scss'
-import { DotsHorizontal as MoreIcon, WindowClose } from 'mdi-material-ui'
+import Icon from '@mdi/react'
+import { mdiDotsHorizontal, mdiWindowClose } from '@mdi/js'
 
 export default props => {
   const [open, setOpen] = useState(false)
@@ -11,24 +11,16 @@ export default props => {
   return (
     <div>
       <style jsx>{styles}</style>
-      <Button
-        size='small'
-        variant='contained'
-        fullWidth
-        onClick={() => setOpen(true)}
-      >
-        details <MoreIcon />
-      </Button>
-      <Modal
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'
-        open={open}
-        onClose={() => setOpen(false)}
-      >
+      <button aria-label="Show details" className='details' onClick={() => setOpen(true)}>
+        details <Icon color='#fff' size={1} path={mdiDotsHorizontal} />
+      </button>
+      <Modal show={open} onClose={() => setOpen(false)}>
         <div className='alumni-details'>
           <img
-            className='photo'
-            src={`/static/alumni/photos/${photo}`}
+            className={`photo`}
+            src={
+              photo ? `/static/alumni/photos/${photo}` : `/static/avatar.png`
+            }
             alt={name}
           />
           <h3 className='hyf-title'>{name}</h3>
@@ -37,7 +29,7 @@ export default props => {
           <h3>Skills:</h3>
           <p> {skills.join(', ')}</p>
           <span className='close' onClick={() => setOpen(false)}>
-            <WindowClose />
+            <Icon size={1} path={mdiWindowClose} />
           </span>
         </div>
       </Modal>

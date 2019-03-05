@@ -10,7 +10,6 @@ import {
 import WufooForm from 'react-wufoo-embed'
 import Partners from '../components/partners/partners'
 
-
 export default () => (
   <Layout>
     <Head>
@@ -24,14 +23,15 @@ export default () => (
 
     <Content id='apply-for-class'>
       <h2>Apply for class</h2>
-      <WufooForm userName='cphhackyourfuture' formHash='z6vsui115onnkl' header='hide' />
+      <WufooForm userName='cphhackyourfuture' formHash='q1wl24e70yn2y5l' header='hide' />
+
     </Content>
 
     <Content id='learn'>
       <h2>{title_learn}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
     </Content>
-    
+
     <Partners />
   </Layout>
 )
