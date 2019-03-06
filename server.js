@@ -14,13 +14,14 @@ app.prepare().then(() => {
 
   if (process.env.NODE_ENVIRONMENT === 'production') {
     server.use(enforce.HTTPS({ trustProtoHeader: true }));
+    
+    server.get('*.js', function (req, res, next) {
+      req.url = req.url + '.gz';
+      res.set('Content-Encoding', 'gzip');
+      next();
+    });
   }
 
-  server.get('*.js', function (req, res, next) {
-    req.url = req.url + '.gz';
-    res.set('Content-Encoding', 'gzip');
-    next();
-  });
 
   server.get('*', (req, res) => {
     return handle(req, res)
