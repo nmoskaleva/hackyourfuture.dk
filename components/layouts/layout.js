@@ -5,7 +5,7 @@ import React from 'react'
 
 export default ({ children }) => {
   return (
-    <html lang="en">
+    <div>
       {/*language=CSS*/}
       <style jsx global>{`
         /* Normalize start */
@@ -488,6 +488,6 @@ export default ({ children }) => {
           `
         }}
       />
-    </html>
+    </div>
   )
 }
