@@ -28,6 +28,8 @@ $primary-color: #293a7d;
     flex-direction: column;
 
     li {
+      padding: 1rem;
+      
       &.active a {
         font-weight: bold;
       }
@@ -37,7 +39,6 @@ $primary-color: #293a7d;
         text-decoration: none;
         font-size: 1.2rem;
         display: block;
-        padding: 1rem;
         transition: background-color 0.3s ease-in-out;
 
         &:hover,
