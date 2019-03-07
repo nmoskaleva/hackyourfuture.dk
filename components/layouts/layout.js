@@ -97,18 +97,18 @@ export default ({ children }) => {
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@hyf' />
 
-        <meta name="description" content="HackYourFuture Refugee Coding School In Copenhagen" />
+        <meta name="description" content="HackYourFuture - A web development coding school for newcomers in Copenhagen" />
         <meta name="image" content="https://hackyourfuture.dk/static/hero.jpg" />
         
-        <meta itemProp="name" content="HackYourFuture - Copenhagen" />
-        <meta itemProp="description" content="HackYourFuture Refugee Coding School In Copenhagen" />
+        <meta itemProp="name" content="HackYourFuture - A coding school in Copenhagen" />
+        <meta itemProp="description" content="HackYourFuture - A web development coding school for newcomers in Copenhagen" />
         <meta itemProp="image" content="https://hackyourfuture.dk/static/hero.jpg" />
         
-        <meta name="og:title" content="HackYourFuture - Copenhagen" />
-        <meta name="og:description" content="HackYourFuture Refugee Coding School In Copenhagen" />
+        <meta name="og:title" content="HackYourFuture - A coding school in Copenhagen" />
+        <meta name="og:description" content="HackYourFuture - A web development coding school for newcomers in Copenhagen" />
         <meta name="og:image" content="https://hackyourfuture.dk/static/hero.jpg" />
         <meta name="og:url" content="https://hackyourfuture.dk/" />
-        <meta name="og:site_name" content="HackYourFuture - Copenhagen" />
+        <meta name="og:site_name" content="HackYourFuture - A coding school in Copenhagen" />
         <meta name="og:locale" content="en" />
         <meta name="og:type" content="website"></meta>
 
