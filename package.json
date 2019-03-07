@@ -10,11 +10,14 @@
   "dependencies": {
     "@mdi/js": "^3.5.95",
     "@mdi/react": "^1.1.0",
+    "compression-webpack-plugin": "^2.0.0",
     "express": "^4.14.0",
     "express-sslify": "^1.2.0",
+    "forcedomain": "^1.0.1",
     "jss": "^9.8.7",
     "marked": "^0.6.0",
     "next": "^8.0.0",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -22,10 +25,8 @@
     "react-lazy-load-image-component": "^1.3.2",
     "react-reveal": "^1.2.2",
     "react-wufoo-embed": "^1.0.0",
-    "uuid": "^3.3.2",
-    "compression-webpack-plugin": "^2.0.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

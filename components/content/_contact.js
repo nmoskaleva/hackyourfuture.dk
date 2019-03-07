@@ -1,4 +1,4 @@
-const title = `Contact us`
+const title = `Contact - HackYourFuture`
 const content = `
 
 Feel to contact us about anything, we always happy to chat!

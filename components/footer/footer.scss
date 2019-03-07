@@ -20,15 +20,19 @@ footer {
       flex-direction: column;
     }
 
-    > * {
-      flex: 240px 0 1;
-      text-align: left;
+    ul {
+      margin-bottom: 24px;
 
-      @media (max-width: $breakpoint) {
-        flex: 1;
-        margin-bottom: 24px;
+      & > * {
+        flex: 240px 0 1;
+        text-align: left;
+        margin-bottom: 4px;
+  
+        @media (max-width: $breakpoint) {
+          flex: 1;
+        }
       }
-    }
+    } 
 
     ul li a, a {
       color: white;

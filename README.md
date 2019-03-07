@@ -17,6 +17,8 @@ Also one of the most important features is SEO-friendly.
 ### Run project
 Set the node_env. This is how you do in git bash:
 `export NODE_ENV=develop`
+`cmder`
+`set NODE_ENV=develop`
 Now you can run 
 `npm run start`
 or run
