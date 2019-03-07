@@ -13,6 +13,15 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
+  server.get('/robots.txt', (req, res) => (
+    res.status(200).sendFile('robots.txt', {
+      root: __dirname + '/static/',
+      headers: {
+        'Content-Type': 'text/plain;charset=UTF-8',
+      }
+    })
+  ));
+
   if (process.env.NODE_ENVIRONMENT === 'production') {
     server.use(enforce.HTTPS({ trustProtoHeader: true }));
     
