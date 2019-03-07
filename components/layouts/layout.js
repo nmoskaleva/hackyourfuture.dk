@@ -89,7 +89,7 @@ export default ({ children }) => {
         }
       `}</style>
       <Head>
-        <title>HackYourFuture - Copenhagen</title>
+        <title>HackYourFuture - A coding school in Copenhagen</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
 
         <meta name='keywords' content='HackYourFuture, copenhagen, denmark, coding, school, dk, programming' />

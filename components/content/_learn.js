@@ -1,4 +1,4 @@
-const title = `Learn`
+const title = `Learn - HackYourFuture`
 const content = `
 We are super engaged in learning and especially about web development!
 
