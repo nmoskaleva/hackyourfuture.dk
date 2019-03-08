@@ -29,12 +29,13 @@ app.prepare().then(() => {
       hostname: 'www.hackyourfuture.dk',
       excludeRule: /staging/i
     }));
-    
+    /*
     server.get('*.js', function (req, res, next) {
       req.url = req.url + '.gz';
       res.set('Content-Encoding', 'gzip');
       next();
     });
+    */
   }
 
 
