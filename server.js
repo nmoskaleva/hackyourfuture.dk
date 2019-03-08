@@ -30,9 +30,20 @@ app.prepare().then(() => {
       excludeRule: /staging/i
     }));
     
-    server.get('*.js', function (req, res, next) {
+    // Firefox needs the Content-Type specified.
+    // For JS
+    server.get('*.js', function(req, res, next) {
       req.url = req.url + '.gz';
       res.set('Content-Encoding', 'gzip');
+      res.set('Content-Type', 'text/javascript');
+      next();
+    });
+
+    // For CSS
+    server.get('*.css', function(req, res, next) {
+      req.url = req.url + '.gz';
+      res.set('Content-Encoding', 'gzip');
+      res.set('Content-Type', 'text/css');
       next();
     });
   }
