@@ -239,5 +239,21 @@
     "photo": "/static/team/allan-thraen.jpg",
     "linkedin": "https://www.linkedin.com/in/allanthraen/",
     "github": "https://github.com/AThraen/"
+  },
+  {
+    "id": 36,
+    "name": "Zoey Zou",
+    "role": "mentor",
+    "photo": "/static/team/zoey.jpg",
+    "linkedin": "https://www.linkedin.com/in/zoeyzou2018/",
+    "github": "https://github.com/zoeyzou"
+  },
+  {
+    "id": 37,
+    "name": "Krishna Rana",
+    "role": "mentor",
+    "photo": "/static/team/krishna.jpg",
+    "linkedin": "https://www.linkedin.com/in/krishnarana2121/",
+    "github": "https://github.com/krishnarrana"
   }
 ]

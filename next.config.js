@@ -17,7 +17,7 @@ module.exports = {
     if (config.mode === 'production') {
       config.plugins.push(
         new CompressionPlugin(),
-      );
+      ); 
     }
     
     return config
