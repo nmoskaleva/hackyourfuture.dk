@@ -2,9 +2,9 @@
 
 ![content](/static/logo-dark.svg)
 
-this is a fork from [Keven repo](`https://github.com/kevinsimper/hackyourfuture.dk`)
+This is a fork from [Kevin's repo](`https://github.com/kevinsimper/hackyourfuture.dk`)
 
-to preview on Heroku hosting [`https://hyf-dk.herokuapp.com/`](https://hyf-dk.herokuapp.com/)
+To preview on Heroku hosting [`https://hyf-dk.herokuapp.com/`](https://hyf-dk.herokuapp.com/)
 
 
 ### Why Next.js
