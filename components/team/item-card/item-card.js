@@ -16,13 +16,14 @@ const ItemCard = ({ item, children }) => {
   const {
     photo,
     github,
-    role,
+    roles,
     name,
     linkedin,
     email,
     onlineCV,
     pdfCV,
-    website
+    website,
+    roleDescription
   } = item
   return (
     <Slide duration={300} effect='fadeInUp'>
@@ -52,7 +53,7 @@ const ItemCard = ({ item, children }) => {
         {photo ? (
           <LazyLoadImage
             alt={name}
-            src={role === 'alumni' ? `/static/alumni/photos/${photo}` : photo}
+            src={roles.includes('alumni') ? `/static/alumni/photos/${photo}` : photo}
           />
         ) : (
           <LazyLoadImage
@@ -62,7 +63,7 @@ const ItemCard = ({ item, children }) => {
           />
         )}
         <h3 className='member-name'>{name}</h3>
-        {role && <p className='member-role'>{role}</p>}
+        {roles && <p className='member-role'>{ roleDescription }</p>}
         <div className='social-media'>
           {github && (
             <a rel="noopener" aria-label="Github link" target='_blank' href={github}>

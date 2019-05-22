@@ -4,7 +4,7 @@ import ItemCard from './item-card/item-card'
 import styles from './team.scss'
 
 export const CoreTeam = () => {
-  const coreTeam = members.filter(member => member.role !== 'mentor')
+  const coreTeam = members.filter(member => member.roles.includes('core'))
   return (
     <>
       <style jsx>{styles}</style>
@@ -19,7 +19,7 @@ export const CoreTeam = () => {
 }
 
 export const MentorsTeam = () => {
-  const mentors = members.filter(member => member.role === 'mentor')
+  const mentors = members.filter(member => member.roles.includes('mentor'))
   return (
     <>
       <style jsx>{styles}</style>

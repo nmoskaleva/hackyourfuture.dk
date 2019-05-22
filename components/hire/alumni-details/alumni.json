@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "role": "alumni",
+    "roles": ["alumni"],
     "name": "Katsisaac50",
     "email": "katsisaac50@gmail.com",
     "photo": "1.jpg",
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "role": "alumni",
+    "roles": ["alumni"],
     "name": "Hala Kasim",
     "email": "halakasim16@gmail.com",
     "photo": "2.jpg",
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "role": "alumni",
+    "roles": ["alumni"],
     "name": "Rufaida Jumaa",
     "email": "eng.rufaidajumaa@gmail.com",
     "photo": "",
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "role": "alumni",
+    "roles": ["alumni"],
     "name": "Mohammed Abd",
     "email": "moha.abd.99@gmail.com",
     "photo": "3.jpg",
@@ -57,7 +57,7 @@
   },
   {
     "id": 6,
-    "role": "alumni",
+    "roles": ["alumni"],
     "name": "Richard Paredes",
     "email": "chard.paredes@gmail.com",
     "photo": "4.JPG",
