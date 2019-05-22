@@ -289,5 +289,40 @@
     "photo": "/static/team/krishna.jpg",
     "linkedin": "https://www.linkedin.com/in/krishnarana2121/",
     "github": "https://github.com/krishnarrana"
+  },
+  {
+    "id": 38,
+    "name": "Nynne Just Christofferson",
+    "roles": ["boardmember"],
+    "photo": "/static/team/nynne.jpg",
+    "roleDescription": "Chairwoman of the Board"
+  },
+  {
+    "id": 39,
+    "name": "Sherry List",
+    "roles": ["boardmember"],
+    "photo": "/static/team/sherry-list.jpg",
+    "roleDescription": "Vice Chairwoman of the Board"
+  },
+  {
+    "id": 40,
+    "name": "Christopher Klüter",
+    "roles": ["boardmember"],
+    "photo": "/static/team/christopher.jpg",
+    "roleDescription": "Treasurer" 
+  },
+  {
+    "id": 41,
+    "name": "Rohit Sharma",
+    "roles": ["boardmember"],
+    "photo": "/static/team/rohit.jpg",
+    "roleDescription": "Board Member"
+  },
+  {
+    "id": 42,
+    "name": "Mila Manieva",
+    "roles": ["boardmember"],
+    "photo": "/static/team/mila-manieva.jpg",
+    "roleDescription": "Board Member"
   }
 ]
