@@ -4,7 +4,7 @@ import ItemCard from './item-card/item-card'
 import styles from './team.scss'
 
 export const CoreTeam = () => {
-  const coreTeam = members.filter(member => member.role !== 'mentor')
+  const coreTeam = members.filter(member => member.roles.includes('core'))
   return (
     <>
       <style jsx>{styles}</style>
@@ -18,8 +18,23 @@ export const CoreTeam = () => {
   )
 }
 
+export const BoardMembers = () => {
+  const boardMembers = members.filter(member => member.roles.includes('boardmember'))
+  return (
+    <>
+      <style jsx>{styles}</style>
+      <h2>Board members</h2>
+      <div className='team-members core-team'>
+        {boardMembers.map(boardMember => (
+          <ItemCard item={boardMember} key={boardMember.id} />
+        ))}
+      </div>
+    </>
+  )
+}
+
 export const MentorsTeam = () => {
-  const mentors = members.filter(member => member.role === 'mentor')
+  const mentors = members.filter(member => member.roles.includes('mentor'))
   return (
     <>
       <style jsx>{styles}</style>
@@ -38,6 +53,7 @@ export const MentorsTeam = () => {
 export default () => {
   return (
     <div>
+      <BoardMembers />
       <CoreTeam />
       <MentorsTeam />
     </div>

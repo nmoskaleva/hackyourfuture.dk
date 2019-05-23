@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "Christopher Klüter",
-    "role": "Managing Director",
+    "roles": ["core"],
+    "roleDescription": "Managing Director",
     "email": "christopher@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/christopher-kl%C3%BCter-26794643/",
     "photo": "/static/team/christopher.jpg"
@@ -10,7 +11,8 @@
   {
     "id": 2,
     "name": "Marie Hoff",
-    "role": "Community Manager",
+    "roles": ["core"],
+    "roleDescription": "Community Manager",
     "email": "marie@hackyourfuture.net",
     "linkedin": "https://www.linkedin.com/in/marie-hoff/",
     "photo": "/static/team/marie.jpg"
@@ -18,7 +20,8 @@
   {
     "id": 3,
     "name": "Benjamin Dalsgaard Hughes",
-    "role": "Educational Director",
+    "roles": ["core"],
+    "roleDescription": "Educational Director",
     "photo": "/static/team/benjamin.jpg",
     "linkedin": "https://www.linkedin.com/in/benjamindalshughes/",
     "github": "https://github.com/benna100/",
@@ -28,13 +31,15 @@
   {
     "id": 4,
     "name": "Alicia Gonzales",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/alicia.jpg"
   },
   {
     "id": 5,
     "name": "Zaki Wasik",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/zaki.jpg",
     "linkedin": "https://www.linkedin.com/in/zakiwasik/",
     "github": "https://github.com/zkwsk"
@@ -42,13 +47,15 @@
   {
     "id": 6,
     "name": "Rohit Sharma",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/rohit.jpg"
   },
   {
     "id": 7,
     "name": "Rasmus Jones",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/rasmus.jpg",
     "linkedin": "https://www.linkedin.com/in/rasmus-jones-b4552480/",
     "github": "https://github.com/Rassibassi"
@@ -56,7 +63,8 @@
   {
     "id": 8,
     "name": "Pachito Marco Calabrese",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/marco.jpg",
     "linkedin": "https://www.linkedin.com/in/pmcalabrese/",
     "github": "https://github.com/pmcalabrese/"
@@ -64,7 +72,8 @@
   {
     "id": 9,
     "name": "Martin Clemmensen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/martin.jpg",
     "linkedin": "https://www.linkedin.com/in/martinclemmensen/",
     "github": "https://github.com/mclemme"
@@ -72,7 +81,8 @@
   {
     "id": 10,
     "name": "Marta Matos",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/marta.jpg",
     "linkedin": "https://www.linkedin.com/in/marta-matos-829a7050/",
     "github": "https://github.com/martamatos"
@@ -80,7 +90,8 @@
   {
     "id": 11,
     "name": "Nynne Just Christofferson",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/nynne.jpg",
     "linkedin": "https://www.linkedin.com/in/nynne-just-christoffersen-0361a316/",
     "github": "https://github.com/nynnejc/"
@@ -88,7 +99,8 @@
   {
     "id": 12,
     "name": "Pankaj Kumar Singh",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/pankaj.jpg",
     "linkedin": "https://dk.linkedin.com/in/pankaj28843",
     "github": "https://github.com/pankaj28843/"
@@ -96,7 +108,8 @@
   {
     "id": 13,
     "name": "Svetlana Galkina",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/svetlana.jpg",
     "linkedin": "",
     "github": ""
@@ -104,7 +117,8 @@
   {
     "id": 14,
     "name": "Jacob Andresen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/jacob.jpg",
     "linkedin": "https://www.linkedin.com/in/jacobandresen/",
     "github": "https://github.com/jacobandresen"
@@ -112,7 +126,8 @@
   {
     "id": 15,
     "name": "Kevin Simper",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/kevin.jpg",
     "linkedin": "https://www.linkedin.com/in/kevinsimper/",
     "github": "https://github.com/kevinsimper"
@@ -120,20 +135,23 @@
   {
     "id": 16,
     "name": "Younes Meliani",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/younes.jpg"
   },
   {
     "id": 17,
     "name": "Fehime Seven",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/fehime.jpg",
     "linkedin": "https://www.linkedin.com/in/fehime-seven-4b2b5b56/?locale=en_US"
   },
   {
     "id": 18,
     "name": "Moritz Beber",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/moritz.jpg",
     "linkedin": "https://www.linkedin.com/in/moritz-beber-b597a55a/",
     "github": "https://github.com/Midnighter"
@@ -141,21 +159,24 @@
   {
     "id": 19,
     "name": "Abed Sujan",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/abed.jpg",
     "linkedin": "https://www.linkedin.com/in/abedsujan/"
   },
   {
     "id": 20,
     "name": "Jakub Cioslowski",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "linkedin": "https://www.linkedin.com/in/jakub-cios%C5%82owski-78b33211b/",
     "github": "https://github.com/jakub-c/"
   },
   {
     "id": 21,
     "name": "Ahmed Magdy",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/ahmed.jpg",
     "linkedin": "https://www.linkedin.com/in/a-magdy/",
     "github": "https://github.com/a-magdy"
@@ -163,7 +184,8 @@
   {
     "id": 23,
     "name": "Mikael Wistoft-Ibsen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/mikael.jpg",
     "linkedin": "https://www.linkedin.com/in/wistoft/",
     "github": "https://github.com/wistoft"
@@ -171,7 +193,8 @@
   {
     "id": 24,
     "name": "Emil Bay",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/emil.jpg",
     "linkedin": "https://www.linkedin.com/in/emilbayes/",
     "github": "https://github.com/emilbayes"
@@ -179,63 +202,72 @@
   {
     "id": 25,
     "name": "Flemming Andersen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/flemming.jpg",
     "linkedin": "https://www.linkedin.com/in/flemeur"
   },
   {
     "id": 26,
     "name": "Daniel Fernandes",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/daniel.jpg",
     "linkedin": "https://www.linkedin.com/in/danielapfernandes/"
   },
   {
     "id": 27,
     "name": "Hugo Leote",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/hugo.jpg",
     "linkedin": "https://www.linkedin.com/in/hugoleote/"
   },
   {
     "id": 28,
     "name": "Oliver Thomsen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/oliver.jpg",
     "linkedin": "https://www.linkedin.com/in/oliver-thomsen/"
   },
   {
     "id": 29,
     "name": "Kristoffer Tølbøll",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/kristoffer.jpg",
     "linkedin": "https://www.linkedin.com/in/kristoffer-t%C3%B8lb%C3%B8ll-19b54210b/"
   },
   {
     "id": 30,
     "name": "Anders Ravn",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/anders.jpg",
     "linkedin": "https://www.linkedin.com/in/anders-ravn-23b69026/"
   },
   {
     "id": 31,
     "name": "Shanawaz Islam",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/shanawaz.jpg",
     "linkedin": "https://www.linkedin.com/in/shanawazislam/"
   },
   {
     "id": 34,
     "name": "Majd Darraj",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/majd.jpg",
     "linkedin": "https://www.linkedin.com/in/majd-darraj/"
   },
   {
     "id": 35,
     "name": "Allan Thraen",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/allan-thraen.jpg",
     "linkedin": "https://www.linkedin.com/in/allanthraen/",
     "github": "https://github.com/AThraen/"
@@ -243,7 +275,8 @@
   {
     "id": 36,
     "name": "Zoey Zou",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/zoey.jpg",
     "linkedin": "https://www.linkedin.com/in/zoeyzou2018/",
     "github": "https://github.com/zoeyzou"
@@ -251,9 +284,45 @@
   {
     "id": 37,
     "name": "Krishna Rana",
-    "role": "mentor",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
     "photo": "/static/team/krishna.jpg",
     "linkedin": "https://www.linkedin.com/in/krishnarana2121/",
     "github": "https://github.com/krishnarrana"
+  },
+  {
+    "id": 38,
+    "name": "Nynne Just Christofferson",
+    "roles": ["boardmember"],
+    "photo": "/static/team/nynne.jpg",
+    "roleDescription": "Chairwoman of the Board"
+  },
+  {
+    "id": 39,
+    "name": "Sherry List",
+    "roles": ["boardmember"],
+    "photo": "/static/team/sherry-list.jpg",
+    "roleDescription": "Vice Chairwoman of the Board"
+  },
+  {
+    "id": 40,
+    "name": "Christopher Klüter",
+    "roles": ["boardmember"],
+    "photo": "/static/team/christopher.jpg",
+    "roleDescription": "Treasurer" 
+  },
+  {
+    "id": 41,
+    "name": "Rohit Sharma",
+    "roles": ["boardmember"],
+    "photo": "/static/team/rohit.jpg",
+    "roleDescription": "Board Member"
+  },
+  {
+    "id": 42,
+    "name": "Mila Manieva",
+    "roles": ["boardmember"],
+    "photo": "/static/team/mila-manieva.jpg",
+    "roleDescription": "Board Member"
   }
 ]
