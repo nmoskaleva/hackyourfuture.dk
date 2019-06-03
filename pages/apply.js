@@ -23,7 +23,7 @@ export default () => (
 
     <Content id='apply-for-class'>
       <h2>Apply for class</h2>
-      <WufooForm userName='cphhackyourfuture' formHash='q1wl24e70yn2y5l' header='hide' />
+      <WufooForm userName='cphhackyourfuture' formHash='r1w5dbm018lelz8' header='hide' />
 
     </Content>
 
