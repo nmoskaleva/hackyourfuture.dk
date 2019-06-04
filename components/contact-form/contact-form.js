@@ -17,8 +17,8 @@ export default ({ email }) => {
 
       {/*name*/}
       <label>
-        <input type='text' required='required' />
-        <span>Username</span>
+        <input type='text' name="name" required='required' />
+        <span>Name</span>
       </label>
 
       {/*email*/}
@@ -28,13 +28,14 @@ export default ({ email }) => {
           onChange={event => setInputEmail(event.target.value)}
           type='email'
           required='required'
+          name="email"
         />
         <span>email</span>
       </label>
 
       {/*message*/}
       <label>
-        <input type='text' required='required' />
+        <input type='text' name="message" required='required' />
         <span>message</span>
       </label>
 
