@@ -324,5 +324,14 @@
     "roles": ["boardmember"],
     "photo": "/static/team/mila-manieva.jpg",
     "roleDescription": "Board Member"
+  },
+  {
+    "id": 43,
+    "name": "Radoslaw Medryk",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/team/radoslaw.jpg",
+    "linkedin": "https://www.linkedin.com/in/radoslaw-medryk/",
+    "github": "https://github.com/radoslaw-medryk"
   }
 ]
