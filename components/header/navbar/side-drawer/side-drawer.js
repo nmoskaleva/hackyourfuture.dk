@@ -27,7 +27,7 @@ export default ({ show, onGoBackClick }) => {
             </Link>
 
             {/*Sub items --------- */}
-            {dropdown.length > 0 && (
+            {dropdown && dropdown.length > 0 && (
               <ul key={uuid()}>
                 {dropdown.map(({ title, url }) => (
                   <li className={url === path && 'active'} key={uuid()}>
