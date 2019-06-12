@@ -1,5 +1,5 @@
 import * as React from 'react'
-import alumniList from './alumni-details/alumni.json'
+import alumniList from './alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
 import styles from './hire.scss'
@@ -128,11 +128,7 @@ class Hire extends React.Component {
         <div className='team-members'>
           {alumniList
             .sort((a, b) => a.name.localeCompare(b.name))
-            .map(member => (
-              <ItemCard item={member} key={member.id}>
-                <AlumniDetails alumni={member} />
-              </ItemCard>
-            ))}
+              .map(member => <ItemCard item={member} key={member.id} />)
         </div>
       </div>
     )
