@@ -15,10 +15,10 @@ export default ({ show, onGoBackClick }) => {
   return (
     <nav className={show ? 'side-drawer open' : 'side-drawer'}>
       <style jsx>{styles}</style>
+      <button key={uuid()} onClick={onGoBackClick}>
+        <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
+      </button>
       <ul>
-        <li key={uuid()} onClick={onGoBackClick}>
-          <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
-        </li>
         {/*Outer list items ---------- */}
         {links.map(({ title, url, dropdown }) => (
           <li className={url === path && 'active'} key={uuid()}>

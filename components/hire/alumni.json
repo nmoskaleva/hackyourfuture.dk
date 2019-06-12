@@ -10,7 +10,7 @@
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "1.pdf",
     "skills": ["JS", "Express.js", "MySQL"],
-    "status": "Looking for jobs",
+    "status": "Fulltime",
     "graduationDate": "01-01-2018"
   },
   {
@@ -24,7 +24,7 @@
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
     "skills": ["JS", "React", "Elastich Search"],
-    "status": "Looking for new opportunities",
+    "status": "Part time",
     "graduationDate": "02-01-2018"
   },
   {
@@ -38,7 +38,7 @@
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
     "skills": ["JS", "React"],
-    "status": "Looking for jobs",
+    "status": "Fulltime",
     "graduationDate": "03-01-2018"
   },
   {
@@ -52,7 +52,7 @@
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
     "skills": ["JS", "GraphQL", "CSS3", "Koa.js"],
-    "status": "looking for internship",
+    "status": "Internship",
     "graduationDate": "04-01-2018"
   },
   {
@@ -66,7 +66,7 @@
     "onlineCV": "http://link-goes-here.com/cv",
     "pdfCV": "2.pdf",
     "skills": ["JS", "HTML", "SCSS", "C#", "UI"],
-    "status": "Looking for jobs",
+    "status": "Fulltime",
     "graduationDate": "05-01-2018"
   }
 ]

@@ -80,10 +80,15 @@ class Hire extends React.Component {
     return (
       <div>
         <style jsx>{styles}</style>
-        <h2 className='center'>Alumni</h2>
+        <h2 className='center'>Find the right candidate</h2>
+        <p className='sub-header'>
+          Meet the HackYourFuture alumni. Making a good match between our
+          dedicated graduates and hiring companies is super important to us. We
+          hope that this database will help you find your next favourite
+          employee or colleague!
+        </p>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
-          <h2>Find the right candidate</h2>
           <p>
             <strong>Select competency</strong>
           </p>
