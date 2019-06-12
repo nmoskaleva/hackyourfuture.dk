@@ -23,16 +23,16 @@ export default ({ show, onGoBackClick }) => {
         {links.map(({ title, url, dropdown }) => (
           <li className={url === path && 'active'} key={uuid()}>
             <Link href={url}>
-              <a rel="noopener">{title}</a>
+              <a rel='noopener'>{title}</a>
             </Link>
 
             {/*Sub items --------- */}
-            {dropdown.length > 0 && (
+            {dropdown && dropdown.length > 0 && (
               <ul key={uuid()}>
                 {dropdown.map(({ title, url }) => (
                   <li className={url === path && 'active'} key={uuid()}>
                     <Link href={url}>
-                      <a rel="noopener">- {title}</a>
+                      <a rel='noopener'>- {title}</a>
                     </Link>
                   </li>
                 ))}

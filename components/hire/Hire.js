@@ -1,10 +1,9 @@
 import * as React from 'react'
-import alumniList from './alumni-details/alumni.json'
+import alumniList from './alumni.json'
 import ItemCard from '../team/item-card/item-card'
 import Content from '../layouts/content/content'
 import styles from './hire.scss'
 import id from 'uuid/v4'
-import AlumniDetails from './alumni-details/alumni-details'
 
 class Hire extends React.Component {
   state = {
@@ -84,21 +83,20 @@ class Hire extends React.Component {
         <h2 className='center'>Alumni</h2>
         <Content>
           {/*FILTER BY SKILLS ---------------- */}
+          <h2>Find the right candidate</h2>
           <p>
-            🔎 Here is a list of alumni students. you can filter them by one or
-            more skills by clicking on buttons bellow:
+            <strong>Select competency</strong>
           </p>
           {uniqueSkills.map(skill => {
             return (
               <button
                 key={id()}
                 onClick={() => this.filterSkillsHandler(skill)}
-                className={
+                className={`${
                   selectedSkills.includes(skill) ? 'active' : 'outlined'
-                }
+                } filter`}
                 color='primary'
-                className={classes.button}
-                aria-label="Filter specific skills"
+                aria-label='Filter specific skills'
               >
                 {skill}
               </button>
@@ -107,17 +105,17 @@ class Hire extends React.Component {
 
           {/*FILTER BY STATUS ---------------- */}
           <p>
-            🏳️ You cal also filter alumni students by there status using the
-            filter buttons below:
+            <strong>Select status</strong>
           </p>
           {uniqueStatuses.map(status => {
             return (
               <button
                 key={id()}
                 onClick={() => this.filterStatusesHandler(status)}
-                className={selectedStatus.includes(status) && 'active'}
+                className={`${selectedStatus.includes(status) &&
+                  'active'} filter`}
                 color='primary'
-                aria-label="Filter specific status"
+                aria-label='Filter specific status'
               >
                 {status}
               </button>
@@ -126,13 +124,16 @@ class Hire extends React.Component {
         </Content>
 
         <div className='team-members'>
-          {alumniList
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map(member => (
-              <ItemCard item={member} key={member.id}>
-                <AlumniDetails alumni={member} />
-              </ItemCard>
-            ))}
+          {alumniList.length > 0 ? (
+            alumniList
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map(member => <ItemCard item={member} key={member.id} />)
+          ) : (
+            <div className='no-results'>
+              <h3>No students found</h3>
+              <p>Try change your search filter</p>
+            </div>
+          )}
         </div>
       </div>
     )

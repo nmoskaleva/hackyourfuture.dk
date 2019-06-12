@@ -49,5 +49,10 @@
         "url": "/about#partners"
       }
     ]
+  },
+  {
+    "id": 4,
+    "title": "HIRE",
+    "url": "/hire"
   }
 ]
