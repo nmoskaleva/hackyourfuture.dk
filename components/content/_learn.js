@@ -1,8 +1,7 @@
-const title = `Learn - HackYourFuture`
+const title = `HackYourFuture Copenhagen on GitHub`
 const content = `
 You can find our entire curriculum here:
 
-### HackYourFuture Copenhagen - Github organisation
 <a rel="noopener" href="https://github.com/hackYourFuture-CPH" 
 target="_blank">https://github.com/hackYourFuture-CPH</a>
 
