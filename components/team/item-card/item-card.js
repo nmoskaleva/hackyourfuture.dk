@@ -51,14 +51,7 @@ const ItemCard = ({ item, children }) => {
       `}</style>
       <div className='team-member-card'>
         {photo ? (
-          <LazyLoadImage
-            alt={name}
-            src={
-              roles.includes('alumni')
-                ? `/static/alumni/photos/${photo}`
-                : photo
-            }
-          />
+          <LazyLoadImage alt={name} src={photo} />
         ) : (
           <LazyLoadImage
             alt={name}
