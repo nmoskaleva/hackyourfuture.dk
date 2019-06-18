@@ -15,24 +15,24 @@ export default ({ show, onGoBackClick }) => {
   return (
     <nav className={show ? 'side-drawer open' : 'side-drawer'}>
       <style jsx>{styles}</style>
+      <button key={uuid()} onClick={onGoBackClick}>
+        <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
+      </button>
       <ul>
-        <li key={uuid()} onClick={onGoBackClick}>
-          <Icon color='#293a7d' size={1} path={mdiBackspaceOutline} />
-        </li>
         {/*Outer list items ---------- */}
         {links.map(({ title, url, dropdown }) => (
           <li className={url === path && 'active'} key={uuid()}>
             <Link href={url}>
-              <a rel="noopener">{title}</a>
+              <a rel='noopener'>{title}</a>
             </Link>
 
             {/*Sub items --------- */}
-            {dropdown.length > 0 && (
+            {dropdown && dropdown.length > 0 && (
               <ul key={uuid()}>
                 {dropdown.map(({ title, url }) => (
                   <li className={url === path && 'active'} key={uuid()}>
                     <Link href={url}>
-                      <a rel="noopener">- {title}</a>
+                      <a rel='noopener'>- {title}</a>
                     </Link>
                   </li>
                 ))}

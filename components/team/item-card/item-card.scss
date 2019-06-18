@@ -11,10 +11,6 @@ $primary-color: #293a7d;
   box-sizing: border-box;
   max-width: 260px;
 
-  @media (max-width: 519px) {
-    width: 50%;
-  }
-
   .member-name {
     font-family: Space Mono, monospace;
     line-height: 2rem;
