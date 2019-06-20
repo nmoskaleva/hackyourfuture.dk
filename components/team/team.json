@@ -333,5 +333,14 @@
     "photo": "/static/team/radoslaw.jpg",
     "linkedin": "https://www.linkedin.com/in/radoslaw-medryk/",
     "github": "https://github.com/radoslaw-medryk"
+  },
+  {
+    "id": 44,
+    "name": "Badr Amine",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/alumni/photos/badr.jpg",
+    "linkedin": "",
+    "github": "https://github.com/hackash96"
   }
 ]
