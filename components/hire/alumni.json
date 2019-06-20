@@ -55,7 +55,7 @@
     "photo": "/static/alumni/photos/badr.jpg",
     "github": "https://github.com/HackAsh96",
     "linkedin": "",
-    "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
+    "skills": ["JS","TS","Express.js", "MySQL", "React","React-Native","Redux.js","Sass","Azure DevOps","Heroku","Firebase","Knex.js","XML","HTML", "CSS", "Node.js"],
     "status": "Looking for jobs",
     "graduationDate": "02-06-2018"
   },
