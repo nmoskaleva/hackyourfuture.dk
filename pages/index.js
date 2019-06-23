@@ -6,6 +6,7 @@ import marked from 'marked'
 import Hero from '../components/hero/hero'
 import { content, title } from '../components/content/_home'
 import FindUs from '../components/find-us/find-us'
+import Intro from '../components/intro/Intro'
 
 export default () => {
   return (
@@ -14,9 +15,7 @@ export default () => {
         <title>{title}</title>
       </Head>
       <Hero />
-      <Content>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-      </Content>
+      <Intro />
       <Team />
     </Layout>
   )
