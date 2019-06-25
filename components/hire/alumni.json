@@ -44,7 +44,7 @@
     "github": "https://github.com/kwenealete",
     "pdfCV": "/static/alumni/cv/monya.pdf",
     "linkedin": "https://www.linkedin.com/in/monya-kwene-alete-208203b5/",
-    "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
+    "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js", "Java", "Sass", "Scss", "Heroku"],
     "status": "Looking for jobs",
     "graduationDate": "02-06-2018"
 },
