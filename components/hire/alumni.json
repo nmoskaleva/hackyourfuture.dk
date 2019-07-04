@@ -55,6 +55,7 @@
     "email": "amine2019badr@gmail.com",
     "photo": "/static/alumni/photos/badr.jpg",
     "github": "https://github.com/HackAsh96",
+     "pdfCV": "/static/alumni/cv/badr.pdf",
     "linkedin": "",
     "skills": ["JS","TS","Express.js", "MySQL", "React","React-Native","Redux.js","Sass","Azure DevOps","Heroku","Firebase","Knex.js","XML","HTML", "CSS", "Node.js"],
     "status": "Looking for jobs",
