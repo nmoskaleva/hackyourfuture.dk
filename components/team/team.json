@@ -342,5 +342,14 @@
     "photo": "/static/alumni/photos/badr.jpg",
     "linkedin": "",
     "github": "https://github.com/hackash96"
+  },
+    {
+    "id": 45,
+    "name": "Neer Thapa",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/alumni/photos/neer.jpg",
+    "linkedin": "https://www.linkedin.com/in/neerthapa/",
+    "github": "https://github.com/nirmalathapa"
   }
 ]
