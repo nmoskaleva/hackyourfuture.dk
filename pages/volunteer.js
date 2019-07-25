@@ -18,7 +18,7 @@ export default () => (
       <Curriculum />
 
       <h2 id='becoming-mentor'>Would you like to help?</h2>
-      <Contactform />
+      <Contactform email={'cph@hackyourfuture.net'} />
     </Content>
 
     <MentorsTeam id='mentors' />
