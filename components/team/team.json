@@ -137,7 +137,9 @@
     "name": "Younes Meliani",
     "roles": ["mentor"],
     "roleDescription": "Mentor",
-    "photo": "/static/team/younes.jpg"
+    "photo": "/static/team/younes.jpg",
+    "linkedin": "https://younes.dev/l/linkedin",
+    "github": "https://younes.dev/l/github"
   },
   {
     "id": 17,
