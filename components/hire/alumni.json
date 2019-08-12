@@ -156,7 +156,7 @@
     "photo": "/static/alumni/photos/mohamed.jpg",
     "github": "https://github.com/mohamedaldahoul",
     "onlineCV": "http://mohamedaldahoul.ml",
-    "linkedin": "www.linkedin.com/in/mohamedaldahoul",
+    "linkedin": "https://www.linkedin.com/in/mohamedaldahoul",
     "skills": ["JS","PHP", "Python", "React", "Redux", "Node.js", "MySQL", "PostgreSQL","GraphQL", "Docker", "Bootstrap", "AWS", "Hetzner" ],
     "status": "Looking for jobs",
     "graduationDate": "11-06-2018"
