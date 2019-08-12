@@ -135,5 +135,17 @@
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
     "status": "Looking for jobs",
     "graduationDate": "01-09-2018"
+  }, {
+    "id": 15,
+    "roles": ["alumni"],
+    "name": "Hakki SUMAN",
+    "email": "hakkisuman@gmail.com  ",
+    "photo": "/static/alumni/photos/hakki.jpg",
+    "github": "https://github.com/arcevit",
+    "onlineCV": "https://arcevit.github.io/",
+    "linkedin": "www.linkedin.com/in/hakkisuman",
+    "skills": ["JS","React","Knex.JS", "Express.js", "MySQL", "HTML", "CSS", "Node.js","UFT/QTP"],
+    "status": "Looking for jobs",
+    "graduationDate": "11-08-2019"
   }
 ]
