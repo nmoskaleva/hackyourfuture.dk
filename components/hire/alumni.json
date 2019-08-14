@@ -198,9 +198,13 @@
     "id": 21,
     "roles": ["alumni"],
     "name": "Afshin Heidari Monfared",
+    "email": "afshin.heidarimonfared@gmail.com",
+    "photo": "/static/alumni/photos/afshin.jpg", 
+    "github":"https://github.com/Afshinrommel", 
+    "onlineCV":"https://github.com/Afshinrommel/CV/blob/master/CV%2014.8.2019.pdf",
+    "linkedin":"https://www.linkedin.com/in/afshin-heidari-monfared-3b2006121/",  
     "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js"],
     "status": "Looking for jobs",
     "graduationDate": "11-08-2019"
   }
-
 ]
