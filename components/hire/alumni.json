@@ -202,6 +202,18 @@
     "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js"],
     "status": "Looking for jobs",
     "graduationDate": "11-08-2019"
+  },
+  {
+    "id": 22,
+    "roles": ["alumni"],
+    "name": "Kseniia Zar",
+    "email": "kseniiazar@gmail.com",
+    "photo": "/static/alumni/photos/kseniia.jpg",
+    "github": "https://github.com/kseniiazar",
+    "linkedin": "https://www.linkedin.com/in/kseniiazar/",
+    "skills": [ "JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js", "Git", "Knex.js", "Jest"],
+    "status": "Looking for jobs",
+    "graduationDate": "11-08-2019"
   }
 
 ]
