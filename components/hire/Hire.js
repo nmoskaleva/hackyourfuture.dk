@@ -27,7 +27,9 @@ class Hire extends React.Component {
 
     this.setState({
       // get distinct unique items from an array
-      uniqueSkills: [...new Set(skills)],
+      uniqueSkills: [...new Set(skills)].sort((a, b) =>
+        a.toLowerCase().localeCompare(b.toLowerCase())
+      ),
       uniqueStatuses: [...new Set(statuses)].filter(
         skill => skill === 'Looking for jobs'
       )
