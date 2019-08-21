@@ -183,7 +183,13 @@
     "id": 19,
     "roles": ["alumni"],
     "name": "Keerthika Devi Alampalli",
+    "email": "keerthi1822@gmail.com",
+    "photo": "/static/alumni/photos/Keerthi.jpg",
+    "github": "https://github.com/keerthi1822",
     "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js"],
+    "linkedin": "www.linkedin.com/in/keerthi-alampalli-002750152",
+    "pdfCV": "/static/alumni/cv/Keerthi.pdf",
+    "onlineCV": "https://keerthi1822.github.io/Resume/",
     "status": "Looking for jobs",
     "graduationDate": "11-08-2019"
   },
