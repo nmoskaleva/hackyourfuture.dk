@@ -183,7 +183,7 @@
     "id": 19,
     "roles": ["alumni"],
     "name": "Keerthika Devi Alampalli",
-    "emailId": "keerthi1822@gmail.com",
+    "email": "keerthi1822@gmail.com",
     "photo": "/static/alumni/photos/Keerthi.jpg",
     "github": "https://github.com/keerthi1822",
     "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js"],
