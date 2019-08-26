@@ -167,7 +167,11 @@
     "id": 17,
     "roles": ["alumni"],
     "name": "Sana Hayat",
-    "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js"],
+    "email": "sanahayyat116@live.com",
+    "photo": "/static/alumni/photos/sana.png",
+    "github": "https://github.com/Sanahayat",
+    "linkedin": "https://www.linkedin.com/in/sana-hayat-8a0064114/",
+    "skills": ["JS","React","Knex.js", "Express.js", "MySQL", "HTML", "CSS", "Node.js", "HighCharts/React-HighCharts"],
     "status": "Looking for jobs",
     "graduationDate": "11-08-2019"
   },
