@@ -9,6 +9,7 @@ import {
 } from '../components/content/_learn'
 import WufooForm from 'react-wufoo-embed'
 import Partners from '../components/partners/partners'
+import FAQ from '../components/faq/faq'
 
 export default () => (
   <Layout>
@@ -21,10 +22,17 @@ export default () => (
       <img alt='Apply to be a student' src='https://i.imgur.com/ukKK09t.jpg' />
     </Content>
 
+    <Content>
+      <FAQ />
+    </Content>
+
     <Content id='apply-for-class'>
       <h2>Apply for class</h2>
-      <WufooForm userName='cphhackyourfuture' formHash='w1e3chjs1cq5lr6' header='hide' />
-
+      <WufooForm
+        userName='cphhackyourfuture'
+        formHash='w1e3chjs1cq5lr6'
+        header='hide'
+      />
     </Content>
 
     <Content id='learn'>
