@@ -8,6 +8,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.2",
     "@mdi/js": "^3.5.95",
     "@mdi/react": "^1.1.0",
     "compression-webpack-plugin": "^2.0.0",
@@ -15,7 +16,7 @@
     "express-sslify": "^1.2.0",
     "forcedomain": "^1.0.1",
     "jss": "^9.8.7",
-    "marked": "^0.6.0",
+    "marked": "^0.7.0",
     "next": "^8.0.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
