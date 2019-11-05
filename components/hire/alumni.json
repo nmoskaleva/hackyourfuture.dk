@@ -366,5 +366,29 @@
     ],
     "status": "Looking for jobs",
     "graduationDate": "23-10-2019"
+  },
+  {
+    "id": 25,
+    "roles": ["alumni"],
+    "name": "Fowad Latif",
+    "email": "fawadik@yahoo.com",
+    "photo": "/static/alumni/photos/fowad.jpg",
+    "github": "https://github.com/fawadik",    
+    "pdfCV": "/static/alumni/cv/fowad.pdf",
+    "linkedin": "https://www.linkedin.com/in/fowad-latif/",
+    "skills": [
+      "CSS",
+      "Express.js",
+      "Git",
+      "Heroku",
+      "HTML",
+      "JS",
+      "Knex.js",
+      "MySQL",
+      "Node.js",
+      "React"      
+    ],
+    "status": "Looking for jobs",
+    "graduationDate": "23-10-2019"
   }
 ]
