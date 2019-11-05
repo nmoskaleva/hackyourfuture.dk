@@ -1,10 +1,13 @@
 const title = `Apply - HackYourFuture`
-const content = `
-# Apply to be a student
-
-Every 2 months we start a new class with talented refugees who want to start their career in web-development. We’re looking for people who are very motivated and are willing to put in a lot of hours in order to become great at coding. You will need to have an intermediate level in English and you will need to study for around 25 hours per week, with a physical class every Sunday. (and occasional masterclasses during the week) We accept people living all over the Denmark, and we pay for transportation costs (traintickets).
-
-Want to apply? Please fill in your details below and we will contact you about the further steps in the application process.
-
-`
-export { title, content }
+const sectionTitle = `Applying for our classes`
+const contentOne = `Approximately every 2 months we start a new class in our program. The course is designed especially for people with limited access to further education or the job market in Denmark. We are a non-profit, 
+charitable organization and our program is free. You don't need a technical background to apply.`
+const contentTwo = `Before you apply, please go through the below list and consider the following:`
+const requirements = [
+  `Are you able to follow the program in English?`,
+  `Can you spend 30 hours on homework and class every week?`,
+  `Can you attend class on Sundays from 12:00 - 16:00?`,
+  `Can you commit to the program for 7 months?`,
+  `You cannot afford a paid bootcamp.`
+]
+export { title, sectionTitle, contentOne, contentTwo, requirements }
