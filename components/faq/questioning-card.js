@@ -11,13 +11,22 @@ import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Box from '@material-ui/core/Box'
 
+// styling
 const useStyles = makeStyles(theme => ({
-  card: {
-    marginBottom: '10px'
+  box: {
+    margin: 'auto'
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%' // 16:9
+  question: {
+    fontFamily: 'Work Sans, sans-serif',
+    fontWeight: 'bold'
+  },
+  answer: {
+    fontFamily: 'Work Sans, sans-serif',
+    color: 'black'
+  },
+  card: {
+    marginBottom: '10px',
+    borderRadius: '0'
   },
   expand: {
     transform: 'rotate(-90deg)',
@@ -43,8 +52,10 @@ export default function Questioning(props) {
     <Card className={classes.card}>
       <CardContent>
         <Box display='flex'>
-          <Box flexGrow={1}>
-            <Typography>{props.question}</Typography>
+          <Box flexGrow={1} className={classes.box}>
+            <Typography className={classes.question}>
+              {props.question}
+            </Typography>
           </Box>
           <Box>
             <IconButton
@@ -62,7 +73,9 @@ export default function Questioning(props) {
       </CardContent>
       <Collapse in={expanded} timeout='auto' unmountOnExit>
         <CardContent>
-          <Typography paragraph>{props.answer}</Typography>
+          <Typography className={classes.answer} paragraph>
+            {props.answer}
+          </Typography>
         </CardContent>
       </Collapse>
     </Card>
