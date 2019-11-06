@@ -8,7 +8,6 @@ import {
   title as title_learn
 } from '../components/content/_learn'
 import WufooForm from 'react-wufoo-embed'
-import Partners from '../components/partners/partners'
 import FAQ from '../components/faq/faq'
 import ApplySection from '../components/apply-section/apply-section'
 
@@ -17,15 +16,9 @@ export default () => (
     <Head>
       <title>{title}</title>
     </Head>
-
     <Content id='apply'>
       <ApplySection />
     </Content>
-
-    <Content>
-      <FAQ />
-    </Content>
-
     <Content id='apply-for-class'>
       <h2>Apply for class</h2>
       <WufooForm
@@ -34,12 +27,12 @@ export default () => (
         header='hide'
       />
     </Content>
-
     <Content id='learn'>
       <h2>{title_learn}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
     </Content>
-
-    <Partners />
+    <Content>
+      <FAQ />
+    </Content>
   </Layout>
 )
