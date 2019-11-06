@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
     "@mdi/js": "^3.5.95",
     "@mdi/react": "^1.1.0",
     "compression-webpack-plugin": "^2.0.0",
