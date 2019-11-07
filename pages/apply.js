@@ -20,7 +20,7 @@ export default () => (
       <ApplySection />
     </Content>
     <Content id='apply-for-class'>
-      <h2>Apply for class</h2>
+      <h2>Application Form</h2>
       <WufooForm
         userName='cphhackyourfuture'
         formHash='w1e3chjs1cq5lr6'
