@@ -16,9 +16,13 @@ import ListItemText from '@material-ui/core/ListItemText'
 import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import Avatar from '@material-ui/core/Avatar'
 import Grid from '@material-ui/core/Grid'
+import Container from '@material-ui/core/Container'
 
 // styling
 const useStyles = makeStyles({
+  stylePadding: {
+    padding: '0px'
+  },
   avatar: {
     margin: 10,
     color: '#fff',
@@ -26,8 +30,21 @@ const useStyles = makeStyles({
   },
   title: {
     color: '#293a7d',
-    fontFamily: 'Space Mono, monospace',
-    fontSize: '2rem'
+    fontFamily: "'Space Mono', 'monospace'",
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    marginBottom: '20px'
+  },
+  listText: {
+    fontFamily: "'Work Sans', 'sans-serif'",
+    fontSize: '1rem'
+  },
+  contentOne: {
+    fontFamily: "'Work Sans', 'sans-serif'",
+    marginBottom: '20px'
+  },
+  contentTwo: {
+    fontFamily: "'Work Sans', 'sans-serif'"
   }
 })
 
@@ -36,24 +53,37 @@ export default function applySection() {
   return (
     <React.Fragment>
       <Typography className={classes.title}>{sectionTitle}</Typography>
-      <Typography>{contentOne}</Typography>
-      <Grid container direction='row' justify='center' alignItems='center'>
-        <Grid item md={6}>
-          <Typography>{contentTwo}</Typography>
-          <List>
-            {requirements.map(requirement => {
-              return (
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar className={classes.avatar}>&#10004;</Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>{requirement}</ListItemText>
-                </ListItem>
-              )
-            })}
-          </List>
+      <Typography className={classes.contentOne}>{contentOne}</Typography>
+      <Grid
+        container
+        className={classes.stylePadding}
+        direction='row'
+        justify='center'
+        alignItems='center'
+      >
+        <Grid item md={7}>
+          <Container className={classes.stylePadding}>
+            <Typography className={classes.contentTwo}>{contentTwo}</Typography>
+            <List className={classes.listText}>
+              {requirements.map(requirement => {
+                return (
+                  <ListItem className={classes.stylePadding}>
+                    <ListItemAvatar>
+                      <Avatar className={classes.avatar}>&#10004;</Avatar>
+                    </ListItemAvatar>
+                    <ListItemText
+                      className={classes.listText}
+                      disableTypography='true'
+                    >
+                      {requirement}
+                    </ListItemText>
+                  </ListItem>
+                )
+              })}
+            </List>
+          </Container>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={5}>
           <img src='/static/apply/apply-section-photo.jpg' />
         </Grid>
       </Grid>

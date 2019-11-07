@@ -2,6 +2,7 @@ import React from 'react'
 import members from './team.json'
 import ItemCard from './item-card/item-card'
 import styles from './team.scss'
+import { textAlign } from '@material-ui/system'
 
 export const CoreTeam = () => {
   const coreTeam = members.filter(member => member.roles.includes('core'))
@@ -19,7 +20,9 @@ export const CoreTeam = () => {
 }
 
 export const BoardMembers = () => {
-  const boardMembers = members.filter(member => member.roles.includes('boardmember'))
+  const boardMembers = members.filter(member =>
+    member.roles.includes('boardmember')
+  )
   return (
     <>
       <style jsx>{styles}</style>
@@ -38,7 +41,7 @@ export const MentorsTeam = () => {
   return (
     <>
       <style jsx>{styles}</style>
-      <h2>Mentors</h2>
+      <h2 style={{ textAlign: 'center' }}>Our Mentors</h2>
       <div className='team-members mentors'>
         {mentors
           .sort((a, b) => a.name.localeCompare(b.name)) // sort names alphabetically
