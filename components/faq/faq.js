@@ -11,22 +11,25 @@ import Container from '@material-ui/core/Container'
 const useStyles = makeStyles(() => ({
   title: {
     color: '#293a7d',
-    fontFamily: 'Space Mono, monospace',
     fontSize: '2rem',
-    margin: '10px 0 40px 0'
+    fontFamily: "'Space Mono', 'monospace'",
+    fontWeight: 'bold',
+    marginBottom: '30px'
   }
 }))
 
 export default function faq() {
   const classes = useStyles()
   return (
-    <Container>
+    <React.Fragment>
       <Typography className={classes.title}>
         Frequently Asked Questions
       </Typography>
-      {questions.map(({ id, question, answer }) => (
-        <Questioning key={id} question={question} answer={answer} />
-      ))}
-    </Container>
+      <Container>
+        {questions.map(({ id, question, answer }) => (
+          <Questioning key={id} question={question} answer={answer} />
+        ))}
+      </Container>
+    </React.Fragment>
   )
 }
