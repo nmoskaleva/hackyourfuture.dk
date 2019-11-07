@@ -67,13 +67,13 @@ export default function applySection() {
             <List className={classes.listText}>
               {requirements.map(requirement => {
                 return (
-                  <ListItem className={classes.stylePadding}>
+                  <ListItem key={requirement} className={classes.stylePadding}>
                     <ListItemAvatar>
                       <Avatar className={classes.avatar}>&#10004;</Avatar>
                     </ListItemAvatar>
                     <ListItemText
                       className={classes.listText}
-                      disableTypography='true'
+                      disableTypography={true}
                     >
                       {requirement}
                     </ListItemText>
