@@ -206,7 +206,6 @@ export default ({ children }) => {
 
         h2 {
           letter-spacing: 0.2px;
-          text-align: center;
           margin: 2rem 0;
         }
 
