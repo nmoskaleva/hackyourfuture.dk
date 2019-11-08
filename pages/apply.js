@@ -10,6 +10,7 @@ import {
 import WufooForm from 'react-wufoo-embed'
 import FAQ from '../components/faq/faq'
 import ApplySection from '../components/apply-section/apply-section'
+import Learning from '../components/learning-section/learning'
 
 export default () => (
   <Layout>
@@ -18,6 +19,9 @@ export default () => (
     </Head>
     <Content id='apply'>
       <ApplySection />
+    </Content>
+    <Content>
+      <Learning />
     </Content>
     <Content id='apply-for-class'>
       <h2>Application Form</h2>
