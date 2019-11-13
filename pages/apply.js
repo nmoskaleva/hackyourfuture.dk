@@ -3,10 +3,7 @@ import marked from 'marked'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
 import { title } from '../components/content/_apply'
-import {
-  content as content_learn,
-  title as title_learn
-} from '../components/content/_learn'
+import Learn from '../components/learn/learn'
 import WufooForm from 'react-wufoo-embed'
 import FAQ from '../components/faq/faq'
 import ApplySection from '../components/apply-section/apply-section'
@@ -32,8 +29,7 @@ export default () => (
       />
     </Content>
     <Content id='learn'>
-      <h2>{title_learn}</h2>
-      <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
+      <Learn />
     </Content>
     <Content>
       <FAQ />
