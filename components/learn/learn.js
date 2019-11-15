@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     marginBottom: '20px'
   },
   linkOne: {
-    color: '#FF3505'
+    color: '#FF8108',
+    textDecoration: 'underline'
   },
   linkTwo: {
     color: 'black',
