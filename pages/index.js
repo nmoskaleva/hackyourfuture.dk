@@ -11,6 +11,7 @@ export default () => {
   return (
     <Layout>
       <Head>
+      <meta name="google-site-verification" content="YvWW5A5Yye9vDijg-oTcYoggq9HkweFT-6J9d6xjnNA" />
         <title>{title}</title>
       </Head>
       <Hero />
