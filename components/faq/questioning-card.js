@@ -1,4 +1,5 @@
 import React from 'react'
+import marked from 'marked'
 
 // import material UI
 import { makeStyles } from '@material-ui/core/styles'
@@ -73,8 +74,8 @@ export default function Questioning(props) {
       </CardContent>
       <Collapse in={expanded} timeout='auto' unmountOnExit>
         <CardContent>
-          <Typography className={classes.answer} paragraph>
-            {props.answer}
+          <Typography className={classes.answer}>
+            <Box dangerouslySetInnerHTML={{ __html: marked(props.answer) }}/>
           </Typography>
         </CardContent>
       </Collapse>
