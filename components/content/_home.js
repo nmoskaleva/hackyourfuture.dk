@@ -1,6 +1,5 @@
 const title = `HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups`
 const content = `
-## What is HackYourFuture?
 
 <span class="hyf-title">HackYourFuture</span> supports refugees, asylum seekers and disadvantaged groups with limited access to further education and the Danish labour market in acquiring the necessary skills to become web developers and entering a very in-demand field. Our goal is not only to educate our students, but also to guide them towards employment and integrate them into the developer community.
 
