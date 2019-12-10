@@ -38,9 +38,9 @@ export default () => {
           <Link
             className={classes.link}
             rel='noopener'
-            href='mailto:cph@hackyourfuture.net'
+            href='mailto:cph@hackyourfuture.dk'
           >
-            cph@hackyourfuture.net
+            cph@hackyourfuture.dk
           </Link>
         </Typography>
       </Grid>

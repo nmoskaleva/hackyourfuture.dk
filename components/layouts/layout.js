@@ -232,7 +232,7 @@ export default ({ children }) => {
         }
       `}</style>
       <Head>
-        <title>HackYourFuture - A coding school in Copenhagen</title>
+        <title>HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
 
         <meta
@@ -245,7 +245,7 @@ export default ({ children }) => {
 
         <meta
           name='description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='image'
@@ -254,11 +254,11 @@ export default ({ children }) => {
 
         <meta
           itemProp='name'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           itemProp='description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           itemProp='image'
@@ -267,11 +267,11 @@ export default ({ children }) => {
 
         <meta
           name='og:title'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='og:description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='og:image'
@@ -280,7 +280,7 @@ export default ({ children }) => {
         <meta name='og:url' content='https://hackyourfuture.dk/' />
         <meta
           name='og:site_name'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta name='og:locale' content='en' />
         <meta name='og:type' content='website' />

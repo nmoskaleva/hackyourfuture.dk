@@ -38,7 +38,7 @@ export default () => (
     <Content id='contact'>
       <h2>{contact_title}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(contact_content) }} />
-      <Contactform email={'cph@hackyourfuture.net'} />
+      <Contactform email={'cph@hackyourfuture.dk'} />
       <div style={{ marginTop: 40 }}>
         <Map />
       </div>
