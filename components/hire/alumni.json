@@ -373,7 +373,7 @@
     "name": "Fowad Latif",
     "email": "fawadik@yahoo.com",
     "photo": "/static/alumni/photos/fowad.jpg",
-    "github": "https://github.com/fawadik",
+    "github": "https://github.com/fawadik",    
     "pdfCV": "/static/alumni/cv/fowad.pdf",
     "linkedin": "https://www.linkedin.com/in/fowad-latif/",
     "skills": [
@@ -386,31 +386,7 @@
       "Knex.js",
       "MySQL",
       "Node.js",
-      "React"
-    ],
-    "status": "Looking for jobs",
-    "graduationDate": "23-10-2019"
-  },
-  {
-    "id": 26,
-    "roles": ["alumni"],
-    "name": "Rahim Ismaili",
-    "email": "ismailirahim6@gmail.com",
-    "photo": "/static/alumni/photos/rahim.jpeg",
-    "github": "https://github.com/ismailirahim",
-    "pdfCV": "/static/alumni/cv/Rahim.pdf",
-    "linkedin": "https://www.linkedin.com/in/rahim-ismaili/",
-    "skills": [
-      "JS",
-      "React",
-      "Node.js",
-      "Express.js",
-      "Knex.js",
-      "MySQL",
-      "HTML",
-      "CSS",
-      "Git",
-      "Jest"
+      "React"      
     ],
     "status": "Looking for jobs",
     "graduationDate": "23-10-2019"
