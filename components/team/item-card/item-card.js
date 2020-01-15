@@ -23,7 +23,8 @@ const ItemCard = ({ item, children }) => {
     pdfCV,
     website,
     roleDescription,
-    skills
+    skills,
+    company
   } = item
   return (
     <div>
@@ -60,9 +61,8 @@ const ItemCard = ({ item, children }) => {
           />
         )}
         <h3 className='member-name'>{name}</h3>
-
+        <h4>{company}</h4> {/* add a class here */}
         {roles && <p className='member-role'>{roleDescription}</p>}
-
         {skills && (
           <div className='skills'>
             <p>{skills.join(', ')}</p>

@@ -54,12 +54,30 @@ export const MentorsTeam = () => {
   )
 }
 
+export const Graduates = () => {
+  const graduates = members.filter(member => member.roles.includes('graduate'))
+  return (
+    <>
+      <style jsx>{styles}</style>
+      <h2 className='title'>Our Graduates</h2>
+      <div className='team-members graduates'>
+        {graduates
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(member => (
+            <ItemCard item={member} key={member.id} />
+          ))}
+      </div>
+    </>
+  )
+}
+
 export default () => {
   return (
     <div>
       <BoardMembers />
       <CoreTeam />
       <MentorsTeam />
+      <Graduates />
     </div>
   )
 }

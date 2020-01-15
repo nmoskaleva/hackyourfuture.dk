@@ -311,7 +311,7 @@
     "name": "Christopher Klüter",
     "roles": ["boardmember"],
     "photo": "/static/team/christopher.jpg",
-    "roleDescription": "Treasurer" 
+    "roleDescription": "Treasurer"
   },
   {
     "id": 41,
@@ -345,7 +345,7 @@
     "linkedin": "",
     "github": "https://github.com/hackash96"
   },
-    {
+  {
     "id": 45,
     "name": "Neer Thapa",
     "roles": ["mentor"],
@@ -353,5 +353,41 @@
     "photo": "/static/alumni/photos/neer.jpg",
     "linkedin": "https://www.linkedin.com/in/neerthapa/",
     "github": "https://github.com/nirmalathapa"
+  },
+  {
+    "id": 46,
+    "name": "Abdulrahman Ramadan",
+    "roles": ["graduate"],
+    "roleDescription": "Graduate",
+    "company": "Famly",
+    "photo": "/static/team/abdulrahman.jpg",
+    "linkedin": "https://www.linkedin.com/in/ramadan46/"
+  },
+  {
+    "id": 47,
+    "name": "Mohamed Aldahoul",
+    "roles": ["graduate"],
+    "roleDescription": "Graduate",
+    "company": "TooGoodToGo",
+    "photo": "/static/alumni/photos/mohamed.jpg",
+    "linkedin": "https://www.linkedin.com/in/mohamedaldahoul/"
+  },
+  {
+    "id": 48,
+    "name": "Zoey Zou",
+    "roles": ["graduate"],
+    "roleDescription": "Graduate",
+    "company": "Pleo",
+    "photo": "/static/team/zoey.jpg",
+    "linkedin": "https://www.linkedin.com/in/zoeyzou2018/"
+  },
+  {
+    "id": 49,
+    "name": "Hala Kasim",
+    "roles": ["graduate"],
+    "roleDescription": "Graduate",
+    "company": "Kruso",
+    "photo": "/static/team/hala.jpg",
+    "linkedin": "https://www.linkedin.com/in/hala-qasim-009451155/"
   }
 ]
