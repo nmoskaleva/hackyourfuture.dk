@@ -11,6 +11,7 @@ import {
 import { content as partners_content } from '../components/content/_partners'
 import Contactform from '../components/contact-form/contact-form'
 import Partners from '../components/partners/partners'
+import { Graduates } from '../components/team/team'
 
 export default () => (
   <Layout>
@@ -34,6 +35,8 @@ export default () => (
     <Content>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </Content>
+
+    <Graduates />
 
     <Content id='contact'>
       <h2>{contact_title}</h2>

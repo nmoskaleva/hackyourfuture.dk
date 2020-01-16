@@ -61,7 +61,9 @@ const ItemCard = ({ item, children }) => {
           />
         )}
         <h3 className='member-name'>{name}</h3>
-        <h4>{company}</h4> {/* add a class here */}
+
+        <h4 className='member-company'>{company}</h4>
+
         {roles && <p className='member-role'>{roleDescription}</p>}
         {skills && (
           <div className='skills'>
