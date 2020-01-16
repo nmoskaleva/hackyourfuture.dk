@@ -43,3 +43,21 @@ $primary-color: #293a7d;
     }
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
+  .team-member-card {
+    max-width: 150px;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 375px) {
+  .team-member-card {
+    max-width: 180px;
+  }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {
+  .team-member-card {
+    max-width: 200px;
+  }
+}
