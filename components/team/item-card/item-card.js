@@ -23,7 +23,8 @@ const ItemCard = ({ item, children }) => {
     pdfCV,
     website,
     roleDescription,
-    skills
+    skills,
+    company
   } = item
   return (
     <div>
@@ -60,6 +61,8 @@ const ItemCard = ({ item, children }) => {
           />
         )}
         <h3 className='member-name'>{name}</h3>
+
+        <p className='member-company'>{company}</p>
 
         {roles && <p className='member-role'>{roleDescription}</p>}
 
