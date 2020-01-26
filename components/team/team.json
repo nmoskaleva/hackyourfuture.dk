@@ -29,6 +29,16 @@
     "website": "https://benna100.github.io/portfolio/"
   },
   {
+    "id": 22,
+    "name": "Daniel Fernandes",
+    "roles": ["core"],
+    "roleDescription": "Partnership Manager",
+    "photo": "/static/team/daniel.jpg",
+    "linkedin": "https://www.linkedin.com/in/danielapfernandes/",
+    "github": "https://github.com/dpfernandes/",
+    "email": "daniel@hackyourfuture.dk"
+  },
+  {
     "id": 4,
     "name": "Alicia Gonzales",
     "roles": ["mentor"],
