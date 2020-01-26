@@ -8,9 +8,9 @@ import {
   content as contact_content,
   title as contact_title
 } from '../components/content/_contact'
-import { content as partners_content } from '../components/content/_partners'
 import Contactform from '../components/contact-form/contact-form'
 import Partners from '../components/partners/partners'
+import Media from '../components/partners/media'
 
 export default () => (
   <Layout>
@@ -44,9 +44,7 @@ export default () => (
       </div>
     </Content>
 
-    <Content id='partners'>
-      <div dangerouslySetInnerHTML={{ __html: marked(partners_content) }} />
-    </Content>
+    <Media />
 
     <Partners />
   </Layout>
