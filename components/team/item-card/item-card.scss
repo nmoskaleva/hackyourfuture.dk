@@ -51,12 +51,40 @@ $primary-color: #293a7d;
 @media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
   .team-member-card {
     max-width: 150px;
+    padding: 10px;
+    .social-media {
+      margin-top: 0.1rem;
+      margin: 0;
+      a {
+        padding: 3px;
+      }
+    }
+    .member-name,
+    .member-company,
+    .member-role {
+      line-height: 1.2rem;
+      font-size: 0.7rem;
+    }
   }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 375px) {
   .team-member-card {
     max-width: 180px;
+    padding: 13px;
+    .social-media {
+      margin-top: 0.1rem;
+      margin: 0;
+      a {
+        padding: 5px;
+      }
+    }
+    .member-name,
+    .member-company,
+    .member-role {
+      line-height: 1.2rem;
+      font-size: 0.9rem;
+    }
   }
 }
 
