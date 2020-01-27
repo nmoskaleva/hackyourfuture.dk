@@ -353,5 +353,14 @@
     "photo": "/static/alumni/photos/neer.jpg",
     "linkedin": "https://www.linkedin.com/in/neerthapa/",
     "github": "https://github.com/nirmalathapa"
+  },
+  {
+    "id": 46,
+    "name": "Daryan",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/alumni/photos/daryan.jpg",
+    "linkedin": "https://www.linkedin.com/in/daryan-kamalifar-915725140/",
+    "github": "https://github.com/Daryan-Tech"
   }
 ]
