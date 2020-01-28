@@ -14,5 +14,10 @@ export default () => (
     <Content>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </Content>
+    <Content>
+      <div className='confirmation-page-img'>
+        <img src='../static/confirmation-page/confirmation-page-photo.jpg' />
+      </div>
+    </Content>
   </Layout>
 )

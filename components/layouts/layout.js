@@ -230,6 +230,10 @@ export default ({ children }) => {
         .hyf-title > a {
           text-decoration: none;
         }
+
+        .confirmation-page-img {
+          text-align: center;
+        }
       `}</style>
       <Head>
         <title>HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups</title>
