@@ -297,7 +297,7 @@
     "name": "Nynne Just Christofferson",
     "roles": ["boardmember"],
     "photo": "/static/team/nynne.jpg",
-    "roleDescription": "Chairwoman of the Board",
+    "roleDescription": "Chairwoman",
     "company": "Siteimprove",
     "linkedin": "https://www.linkedin.com/in/nynne-just-christoffersen-0361a316/"
   },
@@ -306,7 +306,7 @@
     "name": "Sherry List",
     "roles": ["boardmember"],
     "photo": "/static/team/sherry-list.jpg",
-    "roleDescription": "Vice Chairwoman of the Board",
+    "roleDescription": "Vice Chairwoman",
     "company": "Microsoft",
     "linkedin": "https://www.linkedin.com/in/sherrylist/"
   },
