@@ -29,6 +29,16 @@
     "website": "https://benna100.github.io/portfolio/"
   },
   {
+    "id": 22,
+    "name": "Daniel Fernandes",
+    "roles": ["core"],
+    "roleDescription": "Partnership Manager",
+    "photo": "/static/team/daniel.jpg",
+    "linkedin": "https://www.linkedin.com/in/danielapfernandes/",
+    "github": "https://github.com/dpfernandes/",
+    "email": "daniel@hackyourfuture.dk"
+  },
+  {
     "id": 4,
     "name": "Alicia Gonzales",
     "roles": ["mentor"],
@@ -297,35 +307,45 @@
     "name": "Nynne Just Christofferson",
     "roles": ["boardmember"],
     "photo": "/static/team/nynne.jpg",
-    "roleDescription": "Chairwoman of the Board"
+    "roleDescription": "Chairwoman",
+    "company": "Siteimprove",
+    "linkedin": "https://www.linkedin.com/in/nynne-just-christoffersen-0361a316/"
   },
   {
     "id": 39,
     "name": "Sherry List",
     "roles": ["boardmember"],
     "photo": "/static/team/sherry-list.jpg",
-    "roleDescription": "Vice Chairwoman of the Board"
+    "roleDescription": "Vice Chairwoman",
+    "company": "Microsoft",
+    "linkedin": "https://www.linkedin.com/in/sherrylist/"
   },
   {
     "id": 40,
     "name": "Christopher Klüter",
     "roles": ["boardmember"],
     "photo": "/static/team/christopher.jpg",
-    "roleDescription": "Treasurer"
+    "roleDescription": "Treasurer",
+    "company": "HackYourFuture",
+    "linkedin": "https://www.linkedin.com/in/christopher-klueter/"
   },
   {
     "id": 41,
     "name": "Rohit Sharma",
     "roles": ["boardmember"],
     "photo": "/static/team/rohit.jpg",
-    "roleDescription": "Board Member"
+    "roleDescription": "Board Member",
+    "company": "DataRobot",
+    "linkedin": "https://www.linkedin.com/in/r0hit/"
   },
   {
     "id": 42,
     "name": "Mila Manieva",
     "roles": ["boardmember"],
     "photo": "/static/team/mila-manieva.jpg",
-    "roleDescription": "Board Member"
+    "roleDescription": "Board Member",
+    "company": "Web&Coffee",
+    "linkedin": "https://www.linkedin.com/in/mmdalby/"
   },
   {
     "id": 43,
