@@ -187,6 +187,8 @@
     "id": 16,
     "roles": ["alumni"],
     "name": "Mohamed Aldahoul",
+    "company": "TooGoodToGo",
+    "roleDescription": "Graduate",
     "email": "mohamed.aldahoul@gmail.com",
     "photo": "/static/alumni/photos/mohamed.jpg",
     "github": "https://github.com/mohamedaldahoul",
@@ -414,5 +416,38 @@
     ],
     "status": "Looking for jobs",
     "graduationDate": "23-10-2019"
+  },
+  {
+    "id": 27,
+    "name": "Abdulrahman Ramadan",
+    "roles": ["alumni"],
+    "roleDescription": "Graduate",
+    "status": "Employed",
+    "company": "Famly",
+    "photo": "/static/team/abdulrahman.jpg",
+    "linkedin": "https://www.linkedin.com/in/ramadan46/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
+  },
+  {
+    "id": 28,
+    "name": "Zoey Zou",
+    "roles": ["alumni"],
+    "roleDescription": "Graduate",
+    "status": "Employed",
+    "company": "Pleo",
+    "photo": "/static/team/zoey.jpg",
+    "linkedin": "https://www.linkedin.com/in/zoeyzou2018/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
+  },
+  {
+    "id": 29,
+    "name": "Hala Kasim",
+    "roles": ["alumni"],
+    "roleDescription": "Graduate",
+    "status": "Employed",
+    "company": "Kruso",
+    "photo": "/static/team/hala.jpg",
+    "linkedin": "https://www.linkedin.com/in/hala-qasim-009451155/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
   }
 ]

@@ -2,6 +2,7 @@ import React from 'react'
 import members from './team.json'
 import ItemCard from './item-card/item-card'
 import styles from './team.scss'
+import alumniList from '../hire/alumni.json'
 
 //styling
 
@@ -55,7 +56,7 @@ export const MentorsTeam = () => {
 }
 
 export const Graduates = () => {
-  const graduates = members.filter(member => member.roles.includes('graduate'))
+  const graduates = alumniList.filter(alumni => alumni.company)
   return (
     <>
       <style jsx>{styles}</style>
