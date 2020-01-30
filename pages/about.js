@@ -10,7 +10,7 @@ import {
 } from '../components/content/_contact'
 import Contactform from '../components/contact-form/contact-form'
 import Partners from '../components/partners/partners'
-import Media from '../components/partners/media'
+import Press from '../components/partners/press'
 
 export default () => (
   <Layout>
@@ -44,7 +44,7 @@ export default () => (
       </div>
     </Content>
 
-    <Media />
+    <Press />
 
     <Partners />
   </Layout>
