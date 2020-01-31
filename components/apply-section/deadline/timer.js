@@ -30,11 +30,8 @@ const useStyles = makeStyles(theme => ({
   listItem: {
     padding: '0 1rem 0 1rem ',
     marginBottom: 0,
-    '@media (max-width:320px)': {
-      width: '170%'
-    },
     '@media (max-width:375px)': {
-      width: '130%'
+      width: '140%'
     }
   },
   primaryText: {
@@ -52,25 +49,29 @@ const useStyles = makeStyles(theme => ({
     fontSize: '1rem',
     textAlign: 'right',
     '@media (max-width:325px)': {
-      fontSize: '0.8rem'
+      fontSize: '0.7rem'
     }
   }
 }))
 
-export default function timer(props) {
+export default function Timer(props) {
   const classes = useStyles()
+  const dateToCountDownFrom = props.date
+  const countDownComponents = countdown(dateToCountDownFrom)
   return (
     <div className={classes.root}>
       <List className={classes.list}>
-        {countdown(props.date).map(item => (
-          <ListItem className={classes.listItem} key={item}>
+        {countDownComponents.map(timeUnit => (
+          <ListItem className={classes.listItem} key={timeUnit}>
             <ListItemText
               classes={{
-                primary: classes.primaryText,
-                secondary: classes.secondaryText
+                // primary and secondary are names of classes in material-ui that allow to override the style of the component
+                // https://material-ui.com/api/list-item-text/
+                primary: classes.primaryText, //count of time unit
+                secondary: classes.secondaryText // time unit name: days, hours, min, sec
               }}
-              primary={item[0].split(' ', 1)}
-              secondary={item[0].split(' ', 2)[1]}
+              primary={timeUnit[0]}
+              secondary={timeUnit[1]}
             />
           </ListItem>
         ))}

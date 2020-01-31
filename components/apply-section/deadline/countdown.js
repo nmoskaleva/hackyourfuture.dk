@@ -1,42 +1,25 @@
 import React, { useState, useEffect } from 'react'
+import { getTimeToDeadline } from './helpers'
+
+// countdown funciton calculates the difference between today and the applications deadline date in days, hours, minutes and seconds.
+// Returns an array of remaining time and time units names.
 
 export default function countdown(date) {
-  const calculateTimeLeft = () => {
-    const diff = +new Date(date) - +new Date()
-    let timeLeft = {}
-
-    if (diff > 0) {
-      timeLeft = {
-        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((diff / 1000 / 60) % 60),
-        seconds: Math.floor((diff / 1000) % 60)
-      }
-    } else {
-      timeLeft = {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0
-      }
-    }
-    return timeLeft
-  }
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
+  const [timeLeftInUnits, setTimeLeftInUnits] = useState(getTimeToDeadline())
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTimeLeft(calculateTimeLeft())
+    const oneSecondInterval = setInterval(() => {
+      setTimeLeftInUnits(getTimeToDeadline(date))
     }, 1000)
 
-    return () => clearInterval(intervalId)
+    return () => clearInterval(oneSecondInterval)
   }, [])
 
   const countdownComponents = []
 
-  Object.keys(timeLeft).forEach(item => {
-    countdownComponents.push([timeLeft[item] + ` ` + item])
+  Object.keys(timeLeftInUnits).forEach(timeUnit => {
+    countdownComponents.push([timeLeftInUnits[timeUnit], timeUnit])
+    // [[21, "days"], [6, "hours"], [34, "minutes"], [31, "seconds"]]
   })
 
   return countdownComponents
