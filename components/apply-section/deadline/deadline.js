@@ -1,6 +1,7 @@
-
 import React from 'react'
+import useSWR from 'swr'
 import Timer from './timer'
+import { fetcher } from './helpers'
 import { makeStyles } from '@material-ui/core/styles'
 import Content from '../../layouts/content/content'
 import Typography from '@material-ui/core/Typography'
@@ -20,12 +21,11 @@ const useStyles = makeStyles({
     padding: 0
   },
   newClassNumber: {
-    borderRadius: '25px',
-    padding: '0.5rem 0.8rem 0.6rem 0.8rem',
-    backgroundColor: '#293A7D',
-    color: '#FFFFFF',
-    '@media (max-width:768px)': {
-      padding: '0 0.4rem 0 0.4rem'
+    '@media (min-width: 992px)': {
+      borderRadius: '25px',
+      padding: '0.5rem 0.8rem 0.6rem 0.8rem',
+      backgroundColor: '#293A7D',
+      color: '#FFFFFF'
     }
   }
 })
@@ -33,9 +33,11 @@ const useStyles = makeStyles({
 export default function Deadline() {
   const classes = useStyles()
 
-  const newClassNumber = 14
-  const applicationDeadline = '02 / 20 / 2020'
-  const classStart = '03 / 01 / 2020'
+  const { data, error } = useSWR('/api/deadline-data', fetcher)
+  if (error) { console.log('Failed to fetch deadline data', { error }) }
+
+  const newClassNumber = data?.data[1][0]
+  const applicationDeadline = data?.data[1][1]
 
   const applicationEndDate = new Date(applicationDeadline).toLocaleString(
     'en',
@@ -46,22 +48,18 @@ export default function Deadline() {
     }
   )
 
-  const newClassStartDate = new Date(classStart).toLocaleString('en', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-  })
-
-
-  return (
-    <React.Fragment>
-      <Typography className={classes.deadline}>
-        <span className={classes.newClassNumber}>Class {newClassNumber}</span> starts on {newClassStartDate} | Application Deadline: {applicationEndDate}
-      </Typography>
-      <Container>
-        <Timer date={applicationEndDate} />
-      </Container>
-    </React.Fragment>
-  )
-
+  if (applicationDeadline) {
+    return (
+      <Content>
+        <Typography className={classes.deadline}>
+          <span className={classes.newClassNumber}>Class {newClassNumber}</span> Application Deadline is on {applicationEndDate}
+        </Typography>
+        <Container>
+          <Timer date={applicationEndDate} />
+        </Container>
+      </Content>
+    )
+  } else {
+    return null
+  }
 }
