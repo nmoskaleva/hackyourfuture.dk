@@ -20,7 +20,7 @@ class Hire extends React.Component {
     let skills = []
     let statuses = []
 
-    alumniList.forEach(alumni => {
+    this.state.alumniList.forEach(alumni => {
       skills = [...skills, ...alumni.skills]
       statuses = [...statuses, alumni.status]
     })
@@ -107,7 +107,7 @@ class Hire extends React.Component {
                 onClick={() => this.filterSkillsHandler(skill)}
                 className={`${
                   selectedSkills.includes(skill) ? 'active' : 'outlined'
-                } filter`}
+                  } filter`}
                 color='primary'
                 aria-label='Filter specific skills'
               >
@@ -142,11 +142,11 @@ class Hire extends React.Component {
               .sort((a, b) => a.name.localeCompare(b.name))
               .map(member => <ItemCard item={member} key={member.id} />)
           ) : (
-            <div className='no-results'>
-              <h3>No students found</h3>
-              <p>Try change your search filter</p>
-            </div>
-          )}
+              <div className='no-results'>
+                <h3>No students found</h3>
+                <p>Try change your search filter</p>
+              </div>
+            )}
         </div>
       </div>
     )
