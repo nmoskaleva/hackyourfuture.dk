@@ -55,14 +55,14 @@ export const MentorsTeam = () => {
   )
 }
 
-export const Graduates = () => {
-  const graduates = alumniList.filter(alumni => alumni.company)
+export const EmployedAlumni = () => {
+  const highlightedAlumniInCompany = alumniList.filter(alumni => alumni.company)
   return (
     <>
       <style jsx>{styles}</style>
       <h2 className='title'>Our Graduates</h2>
-      <div className='team-members graduates'>
-        {graduates
+      <div className='team-members employed-alumni'>
+        {highlightedAlumniInCompany
           .sort((a, b) => a.name.localeCompare(b.name))
           .map(member => (
             <ItemCard item={member} key={member.id} />
@@ -78,7 +78,7 @@ export default () => {
       <BoardMembers />
       <CoreTeam />
       <MentorsTeam />
-      <Graduates />
+      <EmployedAlumni />
     </div>
   )
 }
