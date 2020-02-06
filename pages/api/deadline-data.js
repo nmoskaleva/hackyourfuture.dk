@@ -1,8 +1,8 @@
 // google api to get data from google spreadsheet
 const { google } = require('googleapis')
-const keys = require('../../keys.json')
+require('dotenv').config();
 
-const client = new google.auth.JWT(keys.client_email, null, keys.private_key, [
+const client = new google.auth.JWT(process.env.CLIENT_EMAIL, null, process.env.PRIVATE_KEY, [
   'https://www.googleapis.com/auth/spreadsheets'
 ])
 
