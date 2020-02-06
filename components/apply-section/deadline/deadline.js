@@ -48,7 +48,10 @@ export default function Deadline() {
     }
   )
 
-  if (applicationDeadline) {
+  if (!applicationDeadline) {
+    return null;
+  }
+  else {
     return (
       <Content>
         <Typography className={classes.deadline}>
@@ -59,7 +62,5 @@ export default function Deadline() {
         </Container>
       </Content>
     )
-  } else {
-    return null
   }
 }

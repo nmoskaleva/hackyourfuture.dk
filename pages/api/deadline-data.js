@@ -12,12 +12,11 @@ client.authorize(function (err, tokens) {
     return
   } else {
     console.log('Spreadsheet connected')
-    gsrun(client)
   }
 })
 
-async function gsrun(cl) {
-  const gsapi = google.sheets({ version: 'v4', auth: cl })
+async function gsrun(client) {
+  const gsapi = google.sheets({ version: 'v4', auth: client })
 
   const spreadsheetDetails = {
     spreadsheetId: '1-ZbDvUEZB-Ej63-1Ik0oUTMCxuRJIlkaYmFrzSDTWQI',
