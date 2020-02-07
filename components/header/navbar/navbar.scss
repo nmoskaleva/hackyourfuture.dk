@@ -30,6 +30,11 @@ $primary-color: #293a7d;
           opacity: 0.9;
           text-decoration: underline;
         }
+        &.donate {
+          background-color: $primary-color;
+          color: white;
+          padding: 0.7rem;
+        }
       }
       &.active > a {
         text-decoration: underline;
