@@ -21,4 +21,8 @@ const getTimeToDeadline = date => {
   return timeLeftInUnits
 }
 
-export { getTimeToDeadline }
+function fetcher(url) {
+  return fetch(url).then(res => res.json())
+}
+
+export { getTimeToDeadline, fetcher }

@@ -66,7 +66,6 @@ export default function Timer(props) {
             <ListItemText
               classes={{
                 // primary and secondary are names of classes in material-ui that allow to override the style of the component
-                // https://material-ui.com/api/list-item-text/
                 primary: classes.primaryText, //count of time unit
                 secondary: classes.secondaryText // time unit name: days, hours, min, sec
               }}

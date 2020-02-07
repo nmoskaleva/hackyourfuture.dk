@@ -15,11 +15,9 @@ export default () => (
     <Head>
       <title>{title}</title>
     </Head>
+    <ApplicationDeadline />
     <Content id='apply'>
       <ApplySection />
-    </Content>
-    <Content>
-      <ApplicationDeadline />
     </Content>
     <Content>
       <Learning />
