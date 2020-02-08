@@ -34,6 +34,9 @@ button.filter {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 
+  &:first-letter{
+    text-transform: capitalize;
+  }
   &:hover {
     background-color: #fff;
   }

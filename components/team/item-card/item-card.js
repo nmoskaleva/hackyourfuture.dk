@@ -55,12 +55,12 @@ const ItemCard = ({ item, children }) => {
         {photo ? (
           <LazyLoadImage alt={name} src={photo} />
         ) : (
-          <LazyLoadImage
-            alt={name}
-            className='member-default-avatar'
-            src={'/static/avatar.png'}
-          />
-        )}
+            <LazyLoadImage
+              alt={name}
+              className='member-default-avatar'
+              src={'/static/avatar.png'}
+            />
+          )}
         <h3 className='member-name'>{name}</h3>
 
         <p className='member-company'>{company}</p>
@@ -92,7 +92,7 @@ const ItemCard = ({ item, children }) => {
               <Icon size={1} color='#293a7d' path={mdiLinkedin} />
             </a>
           )}
-          {email && status !== 'Employed' && (
+          {email && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='email link'
@@ -103,7 +103,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {onlineCV && status !== 'Employed' && (
+          {onlineCV && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='Online cv link'
@@ -114,7 +114,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {pdfCV && status !== 'Employed' && (
+          {pdfCV && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='Pdf cv link'
@@ -125,7 +125,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {website && status !== 'Employed' && (
+          {website && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='website link'
