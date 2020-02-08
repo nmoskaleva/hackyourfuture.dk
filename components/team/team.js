@@ -55,7 +55,7 @@ export const MentorsTeam = () => {
   )
 }
 
-export const EmployedAlumni = () => {
+export const Graduates = () => {
   const highlightedAlumniInCompany = alumniList.filter(alumni => alumni.company)
   return (
     <>
@@ -78,7 +78,7 @@ export default () => {
       <BoardMembers />
       <CoreTeam />
       <MentorsTeam />
-      <EmployedAlumni />
+      <Graduates />
     </div>
   )
 }

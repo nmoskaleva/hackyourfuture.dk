@@ -10,7 +10,7 @@ import {
 } from '../components/content/_contact'
 import Contactform from '../components/contact-form/contact-form'
 import Partners from '../components/partners/partners'
-import { EmployedAlumni } from '../components/team/team'
+import { Graduates } from '../components/team/team'
 import Press from '../components/partners/press'
 
 export default () => (
@@ -36,7 +36,7 @@ export default () => (
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </Content>
 
-    <EmployedAlumni />
+    <Graduates />
 
     <Content id='contact'>
       <h2>{contact_title}</h2>
