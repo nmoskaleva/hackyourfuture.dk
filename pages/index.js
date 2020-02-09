@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Team from '../components/team/team'
+import { MentorsTeam } from '../components/team/team'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
 import marked from 'marked'
@@ -19,7 +19,7 @@ export default () => {
       <Content>
         <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
       </Content>
-      <Team />
+      <MentorsTeam />
       <Partners />
     </Layout>
   )

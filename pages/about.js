@@ -9,6 +9,7 @@ import {
   title as contact_title
 } from '../components/content/_contact'
 import Contactform from '../components/contact-form/contact-form'
+import { BoardMembers, CoreTeam } from '../components/team/team'
 import Partners from '../components/partners/partners'
 import Press from '../components/partners/press'
 
@@ -44,8 +45,10 @@ export default () => (
       </div>
     </Content>
 
+    <BoardMembers />
+    <CoreTeam />
     <Press />
-
     <Partners />
+
   </Layout>
 )
