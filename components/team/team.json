@@ -304,21 +304,21 @@
   },
   {
     "id": 38,
-    "name": "Nynne Just Christofferson",
-    "roles": ["boardmember"],
-    "photo": "/static/team/nynne.jpg",
-    "roleDescription": "Chairwoman",
-    "company": "Siteimprove",
-    "linkedin": "https://www.linkedin.com/in/nynne-just-christoffersen-0361a316/"
-  },
-  {
-    "id": 39,
     "name": "Sherry List",
     "roles": ["boardmember"],
     "photo": "/static/team/sherry-list.jpg",
     "roleDescription": "Vice Chairwoman",
     "company": "Microsoft",
     "linkedin": "https://www.linkedin.com/in/sherrylist/"
+  },
+  {
+    "id": 39,
+    "name": "Allan Thraen",
+    "roles": ["boardmember"],
+    "roleDescription": "Vice Chairman",
+    "company": "CodeArt",
+    "photo": "/static/team/allan-thraen.jpg",
+    "linkedin": "https://www.linkedin.com/in/allanthraen/"
   },
   {
     "id": 40,
@@ -331,21 +331,21 @@
   },
   {
     "id": 41,
-    "name": "Rohit Sharma",
+    "name": "Marta Matos",
     "roles": ["boardmember"],
-    "photo": "/static/team/rohit.jpg",
-    "roleDescription": "Board Member",
-    "company": "DataRobot",
-    "linkedin": "https://www.linkedin.com/in/r0hit/"
+    "photo": "/static/team/marta.jpg",
+    "roleDescription": "Mentor Representative",
+    "company": "DTU Biosustain",
+    "linkedin": "https://www.linkedin.com/in/marta-matos-829a7050/"
   },
   {
     "id": 42,
-    "name": "Mila Manieva",
+    "name": "Mohamed Aldahoul",
     "roles": ["boardmember"],
-    "photo": "/static/team/mila-manieva.jpg",
-    "roleDescription": "Board Member",
-    "company": "Web&Coffee",
-    "linkedin": "https://www.linkedin.com/in/mmdalby/"
+    "photo": "/static/alumni/photos/mohamed.jpg",
+    "roleDescription": "Student Representative",
+    "company": "Too Good To Go",
+    "linkedin": "https://www.linkedin.com/in/mohamedaldahoul"
   },
   {
     "id": 43,
