@@ -19,7 +19,7 @@ async function gsrun(client) {
   const gsapi = google.sheets({ version: 'v4', auth: client })
 
   const spreadsheetDetails = {
-    spreadsheetId: '1-ZbDvUEZB-Ej63-1Ik0oUTMCxuRJIlkaYmFrzSDTWQI',
+    spreadsheetId: '1KD6Dr9z5fxEzx-jxs84e0tBfpohTkup8GE4r3CC3qZA',
     range: 'A1:C2'
   }
 
