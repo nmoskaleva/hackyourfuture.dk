@@ -5,10 +5,10 @@ const getTimeToDeadline = date => {
 
   if (difference > 0) {
     timeLeftInUnits = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60)
+      days: ('0' + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
+      hours: ('0' + Math.floor((difference / (1000 * 60 * 60)) % 24)).slice(-2),
+      minutes: ('0' + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
+      seconds: ('0' + Math.floor((difference / 1000) % 60)).slice(-2)
     }
   } else {
     timeLeftInUnits = {
