@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getTimeToDeadline } from './helpers'
 
-// countdown funciton calculates the difference between today and the applications deadline date in days, hours, minutes and seconds.
+// Countdown funciton calculates the difference between today and the applications deadline date in days, hours, minutes and seconds. 
 // Returns an array of remaining time and time units names.
 
 export default function countdown(date) {

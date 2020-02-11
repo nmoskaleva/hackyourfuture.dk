@@ -7,8 +7,8 @@ const getTimeToDeadline = date => {
     timeLeftInUnits = {
       days: ('0' + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
       hours: ('0' + Math.floor((difference / (1000 * 60 * 60)) % 24)).slice(-2),
-      minutes: ('0' + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
-      seconds: ('0' + Math.floor((difference / 1000) % 60)).slice(-2)
+      min: ('0' + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
+      sec: ('0' + Math.floor((difference / 1000) % 60)).slice(-2)
     }
   } else {
     timeLeftInUnits = {
