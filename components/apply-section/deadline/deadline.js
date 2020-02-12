@@ -4,6 +4,7 @@ import Timer from './timer'
 import { fetcher } from './helpers'
 import { makeStyles } from '@material-ui/core/styles'
 import Content from '../../layouts/content/content'
+import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 
@@ -11,21 +12,36 @@ import Container from '@material-ui/core/Container'
 const useStyles = makeStyles({
   deadline: {
     color: '#293a7d',
-    display: 'block',
     textAlign: 'center',
     fontFamily: "'Space Mono', 'monospace'",
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
+    padding: 0,
     paddingTop: '1rem',
-    marginBottom: 0,
-    padding: 0
+    marginBottom: 0
   },
   newClassNumber: {
-    '@media (min-width: 992px)': {
-      borderRadius: '25px',
-      padding: '0.5rem 0.8rem 0.6rem 0.8rem',
-      backgroundColor: '#293A7D',
-      color: '#FFFFFF'
+    padding: '0.5rem 0.8rem 0.6rem 0.8rem',
+    backgroundColor: '#293A7D',
+    color: '#FFFFFF',
+    fontFamily: "'Space Mono', 'monospace'",
+    fontSize: '1.2rem',
+    fontWeight: 'bold',
+    display: 'inline'
+  },
+  event: {
+    fontFamily: "'Space Mono', 'monospace'",
+    display: 'inline',
+    marginTop: '1rem',
+    '@media (max-width: 768px)': {
+      marginTop: '2rem',
+      paddingLeft: '0.9rem',
+      display: 'block'
+    }
+  },
+  dateOfEvent: {
+    fontFamily: "'Space Mono', 'monospace'",
+    fontWeight: 'bold',
+    '@media (max-width: 768px)': {
+      display: 'block'
     }
   }
 })
@@ -38,6 +54,7 @@ export default function Deadline() {
 
   const newClassNumber = data?.data[1][0]
   const applicationDeadline = data?.data[1][1]
+  const newClassStart = data?.data[1][2]
 
   const applicationEndDate = new Date(applicationDeadline).toLocaleString(
     'en',
@@ -54,9 +71,11 @@ export default function Deadline() {
   else {
     return (
       <Content>
-        <Typography className={classes.deadline}>
-          <span className={classes.newClassNumber}>Class {newClassNumber}</span> Application Deadline is on {applicationEndDate}
-        </Typography>
+        <Box className={classes.deadline}>
+          <Typography className={classes.newClassNumber}>Class {newClassNumber}</Typography>
+          <Typography className={classes.event}>Application Deadline: <span className={classes.dateOfEvent}>{applicationEndDate}</span></Typography>
+          <Typography className={classes.event}>Class starting: <span className={classes.dateOfEvent}>{newClassStart}</span></Typography>
+        </Box>
         <Container>
           <Timer date={applicationEndDate} />
         </Container>
