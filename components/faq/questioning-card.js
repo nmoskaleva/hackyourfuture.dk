@@ -19,11 +19,13 @@ const useStyles = makeStyles(theme => ({
   },
   question: {
     fontFamily: 'Work Sans, sans-serif',
-    fontWeight: 'bold'
+    fontSize: '1.1rem',
+    color: 'black'
   },
   answer: {
     fontFamily: 'Work Sans, sans-serif',
-    color: 'black'
+    color: 'black',
+    fontWeight: 'bold'
   },
   card: {
     marginBottom: '10px',

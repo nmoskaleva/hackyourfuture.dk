@@ -25,12 +25,16 @@ const useStyles = makeStyles(theme => ({
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-    maxWidth: '45%'
+    maxWidth: '45%',
+    '@media (max-width:414px)': {
+      boxSizing: 'content-box'
+    }
   },
   listItem: {
     padding: '0 1rem 0 1rem ',
     marginBottom: 0,
     '@media (max-width:375px)': {
+      padding: '0 0.8rem 0 0.8rem ',
       width: '140%'
     }
   },
@@ -41,13 +45,13 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 'bold',
     textAlign: 'left',
     '@media (max-width:325px)': {
-      fontSize: '1.7rem'
+      fontSize: '1.6rem'
     }
   },
   secondaryText: {
     fontFamily: "'Space Mono', 'monospace'",
     fontSize: '1rem',
-    textAlign: 'right',
+    textAlign: 'center',
     '@media (max-width:325px)': {
       fontSize: '0.7rem'
     }
@@ -65,7 +69,6 @@ export default function Timer(props) {
           <ListItem className={classes.listItem} key={timeUnit}>
             <ListItemText
               classes={{
-                // primary and secondary are names of classes in material-ui that allow to override the style of the component
                 primary: classes.primaryText, //count of time unit
                 secondary: classes.secondaryText // time unit name: days, hours, min, sec
               }}

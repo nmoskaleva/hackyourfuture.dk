@@ -2,6 +2,7 @@ import React from 'react'
 import members from './team.json'
 import ItemCard from './item-card/item-card'
 import styles from './team.scss'
+import alumniList from '../hire/alumni.json'
 
 //styling
 
@@ -54,12 +55,30 @@ export const MentorsTeam = () => {
   )
 }
 
+export const Graduates = () => {
+  const highlightedAlumniInCompany = alumniList.filter(alumni => alumni.company)
+  return (
+    <>
+      <style jsx>{styles}</style>
+      <h2 className='title'>Our Graduates</h2>
+      <div className='team-members employed-alumni'>
+        {highlightedAlumniInCompany
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(member => (
+            <ItemCard item={member} key={member.id} />
+          ))}
+      </div>
+    </>
+  )
+}
+
 export default () => {
   return (
     <div>
       <BoardMembers />
       <CoreTeam />
       <MentorsTeam />
+      <Graduates />
     </div>
   )
 }

@@ -24,7 +24,8 @@ const ItemCard = ({ item, children }) => {
     website,
     roleDescription,
     skills,
-    company
+    company,
+    status
   } = item
   return (
     <div>
@@ -54,19 +55,18 @@ const ItemCard = ({ item, children }) => {
         {photo ? (
           <LazyLoadImage alt={name} src={photo} />
         ) : (
-          <LazyLoadImage
-            alt={name}
-            className='member-default-avatar'
-            src={'/static/avatar.png'}
-          />
-        )}
+            <LazyLoadImage
+              alt={name}
+              className='member-default-avatar'
+              src={'/static/avatar.png'}
+            />
+          )}
         <h3 className='member-name'>{name}</h3>
 
         <p className='member-company'>{company}</p>
 
         {roles && <p className='member-role'>{roleDescription}</p>}
-
-        {skills && (
+        {skills && !company && (
           <div className='skills'>
             <p>{skills.join(', ')}</p>
           </div>
@@ -92,7 +92,7 @@ const ItemCard = ({ item, children }) => {
               <Icon size={1} color='#293a7d' path={mdiLinkedin} />
             </a>
           )}
-          {email && (
+          {email && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='email link'
@@ -103,7 +103,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {onlineCV && (
+          {onlineCV && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='Online cv link'
@@ -114,7 +114,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {pdfCV && (
+          {pdfCV && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='Pdf cv link'
@@ -125,7 +125,7 @@ const ItemCard = ({ item, children }) => {
             </a>
           )}
 
-          {website && (
+          {website && status !== 'employed' && (
             <a
               rel='noopener'
               aria-label='website link'

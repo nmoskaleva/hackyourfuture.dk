@@ -55,6 +55,14 @@ $primary-color: #293a7d;
         &:active {
           background: #eee;
         }
+        &.donate {
+          background-color: $primary-color;
+          color: white;
+          padding: 0 0.4rem 0 0.4rem;
+          margin-top: 0.8rem;
+          font-weight: bold;
+          width: 90px;
+        }
       }
     }
   }
