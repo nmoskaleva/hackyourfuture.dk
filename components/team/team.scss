@@ -18,21 +18,3 @@
 .title {
   text-align: center;
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
-  .team-members.core-team {
-    max-width: 150px;
-  }
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 375px) {
-  .team-members.core-team {
-    max-width: 180px;
-  }
-}
-
-@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {
-  .team-members.core-team {
-    max-width: 200px;
-  }
-}
