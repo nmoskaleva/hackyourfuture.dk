@@ -12,7 +12,7 @@ class Hire extends React.Component {
     selectedStatus: [],
     uniqueStatuses: [],
     alumniList: alumniList.filter(
-      alumni => alumni.status === 'Looking for jobs'
+      alumni => alumni.status === 'looking for jobs'
     )
   }
 
@@ -31,7 +31,7 @@ class Hire extends React.Component {
         a.toLowerCase().localeCompare(b.toLowerCase())
       ),
       uniqueStatuses: [...new Set(statuses)].filter(
-        skill => skill === 'Looking for jobs'
+        skill => skill === 'looking for jobs'
       )
     })
   }
@@ -39,7 +39,7 @@ class Hire extends React.Component {
   doFiltering = () => {
     // by default: all alumni list
     let newAlumniList = alumniList.filter(
-      alumni => alumni.status === 'Looking for jobs'
+      alumni => alumni.status === 'looking for jobs'
     )
     // if any filter by skills button is clicked, then filter by skills
     if (this.state.selectedSkills.length !== 0) {
