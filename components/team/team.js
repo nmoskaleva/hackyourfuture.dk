@@ -60,7 +60,7 @@ export const Graduates = () => {
   return (
     <>
       <style jsx>{styles}</style>
-      <h2 className='title'>Our Graduates</h2>
+      <h2 className='title'>Meet our Graduates</h2>
       <div className='team-members employed-alumni'>
         {highlightedAlumniInCompany
           .sort((a, b) => a.name.localeCompare(b.name))
