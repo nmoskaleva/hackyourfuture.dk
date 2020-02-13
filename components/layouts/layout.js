@@ -201,12 +201,13 @@ export default ({ children }) => {
         h1 {
           font-size: 40px;
           line-height: 50px;
-          text-align: center;
+          margin-bottom: 2rem;
         }
 
         h2 {
           letter-spacing: 0.2px;
           margin: 2rem 0;
+          line-height: 3rem;
         }
 
         @media (max-width: 768px) {
@@ -230,9 +231,16 @@ export default ({ children }) => {
         .hyf-title > a {
           text-decoration: none;
         }
+
+        .confirmation-page-img {
+          text-align: center;
+        }
       `}</style>
       <Head>
-        <title>HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups</title>
+        <title>
+          HackYourFuture Copenhagen - A non-profit coding school for
+          disadvantaged groups
+        </title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
 
         <meta

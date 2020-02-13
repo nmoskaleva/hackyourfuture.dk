@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import marked from 'marked'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
-import { content, title } from '../components/content/_support-us'
+import marked from 'marked'
+import { content, title } from '../components/content/_donate'
 
 export default () => (
   <Layout>

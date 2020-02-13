@@ -1,6 +1,6 @@
 import React from 'react'
 import Questioning from './questioning-card'
-import questions from './questions'
+import questions from './questions-mentors'
 
 // imports material UI
 import { makeStyles } from '@material-ui/core/styles'

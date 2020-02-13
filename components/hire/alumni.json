@@ -9,7 +9,7 @@
     "onlineCV": "https://katsisaac50.github.io/myresume/",
     "linkedin": "https://www.linkedin.com/in/katongole-isaac-2b27b6170/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "02-09-2018"
   },
   {
@@ -22,7 +22,7 @@
     "github": "https://github.com/paredesrichard",
     "linkedin": "https://www.linkedin.com/in/richard-paredes/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Employed",
+    "status": "employed",
     "graduationDate": "25-11-2018"
   },
   {
@@ -52,7 +52,7 @@
       "PostgreSQL",
       "GraphQL"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "02-06-2018"
   },
   {
@@ -82,7 +82,7 @@
       "CSS",
       "Node.js"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "02-06-2018"
   },
   {
@@ -94,7 +94,7 @@
     "github": "https://github.com/elilovna",
     "linkedin": "https://www.linkedin.com/in/yana-khuchuieva-3a771a159/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "25-11-2018"
   },
   {
@@ -106,7 +106,7 @@
     "github": "https://github.com/samyarmodabber",
     "linkedin": "https://www.linkedin.com/in/samyarmodabber/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "25-11-2018"
   },
   {
@@ -119,7 +119,7 @@
     "pdfCV": "/static/alumni/cv/johanna.pdf",
     "linkedin": "https://www.linkedin.com/in/johanna-may-baguio-a8aa90174/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "02-06-2019"
   },
   {
@@ -132,7 +132,7 @@
     "onlineCV": "https://neer.netlify.com/",
     "linkedin": "https://www.linkedin.com/in/neerthapa/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Employed",
+    "status": "employed",
     "graduationDate": "27-01-2019"
   },
   {
@@ -144,7 +144,7 @@
     "onlineCV": "https://www.marcodecara.com/",
     "linkedin": "https://www.linkedin.com/in/marco-de-cara-1b409013a/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "27-01-2019"
   },
   {
@@ -157,7 +157,7 @@
     "onlineCV": "https://asma2018.github.io/myportfolio/",
     "linkedin": "https://www.linkedin.com/in/asma-s-chudhary-4249a815/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "01-09-2018"
   },
   {
@@ -180,13 +180,15 @@
       "Node.js",
       "UFT/QTP"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "11-08-2019"
   },
   {
     "id": 16,
     "roles": ["alumni"],
     "name": "Mohamed Aldahoul",
+    "company": "TooGoodToGo",
+    "roleDescription": "graduate",
     "email": "mohamed.aldahoul@gmail.com",
     "photo": "/static/alumni/photos/mohamed.jpg",
     "github": "https://github.com/mohamedaldahoul",
@@ -207,7 +209,7 @@
       "AWS",
       "Hetzner"
     ],
-    "status": "Employed",
+    "status": "employed",
     "graduationDate": "11-06-2018"
   },
   {
@@ -229,7 +231,7 @@
       "Node.js",
       "HighCharts/React-HighCharts"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "11-08-2019"
   },
   {
@@ -251,7 +253,7 @@
     "photo": "/static/alumni/photos/natalia.jpg",
     "github": "https://github.com/nmoskaleva",
     "linkedin": "https://www.linkedin.com/in/nmoskaleva",
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "11-08-2019"
   },
   {
@@ -274,7 +276,7 @@
     "linkedin": "https://www.linkedin.com/in/keerthi-alampalli-002750152",
     "pdfCV": "/static/alumni/cv/Keerthi.pdf",
     "onlineCV": "https://keerthi1822.github.io/Resume/",
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "11-08-2019"
   },
   {
@@ -295,7 +297,7 @@
       "CSS",
       "Node.js"
     ],
-    "status": "Employed",
+    "status": "employed",
     "graduationDate": "11-08-2019"
   },
   {
@@ -317,7 +319,7 @@
       "CSS",
       "Node.js"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "11-08-2019"
   },
   {
@@ -340,7 +342,7 @@
       "Knex.js",
       "Jest"
     ],
-    "status": "Employed",
+    "status": "employed",
     "graduationDate": "11-08-2019"
   },
   {
@@ -364,7 +366,7 @@
       "Bootstrap",
       "SAS"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "23-10-2019"
   },
   {
@@ -373,7 +375,7 @@
     "name": "Fowad Latif",
     "email": "fawadik@yahoo.com",
     "photo": "/static/alumni/photos/fowad.jpg",
-    "github": "https://github.com/fawadik",    
+    "github": "https://github.com/fawadik",
     "pdfCV": "/static/alumni/cv/fowad.pdf",
     "linkedin": "https://www.linkedin.com/in/fowad-latif/",
     "skills": [
@@ -386,9 +388,66 @@
       "Knex.js",
       "MySQL",
       "Node.js",
-      "React"      
+      "React"
     ],
-    "status": "Looking for jobs",
+    "status": "looking for jobs",
     "graduationDate": "23-10-2019"
+  },
+  {
+    "id": 26,
+    "roles": ["alumni"],
+    "name": "Rahim Ismaili",
+    "email": "ismailirahim6@gmail.com",
+    "photo": "/static/alumni/photos/rahim.jpeg",
+    "github": "https://github.com/ismailirahim",
+    "pdfCV": "/static/alumni/cv/Rahim.pdf",
+    "linkedin": "https://www.linkedin.com/in/rahim-ismaili/",
+    "skills": [
+      "JS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Knex.js",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Git",
+      "Jest"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "23-10-2019"
+  },
+  {
+    "id": 27,
+    "name": "Abdulrahman Ramadan",
+    "roles": ["alumni"],
+    "roleDescription": "graduate",
+    "status": "employed",
+    "company": "Famly",
+    "photo": "/static/team/abdulrahman.jpg",
+    "linkedin": "https://www.linkedin.com/in/ramadan46/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
+  },
+  {
+    "id": 28,
+    "name": "Zoey Zou",
+    "roles": ["alumni"],
+    "roleDescription": "graduate",
+    "status": "employed",
+    "company": "Pleo",
+    "photo": "/static/team/zoey.jpg",
+    "linkedin": "https://www.linkedin.com/in/zoeyzou2018/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
+  },
+  {
+    "id": 29,
+    "name": "Hala Kasim",
+    "roles": ["alumni"],
+    "roleDescription": "graduate",
+    "status": "employed",
+    "company": "Kruso",
+    "photo": "/static/team/hala.jpg",
+    "linkedin": "https://www.linkedin.com/in/hala-qasim-009451155/",
+    "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
   }
 ]

@@ -52,7 +52,7 @@ export default function applySection() {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <Typography className={classes.title}>{sectionTitle}</Typography>
+      <h1>{sectionTitle}</h1>
       <Typography className={classes.contentOne}>{contentOne}</Typography>
       <Grid
         container

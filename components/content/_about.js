@@ -1,6 +1,6 @@
 const title = 'About - HackYourFuture'
 let content = `
-## What is HackYourFuture?
+# What is HackYourFuture?
 HackYourFuture is a non-profit organisation that aims to train refugees, asylum seekers and other disadvantaged groups to become web-developers and empower them by opening the doors to a very in-demand job market.
 
 In our 32-week program we train students with and without a coding background in modern JavaScript software development. Our aim is to have our students land their first software development job after finishing our course. Our teachers are all volunteers and extremely passionate about coding and sharing their expertise - we love it!

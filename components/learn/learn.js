@@ -36,7 +36,7 @@ export default function learn() {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <Typography className={classes.title}>Get a Headstart!</Typography>
+      <h2>Get a Headstart!</h2>
       <Typography className={classes.content}>
         Waiting to start the test assignment? Check out this resource to get a
         head-start by trying some relevant tutorials and going through our{' '}
@@ -48,7 +48,7 @@ export default function learn() {
         </Link>
         . It will be a great introduction to some of the topics we teach!
       </Typography>
-      <Typography className={classes.title}>Did you know?</Typography>
+      <h3>Did you know?</h3>
       <Typography className={classes.content}>
         Our entire curriculum can be accessed online, for free{' '}
         <Link

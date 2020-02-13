@@ -8,12 +8,14 @@ import WufooForm from 'react-wufoo-embed'
 import FAQ from '../components/faq/faq'
 import ApplySection from '../components/apply-section/apply-section'
 import Learning from '../components/learning-section/learning'
+import ApplicationDeadline from '../components/apply-section/deadline/deadline'
 
 export default () => (
   <Layout>
     <Head>
       <title>{title}</title>
     </Head>
+    <ApplicationDeadline />
     <Content id='apply'>
       <ApplySection />
     </Content>

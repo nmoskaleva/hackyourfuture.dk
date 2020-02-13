@@ -46,7 +46,7 @@ export default function learning() {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <Typography className={classes.title}>{title}</Typography>
+      <h2>{title}</h2>
       <Typography className={classes.descriptionTwo}>{description}</Typography>
       <Grid
         container

@@ -39,6 +39,7 @@ export default () => {
             className={classes.link}
             rel='noopener'
             href='mailto:cph@hackyourfuture.dk'
+            style={{ wordBreak: 'break-word' }}
           >
             cph@hackyourfuture.dk
           </Link>

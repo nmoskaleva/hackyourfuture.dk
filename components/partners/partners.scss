@@ -3,12 +3,17 @@
   align-items: center;
   flex-direction: column;
 
+  a.mollerske {
+    width: calc(100% - 24px);
+    max-width: 1000px;
+  }
+
   .wrapper {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 1rem;
 
     .partner {

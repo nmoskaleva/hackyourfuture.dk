@@ -12,7 +12,7 @@ class Hire extends React.Component {
     selectedStatus: [],
     uniqueStatuses: [],
     alumniList: alumniList.filter(
-      alumni => alumni.status === 'Looking for jobs'
+      alumni => alumni.status === 'looking for jobs'
     )
   }
 
@@ -20,7 +20,7 @@ class Hire extends React.Component {
     let skills = []
     let statuses = []
 
-    alumniList.forEach(alumni => {
+    this.state.alumniList.forEach(alumni => {
       skills = [...skills, ...alumni.skills]
       statuses = [...statuses, alumni.status]
     })
@@ -31,7 +31,7 @@ class Hire extends React.Component {
         a.toLowerCase().localeCompare(b.toLowerCase())
       ),
       uniqueStatuses: [...new Set(statuses)].filter(
-        skill => skill === 'Looking for jobs'
+        skill => skill === 'looking for jobs'
       )
     })
   }
@@ -39,7 +39,7 @@ class Hire extends React.Component {
   doFiltering = () => {
     // by default: all alumni list
     let newAlumniList = alumniList.filter(
-      alumni => alumni.status === 'Looking for jobs'
+      alumni => alumni.status === 'looking for jobs'
     )
     // if any filter by skills button is clicked, then filter by skills
     if (this.state.selectedSkills.length !== 0) {
@@ -86,16 +86,18 @@ class Hire extends React.Component {
       selectedStatus
     } = this.state
     return (
-      <div>
+      <section className='hire'>
         <style jsx>{styles}</style>
-        <h2 className='center'>Find the right candidate</h2>
-        <p className='sub-header'>
+        <h1>Find the right candidate</h1>
+        <p>
           Meet the HackYourFuture alumni. Making a good match between our
-          dedicated graduates and hiring companies is super important to us. We
-          hope that this database will help you find your next favourite
+          dedicated graduates and hiring companies is super important to us.
+          <br />
+          <br />
+          We hope that this database will help you find your next favourite
           employee or colleague!
         </p>
-        <Content>
+        <div className='filters'>
           {/*FILTER BY SKILLS ---------------- */}
           <p>
             <strong>Select competency</strong>
@@ -134,7 +136,7 @@ class Hire extends React.Component {
               </button>
             )
           })}
-        </Content>
+        </div>
 
         <div className='team-members'>
           {alumniList.length > 0 ? (
@@ -148,7 +150,7 @@ class Hire extends React.Component {
             </div>
           )}
         </div>
-      </div>
+      </section>
     )
   }
 }
