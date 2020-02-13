@@ -1,6 +1,6 @@
 const title = `Privacy Policy`
 const content = `
-## Privacy Policy
+# Privacy Policy
 This privacy notice discloses the privacy practices for HackYourFuture.dk. This privacy notice applies solely to information collected by this website. It will notify you of the following:
 
 What personally identifiable information is collected from you through the website, how it is used and with whom it may be shared.
