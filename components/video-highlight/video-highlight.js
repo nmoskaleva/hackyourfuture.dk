@@ -3,12 +3,7 @@ import styles from './video-highlight.scss'
 const Iframe = props => (
   <>
     <style jsx>{styles}</style>
-    <iframe
-      src={props.src}
-      height={props.height}
-      width='100%'
-      frameBorder='0'
-    />
+    <iframe src={props.src} height={props.height} frameBorder='0' />
   </>
 )
 
