@@ -207,6 +207,7 @@ export default ({ children }) => {
         h2 {
           letter-spacing: 0.2px;
           margin: 2rem 0;
+          line-height: 3rem;
         }
 
         @media (max-width: 768px) {

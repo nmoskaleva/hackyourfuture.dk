@@ -22,9 +22,7 @@ export default function faq() {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <Typography className={classes.title}>
-        Frequently Asked Questions
-      </Typography>
+      <h2>Frequently Asked Questions</h2>
       <Container>
         {questions.map(({ id, question, answer }) => (
           <Questioning key={id} question={question} answer={answer} />

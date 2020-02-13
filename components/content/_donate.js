@@ -16,7 +16,7 @@ Here you can find some suggested amounts and an example of what we can use the a
 
 
 ### MobilePay
-nr.: <strong>23 74 28</strong>
+Nr.: <strong>23 74 28</strong>
 
 ### Bank Details
 Foreningen HackYourFuture <br>

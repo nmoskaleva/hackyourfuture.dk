@@ -86,16 +86,18 @@ class Hire extends React.Component {
       selectedStatus
     } = this.state
     return (
-      <div>
+      <section className='hire'>
         <style jsx>{styles}</style>
-        <h2 className='center'>Find the right candidate</h2>
-        <p className='sub-header'>
+        <h1>Find the right candidate</h1>
+        <p>
           Meet the HackYourFuture alumni. Making a good match between our
-          dedicated graduates and hiring companies is super important to us. We
-          hope that this database will help you find your next favourite
+          dedicated graduates and hiring companies is super important to us.
+          <br />
+          <br />
+          We hope that this database will help you find your next favourite
           employee or colleague!
         </p>
-        <Content>
+        <div className='filters'>
           {/*FILTER BY SKILLS ---------------- */}
           <p>
             <strong>Select competency</strong>
@@ -107,7 +109,7 @@ class Hire extends React.Component {
                 onClick={() => this.filterSkillsHandler(skill)}
                 className={`${
                   selectedSkills.includes(skill) ? 'active' : 'outlined'
-                  } filter`}
+                } filter`}
                 color='primary'
                 aria-label='Filter specific skills'
               >
@@ -134,7 +136,7 @@ class Hire extends React.Component {
               </button>
             )
           })}
-        </Content>
+        </div>
 
         <div className='team-members'>
           {alumniList.length > 0 ? (
@@ -142,13 +144,13 @@ class Hire extends React.Component {
               .sort((a, b) => a.name.localeCompare(b.name))
               .map(member => <ItemCard item={member} key={member.id} />)
           ) : (
-              <div className='no-results'>
-                <h3>No students found</h3>
-                <p>Try change your search filter</p>
-              </div>
-            )}
+            <div className='no-results'>
+              <h3>No students found</h3>
+              <p>Try change your search filter</p>
+            </div>
+          )}
         </div>
-      </div>
+      </section>
     )
   }
 }
