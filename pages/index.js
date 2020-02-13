@@ -7,6 +7,7 @@ import Hero from '../components/hero/hero'
 import { content, title } from '../components/content/_home'
 import FindUs from '../components/find-us/find-us'
 import Partners from '../components/partners/partners'
+import { Graduates } from '../components/team/team'
 
 export default () => {
   return (
@@ -19,7 +20,7 @@ export default () => {
       <Content>
         <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
       </Content>
-      <MentorsTeam />
+      <Graduates />
       <Partners />
     </Layout>
   )
