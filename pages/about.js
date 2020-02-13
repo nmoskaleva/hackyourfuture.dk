@@ -11,7 +11,6 @@ import {
 import Contactform from '../components/contact-form/contact-form'
 import { BoardMembers, CoreTeam } from '../components/team/team'
 import Partners from '../components/partners/partners'
-import { Graduates } from '../components/team/team'
 import Press from '../components/partners/press'
 
 export default () => (
@@ -37,8 +36,6 @@ export default () => (
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </Content>
 
-    <Graduates />
-
     <Content id='contact'>
       <h2>{contact_title}</h2>
       <div dangerouslySetInnerHTML={{ __html: marked(contact_content) }} />
@@ -52,6 +49,5 @@ export default () => (
     <CoreTeam />
     <Press />
     <Partners />
-
   </Layout>
 )
