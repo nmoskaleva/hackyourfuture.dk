@@ -17,15 +17,18 @@ Here you can find some suggested amounts and an example of what we can use the a
 
 ### MobilePay
 Nr.: <strong>23 74 28</strong>
+<br><br>
 
 ### Bank Details
 Foreningen HackYourFuture <br>
 Reg. nr.: <strong>5361</strong> <br>
 Kto. nr.: <strong>0000262814</strong>
+<br><br>
 
 ### IBAN
 IBAN: <strong>DK1553610000262814</strong> <br>
 SWIFT/BIC: <strong>ALBADKKK</strong>
+<br><br>
 
 ### Want to become a company partner of HackYourFuture? 
 Send us a mail to cph@hackyourfuture.dk.
