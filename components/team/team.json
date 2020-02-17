@@ -4,7 +4,7 @@
     "name": "Christopher Klüter",
     "roles": ["core"],
     "roleDescription": "managing director",
-    "email": "christopher@hackyourfuture.net",
+    "email": "christopher@hackyourfuture.dk",
     "linkedin": "https://www.linkedin.com/in/christopher-kl%C3%BCter-26794643/",
     "photo": "/static/team/christopher.jpg"
   },
@@ -13,7 +13,7 @@
     "name": "Marie Hoff",
     "roles": ["core"],
     "roleDescription": "community manager",
-    "email": "marie@hackyourfuture.net",
+    "email": "marie@hackyourfuture.dk",
     "linkedin": "https://www.linkedin.com/in/marie-hoff/",
     "photo": "/static/team/marie.jpg"
   },
@@ -25,7 +25,7 @@
     "photo": "/static/team/benjamin.jpg",
     "linkedin": "https://www.linkedin.com/in/benjamindalshughes/",
     "github": "https://github.com/benna100/",
-    "email": "benjami@hackyourfuture.net",
+    "email": "benjamin@hackyourfuture.dk",
     "website": "https://benna100.github.io/portfolio/"
   },
   {
