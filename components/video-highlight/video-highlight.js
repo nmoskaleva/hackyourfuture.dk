@@ -10,7 +10,7 @@ const Iframe = props => (
 export default () => (
   <>
     <style jsx>{styles}</style>
-    <section className='video-highlight'>
+    <section className='video-highlight' id='zuhair-success-story'>
       <h2>Success stories</h2>
       <div className='wrapper'>
         <p>

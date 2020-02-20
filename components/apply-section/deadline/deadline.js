@@ -50,7 +50,9 @@ export default function Deadline() {
   const classes = useStyles()
 
   const { data, error } = useSWR('/api/deadline-data', fetcher)
-  if (error) { console.log('Failed to fetch deadline data', { error }) }
+  if (error) {
+    console.log('Failed to fetch deadline data', { error })
+  }
 
   const newClassNumber = data?.data[1][0]
   const applicationDeadline = data?.data[1][1]
@@ -66,15 +68,24 @@ export default function Deadline() {
   )
 
   if (!applicationDeadline) {
-    return null;
-  }
-  else {
+    return null
+  } else {
     return (
       <Content>
         <Box className={classes.deadline}>
-          <Typography className={classes.newClassNumber}>Class {newClassNumber}</Typography>
-          <Typography className={classes.event}>Application Deadline: <span className={classes.dateOfEvent}>{applicationEndDate}</span></Typography>
-          <Typography className={classes.event}>Class starting: <span className={classes.dateOfEvent}>{newClassStart}</span></Typography>
+          <Typography className={classes.newClassNumber}>
+            Class {newClassNumber}
+          </Typography>
+          <Typography className={classes.event}>
+            {' '}
+            Application Deadline:{' '}
+            <span className={classes.dateOfEvent}>{applicationEndDate}</span>
+          </Typography>
+          <Typography className={classes.event}>
+            {' '}
+            Class starting:{' '}
+            <span className={classes.dateOfEvent}>{newClassStart}</span>
+          </Typography>
         </Box>
         <Container>
           <Timer date={applicationEndDate} />
