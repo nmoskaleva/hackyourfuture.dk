@@ -81,11 +81,6 @@ export default function Deadline() {
             Application Deadline:{' '}
             <span className={classes.dateOfEvent}>{applicationEndDate}</span>
           </Typography>
-          <Typography className={classes.event}>
-            {' '}
-            Class starting:{' '}
-            <span className={classes.dateOfEvent}>{newClassStart}</span>
-          </Typography>
         </Box>
         <Container>
           <Timer date={applicationEndDate} />
