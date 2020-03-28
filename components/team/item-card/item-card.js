@@ -11,9 +11,8 @@ import {
 } from '@mdi/js'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const ItemCard = ({ item, children }) => {
+const ItemCard = ({ item, photo, children }) => {
   const {
-    photo,
     github,
     roles,
     name,
@@ -43,7 +42,6 @@ const ItemCard = ({ item, children }) => {
           margin-bottom: 12px;
           background-color: #f4f4f4;
         }
-
         @media (max-width: 519px) {
           .team-member-card img {
             width: 36vw;
@@ -62,7 +60,6 @@ const ItemCard = ({ item, children }) => {
             />
           )}
         <h3 className='member-name'>{name}</h3>
-
         <p className='member-company'>{company}</p>
 
         {roles && <p className='member-role'>{roleDescription}</p>}

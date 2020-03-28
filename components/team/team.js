@@ -3,56 +3,26 @@ import members from './team.json'
 import ItemCard from './item-card/item-card'
 import styles from './team.scss'
 import alumniList from '../hire/alumni.json'
+import getTeamMembersData from './team-members-data'
 
-//styling
+// Contentful entry Ids
+const boardMembersEntryId = '1TjBxNqZHJ7LFVlpRfP7rf'
+const coreTeamEntryId = '1IqH7UoXZ6cIWvyyq0p4qk'
+const mentorsEntryId = '3WPLgg9bIRKvZOp6OcXr8r'
 
 export const CoreTeam = () => {
-  const coreTeam = members.filter(member => member.roles.includes('core'))
-  return (
-    <>
-      <style jsx>{styles}</style>
-      <h2 className='title'>Core team</h2>
-      <div className='team-members core-team'>
-        {coreTeam.map(member => (
-          <ItemCard item={member} key={member.id} />
-        ))}
-      </div>
-    </>
-  )
+  const coreTeam = getTeamMembersData(coreTeamEntryId)
+  return coreTeam
 }
 
 export const BoardMembers = () => {
-  const boardMembers = members.filter(member =>
-    member.roles.includes('boardmember')
-  )
-  return (
-    <>
-      <style jsx>{styles}</style>
-      <h2 className='title'>Board members</h2>
-      <div className='team-members core-team'>
-        {boardMembers.map(boardMember => (
-          <ItemCard item={boardMember} key={boardMember.id} />
-        ))}
-      </div>
-    </>
-  )
+  const boardMembers = getTeamMembersData(boardMembersEntryId)
+  return boardMembers
 }
 
 export const MentorsTeam = () => {
-  const mentors = members.filter(member => member.roles.includes('mentor'))
-  return (
-    <>
-      <style jsx>{styles}</style>
-      <h2 className='title'>Our Mentors</h2>
-      <div className='team-members mentors'>
-        {mentors
-          .sort((a, b) => a.name.localeCompare(b.name)) // sort names alphabetically
-          .map(member => (
-            <ItemCard item={member} key={member.id} />
-          ))}
-      </div>
-    </>
-  )
+  const mentors = getTeamMembersData(mentorsEntryId)
+  return mentors
 }
 
 export const Graduates = () => {
