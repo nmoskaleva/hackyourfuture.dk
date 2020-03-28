@@ -1,11 +1,14 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
 import Questioning from './questioning-card'
-import questions from './questions-mentors'
 
 // imports material UI
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
+
+// Contentful client
+import client from '../../contentful'
 
 // styling
 const useStyles = makeStyles(() => ({
@@ -19,13 +22,33 @@ const useStyles = makeStyles(() => ({
 }))
 
 export default function faq() {
+  async function fetchEntries() {
+    const entries = await client.getEntries({
+      content_type: 'faqMentors',
+      order: 'fields.id'
+    })
+    const faqData = entries.items
+    if (entries.items) return faqData
+    else console.log(`error`)
+  }
+
+  const [faqs, setFaqs] = useState([])
+
+  useEffect(() => {
+    async function getFaqs() {
+      const allFaqs = await fetchEntries()
+      setFaqs([...allFaqs])
+    }
+    getFaqs()
+  }, [])
+
   const classes = useStyles()
   return (
     <React.Fragment>
       <h2>Frequently Asked Questions</h2>
       <Container>
-        {questions.map(({ id, question, answer }) => (
-          <Questioning key={id} question={question} answer={answer} />
+        {faqs.map(faq => (
+          <Questioning key={faq.fields.id} question={faq.fields.question} answer={faq.fields.answer} />
         ))}
       </Container>
     </React.Fragment>
