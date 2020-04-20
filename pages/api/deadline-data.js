@@ -1,12 +1,15 @@
 // google api to get data from google spreadsheet
 const { google } = require('googleapis')
-require('dotenv').config();
+require('dotenv').config()
 
-const client = new google.auth.JWT(process.env.CLIENT_EMAIL, null, process.env.PRIVATE_KEY, [
+const privateKey = process.env.PRIVATE_KEY.split(`\\n`).join(`
+`)
+
+const client = new google.auth.JWT(process.env.CLIENT_EMAIL, null, privateKey, [
   'https://www.googleapis.com/auth/spreadsheets'
 ])
 
-client.authorize(function (err, tokens) {
+client.authorize(function(err, tokens) {
   if (err) {
     console.log(err)
     return
@@ -19,7 +22,7 @@ async function gsrun(client) {
   const gsapi = google.sheets({ version: 'v4', auth: client })
 
   const spreadsheetDetails = {
-    spreadsheetId: '1KD6Dr9z5fxEzx-jxs84e0tBfpohTkup8GE4r3CC3qZA',
+    spreadsheetId: '1edSXrvn_avbnqJNMdAJEDeuFOKMZ97Z5UyIOgdWld4w',
     range: 'A1:C2'
   }
 
