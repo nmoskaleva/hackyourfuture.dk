@@ -9,9 +9,10 @@ const CarouselComponent = ({ children }) => {
     });
 
     const startingIndex = items.startingIndex
+    const numberOfVisibleItems = 4;
 
-    // display 4 items at a time
-    const itemsToShow = itemsInCarousel.slice(startingIndex, startingIndex + 4);
+    // display given number of items (numberOfVisibleItems) at a time
+    const itemsToShow = itemsInCarousel.slice(startingIndex, startingIndex + numberOfVisibleItems);
 
     // check itemsToShow array length: if less than 4, append items from the beginning of the array
     const itemsOnDisplay = itemsToShow.length > 4 ?
@@ -21,12 +22,11 @@ const CarouselComponent = ({ children }) => {
             ...itemsInCarousel.slice(0, 4 - itemsToShow.length)
         ]
 
-    const forward = items.startingIndex + 1;
+    const nextStartingIndex = items.startingIndex + 1;
 
     const goToNextItem = (startingIndex) => {
-        const itemsInCarouselLength = itemsInCarousel.length;
-        const nextItem = startingIndex % itemsInCarouselLength;
-        const lastItem = itemsInCarouselLength - 1;
+        const nextItem = startingIndex % itemsInCarousel.length;
+        const lastItem = itemsInCarousel.length - 1;
 
         setItems({
             ...items,
@@ -37,7 +37,7 @@ const CarouselComponent = ({ children }) => {
     // change items on display every 5 seconds 
     useEffect(() => {
         const timer = setInterval(() => {
-            goToNextItem(forward)
+            goToNextItem(nextStartingIndex)
         }, 5000);
         return () => clearTimeout(timer);
     }, [startingIndex]);
