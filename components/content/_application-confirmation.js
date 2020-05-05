@@ -1,4 +1,4 @@
-const title = 'Appication confirmation - HackYourFuture'
+const title = 'Application confirmation - HackYourFuture'
 let content = `
 # Application confirmation 
 Thank you for applying to HackYourFuture! You should receive an auto reply with further info from us shortly.

@@ -26,7 +26,7 @@ export default () => (
       <h2>Application Form</h2>
       <WufooForm
         userName='cphhackyourfuture'
-        formHash='z1r0g5pa1rk0uw6'
+        formHash='zbk2uhv0j04hv4'
         header='hide'
       />
     </Content>
