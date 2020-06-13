@@ -144,7 +144,8 @@
     "onlineCV": "https://www.marcodecara.com/",
     "linkedin": "https://www.linkedin.com/in/marco-de-cara-1b409013a/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "looking for jobs",
+    "company": "Mytheresa.com",
+    "status": "employed",
     "graduationDate": "27-01-2019"
   },
   {
