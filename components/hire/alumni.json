@@ -482,9 +482,10 @@
     "roles": ["alumni"],
     "name": "Axel Leonide Gassay Ekamba",
     "email": "axelleonide@gmail.com",
-    "photo": "/static/alumni/photos/Axel.jpg",
+    "photo": "/static/alumni/photos/axel.jpg",
     "github": "https://github.com/Ekamba",
-    "onlineCV": "https://ekamba.github.io/Axel_portfolio/",
+     "pdfCV": "/static/alumni/cv/axel.pdf",
+    "portfolio": "https://ekamba.github.io/Axel_portfolio/",
     "linkedin": "https://www.linkedin.com/in/axel-ekamba-1b8bb066/",
     "skills": [
       "JS",
