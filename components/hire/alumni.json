@@ -471,10 +471,35 @@
       "CSS",
       "Sass",
       "Bootstrap",
-      "Git" ,
+      "Git",
       "Firebase"
     ],
     "status": "looking for jobs",
     "graduationDate": "29-01-2020"
+  },
+  {
+    "id": 31,
+    "roles": ["alumni"],
+    "name": "Axel Leonide Gassay Ekamba",
+    "email": "axelleonide@gmail.com",
+    "photo": "/static/alumni/photos/axel.jpg",
+    "github": "https://github.com/Ekamba",
+    "pdfCV": "/static/alumni/cv/axel.pdf",
+    "portfolio": "https://ekamba.github.io/Axel_portfolio/",
+    "linkedin": "https://www.linkedin.com/in/axel-ekamba-1b8bb066/",
+    "skills": [
+      "JS",
+      "Express.js",
+      "MySQL",
+      "React",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Python",
+      "Knex.js",
+      "sass"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "29-04-2020"
   }
 ]
