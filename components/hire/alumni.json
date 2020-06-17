@@ -449,5 +449,31 @@
     "photo": "/static/team/hala.jpg",
     "linkedin": "https://www.linkedin.com/in/hala-qasim-009451155/",
     "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
+  },
+  {
+    "id": 30,
+    "roles": ["alumni"],
+    "name": "Amjad Iftikhar",
+    "email": "amjadiftikhar_99@hotmail.com",
+    "photo": "/static/alumni/photos/amjad.jpg",
+    "github": "https://github.com/amjadiftikhar",
+    "pdfCV": "/static/alumni/cv/amjad.pdf",
+    "linkedin": "https://www.linkedin.com/in/amjad-iftikhar-545aa331/",
+    "skills": [
+      "JS",
+      "Node.js",
+      "React",
+      "HTML",
+      "CSS",
+      "Express.js",
+      "Git",
+      "Heroku",
+      "Knex.js",
+      "MySQL",
+      "Firebase",
+      "TS"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "23-10-2019"
   }
 ]
