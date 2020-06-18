@@ -452,6 +452,32 @@
     "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
   },
   {
+    "id": 31,
+    "roles": ["alumni"],
+    "name": "Amjad Iftikhar",
+    "email": "amjadiftikhar_99@hotmail.com",
+    "photo": "/static/alumni/photos/amjad.jpg",
+    "github": "https://github.com/amjadiftikhar",
+    "pdfCV": "/static/alumni/cv/amjad.pdf",
+    "linkedin": "https://www.linkedin.com/in/amjad-iftikhar-545aa331/",
+    "skills": [
+      "JS",
+      "Node.js",
+      "React",
+      "HTML",
+      "CSS",
+      "Express.js",
+      "Git",
+      "Heroku",
+      "Knex.js",
+      "MySQL",
+      "Firebase",
+      "TS"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "29-04-2020"
+  },
+  { 
     "id": 30,
     "roles": ["alumni"],
     "name": "Lilla Kőrösi",
