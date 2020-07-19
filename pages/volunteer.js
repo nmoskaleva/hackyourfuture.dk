@@ -7,6 +7,7 @@ import { MentorsTeam } from '../components/team/team'
 import { content, title } from '../components/content/_mentors'
 import Partners from '../components/partners/partners'
 import Curriculum from '../components/curriculum/curriculum'
+import FAQ from '../components/faq/faq-mentors'
 
 export default () => (
   <Layout>
@@ -18,7 +19,11 @@ export default () => (
       <Curriculum />
 
       <h2 id='becoming-mentor'>Would you like to help?</h2>
-      <Contactform />
+      <Contactform email={'cph@hackyourfuture.net'} />
+    </Content>
+
+    <Content>
+      <FAQ />
     </Content>
 
     <MentorsTeam id='mentors' />

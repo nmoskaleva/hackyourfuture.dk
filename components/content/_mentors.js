@@ -1,6 +1,6 @@
 const title = `Volunteer - HackYourFuture`
 const content = `
-# Mentors
+# Volunteer
 
 HackYourFuture is getting a lot of help from awesome volunteer mentors that want to help new people with an interest in programming.
 

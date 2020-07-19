@@ -2,36 +2,39 @@ import Head from 'next/head'
 import marked from 'marked'
 import Layout from '../components/layouts/layout'
 import Content from '../components/layouts/content/content'
-import { content, title } from '../components/content/_apply'
-import {
-  content as content_learn,
-  title as title_learn
-} from '../components/content/_learn'
+import { title } from '../components/content/_apply'
+import Learn from '../components/learn/learn'
 import WufooForm from 'react-wufoo-embed'
-import Partners from '../components/partners/partners'
+import FAQ from '../components/faq/faq'
+import ApplySection from '../components/apply-section/apply-section'
+import Learning from '../components/learning-section/learning'
+import ApplicationDeadline from '../components/apply-section/deadline/deadline'
 
 export default () => (
   <Layout>
     <Head>
       <title>{title}</title>
     </Head>
-
+    <ApplicationDeadline />
     <Content id='apply'>
-      <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-      <img alt='Apply to be a student' src='https://i.imgur.com/ukKK09t.jpg' />
+      <ApplySection />
     </Content>
-
+    <Content>
+      <Learning />
+    </Content>
     <Content id='apply-for-class'>
-      <h2>Apply for class</h2>
-      <WufooForm userName='cphhackyourfuture' formHash='r1w5dbm018lelz8' header='hide' />
-
+      <h2>Application Form</h2>
+      <WufooForm
+        userName='cphhackyourfuture'
+        formHash='zbk2uhv0j04hv4'
+        header='hide'
+      />
     </Content>
-
     <Content id='learn'>
-      <h2>{title_learn}</h2>
-      <div dangerouslySetInnerHTML={{ __html: marked(content_learn) }} />
+      <Learn />
     </Content>
-
-    <Partners />
+    <Content>
+      <FAQ />
+    </Content>
   </Layout>
 )

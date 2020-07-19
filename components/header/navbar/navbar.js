@@ -16,7 +16,9 @@ export default () => {
         {links.map(({ id, title, url }) => (
           <li className={url === pathName && 'active'} key={uuid()}>
             <Link href={url}>
-              <a rel="noopener">{title}</a>
+              <a rel='noopener' className={title === 'DONATE' && 'donate'}>
+                {title}
+              </a>
             </Link>
           </li>
         ))}

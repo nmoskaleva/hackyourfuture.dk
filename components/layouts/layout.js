@@ -201,13 +201,13 @@ export default ({ children }) => {
         h1 {
           font-size: 40px;
           line-height: 50px;
-          text-align: center;
+          margin-bottom: 2rem;
         }
 
         h2 {
           letter-spacing: 0.2px;
-          text-align: center;
           margin: 2rem 0;
+          line-height: 3rem;
         }
 
         @media (max-width: 768px) {
@@ -231,9 +231,16 @@ export default ({ children }) => {
         .hyf-title > a {
           text-decoration: none;
         }
+
+        .confirmation-page-img {
+          text-align: center;
+        }
       `}</style>
       <Head>
-        <title>HackYourFuture - A coding school in Copenhagen</title>
+        <title>
+          HackYourFuture Copenhagen - A non-profit coding school for
+          disadvantaged groups
+        </title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
 
         <meta
@@ -246,7 +253,7 @@ export default ({ children }) => {
 
         <meta
           name='description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='image'
@@ -255,11 +262,11 @@ export default ({ children }) => {
 
         <meta
           itemProp='name'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           itemProp='description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           itemProp='image'
@@ -268,11 +275,11 @@ export default ({ children }) => {
 
         <meta
           name='og:title'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='og:description'
-          content='HackYourFuture - A web development coding school for newcomers in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta
           name='og:image'
@@ -281,7 +288,7 @@ export default ({ children }) => {
         <meta name='og:url' content='https://hackyourfuture.dk/' />
         <meta
           name='og:site_name'
-          content='HackYourFuture - A coding school in Copenhagen'
+          content='HackYourFuture Copenhagen - A non-profit coding school for disadvantaged groups'
         />
         <meta name='og:locale' content='en' />
         <meta name='og:type' content='website' />
@@ -301,13 +308,18 @@ export default ({ children }) => {
       <main>{children}</main>
       <Footer />
       <script
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=UA-159689438-1'
+      />
+
+      <script
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-117911945-1');
+            gtag('config', 'UA-159689438-1');
           `
         }}
       />

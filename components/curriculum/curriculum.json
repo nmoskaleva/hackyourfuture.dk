@@ -18,16 +18,16 @@
         "id": 4,
         "title": "Javascript 3",
         "duration": "3 weeks"
-    },
+   },
     {
         "id": 5,
-        "title": "Node.js",
-        "duration": "5 weeks"
+        "title": "Databases",
+        "duration": "3 weeks"
     },
     {
         "id": 6,
-        "title": "Databases",
-        "duration": "3 weeks"
+        "title": "Node.js",
+        "duration": "5 weeks"
     },
     {
         "id": 7,
