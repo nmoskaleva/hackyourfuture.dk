@@ -1,6 +1,6 @@
 import React from 'react'
 import Questioning from './questioning-card'
-import questions from './questions-mentors'
+//import questions from './questions-mentors'
 
 // imports material UI
 import { makeStyles } from '@material-ui/core/styles'
@@ -18,14 +18,14 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-export default function faq() {
+export default function faq({ questions }) {
   const classes = useStyles()
   return (
     <React.Fragment>
       <h2>Frequently Asked Questions</h2>
       <Container>
-        {questions.map(({ id, question, answer }) => (
-          <Questioning key={id} question={question} answer={answer} />
+        {questions.map(question => (
+          <Questioning key={question.fields.id} question={question.fields.question} answer={question.fields.answer} />
         ))}
       </Container>
     </React.Fragment>

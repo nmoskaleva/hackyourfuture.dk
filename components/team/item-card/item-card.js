@@ -11,9 +11,8 @@ import {
 } from '@mdi/js'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const ItemCard = ({ item, children }) => {
+const ItemCard = ({ item, photo, children }) => {
   const {
-    photo,
     github,
     roles,
     name,
@@ -26,7 +25,7 @@ const ItemCard = ({ item, children }) => {
     skills,
     company,
     status
-  } = item
+  } = item.fields
   return (
     <div>
       <style jsx>{styles}</style>
@@ -68,7 +67,7 @@ const ItemCard = ({ item, children }) => {
         {roles && <p className='member-role'>{roleDescription}</p>}
         {skills && !company && (
           <div className='skills'>
-            <p>{skills.join(', ')}</p>
+            {/* <p>{skills.join(', ')}</p> */}
           </div>
         )}
         <div className='social-media'>

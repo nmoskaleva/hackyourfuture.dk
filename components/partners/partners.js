@@ -2,7 +2,7 @@ import React from 'react'
 import partners from './partners.json'
 import styles from './partners.scss'
 
-export default () => (
+export default ({ partners, sponsor }) => (
   <>
     <style jsx>{styles}</style>
     <section className='partners'>
@@ -11,25 +11,25 @@ export default () => (
         aria-label='Partner link'
         rel='noopener'
         target='_blank'
-        href='https://www.apmollerfonde.dk/'
+        href={sponsor.url}
         className='mollerske'
       >
         <img
           alt='Den A.P. Møllerske Støttefond logo'
-          src={`/static/partners/mollerske.png`}
+          src={sponsor.logo.fields.file.url}
         />
       </a>
       <h2 className='center'>Supported by</h2>
       <div className='wrapper'>
-        {partners.map(({ id, logo, url, title, width }) => (
-          <div className='partner' key={id}>
+        {partners.map(partner => (
+          <div className='partner' key={partner.fields.id}>
             <a
               aria-label='Partner link'
               rel='noopener'
               target='_blank'
-              href={url}
+              href={partner.fields.url}
             >
-              <img alt={title} src={`/static/partners/${logo}`} width='150vw' />
+              <img alt={partner.fields.title} src={partner.fields.logo.fields.file.url} width='150vw' />
             </a>
           </div>
         ))}

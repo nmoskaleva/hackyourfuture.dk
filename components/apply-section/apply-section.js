@@ -18,6 +18,8 @@ import Avatar from '@material-ui/core/Avatar'
 import Grid from '@material-ui/core/Grid'
 import Container from '@material-ui/core/Container'
 
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
 // styling
 const useStyles = makeStyles({
   stylePadding: {
@@ -48,12 +50,13 @@ const useStyles = makeStyles({
   }
 })
 
-export default function applySection() {
+export default function applySection({ contentOne, contentTwo, requirements }) {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <h1>{sectionTitle}</h1>
-      <Typography className={classes.contentOne}>{contentOne}</Typography>
+      {/* <h1>{sectionTitle}</h1> */}
+      <Typography className={classes.contentOne}>        {documentToReactComponents(contentOne)}
+      </Typography>
       <Grid
         container
         className={classes.stylePadding}
@@ -67,7 +70,7 @@ export default function applySection() {
             <List className={classes.listText}>
               {requirements.map(requirement => {
                 return (
-                  <ListItem key={requirement} className={classes.stylePadding}>
+                  <ListItem key={requirement.fields.id} className={classes.stylePadding}>
                     <ListItemAvatar>
                       <Avatar className={classes.avatar}>&#10004;</Avatar>
                     </ListItemAvatar>
@@ -75,7 +78,7 @@ export default function applySection() {
                       className={classes.listText}
                       disableTypography={true}
                     >
-                      {requirement}
+                      {requirement.fields.requirement}
                     </ListItemText>
                   </ListItem>
                 )

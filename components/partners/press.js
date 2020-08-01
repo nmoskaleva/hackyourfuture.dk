@@ -1,16 +1,15 @@
 import React from 'react'
-import press from './press.json'
 import styles from './partners.scss'
 
-export default () => (
+export default ({ press }) => (
   <div className='partners'>
     <style jsx>{styles}</style>
     <h2 className='center'>Featured in</h2>
     <div className='wrapper'>
-      {press.map(({ id, logo, url, title }) => (
-        <div className='partner' key={id}>
-          <a aria-label='Media link' rel='noopener' target='_blank' href={url}>
-            <img alt={title} src={`/static/media/${logo}`} width='170vw' />
+      {press.map(media => (
+        <div className='partner' key={media.fields.id}>
+          <a aria-label='Media link' rel='noopener' target='_blank' href={media.fields.url}>
+            <img alt={media.fields.title} src={media.fields.logo.fields.file.url} width='170vw' />
           </a>
         </div>
       ))}
