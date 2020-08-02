@@ -83,7 +83,7 @@
       "Node.js"
     ],
     "status": "employed",
-    "company":"SocialTechProject",
+    "company": "SocialTechProject",
     "graduationDate": "02-06-2018"
   },
   {
@@ -479,7 +479,7 @@
     "status": "looking for jobs",
     "graduationDate": "29-04-2020"
   },
-  { 
+  {
     "id": 30,
     "roles": ["alumni"],
     "name": "Lilla Kőrösi",
@@ -530,5 +530,34 @@
     ],
     "status": "looking for jobs",
     "graduationDate": "29-04-2020"
+  },
+  {
+    "id": 32,
+    "roles": ["alumni"],
+    "name": "Ghofrane Ben Hmaid",
+    "email": "ghofranebh90@gmail.com",
+    "photo": "/static/alumni/photos/ghofrane.jpg",
+    "github": "https://github.com/ghofranebenhmaid",
+    "linkedin": "https://www.linkedin.com/in/ghofranebenhmaid/",
+    "pdfCV": "/static/alumni/cv/ghofranebenhmaid.pdf",
+    "behance": "https://www.behance.net/ghofranebenhmaid",
+    "skills": [
+      "JS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Wordpress",
+      "PHP",
+      "Knex.js",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "Adobe package",
+      "Git"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "08-07-2020"
   }
 ]
