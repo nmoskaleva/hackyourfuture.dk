@@ -63,7 +63,7 @@
     "photo": "/static/alumni/photos/badr.jpg",
     "github": "https://github.com/HackAsh96",
     "pdfCV": "/static/alumni/cv/badr.pdf",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/badr-amine-b538ab18a/",
     "skills": [
       "JS",
       "TS",
@@ -82,7 +82,8 @@
       "CSS",
       "Node.js"
     ],
-    "status": "looking for jobs",
+    "status": "employed",
+    "company": "SocialTechProject",
     "graduationDate": "02-06-2018"
   },
   {
@@ -94,7 +95,8 @@
     "github": "https://github.com/elilovna",
     "linkedin": "https://www.linkedin.com/in/yana-khuchuieva-3a771a159/",
     "skills": ["JS", "Express.js", "MySQL", "React", "HTML", "CSS", "Node.js"],
-    "status": "looking for jobs",
+    "status": "employed",
+    "company": "Peytz & Co",
     "graduationDate": "25-11-2018"
   },
   {
@@ -424,7 +426,7 @@
     "roles": ["alumni"],
     "roleDescription": "graduate",
     "status": "employed",
-    "company": "Famly",
+    "company": "Worthmore",
     "photo": "/static/team/abdulrahman.jpg",
     "linkedin": "https://www.linkedin.com/in/ramadan46/",
     "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
@@ -435,7 +437,7 @@
     "roles": ["alumni"],
     "roleDescription": "graduate",
     "status": "employed",
-    "company": "Pleo",
+    "company": "Karnov Group",
     "photo": "/static/team/zoey.jpg",
     "linkedin": "https://www.linkedin.com/in/zoeyzou2018/",
     "skills": ["JS", "MySQL", "React", "HTML", "CSS", "Node.js"]
@@ -477,7 +479,7 @@
     "status": "looking for jobs",
     "graduationDate": "29-04-2020"
   },
-  { 
+  {
     "id": 30,
     "roles": ["alumni"],
     "name": "Lilla Kőrösi",
@@ -528,5 +530,34 @@
     ],
     "status": "looking for jobs",
     "graduationDate": "29-04-2020"
+  },
+  {
+    "id": 32,
+    "roles": ["alumni"],
+    "name": "Ghofrane Ben Hmaid",
+    "email": "ghofranebh90@gmail.com",
+    "photo": "/static/alumni/photos/ghofrane.jpg",
+    "github": "https://github.com/ghofranebenhmaid",
+    "linkedin": "https://www.linkedin.com/in/ghofranebenhmaid/",
+    "pdfCV": "/static/alumni/cv/ghofranebenhmaid.pdf",
+    "behance": "https://www.behance.net/ghofranebenhmaid",
+    "skills": [
+      "JS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Wordpress",
+      "PHP",
+      "Knex.js",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "Adobe package",
+      "Git"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "08-07-2020"
   }
 ]
