@@ -384,6 +384,15 @@
     "github": "https://github.com/Daryan-Tech"
   },
   {
+    "id": 47,
+    "name": "Niels Schmidt",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/team/niels.jpeg",
+    "linkedin": "https://www.linkedin.com/in/niels-schmidt/",
+    "github": "https://github.com/bytewiz"
+  },
+  {
     "id": 48,
     "name": "Jawad Khawaja",
     "roles": ["mentor"],
