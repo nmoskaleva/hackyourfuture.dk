@@ -382,5 +382,23 @@
     "photo": "/static/alumni/photos/daryan.jpg",
     "linkedin": "https://www.linkedin.com/in/daryan-kamalifar-915725140/",
     "github": "https://github.com/Daryan-Tech"
+  },
+  {
+    "id": 47,
+    "name": "Niels Schmidt",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/team/niels.jpeg",
+    "linkedin": "https://www.linkedin.com/in/niels-schmidt/",
+    "github": "https://github.com/bytewiz"
+  },
+  {
+    "id": 48,
+    "name": "Jawad Khawaja",
+    "roles": ["mentor"],
+    "roleDescription": "mentor",
+    "photo": "/static/team/jawad.jpg",
+    "linkedin": "https://www.linkedin.com/in/jawadkhawaja/",
+    "github": "https://github.com/jawkha/"
   }
 ]
