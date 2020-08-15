@@ -1,35 +1,35 @@
 import { useState, useEffect } from 'react'
 import { client } from './contentful'
 
-export const useContentfulContentType = (cntType) => {
-    let [content, setContent] = useState(null)
-    const [error, setError] = useState(null)
+export const useContentfulContentType = (contentType) => {
+    let [content, setContent] = useState()
+    const [error, setError] = useState()
 
     useEffect(() => {
-        async function fetchData() {
+        async function fetchContentfulContent() {
             try {
                 const entries = await client.getEntries({
-                    content_type: cntType,
+                    content_type: contentType,
                     order: 'fields.id'
                 })
                 const contentList = await entries.items
-                setContent([...contentList])
+                setContent(contentList)
             }
             catch (error) {
                 setError(error)
             }
         }
-        fetchData()
+        fetchContentfulContent()
     }, [])
     return { content, error }
 }
 
 export const useContentfulEntryId = (entryId) => {
-    let [content, setContent] = useState(null)
-    const [error, setError] = useState(null)
+    let [content, setContent] = useState()
+    const [error, setError] = useState()
 
     useEffect(() => {
-        async function fetchData() {
+        async function fetchContentfulContent() {
             try {
                 const entry = await client.getEntry(entryId)
                 const content = await entry.fields
@@ -39,7 +39,7 @@ export const useContentfulEntryId = (entryId) => {
                 setError(error)
             }
         }
-        fetchData()
+        fetchContentfulContent()
     }, [])
     return { content, error }
 }

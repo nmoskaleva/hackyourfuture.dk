@@ -4,7 +4,7 @@ import { useContentfulEntryId } from '../../contentful-hooks'
 
 const Curriculum = () => {
   const curriculumEntryId = '5iMQfQkm1sJoBdiBZArNLE'
-  const modules = useContentfulEntryId(curriculumEntryId).content
+  const { content: modules } = useContentfulEntryId(curriculumEntryId)
 
   return (
     <div className='curriculum'>

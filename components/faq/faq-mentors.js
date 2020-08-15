@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
 
 export default function faq() {
   const classes = useStyles()
-  const questions = useContentfulContentType('faqMentors').content
+  const { content: questions } = useContentfulContentType('faqMentors')
 
   return (
     <React.Fragment>
