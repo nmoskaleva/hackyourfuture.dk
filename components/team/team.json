@@ -400,5 +400,14 @@
     "photo": "/static/team/jawad.jpg",
     "linkedin": "https://www.linkedin.com/in/jawadkhawaja/",
     "github": "https://github.com/jawkha/"
+  },
+  {
+    "id": 49,
+    "name": "Vladyslav Zavalykhatko",
+    "roles": ["mentor"],
+    "roleDescription": "Mentor",
+    "photo": "/static/team/vladyslavzavalykhatko.jpg",
+    "linkedin": "https://www.linkedin.com/in/vladyslav-zavalykhatko-415331a9/",
+    "github": "https://github.com/Hatko"
   }
 ]
