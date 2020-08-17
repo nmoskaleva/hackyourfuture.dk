@@ -559,5 +559,34 @@
     ],
     "status": "looking for jobs",
     "graduationDate": "08-07-2020"
+  },
+  {
+    "id": 33,
+    "roles": ["alumni"],
+    "name": "Olha Afanasieva",
+    "email": "afanasievaolja@gmail.com",
+    "photo": "/static/alumni/photos/olha_afanasieva.jpg",
+    "github": "https://github.com/OlkaA",
+    "pdfCV": "/static/alumni/cv/olha_afanasieva.pdf",
+    "onlineCV": "https://olkaa.github.io",
+    "linkedin": "https://www.linkedin.com/in/olha-afanasieva/",
+    "skills": [
+      "JS",
+      "Vue",
+      "React",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "Vuetify",
+      "Git" ,
+      "Node.js",
+      "Express.js",
+      "Knex.js",
+      "MySQL",      
+      "Firebase"
+    ],
+    "status": "looking for jobs",
+    "graduationDate": "29-01-2020"
   }
 ]
