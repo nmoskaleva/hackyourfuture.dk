@@ -303,6 +303,15 @@
     "github": "https://github.com/krishnarrana"
   },
   {
+    "id": 37,
+    "name": "Babak Bandpey",
+    "roles": ["mentor"],
+    "roleDescription": "mentor",
+    "photo": "/static/team/babak_bandpey.png",
+    "linkedin": "https://www.linkedin.com/in/babak-bandpey-a18797140/",
+    "github": "https://github.com/babakbandpey"
+  },
+  {
     "id": 38,
     "name": "Sherry List",
     "roles": ["boardmember"],
