@@ -6,7 +6,7 @@ export const useContentfulContentType = (contentType) => {
     const [error, setError] = useState()
 
     useEffect(() => {
-        async function fetchContentfulContent() {
+        async function fetchData() {
             try {
                 const entries = await client.getEntries({
                     content_type: contentType,
@@ -19,7 +19,7 @@ export const useContentfulContentType = (contentType) => {
                 setError(error)
             }
         }
-        fetchContentfulContent()
+        fetchData()
     }, [])
     return { content, error }
 }
@@ -29,7 +29,7 @@ export const useContentfulEntryId = (entryId) => {
     const [error, setError] = useState()
 
     useEffect(() => {
-        async function fetchContentfulContent() {
+        async function fetchData() {
             try {
                 const entry = await client.getEntry(entryId)
                 const content = await entry.fields
@@ -39,7 +39,29 @@ export const useContentfulEntryId = (entryId) => {
                 setError(error)
             }
         }
-        fetchContentfulContent()
+        fetchData()
+    }, [])
+    return { content, error }
+}
+
+export const useContentfulLinkedContent = (contentType, entryId) => {
+    let [content, setContent] = useState()
+    const [error, setError] = useState()
+
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const { items } = await client.getEntries({
+                    content_type: contentType,
+                    'sys.id': entryId
+                })
+                setContent(items[0].fields.entry)
+            }
+            catch (error) {
+                setError(error)
+            }
+        }
+        fetchData()
     }, [])
     return { content, error }
 }
