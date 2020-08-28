@@ -55,7 +55,7 @@ export const useContentfulLinkedContent = (contentType, entryId) => {
                     content_type: contentType,
                     'sys.id': entryId
                 })
-                setContent(items[0].fields.entry)
+                setContent(items[0].fields.entries)
             }
             catch (error) {
                 setError(error)

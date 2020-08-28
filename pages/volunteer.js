@@ -32,7 +32,7 @@ export default ({ content, title }) => (
   </Layout>
 )
 export async function getStaticProps() {
-  const pageContent = await fetchPageContent('4D9bygQz21rkPZtsRb8ccr')
+  const pageContent = await fetchPageContent('5xIDfrZpVuM30HZRVOelFC')
 
   return {
     props: {
