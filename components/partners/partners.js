@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './partners.scss'
-import { useContentfulEntryId } from '../../contentful-hooks'
+import { useContentfulEntryId } from '../../contentful/contentful-hooks'
 
 export default () => {
   const partnersEntryId = '5SHgnmzfogPbe6BsoiRsCz'

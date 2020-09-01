@@ -1,6 +1,6 @@
 import styles from './curriculum.scss'
 import React from 'react'
-import { useContentfulEntryId } from '../../contentful-hooks'
+import { useContentfulEntryId } from '../../contentful/contentful-hooks'
 
 const Curriculum = () => {
   const curriculumEntryId = '2bOrlf0fxogL8qL7pJXsc2'
