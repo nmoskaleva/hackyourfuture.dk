@@ -1,9 +1,10 @@
 import styles from './curriculum.scss'
 import React from 'react'
-import { useContentfulEntryId } from '../../contentful-hooks'
+import { useContentfulEntryId } from '../../contentful/contentful-hooks'
 
 const Curriculum = () => {
-  const curriculumEntryId = '5iMQfQkm1sJoBdiBZArNLE'
+  const curriculumEntryId = '2bOrlf0fxogL8qL7pJXsc2'
+
   const { content: modules } = useContentfulEntryId(curriculumEntryId)
 
   return (

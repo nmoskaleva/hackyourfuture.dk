@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './partners.scss'
-import { useContentfulEntryId } from '../../contentful-hooks'
+import { useContentfulEntryId } from '../../contentful/contentful-hooks'
 
 export default () => {
-  const partnersEntryId = '3CEyXyD8onF9pJd1cMboxP'
-  const sponsorEntryId = '3H7wmN35ixihm684bqeSea'
+  const partnersEntryId = '5SHgnmzfogPbe6BsoiRsCz'
+  const sponsorEntryId = '1He9psGH0xA4dMzOku8esx'
   const partners = useContentfulEntryId(partnersEntryId).content
   const sponsor = useContentfulEntryId(sponsorEntryId).content
 
@@ -13,31 +13,31 @@ export default () => {
       <style jsx>{styles}</style>
       {sponsor && partners &&
         <section className='partners'>
-          <h2 className='center'>Sponsored by</h2>
+          <h2 className='center'>{sponsor.headline}</h2>
           <a
             aria-label='Partner link'
             rel='noopener'
             target='_blank'
-            href={sponsor.url}
+            href={sponsor.assets[0].fields.description}
             className='mollerske'
           >
             <img
               alt='Den A.P. Møllerske Støttefond logo'
-              src={sponsor.logo.fields.file.url}
+              src={sponsor.assets[0].fields.file.url}
             />
           </a>
           <div>
             <h2 className='center'>{partners.headline}</h2>
             <div className='wrapper'>
-              {partners.list.map(partner => (
-                <div className='partner' key={partner.fields.id}>
+              {partners.assets.map(partner => (
+                <div className='partner' key={partner.sys.id}>
                   <a
                     aria-label='Partner link'
                     rel='noopener'
                     target='_blank'
-                    href={partner.fields.url}
+                    href={partner.fields.description}
                   >
-                    <img alt={partner.fields.title} src={partner.fields.logo.fields.file.url} width='150vw' />
+                    <img alt={partner.fields.title} src={partner.fields.file.url} width='150vw' />
                   </a>
                 </div>
               ))}

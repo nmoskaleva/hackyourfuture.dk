@@ -1,6 +1,6 @@
 import React from 'react'
 import Questioning from './questioning-card'
-import { useContentfulLinkedContent } from '../../contentful-hooks'
+import { useContentfulLinkedContent } from '../../contentful/contentful-hooks'
 
 // imports material UI
 import { makeStyles } from '@material-ui/core/styles'
@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
 
 export default function faq() {
   const classes = useStyles()
-  const { content: questions } = useContentfulLinkedContent('list', '6ZDMlsQ2eWqMcAzSvHHae7')
+  const { content: questions } = useContentfulLinkedContent('list', '45uV8haBJj3RiOh04DXPzd')
 
   return (
     <React.Fragment>

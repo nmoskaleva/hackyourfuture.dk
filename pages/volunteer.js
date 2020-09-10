@@ -6,7 +6,7 @@ import { MentorsTeam } from '../components/team/team'
 import Partners from '../components/partners/partners'
 import Curriculum from '../components/curriculum/curriculum'
 import FAQ from '../components/faq/faq-mentors'
-import { fetchPageContent } from '../contentful'
+import { fetchPageContent } from '../contentful/contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export default ({ content, title }) => (
@@ -32,7 +32,7 @@ export default ({ content, title }) => (
   </Layout>
 )
 export async function getStaticProps() {
-  const pageContent = await fetchPageContent('4D9bygQz21rkPZtsRb8ccr')
+  const pageContent = await fetchPageContent('5xIDfrZpVuM30HZRVOelFC')
 
   return {
     props: {
