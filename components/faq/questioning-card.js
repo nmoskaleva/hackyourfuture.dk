@@ -1,5 +1,5 @@
 import React from 'react'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { RichText } from '../../contentful/contentful-custom-rendering'
 
 // import material UI
 import { makeStyles } from '@material-ui/core/styles'
@@ -77,7 +77,7 @@ export default function Questioning(props) {
       <Collapse in={expanded} timeout='auto' unmountOnExit>
         <CardContent>
           <Typography className={classes.answer}>
-            <Box>{documentToReactComponents(props.answer)}</Box>
+            <Box>{<RichText document={props.answer} />}</Box>
           </Typography>
         </CardContent>
       </Collapse>
