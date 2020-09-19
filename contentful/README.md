@@ -16,15 +16,15 @@ Contentful lets your content model evolve with the project. When necessary, cont
 
 Each content type is a compilation of fields of different data types: text, JSON, number, date or time, location, media, boolean, and reference. 
 
-There are two field types in Contentful that are used for text: `Text` and `Rich Text`. `Text` is the field type that uses Markdown. `Rich Text` is the field type that uses rich text. From a developer perspective, the structure of the data from a Text field is different from the structure of data from a `Rich Text` field. More information about two text fields can be found [here](https://www.contentful.com/blog/2020/05/25/beginners-guide-to-contentful-text-types-markdown-richtext/). 
+There are two field types in Contentful that are used for text: `Text` and `Rich Text`. `Text` is the field type that uses Markdown. `Rich Text` is the field type that uses rich text. From a developer perspective, the structure of the data from a `Text` field is different from the structure of data from a `Rich Text` field. More information about two text fields can be found [here](https://www.contentful.com/blog/2020/05/25/beginners-guide-to-contentful-text-types-markdown-richtext/). 
 
 #### Rich Text field type
 
-`Rich Text` is a field type that allows for creating rich text content, providing a wide range of formatting options. Additionally, it allows entries and assets to be linked dynamically and embedded in the text. We are using `Rich Text` format in the `MainBody` field of `ArticlePage` content type. 
+`Rich Text` is a field type that allows for creating rich text content, providing a wide range of formatting options. Additionally, it allows entries and assets to be linked dynamically and embedded in the text. We are using `Rich Text` format in the `MainBody` field of an `ArticlePage` content type. 
 
-The API response corresponding to the Rich Text is a JSON array of Nodes that follow an Abstract Syntax Tree. It eliminates the empty `<p></p>` tags associated with an HTML response, or shortcodes. 
+The API response corresponding to the `Rich Text` is a JSON array of Nodes that follow an Abstract Syntax Tree. It eliminates the empty `<p></p>` tags associated with an HTML response, or shortcodes. 
 
-Rendering the API response from a `Rich Text` field requires helper functions. To render Rich Text fields in React, we use [rich text React renderer](https://github.com/contentful/rich-text/tree/master/packages/rich-text-react-renderer) and `documentToReactComponents` function that it provides.
+Rendering the API response from a `Rich Text` field requires helper functions. To render `Rich Text` fields in React, we use [rich text React renderer](https://github.com/contentful/rich-text/tree/master/packages/rich-text-react-renderer) and `documentToReactComponents` function that it provides.
 
 A custom rendering option is available for `Rich Text` fields. Custom rendering is generally used in order to add custom styles or to render embedded entries. We are using custom rendering in order to add several `<br>` tags, as in `hackyourfuture.dk/donate` page. 
 
@@ -45,8 +45,8 @@ All files Contentful are in `contentful` folder.
 
 - `contentful.js` requires the contentful dependency and creates a client, allowing access to retrieving content from Contentful. It also provides basic functions to fetch content: these functions will be used when fetching data via `getStaticProps`. 
 - `contentful-hooks.js` contains React hooks for fetching data.
-- `contentful-custom-rendering.js` contains the code for custom rendering of a `Rich Text` field type. It should be used when more than one <br> tag needs to be rendered, as in `hackyourfuture.dk/donate` page. 
-* A combination of `Shift` + `Enter` should be used in order to add multiple <br> tags in a `Rich Text` field type in Contentful web app. 
+- `contentful-custom-rendering.js` contains the code for custom rendering of a `Rich Text` field type. It should be used when more than one `<br>` tag needs to be rendered, as in `hackyourfuture.dk/donate` page. 
+*A combination of `Shift` + `Enter` should be used in order to add multiple <br> tags in a `Rich Text` field type in Contentful web app.*
 
 ## Fetching data in Next.js
 
@@ -56,26 +56,26 @@ One caveat is that `getStaticProps` can only be used in files within `pages` fol
 
 ## Requesting content
 
-Content from Contentful can be requested using entry id (`client.getEntry('<entry_id>')`), or using search parameters, such as content type. 
+Content from Contentful can be requested using entry id (`client.getEntry('<entry_id>')`), or using search parameters, such as `content_type`. 
 
 Entries represent anything defined as a Content Type in a space. 
 
-To retrieve a specific entry, you need the id for that entry. If you're looking at an entry you created in the Contentful web app, it should be the string in the URL after `/entries/`.
+To retrieve a specific entry, you need the id for that entry. If you're looking at an entry in the Contentful web app, it should be the string in the URL after `/entries/`.
 The response object of a successful query represents the Entry `<entry_id>` and contains two objects: `sys`, describing system properties of the entry, and `fields`, assigning specific values to the fields of the entry.
 
-To retrive all entries of a content type, use that content type's ID: (`client.getEntries({'content_type': '<content_type_id>'})`). 
+To retrive all entries of a content type, use that content type's ID: `client.getEntries({'content_type': '<content_type_id>'})`. 
 
 You can filter further by properties of the entries, for example, as described below.
 
 ### Retrieving linked content
 
-Entries can have links fields which point to other entries or assets. For example, a `Frequently asked questions: mentors` list has references to `Q&A` entries. 
+Entries can have links fields which point to other entries or assets. For example, a `Frequently asked questions: mentors` `List` content type has references to several `Q&A` type entries. 
 
-When entries have links to other entries, a single HTTP request lets you retrieve the entire set of linked resources in one request. By default, Contentful resolves one level of linked entries or assets.
+When entries have links to other entries, a single `HTTP` request lets you retrieve the entire set of linked resources in one request. By default, Contentful resolves one level of linked entries or assets.
 
-In order to include linked fields in the response, we use `getEntries` and filter by `sys.id=<entry_id>` like in `useContentfulLinkedContent` custom hook, that will be used to fetch data in `components/faq/faq-mentors.js`.
+In order to include linked fields in the response, we use `getEntries()` and filter by `sys.id=<entry_id>` like in `useContentfulLinkedContent` custom hook, that will be used to fetch data in `components/faq/faq-mentors.js`.
 
-* Please note that `getEntry` does not support resolving linked fields due to API limitations.
+*Please note that `getEntry()` does not support resolving linked fields due to API limitations.*
 
 More information on Links is available [here](https://www.contentful.com/developers/docs/concepts/links/). 
 
@@ -85,11 +85,11 @@ With Heroku webhook, projects hosted on Heroku are notified by a content change,
 
 By default, the webhook will:
 
-Trigger a Heroku build.
-Be triggered when an entry or asset is published or unpublished.
-Be scoped to events in the master environment.
+* Trigger a Heroku build.
+* Be triggered when an entry or asset is published or unpublished.
+* Be scoped to events in the master environment.
 
-Webhook is configured in [Contentful web app](https://app.contentful.com/spaces/46kdo181gk6a/settings/webhooks/7rShLBAySnY1iuGaKp1Dhr). 
+Webhook is configured via [Contentful web app](https://app.contentful.com/spaces/46kdo181gk6a/settings/webhooks/7rShLBAySnY1iuGaKp1Dhr). 
 
 ## Contentful export tool
 
@@ -97,9 +97,9 @@ Webhook is configured in [Contentful web app](https://app.contentful.com/spaces/
 
 ## Useful resources
 
-* [Contentful Developer Docs](https://www.contentful.com/developers/docs/). 
-* [JavaScript SDK for Contentful](https://github.com/contentful/contentful.js). 
+* [Contentful Developer Docs](https://www.contentful.com/developers/docs/)
+* [JavaScript SDK for Contentful](https://github.com/contentful/contentful.js) 
 https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/content-type.
-* [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/). 
-* [Getting started with Rich Text](https://www.contentful.com/developers/docs/tutorials/general/getting-started-with-rich-text-field-type/).
-* [Contentful data model](https://www.contentful.com/developers/docs/concepts/data-model/). 
+* [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/)
+* [Contentful data model](https://www.contentful.com/developers/docs/concepts/data-model/)
+* [Getting started with Rich Text](https://www.contentful.com/developers/docs/tutorials/general/getting-started-with-rich-text-field-type/)
