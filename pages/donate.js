@@ -15,13 +15,8 @@ export default () => (
     <Content>
       <style jsx>
         {`
-          ul {
-            // background-color: black;
-          }
           li {
-            
               list-style: inside;
-        
         `}
       </style>
       <h2 id='member'>Become a company member of HackYourFuture! </h2>
